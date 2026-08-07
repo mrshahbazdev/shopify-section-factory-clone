@@ -12,6 +12,7 @@ A Shopify embedded app clone of [Section Store / Section Factory](https://apps.s
 ## Features
 
 - **Explore Sections** — category tabs, search, sorting and a card grid of 769 section designs
+- **Section Detail** — one-time billing (via `appPurchaseOneTimeCreate`) and one-click install into the active theme as a `sections/{handle}.liquid` asset
 - **Bundle & Save** — custom bundle builder with discount tiers
 - **Conversion Blocks** — product-page conversion blocks (Plus)
 - **Bundles / Quantity Breaks** — volume discounts and bundle offers (Plus)
@@ -49,4 +50,4 @@ Section and category data was extracted from the Section Store demo store and st
 
 ## Notes
 
-This is a functional MVP of the admin UI, catalog and navigation. Theme-side Liquid section injection, one-time billing and the Plus upgrade endpoints are scaffolded and ready to be wired to the Shopify Admin API and Shopify App Billing.
+This is a functional MVP clone of the Section Store admin experience. Theme-side Liquid assets, one-time billing, purchase/install records and the Plus upgrade features are scaffolded and wired to the Shopify Admin API. The generated Liquid for each section is a starter template — replace with full section markup per design.
