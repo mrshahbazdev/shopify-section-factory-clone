@@ -10,7 +10,7 @@
     "deploy": "shopify app deploy",
     "config:use": "shopify app config use",
     "env": "shopify app env",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "node server.js",
     "setup": "prisma generate && prisma migrate deploy",
     "generate:liquid": "python3 scripts/generate-sections-liquid.py",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
