@@ -1,0 +1,107 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Session {
+  id                  String    @id
+  shop                String
+  state               String
+  isOnline            Boolean   @default(false)
+  scope               String?
+  expires             DateTime?
+  accessToken         String
+  userId              BigInt?
+  firstName           String?
+  lastName            String?
+  email               String?
+  accountOwner        Boolean   @default(false)
+  locale              String?
+  collaborator        Boolean?  @default(false)
+  emailVerified       Boolean?  @default(false)
+  refreshToken        String?
+  refreshTokenExpires DateTime?
+}
+
+model ShopSettings {
+  id            String   @id @default(cuid())
+  shop          String   @unique
+  plusEnabled   Boolean  @default(false)
+  plusTrialEnds DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Section {
+  id          String             @id @default(cuid())
+  handle      String             @unique
+  title       String
+  description String?
+  price       Int                @default(0) // price in cents
+  isPro       Boolean            @default(false)
+  imageUrl    String?
+  category    String
+  groups      String             @default("") // comma-separated feature groups
+  shopifyUrl  String?
+  createdAt   DateTime           @default(now())
+  updatedAt   DateTime           @updatedAt
+  purchases   SectionPurchase[]
+  installs    InstalledSection[]
+  bundleItems BundleItem[]
+}
+
+model Category {
+  id        String @id @default(cuid())
+  handle    String @unique
+  title     String
+  sortOrder Int    @default(99)
+}
+
+model SectionPurchase {
+  id              String   @id @default(cuid())
+  shop            String
+  sectionId       String
+  section         Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  chargeId        String?
+  amount          Int
+  currency        String   @default("USD")
+  status          String   @default("paid") // paid | refunded
+  createdAt       DateTime @default(now())
+}
+
+model InstalledSection {
+  id        String   @id @default(cuid())
+  shop      String
+  sectionId String
+  section   Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+  themeId   String?
+  createdAt DateTime @default(now())
+
+  @@unique([shop, sectionId])
+}
+
+model Bundle {
+  id          String        @id @default(cuid())
+  shop        String
+  title       String
+  discountPct Int           @default(0)
+  items       BundleItem[]
+  status      String        @default("draft") // draft | published
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+}
+
+model BundleItem {
+  id        String  @id @default(cuid())
+  bundleId  String
+  bundle    Bundle  @relation(fields: [bundleId], references: [id], onDelete: Cascade)
+  sectionId String
+  section   Section @relation(fields: [sectionId], references: [id], onDelete: Cascade)
+}
