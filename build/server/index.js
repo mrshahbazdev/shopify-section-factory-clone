@@ -40,7 +40,7 @@ ApiVersion.January25;
 const addDocumentResponseHeaders = shopify.addDocumentResponseHeaders;
 const authenticate = shopify.authenticate;
 shopify.unauthenticated;
-shopify.login;
+const login = shopify.login;
 shopify.registerWebhooks;
 shopify.sessionStorage;
 const streamTimeout = 5e3;
@@ -158,6 +158,11 @@ const route3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   loader: loader$c
 }, Symbol.toStringTag, { value: "Module" }));
 const loader$b = async ({ request }) => {
+  const url = new URL(request.url);
+  if (url.pathname === "/auth/login") {
+    const errors = await login(request);
+    return json(errors ?? {});
+  }
   await authenticate.admin(request);
   return null;
 };
