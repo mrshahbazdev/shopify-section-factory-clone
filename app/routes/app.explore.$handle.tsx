@@ -1,4 +1,5 @@
 import type { ActionFunctionArgs, LoaderFunctionArgs } from "@remix-run/node";
+import { json } from "@remix-run/node";
 import { Form, useActionData, useLoaderData } from "@remix-run/react";
 import { useState } from "react";
 import {
@@ -13,17 +14,17 @@ import {
 } from "@shopify/polaris";
 
 import { authenticate } from "../shopify.server";
-import sections from "../data/sections.json";
 import { generateSectionLiquid } from "../lib/section-template";
+import { getSection } from "../data/sections.server";
 import db from "../db.server";
 
 export const loader = async ({ request, params }: LoaderFunctionArgs) => {
   await authenticate.admin(request);
-  const section = sections.find((s) => s.handle === params.handle);
+  const section = getSection(params.handle);
   if (!section) {
     throw new Response("Section not found", { status: 404 });
   }
-  return { section };
+  return json({ section });
 };
 
 export const action = async ({
@@ -31,7 +32,7 @@ export const action = async ({
   params,
 }: ActionFunctionArgs) => {
   const { admin, session } = await authenticate.admin(request);
-  const section = sections.find((s) => s.handle === params.handle);
+  const section = getSection(params.handle);
   if (!section || !session) {
     return { error: "Section or session not found" };
   }
@@ -100,8 +101,7 @@ export const action = async ({
 
     if (activeTheme) {
       const liquid =
-        (section as unknown as { liquid?: string }).liquid ??
-        generateSectionLiquid(section.title, section.handle);
+        section.liquid ?? generateSectionLiquid(section.title, section.handle);
       await admin.rest.put({
         path: `/themes/${activeTheme.id}/assets.json`,
         data: {

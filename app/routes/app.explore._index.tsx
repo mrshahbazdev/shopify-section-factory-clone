@@ -13,13 +13,13 @@ import {
   Text,
   EmptyState,
 } from "@shopify/polaris";
+import { json } from "@remix-run/node";
 import { authenticate } from "../shopify.server";
-import sections from "../data/sections.json";
-import categories from "../data/categories.json";
+import { categories, getSectionsWithoutLiquid } from "../data/sections.server";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
   await authenticate.admin(request);
-  return { sections, categories };
+  return json({ sections: getSectionsWithoutLiquid(), categories });
 };
 
 const sortOptions = [
