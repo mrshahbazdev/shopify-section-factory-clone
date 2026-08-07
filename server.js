@@ -5,6 +5,18 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+function stripQuotes(value) {
+  if (
+    typeof value === 'string' &&
+    value.length > 1 &&
+    ((value.startsWith('"') && value.endsWith('"')) ||
+      (value.startsWith("'") && value.endsWith("'")))
+  ) {
+    return value.slice(1, -1);
+  }
+  return value;
+}
+
 // Load environment variables from .env if present
 const envPath = path.resolve(__dirname, '.env');
 if (fs.existsSync(envPath)) {
@@ -16,12 +28,16 @@ if (fs.existsSync(envPath)) {
     if (idx === -1) continue;
     const key = trimmed.slice(0, idx).trim();
     let value = trimmed.slice(idx + 1).trim();
-    // Remove surrounding quotes if present
-    value = value.replace(/^["'](.*)["']$/, '$1');
+    value = stripQuotes(value);
     if (key && process.env[key] === undefined) {
       process.env[key] = value;
     }
   }
+}
+
+// Strip surrounding quotes from environment variables set by the hosting panel
+for (const key of Object.keys(process.env)) {
+  process.env[key] = stripQuotes(process.env[key]);
 }
 
 // Build DATABASE_URL from separate DB_* variables if DATABASE_URL is not set
