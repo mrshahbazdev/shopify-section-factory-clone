@@ -22,24 +22,59 @@ A Shopify embedded app clone of [Section Store / Section Factory](https://apps.s
 
 ## Data
 
-Section and category data was extracted from the Section Store demo store and stored in `app/data/sections.json` and `app/data/categories.json`. Each section now has a generated Shopify Liquid template (`liquid` field) for one-click theme installation. Run `npm run generate:liquid` to regenerate these templates.
+Section and category data was extracted from the Section Store demo store and stored in `app/data/sections.json` and `app/data/categories.json`.
+
+Section Liquid is loaded at runtime from `app/sections/{handle}.liquid`. `726` of those files were scraped from the real Section Store demo pages; the remaining sections fall back to the generated starter templates. Run `npm run generate:liquid` to regenerate fallback templates.
 
 ## Getting started
 
-1. Copy `.env.example` to `.env` and fill in your Shopify Partner app credentials.
-2. Install dependencies:
+1. Install dependencies and set up the database:
    ```bash
    npm install --force
    npm run setup
    ```
-3. Link your Shopify app config:
+2. Copy `.env.example` to `.env` and fill in your Shopify Partner app credentials, or pull them from the linked app:
    ```bash
-   npm run config:link
+   npx shopify app env pull
    ```
-4. Start the dev server:
+3. Start the dev server:
    ```bash
    npm run dev
    ```
+
+## Deploy
+
+1. Link the app to a Partner Dashboard app:
+   ```bash
+   npx shopify app config link
+   # or link by an existing client ID:
+   npx shopify app config link --client-id <YOUR_CLIENT_ID>
+   ```
+2. Deploy the app and its theme app extension:
+   ```bash
+   npx shopify app deploy --allow-updates
+   ```
+3. For live testing, set `SHOPIFY_APP_URL` and `redirect_urls` in `shopify.app.toml` to a public HTTPS URL reachable by Shopify, then re-deploy.
+
+## Install on a development store
+
+The fastest way to test billing and the admin UI is to run:
+
+```bash
+npx shopify app dev --store <your-dev-store>.myshopify.com
+```
+
+`shopify app dev` will create a Cloudflare tunnel, update the app URL for the dev session, and open the install URL. If the store has a storefront password, enter it when prompted. Once installed, the app appears under **Apps** in the store admin, and the section detail page can create real `appPurchaseOneTimeCreate` charges.
+
+## Theme App Extension (Plus features)
+
+The `extensions/section-factory-plus` theme app extension exposes three blocks:
+
+- `blocks/conversion-blocks.liquid`
+- `blocks/bundle.liquid`
+- `blocks/cart-drawer.liquid`
+
+Configuration is written to shop metafields by the admin routes in `app/routes/app.conversion-blocks.tsx`, `app.bundles.tsx` and `app.cart-drawer.tsx`. The extension is bundled and deployed with `npx shopify app deploy --allow-updates`.
 
 ## Scripts
 
@@ -47,7 +82,8 @@ Section and category data was extracted from the Section Store demo store and st
 - `npm run start` — run the production server
 - `npm run lint` — run ESLint
 - `npm run setup` — generate Prisma client and run migrations
+- `npm run generate:liquid` — regenerate `app/sections/*.liquid` fallback templates
 
 ## Notes
 
-This is a functional MVP clone of the Section Store admin experience. Theme-side Liquid assets, one-time billing, purchase/install records and the Plus upgrade features are scaffolded and wired to the Shopify Admin API. The generated Liquid for each section is a starter template — replace with full section markup per design.
+This is a functional MVP clone of the Section Store admin experience. Real Section Store-quality markup for the 726 scraped sections lives in `app/sections/*.liquid`. The remaining sections use generated starter templates that can be replaced with bespoke designs over time.
