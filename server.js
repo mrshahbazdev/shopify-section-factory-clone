@@ -4,6 +4,26 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const logPath = path.resolve(__dirname, 'app-error.log');
+
+function logError(msg, err) {
+  const line = `${new Date().toISOString()} ${msg}\n${err ? (err.stack || err) : ''}\n`;
+  try {
+    fs.appendFileSync(logPath, line);
+  } catch (e) {
+    console.error(line);
+  }
+}
+
+process.on('uncaughtException', (err) => {
+  logError('uncaughtException', err);
+  process.exit(1);
+});
+
+process.on('unhandledRejection', (reason) => {
+  logError('unhandledRejection', reason);
+  process.exit(1);
+});
 
 function stripQuotes(value) {
   if (
@@ -18,26 +38,36 @@ function stripQuotes(value) {
 }
 
 // Load environment variables from .env if present
-const envPath = path.resolve(__dirname, '.env');
-if (fs.existsSync(envPath)) {
-  const contents = fs.readFileSync(envPath, 'utf8');
-  for (const line of contents.split('\n')) {
-    const trimmed = line.trim();
-    if (!trimmed || trimmed.startsWith('#')) continue;
-    const idx = trimmed.indexOf('=');
-    if (idx === -1) continue;
-    const key = trimmed.slice(0, idx).trim();
-    let value = trimmed.slice(idx + 1).trim();
-    value = stripQuotes(value);
-    if (key && process.env[key] === undefined) {
-      process.env[key] = value;
+try {
+  const envPath = path.resolve(__dirname, '.env');
+  if (fs.existsSync(envPath)) {
+    const contents = fs.readFileSync(envPath, 'utf8');
+    for (const line of contents.split('\n')) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith('#')) continue;
+      const idx = trimmed.indexOf('=');
+      if (idx === -1) continue;
+      const key = trimmed.slice(0, idx).trim();
+      let value = trimmed.slice(idx + 1).trim();
+      value = stripQuotes(value);
+      if (key && process.env[key] === undefined) {
+        process.env[key] = value;
+      }
     }
   }
+} catch (err) {
+  logError('failed to load .env', err);
 }
 
 // Strip surrounding quotes from environment variables set by the hosting panel
-for (const key of Object.keys(process.env)) {
-  process.env[key] = stripQuotes(process.env[key]);
+try {
+  for (const key of Object.keys(process.env)) {
+    if (process.env[key] !== undefined) {
+      process.env[key] = stripQuotes(process.env[key]);
+    }
+  }
+} catch (err) {
+  logError('failed to strip env quotes', err);
 }
 
 // Build DATABASE_URL from separate DB_* variables if DATABASE_URL is not set
@@ -56,4 +86,9 @@ process.env.PORT = process.env.PORT || '3000';
 // Tell remix-serve which build to serve
 process.argv[2] = process.argv[2] || path.resolve(__dirname, 'build/server/index.js');
 
-await import('@remix-run/serve/dist/cli.js');
+try {
+  await import('@remix-run/serve/dist/cli.js');
+} catch (err) {
+  logError('startup error', err);
+  throw err;
+}
