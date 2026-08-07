@@ -31,8 +31,8 @@ model Session {
 }
 
 model ShopSettings {
-  id            String   @id @default(cuid())
-  shop          String   @unique
+  id            String   @id @default(cuid()) @db.VarChar(120)
+  shop          String   @unique @db.VarChar(120)
   plusEnabled   Boolean  @default(false)
   plusTrialEnds DateTime?
   createdAt     DateTime @default(now())
@@ -40,14 +40,14 @@ model ShopSettings {
 }
 
 model Section {
-  id          String             @id @default(cuid())
-  handle      String             @unique
-  title       String
+  id          String             @id @default(cuid()) @db.VarChar(120)
+  handle      String             @unique @db.VarChar(120)
+  title       String             @db.VarChar(200)
   description String?            @db.Text
   price       Int                @default(0) // price in cents
   isPro       Boolean            @default(false)
   imageUrl    String?            @db.VarChar(500)
-  category    String
+  category    String             @db.VarChar(120)
   groups      String             @default("") @db.VarChar(500) // comma-separated feature groups
   shopifyUrl  String?            @db.Text
   createdAt   DateTime           @default(now())
@@ -58,50 +58,50 @@ model Section {
 }
 
 model Category {
-  id        String @id @default(cuid())
-  handle    String @unique
-  title     String
+  id        String @id @default(cuid()) @db.VarChar(120)
+  handle    String @unique @db.VarChar(120)
+  title     String @db.VarChar(200)
   sortOrder Int    @default(99)
 }
 
 model SectionPurchase {
-  id        String   @id @default(cuid())
-  shop      String
-  sectionId String
+  id        String   @id @default(cuid()) @db.VarChar(120)
+  shop      String   @db.VarChar(120)
+  sectionId String   @db.VarChar(120)
   section   Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
   chargeId  String?
   amount    Int
-  currency  String   @default("USD")
-  status    String   @default("paid") // paid | refunded
+  currency  String   @default("USD") @db.VarChar(10)
+  status    String   @default("paid") @db.VarChar(20) // paid | refunded
   createdAt DateTime @default(now())
 }
 
 model InstalledSection {
-  id        String   @id @default(cuid())
-  shop      String
-  sectionId String
+  id        String   @id @default(cuid()) @db.VarChar(120)
+  shop      String   @db.VarChar(120)
+  sectionId String   @db.VarChar(120)
   section   Section  @relation(fields: [sectionId], references: [id], onDelete: Cascade)
-  themeId   String?
+  themeId   String?  @db.VarChar(120)
   createdAt DateTime @default(now())
 
   @@unique([shop, sectionId])
 }
 
 model Bundle {
-  id          String        @id @default(cuid())
-  shop        String
-  title       String
+  id          String        @id @default(cuid()) @db.VarChar(120)
+  shop        String        @db.VarChar(120)
+  title       String        @db.VarChar(200)
   discountPct Int           @default(0)
   items       BundleItem[]
-  status      String        @default("draft") // draft | published
+  status      String        @default("draft") @db.VarChar(20) // draft | published
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 }
 
 model BundleItem {
-  id        String  @id @default(cuid())
-  bundleId  String
+  id        String  @id @default(cuid()) @db.VarChar(120)
+  bundleId  String  @db.VarChar(120)
   bundle    Bundle  @relation(fields: [bundleId], references: [id], onDelete: Cascade)
-  sectionId String
+  sectionId String  @db.VarChar(120)
   section   Section @relation(fields: [sectionId], references: [id], onDelete: Cascade)
 }

@@ -23,8 +23,8 @@ CREATE TABLE `Session` (
 
 -- CreateTable
 CREATE TABLE `ShopSettings` (
-    `id` VARCHAR(191) NOT NULL,
-    `shop` VARCHAR(191) NOT NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `shop` VARCHAR(120) NOT NULL,
     `plusEnabled` BOOLEAN NOT NULL DEFAULT false,
     `plusTrialEnds` DATETIME(3) NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
@@ -36,14 +36,14 @@ CREATE TABLE `ShopSettings` (
 
 -- CreateTable
 CREATE TABLE `Section` (
-    `id` VARCHAR(191) NOT NULL,
-    `handle` VARCHAR(191) NOT NULL,
-    `title` VARCHAR(191) NOT NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `handle` VARCHAR(120) NOT NULL,
+    `title` VARCHAR(200) NOT NULL,
     `description` TEXT NULL,
     `price` INTEGER NOT NULL DEFAULT 0,
     `isPro` BOOLEAN NOT NULL DEFAULT false,
     `imageUrl` VARCHAR(500) NULL,
-    `category` VARCHAR(191) NOT NULL,
+    `category` VARCHAR(120) NOT NULL,
     `groups` VARCHAR(500) NOT NULL DEFAULT '',
     `shopifyUrl` TEXT NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
@@ -55,9 +55,9 @@ CREATE TABLE `Section` (
 
 -- CreateTable
 CREATE TABLE `Category` (
-    `id` VARCHAR(191) NOT NULL,
-    `handle` VARCHAR(191) NOT NULL,
-    `title` VARCHAR(191) NOT NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `handle` VARCHAR(120) NOT NULL,
+    `title` VARCHAR(200) NOT NULL,
     `sortOrder` INTEGER NOT NULL DEFAULT 99,
 
     UNIQUE INDEX `Category_handle_key`(`handle`),
@@ -66,13 +66,13 @@ CREATE TABLE `Category` (
 
 -- CreateTable
 CREATE TABLE `SectionPurchase` (
-    `id` VARCHAR(191) NOT NULL,
-    `shop` VARCHAR(191) NOT NULL,
-    `sectionId` VARCHAR(191) NOT NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `shop` VARCHAR(120) NOT NULL,
+    `sectionId` VARCHAR(120) NOT NULL,
     `chargeId` VARCHAR(191) NULL,
     `amount` INTEGER NOT NULL,
-    `currency` VARCHAR(191) NOT NULL DEFAULT 'USD',
-    `status` VARCHAR(191) NOT NULL DEFAULT 'paid',
+    `currency` VARCHAR(10) NOT NULL DEFAULT 'USD',
+    `status` VARCHAR(20) NOT NULL DEFAULT 'paid',
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
 
     PRIMARY KEY (`id`)
@@ -80,10 +80,10 @@ CREATE TABLE `SectionPurchase` (
 
 -- CreateTable
 CREATE TABLE `InstalledSection` (
-    `id` VARCHAR(191) NOT NULL,
-    `shop` VARCHAR(191) NOT NULL,
-    `sectionId` VARCHAR(191) NOT NULL,
-    `themeId` VARCHAR(191) NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `shop` VARCHAR(120) NOT NULL,
+    `sectionId` VARCHAR(120) NOT NULL,
+    `themeId` VARCHAR(120) NULL,
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
 
     UNIQUE INDEX `InstalledSection_shop_sectionId_key`(`shop`, `sectionId`),
@@ -92,11 +92,11 @@ CREATE TABLE `InstalledSection` (
 
 -- CreateTable
 CREATE TABLE `Bundle` (
-    `id` VARCHAR(191) NOT NULL,
-    `shop` VARCHAR(191) NOT NULL,
-    `title` VARCHAR(191) NOT NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `shop` VARCHAR(120) NOT NULL,
+    `title` VARCHAR(200) NOT NULL,
     `discountPct` INTEGER NOT NULL DEFAULT 0,
-    `status` VARCHAR(191) NOT NULL DEFAULT 'draft',
+    `status` VARCHAR(20) NOT NULL DEFAULT 'draft',
     `createdAt` DATETIME(3) NOT NULL DEFAULT CURRENT_TIMESTAMP(3),
     `updatedAt` DATETIME(3) NOT NULL,
 
@@ -105,9 +105,9 @@ CREATE TABLE `Bundle` (
 
 -- CreateTable
 CREATE TABLE `BundleItem` (
-    `id` VARCHAR(191) NOT NULL,
-    `bundleId` VARCHAR(191) NOT NULL,
-    `sectionId` VARCHAR(191) NOT NULL,
+    `id` VARCHAR(120) NOT NULL,
+    `bundleId` VARCHAR(120) NOT NULL,
+    `sectionId` VARCHAR(120) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
