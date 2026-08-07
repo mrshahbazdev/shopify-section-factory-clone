@@ -26,7 +26,7 @@
       <div class="sf-bundle__tier"><span>Buy 2</span><span>Save 10%</span></div>
       <div class="sf-bundle__tier"><span>Buy 3</span><span>Save 15%</span></div>
     {% endfor %}
-    <a class="sf-bundle__cta" href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity={{ config.default_quantity | default: 2 }}">Add bundle to cart</a>
+    <a class="sf-bundle__cta" href="{{ routes.cart_add_url }}?id={{ product.selected_or_first_available_variant.id }}&quantity={{ config.default_quantity | default: 2 }}">Add bundle to cart</a>
   </div>
 {% endif %}
 
@@ -37,6 +37,5 @@
   "settings": [
     {"type": "text", "id": "title", "label": "Title", "default": "Bundle & Save"}
   ],
-  "presets": [{"name": "Bundle / Quantity Breaks"}]
 }
 {% endschema %}
