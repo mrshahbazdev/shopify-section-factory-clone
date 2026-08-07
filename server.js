@@ -24,6 +24,16 @@ if (fs.existsSync(envPath)) {
   }
 }
 
+// Build DATABASE_URL from separate DB_* variables if DATABASE_URL is not set
+if (!process.env.DATABASE_URL && process.env.DB_HOST) {
+  const user = process.env.DB_USER || 'root';
+  const password = process.env.DB_PASSWORD || '';
+  const host = process.env.DB_HOST;
+  const port = process.env.DB_PORT || '3306';
+  const database = process.env.DB_NAME || 'section_factory';
+  process.env.DATABASE_URL = `mysql://${encodeURIComponent(user)}:${encodeURIComponent(password)}@${encodeURIComponent(host)}:${port}/${encodeURIComponent(database)}`;
+}
+
 process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 process.env.PORT = process.env.PORT || '3000';
 

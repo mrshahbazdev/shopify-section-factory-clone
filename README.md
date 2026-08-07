@@ -32,10 +32,12 @@ Section Liquid is loaded at runtime from `app/sections/{handle}.liquid`. `726` o
    ```bash
    npm install --force
    ```
-2. Copy `.env.example` to `.env` and set a MySQL connection string, plus your Shopify Partner app credentials:
+2. Copy `.env.example` to `.env` and set your Shopify Partner app credentials and database details:
    ```bash
    cp .env.example .env
    ```
+
+   Use either `DATABASE_URL` (full MySQL connection string) or separate `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASSWORD`, `DB_NAME` variables. `server.js` builds `DATABASE_URL` automatically when the separate variables are provided.
 3. Create a MySQL database (e.g., `section_factory`) and apply migrations:
    ```bash
    npm run setup
