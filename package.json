@@ -13,7 +13,7 @@
     "start": "node server.js",
     "setup": "prisma generate && prisma migrate deploy",
     "migrate": "node scripts/migrate.js",
-    "postinstall": "prisma generate",
+    "postinstall": "node scripts/postinstall.js",
     "generate:liquid": "python3 scripts/generate-sections-liquid.py",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "shopify": "shopify",
