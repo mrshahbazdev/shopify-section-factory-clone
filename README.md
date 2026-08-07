@@ -6,7 +6,7 @@ A Shopify embedded app clone of [Section Store / Section Factory](https://apps.s
 
 - Remix with Vite
 - Shopify App Bridge + Polaris
-- Prisma + SQLite (easy local dev; swap to MySQL/Postgres for production)
+- Prisma + MySQL
 - `@shopify/shopify-app-remix`
 
 ## Features
@@ -26,45 +26,48 @@ Section and category data was extracted from the Section Store demo store and st
 
 Section Liquid is loaded at runtime from `app/sections/{handle}.liquid`. `726` of those files were scraped from the real Section Store demo pages; the remaining sections fall back to the generated starter templates. Run `npm run generate:liquid` to regenerate fallback templates.
 
-## Getting started
+## Getting started (local)
 
-1. Install dependencies and set up the database:
+1. Install dependencies:
    ```bash
    npm install --force
+   ```
+2. Copy `.env.example` to `.env` and set a MySQL connection string, plus your Shopify Partner app credentials:
+   ```bash
+   cp .env.example .env
+   ```
+3. Create a MySQL database (e.g., `section_factory`) and apply migrations:
+   ```bash
    npm run setup
    ```
-2. Copy `.env.example` to `.env` and fill in your Shopify Partner app credentials, or pull them from the linked app:
+4. Link your Shopify app:
    ```bash
-   npx shopify app env pull
+   npx shopify app config link
    ```
-3. Start the dev server:
+5. Start the dev server:
    ```bash
    npm run dev
    ```
 
-## Deploy
+## Production / VPS deploy
 
-1. Link the app to a Partner Dashboard app:
+1. Build the app:
    ```bash
-   npx shopify app config link
-   # or link by an existing client ID:
-   npx shopify app config link --client-id <YOUR_CLIENT_ID>
+   npm install --force
+   npm run setup   # applies Prisma migrations to your MySQL database
+   npm run build
    ```
-2. Deploy the app and its theme app extension:
+2. Configure `shopify.app.toml` with your production `application_url` and `redirect_urls`.
+3. Deploy the app and theme app extension:
    ```bash
    npx shopify app deploy --allow-updates
    ```
-3. For live testing, set `SHOPIFY_APP_URL` and `redirect_urls` in `shopify.app.toml` to a public HTTPS URL reachable by Shopify, then re-deploy.
+4. Start the production server:
+   ```bash
+   npm run start
+   ```
 
-## Install on a development store
-
-The fastest way to test billing and the admin UI is to run:
-
-```bash
-npx shopify app dev --store <your-dev-store>.myshopify.com
-```
-
-`shopify app dev` will create a Cloudflare tunnel, update the app URL for the dev session, and open the install URL. If the store has a storefront password, enter it when prompted. Once installed, the app appears under **Apps** in the store admin, and the section detail page can create real `appPurchaseOneTimeCreate` charges.
+The app runs on `PORT` (default `3000`). Use a reverse proxy such as Nginx or Caddy for HTTPS termination, or expose the port through your cloud provider.
 
 ## Theme App Extension (Plus features)
 
@@ -81,7 +84,7 @@ Configuration is written to shop metafields by the admin routes in `app/routes/a
 - `npm run build` — build the Remix app for production
 - `npm run start` — run the production server
 - `npm run lint` — run ESLint
-- `npm run setup` — generate Prisma client and run migrations
+- `npm run setup` — generate Prisma client and apply MySQL migrations
 - `npm run generate:liquid` — regenerate `app/sections/*.liquid` fallback templates
 
 ## Notes
