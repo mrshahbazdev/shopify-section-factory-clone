@@ -1,0 +1,405 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+  .section-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d-settings {
+    border: solid #000000 0px;
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    border-radius: 8px;
+  }
+
+  .reviews-items-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    position: relative;
+    background-color: ;
+  }
+
+  .reviews-slider-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d * {
+    box-sizing: border-box;
+  }
+
+  .reviews-slider-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .reviews-slider-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d .swiper-slide {
+    height: auto;
+  }
+
+  .reviews-item-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 6px 12px;
+    border: 0px solid #000000;
+    background-color: rgba(0,0,0,0);
+    border-radius: 8px;
+  }
+
+  .reviews-content-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    flex: 0 0 60px;
+    border: 0px solid #000000;
+    border-radius: 8px;
+  }
+
+  .reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d img,
+  .reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg {
+    background-color: #DDDDDD;
+  }
+
+  .reviews-top-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .testimonials-stars-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .testimonials-stars-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg path {
+    fill: #000000;
+  }
+
+  .testimonials-stars-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg,
+  .testimonials-stars-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d img {
+    display: block;
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+  }
+
+  .reviews-author-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    margin: 0px;
+    font-size: 14px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    font-weight: 700;
+  }
+
+  .reviews-text-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    margin: 0px;
+    margin-top: 3px;
+    font-size: 12px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d,
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #f5f5f5;
+    border-radius: 50%;
+    background: #f3f3f3;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    box-shadow: 0px -2px 12px rgba(0, 0, 0, .08);
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    left: -12.0px !important;
+  }
+
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+    right: -12.0px !important;
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg,
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg {
+    height: 16px;
+    width: 16px;
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg {
+    transform: rotate(180deg);
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg path,
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg path {
+    fill: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d:hover ,
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d:hover {
+    transition: all 0.3s ease 0s;
+    border: 1px solid #dddddd;
+    background: #dddddd;
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d:hover svg path,
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d:hover svg path {
+    fill: #000000;
+    transition: all 0.3s ease 0s;
+  }
+
+  .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d.swiper-button-disabled,
+  .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d.swiper-button-disabled {
+    opacity: 0;
+  }
+  
+  @media(min-width: 1024px) {
+    
+    .section-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d-settings {
+      margin-top: 10px !important;
+      margin-bottom: 10px !important;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .reviews-item-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      padding: 8px 16px;
+    }
+
+    .reviews-author-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      font-size: 14px;
+    }
+
+    .reviews-text-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      margin-top: 4px;
+      font-size: 12px;
+    }
+
+    .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d,
+    .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      width: 28px;
+      height: 28px;
+    }
+
+    .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      left: -14.0px !important;
+    }
+  
+    .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      right: -14.0px !important;
+    }
+
+    .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg,
+    .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d svg {
+      height: 18px;
+      width: 18px;
+    }
+  }</style>
+<style>
+    .reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+     aspect-ratio: 12/12; 
+    }
+  </style>
+<style>
+    .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d,
+    .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+      display: flex;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d,
+      .reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d {
+        display: flex;
+      }
+    }
+  </style>
+<script>
+  (function () {
+    function moreLoadProductForm() {
+      var productForm = document.querySelector('#ss-reviews');
+      if (!productForm){
+        var productForm = document.querySelector('.button--add-to-cart, .product .product-form, .product-single__add-to-cart, .shopify-payment-button, .shopify-payment-button__button, .ProductForm__BuyButtons, .add-to-cart');
+        if (!productForm) return;
+        }
+        const templateContent = document.querySelector(
+          '#ss-reviews-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d'
+        ).content;
+
+        productForm.insertAdjacentElement(
+          'beforebegin',
+          templateContent.firstElementChild
+        );
+    }
+    function moreUnloadProductForm() {
+      const productForm = document.querySelector('.button--add-to-cart, .product .product-form, .product-single__add-to-cart, .shopify-payment-button, .shopify-payment-button__button, .ProductForm__BuyButtons');
+
+      if (!productForm) return;
+
+      const contentTemplateBuyWith = document.querySelector(
+        '#reviews-body-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d'
+      );
+
+      if (contentTemplateBuyWith) contentTemplateBuyWith.remove();
+
+    }
+    window.addEventListener('DOMContentLoaded', moreLoadProductForm);
+
+    // load and unload product form when in Shopify editor:
+    if (window.Shopify && Shopify.designMode) {
+      window.addEventListener('shopify:section:load', moreLoadProductForm);
+      window.addEventListener('shopify:section:unload', moreUnloadProductForm);
+    }
+  })();
+</script>
+<template class="section-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d reviews-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d" id="ss-reviews-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<div class="section-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d-settings" id="reviews-body-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d" style="background-color:#f3f3f3; background-image: ;">
+<div class="reviews-items-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<div class="reviews-slider-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d swiper">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="reviews-item-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<div class="reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<img loading="lazy" sizes=", (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/skincare-popularSkincareIngredients_2x_e43e31bd-1aae-411e-b068-627c76a0fe01.jpg?v=1699497358&amp;width=1000" srcset="//section.store/cdn/shop/files/skincare-popularSkincareIngredients_2x_e43e31bd-1aae-411e-b068-627c76a0fe01.jpg?v=1699497358&amp;width=450 450w, //section.store/cdn/shop/files/skincare-popularSkincareIngredients_2x_e43e31bd-1aae-411e-b068-627c76a0fe01.jpg?v=1699497358&amp;width=535 535w, //section.store/cdn/shop/files/skincare-popularSkincareIngredients_2x_e43e31bd-1aae-411e-b068-627c76a0fe01.jpg?v=1699497358&amp;width=750 750w"/>
+</div>
+<div class="reviews-content-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<div class="reviews-top-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<p class="reviews-author-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">Lori</p>
+<div class="testimonials-stars-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+</div>
+</div>
+<p class="reviews-text-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">Very pleased with this purchase! It's high-quality, easy to use, and reliable. Highly recommend for its efficiency and convenience.</p>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="reviews-item-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<div class="reviews-image-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<img loading="lazy" sizes=", (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/skincare-productsAndRoutine_2x_aa66cd68-6ba6-41df-90d4-fcc016935f96.jpg?v=1699497235&amp;width=1000" srcset="//section.store/cdn/shop/files/skincare-productsAndRoutine_2x_aa66cd68-6ba6-41df-90d4-fcc016935f96.jpg?v=1699497235&amp;width=450 450w, //section.store/cdn/shop/files/skincare-productsAndRoutine_2x_aa66cd68-6ba6-41df-90d4-fcc016935f96.jpg?v=1699497235&amp;width=535 535w, //section.store/cdn/shop/files/skincare-productsAndRoutine_2x_aa66cd68-6ba6-41df-90d4-fcc016935f96.jpg?v=1699497235&amp;width=750 750w"/>
+</div>
+<div class="reviews-content-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<div class="reviews-top-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<p class="reviews-author-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">Jilian</p>
+<div class="testimonials-stars-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#1F448C"></path>
+</svg>
+</div>
+</div>
+<p class="reviews-text-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">Extremely satisfied with this product! It offers excellent quality and simplicity. I recommend for its effectiveness and user-friendliness.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m13.172 12-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414 4.95-4.95Z"></path>
+</svg>
+</div>
+<div class="reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d">
+<svg fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="m13.172 12-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414 4.95-4.95Z"></path>
+</svg>
+</div>
+</div>
+</div>
+</template>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  function initProductReviews() {
+    setTimeout(() => {
+      const slider = new Swiper('.reviews-slider-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d', {
+        speed: 200,
+        slidesPerView: 'auto',
+        navigation: {
+        nextEl: '.reviews-btn-next-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d',
+        prevEl: '.reviews-btn-prev-template--20246542123337__4989be24-6815-42c6-92b9-7b734e30741d'
+      },
+      })
+    },200)
+  }
+
+  document.addEventListener('DOMContentLoaded', initProductReviews);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initProductReviews);
+     document.addEventListener('shopify:section:load', initProductReviews);
+  }
+  
+</script>
+</link>
+{% schema %}
+{
+  "name": "Product reviews",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Product reviews"
+    }
+  ]
+}
+{% endschema %}

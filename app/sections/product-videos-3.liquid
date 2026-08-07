@@ -1,0 +1,493 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">.section-template--21975424008521__ss_product_videos_3_9DdW8b {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 37px;
+    overflow: hidden;
+  }
+
+  .section-template--21975424008521__ss_product_videos_3_9DdW8b-settings {
+    margin: 0 auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b video,
+  .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b {
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50%;
+    justify-content: center;
+    padding: 0px;
+    padding: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all 0.25s ease 0s;
+    border: none;  
+    cursor: pointer;
+    box-sizing: border-box !important;
+  }
+
+  .product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b svg {
+    margin-left: 4px;
+    visibility: visible !important;
+  }
+
+  .product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b svg path {
+    fill: #d69758;
+    transition: all 0.25s ease 0s;
+  }
+
+  .product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b:hover svg path {
+    fill: #fc9d3d;
+    transition: all 0.25s ease 0s;
+  }
+
+  .product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b.active {
+    opacity: 1;
+    z-index: 999;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .product-video-modal-inner-template--21975424008521__ss_product_videos_3_9DdW8b {
+    position: relative;
+    width: 100%;
+    border-radius: 14px;
+    border: 0px solid #000000;
+    overflow: hidden;
+    margin: 0;
+    padding: 32px 32px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  .product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b {
+    width: 100%;
+  }
+
+  .product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b video,
+  .product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+    border-radius: 16px;
+  }
+
+  .product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b {
+    display: flex;
+    aling-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b svg {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #d69758;
+    display: block;
+    width: 40px;
+    height: 40px;
+    transition: all 0.25s ease 0s;
+  }
+
+  .product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b svg path {
+    fill: #ffffff   ;   
+  }
+
+  .product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b:hover svg path {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b:hover svg {
+    background-color: #333333;
+    transition: all 0.25s ease 0s;
+  }
+
+  @media(min-width: 768px) {
+
+    .product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b {
+      padding: 40px;
+    }
+    
+    .product-video-modal-inner-template--21975424008521__ss_product_videos_3_9DdW8b {
+      height: fit-content;
+      width: 320px;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    .section-template--21975424008521__ss_product_videos_3_9DdW8b {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .section-template--21975424008521__ss_product_videos_3_9DdW8b-settings {
+      padding: 0 5rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b {      
+      width: 56px;
+      height: 56px;
+      padding: 8px;
+    }
+
+    .product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b {
+      align-items: flex-end; 
+      justify-content: flex-end;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: unset;
+      -webkit-backdrop-filter: unset;
+    }
+
+    .product-video-modal-inner-template--21975424008521__ss_product_videos_3_9DdW8b {
+      width: 320px;
+      padding: 32px 32px;
+    }
+    
+    .product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b svg {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      margin: 0px;
+    }
+}</style>
+<style>
+    .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b {
+      aspect-ratio: 9.6/13;
+    }
+  </style>
+<style>
+    @media (min-width: 1024px) {
+      .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b {
+        aspect-ratio: 9.6/13;
+      }
+    }
+  </style>
+<style>
+    .product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b {
+      aspect-ratio: auto;
+    }
+  </style>
+<style>
+    @media (min-width: 1024px) {
+      .product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b {
+        aspect-ratio: auto;
+      }
+    }
+  </style>
+<style>
+  .product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b.preview .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b.preview .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b {
+    width: 100%;
+  }
+
+  .product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b.preview .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b:not(:first-child) {
+    margin-left: 20px;
+  } 
+
+  @media(min-width: 1024px) {
+    .product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b.preview .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b:not(:first-child) {
+      margin-left: 20px;
+    } 
+
+    .product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b.preview .product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b {
+      width: calc(100% / 3 - (20px * 2));
+    }
+  }
+</style>
+<template id="ss-product-video-3-template--21975424008521__ss_product_videos_3_9DdW8b">
+<div class="section-template--21975424008521__ss_product_videos_3_9DdW8b product-video-template--21975424008521__ss_product_videos_3_9DdW8b" style="background-color:#f2ece6; background-image: ;">
+<div class="section-template--21975424008521__ss_product_videos_3_9DdW8b-settings">
+<div class="swiper product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b preview">
+<div class="swiper-wrapper">
+<div class="swiper-slide product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b product-video-item-item_MQ6KXY" id="item_MQ6KXY">
+<video autoplay="" class="lazy" loop="" muted="" playsinline="" preload="none" src="//section.store/cdn/shop/videos/c/vp/96fc518d0bcb42f29f159a035a1e3c6d/96fc518d0bcb42f29f159a035a1e3c6d.HD-1080p-2.5Mbps-33344044.mp4?v=0"></video>
+<button class="product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b">
+<svg fill="none" height="20" viewbox="0 0 16 20" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.0543 10L0.94574 20V0L15.0543 10Z" fill="black"></path>
+</svg>
+</button>
+</div>
+<div class="swiper-slide product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b product-video-item-item_TR3ErW" id="item_TR3ErW">
+<video autoplay="" class="lazy" loop="" muted="" playsinline="" preload="none" src="//section.store/cdn/shop/videos/c/vp/21cde963b6ef45d58fd201614d0cb238/21cde963b6ef45d58fd201614d0cb238.SD-480p-0.9Mbps-33343173.mp4?v=0"></video>
+<button class="product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b">
+<svg fill="none" height="20" viewbox="0 0 16 20" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.0543 10L0.94574 20V0L15.0543 10Z" fill="black"></path>
+</svg>
+</button>
+</div>
+<div class="swiper-slide product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b product-video-item-item_Fk9Uzp" id="item_Fk9Uzp">
+<video autoplay="" class="lazy" loop="" muted="" playsinline="" preload="none" src="//section.store/cdn/shop/videos/c/vp/6c404e122c414631964df7d26c43fe71/6c404e122c414631964df7d26c43fe71.SD-480p-0.9Mbps-33343862.mp4?v=0"></video>
+<button class="product-video-player-template--21975424008521__ss_product_videos_3_9DdW8b">
+<svg fill="none" height="20" viewbox="0 0 16 20" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.0543 10L0.94574 20V0L15.0543 10Z" fill="black"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</template>
+<div class="product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b" data-id="item_MQ6KXY">
+<div class="product-video-modal-inner-template--21975424008521__ss_product_videos_3_9DdW8b">
+<div class="product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b">
+<video class="lazy" controls="" loop="" playsinline="" preload="none" src="//section.store/cdn/shop/videos/c/vp/96fc518d0bcb42f29f159a035a1e3c6d/96fc518d0bcb42f29f159a035a1e3c6d.HD-1080p-2.5Mbps-33344044.mp4?v=0"></video>
+</div>
+<button class="product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+</div>
+<div class="product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b" data-id="item_TR3ErW">
+<div class="product-video-modal-inner-template--21975424008521__ss_product_videos_3_9DdW8b">
+<div class="product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b">
+<video class="lazy" controls="" loop="" playsinline="" preload="none" src="//section.store/cdn/shop/videos/c/vp/a21bca56c89d4719b03c905c6d1e16fb/a21bca56c89d4719b03c905c6d1e16fb.HD-1080p-2.5Mbps-33350749.mp4?v=0"></video>
+</div>
+<button class="product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+</div>
+<div class="product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b" data-id="item_Fk9Uzp">
+<div class="product-video-modal-inner-template--21975424008521__ss_product_videos_3_9DdW8b">
+<div class="product-video-modal-inner-video-template--21975424008521__ss_product_videos_3_9DdW8b">
+<video class="lazy" controls="" loop="" playsinline="" preload="none" src="//section.store/cdn/shop/videos/c/vp/86041e45a9e44762bc74f1b16330d66a/86041e45a9e44762bc74f1b16330d66a.HD-1080p-2.5Mbps-33350761.mp4?v=0"></video>
+</div>
+<button class="product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  (function () {
+    function loadProductForm() {
+        var productForm = document.querySelector('#ss-product-video-3');
+
+        if (!productForm){
+          var productForm = document.querySelector('.product__description');
+          if (!productForm) return;
+        }
+    
+        let templateContent =  document.querySelector('#ss-product-video-3-template--21975424008521__ss_product_videos_3_9DdW8b');
+         if (!templateContent || !templateContent.content.firstElementChild) {
+            console.log('Template content missing or invalid');
+            return;
+        }
+
+       const newElement = templateContent.content.firstElementChild.cloneNode(true);
+      
+        productForm.insertAdjacentElement('beforebegin', newElement)
+        
+        productInit();
+    }
+
+    function productInit() {
+      setTimeout(() => {
+
+        
+
+        document.querySelector('.product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b').classList.remove('preview')
+        
+        const slider = new Swiper(".product-video-wrapper-template--21975424008521__ss_product_videos_3_9DdW8b", {          
+          speed: 300,  
+          breakpoints: {
+            320: {
+              spaceBetween: 20,
+              slidesPerView: 3
+            },
+            768: {
+              slidesPerView: 3
+            },
+            1024: {
+              spaceBetween: 20,
+              slidesPerView: 3
+            }
+          },
+        });
+        
+        let items = document.querySelectorAll('.product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b');
+        let modals = document.querySelectorAll('.product-video-modal-template--21975424008521__ss_product_videos_3_9DdW8b');
+
+        if(items) {
+          items.forEach(el => {
+            el.addEventListener('click', () => {
+              if(modals) {
+                modals.forEach(element => {
+                  let dataId = element.getAttribute('data-id');
+                  let video = element.querySelector('video');
+                  let frame = element.querySelector('iframe');
+                  if(el.id == dataId) {
+                    element.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+
+                    if(video) {
+                      video.play();
+                    }
+                    if (frame) {
+                      frame.src = frame.getAttribute('data-src');
+                    }
+                  }
+                })
+              }
+            })
+          })
+        }
+
+        if(modals) {
+          modals.forEach(el => {
+          let video = el.querySelector('video');
+          let frame = el.querySelector('iframe');
+          let close = el.querySelector('.product-video-close-template--21975424008521__ss_product_videos_3_9DdW8b');
+          let close_path = close.querySelector('path');
+          let videoEleemnt = el.querySelector('.product-video-item-template--21975424008521__ss_product_videos_3_9DdW8b');
+
+          if(close) {
+            close.addEventListener('click', (e) => {
+              document.body.style.overflow = '';
+              el.classList.remove('active');
+
+              if(video) {
+                video.pause();
+              }
+
+              if(frame) {
+                let dataSrc2 = frame.getAttribute('data-src2');
+                frame.src = dataSrc2;
+              }
+            }); 
+          }          
+      
+          document.addEventListener('click', (e) => {
+            if (e.target == el) {
+              document.body.style.overflow = '';
+              el.classList.remove('active');
+
+              if(video) {
+                video.pause();
+              }
+
+              if(frame) {
+                let dataSrc2 = frame.getAttribute('data-src2');
+                frame.src = dataSrc2;
+              }
+            }
+          });
+      })
+    }
+      }, 400)
+  }
+
+    // ✅ Run when page loads
+    document.addEventListener('DOMContentLoaded', loadProductForm);
+
+    // ✅ Run when Shopify dynamically reloads a section
+    document.addEventListener('shopify:section:load', function (event) {
+        if (event.detail.sectionId === 'template--21975424008521__ss_product_videos_3_9DdW8b') {
+            loadProductForm();
+        }
+    });
+
+    // ✅ Detect variant change and reload the section
+    document.addEventListener('change', function (event) {
+        if (event.target.matches('input[type="radio"][id^="product-form-main"]')) {
+            console.log('Variant changed, reloading section...');
+            loadProductForm();
+        }
+    });
+
+  })();
+</script>
+</link>
+{% schema %}
+{
+  "name": "Product videos #3",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Product videos #3"
+    }
+  ]
+}
+{% endschema %}

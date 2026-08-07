@@ -1,5 +1,8 @@
+import { readFileSync } from "fs";
+import { resolve } from "path";
 import sectionsJson from "./sections.json";
 import categoriesJson from "./categories.json";
+import { generateSectionLiquid } from "../lib/section-template";
 
 export type Section = {
   id: string;
@@ -25,7 +28,19 @@ export const sections: Section[] = sectionsJson as Section[];
 export const categories: Category[] = categoriesJson as Category[];
 
 export function getSection(handle?: string): Section | undefined {
-  return sections.find((s) => s.handle === handle);
+  const section = sections.find((s) => s.handle === handle);
+  if (!section) return undefined;
+
+  const liquidPath = resolve(process.cwd(), "app/sections", `${handle}.liquid`);
+  try {
+    const liquid = readFileSync(liquidPath, "utf-8");
+    return { ...section, liquid };
+  } catch {
+    return {
+      ...section,
+      liquid: generateSectionLiquid(section.title, section.handle),
+    };
+  }
 }
 
 export function getSectionsWithoutLiquid(): Omit<Section, "liquid">[] {

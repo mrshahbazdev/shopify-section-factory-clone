@@ -1,0 +1,175 @@
+<style data-shopify="">.section-template--19113908273481__35c2a8f5-ba11-4429-9776-822783c52456-padding {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--19113908273481__35c2a8f5-ba11-4429-9776-822783c52456-padding {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+    }
+  }
+
+  .ss-form-field:focus {
+    outline: none;
+    box-shadow: none;
+    /* Add any other properties you want to override */
+  }
+
+  .ss-form-field {
+    border: 1px solid #d5d5d5;
+    outline: none;
+    color: #262626;
+    margin: 0;
+    width: 100%;
+    padding:15px 10px;
+    display: block;
+    margin-bottom: 20px;
+    background: #fff;
+    font-size: 16px;
+    line-height:1.3;
+    border-radius: 6px;
+  } 
+
+  @media screen and (min-width: 750px) {
+    .ss-form-field {
+      padding:15px;
+    }
+  }
+  
+
+  .section-template--19113908273481__35c2a8f5-ba11-4429-9776-822783c52456-padding label {
+    color: #454545;
+    font-size: 18px;
+    line-height:1;
+    margin-bottom:10px;
+  }
+
+  .ss-form-field::placeholder { /* Most modern browsers support this */
+    font-size: 16px;
+    color: #262626; /* Change to desired color */
+    opacity: 1; /* Firefox requires this to not be 0 */
+  }
+  
+  .ss-form-field::-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 16px;
+    color: #262626;
+  }
+  
+  .ss-form-field::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 16px;
+    color: #262626;
+  }
+
+  .ss-submit-button:hover {
+     color: #ffffff;
+     background: #3b3b3b;
+  }
+  
+  .ss-submit-button {
+
+    height: 50px;
+    
+      width: 100%;
+    
+    color: #ffffff;
+    background: #121212;
+    font-size: 21.25px;
+    border-radius: 6px;
+    border: 2px #151515 solid;
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    line-height: 1;
+    padding: 0 10px! important;
+    -webkit-appearance: none;
+    
+  }
+
+  .ss-text-area {
+    height: 150px;
+  }</style><div style="background-color:#f3f3f3;">
+<div class="page-width section-template--19113908273481__35c2a8f5-ba11-4429-9776-822783c52456-padding">
+<div style="">
+<h1 style="color:#121212;text-align: center;font-size:42">
+          Contact form
+        </h1>
+<div style="color:#121212;text-align: center;margin-bottom:20px;">
+</div>
+<form accept-charset="UTF-8" action="/contact#contact_form" class="contact-form" id="contact_form" method="post"><input name="form_type" type="hidden" value="contact"><input name="utf8" type="hidden" value="✓">
+<div style="display: flex; flex-wrap: wrap;justify-content: space-between;">
+<div style="width: 49%;">
+<div>
+<label for="ContactFormEmail">
+                  E-mail*
+                  </label>
+<input autocapitalize="off" autocorrect="off" class="ss-form-field" id="ContactFormEmail" name="contact[email]" placeholder="Email*" required="" type="email" value=""/>
+</div>
+</div>
+<div style="width: 49%;">
+<div>
+<label for="ContactFormName">
+                  Name
+                  </label>
+<input autocapitalize="words" class="ss-form-field" id="ContactFormName" name="contact[Name]" placeholder="Name" type="text" value=""/>
+</div>
+</div>
+<div style="width: 100%;">
+<div>
+<label for="ContactFormDropdown">
+                  Reason for contacting?
+                </label>
+<select class="ss-form-field" id="ContactFormSelect" name="contact[Reason for contacting?]">
+<option disabled="" selected="" value="">Choose reason</option>
+<option value="Returns">Returns</option>
+<option value=" Shipping"> Shipping</option>
+<option value=" Product features"> Product features</option>
+<option value=" Contact sales"> Contact sales</option>
+</select>
+</div>
+</div>
+<div style="width: 100%;">
+<div>
+<label for="ContactFormMessage">
+                  Message*
+                </label>
+<textarea class="ss-form-field ss-text-area" id="ContactFormMessage" name="contact[Message]" placeholder="Please be precise so we can address your issue in the best possible way*" required="" rows="10"></textarea>
+</div>
+</div>
+<div style="width: 100%;">
+<div style="margin-bottom:20px">
+<p>We strive to respond within 48 hours.</p>
+<style>
+                p {
+                font-size:15px;
+                margin:0;
+                line-height:1.3;
+                }
+                </style>
+</div>
+</div>
+<div style="display:flex;width:100%;justify-content:center;">
+<input class="ss-submit-button" type="submit" value="Contact us"/>
+</div>
+</div>
+</input></input></form>
+</div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Contact form",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Contact form"
+    }
+  ]
+}
+{% endschema %}

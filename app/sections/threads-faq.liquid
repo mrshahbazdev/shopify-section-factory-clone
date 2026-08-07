@@ -1,0 +1,152 @@
+<style data-shopify="">.section-template--18378690462025__16476480-098b-401e-9b95-e869b998ee8f-padding {
+    max-width: 180rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-top: 27px;
+    padding-bottom: 48px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--18378690462025__16476480-098b-401e-9b95-e869b998ee8f-padding {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 64px;
+    }
+  }</style><div style="background-color:#ffffff;">
+<div class="page-width section-template--18378690462025__16476480-098b-401e-9b95-e869b998ee8f-padding">
+<div>
+<style>
+  .cs-faq-item {
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    padding: 16px 10px;
+    margin-bottom: 20px;
+  }
+  .cs-faq-item:last-child {
+    margin-bottom: 0;
+  }
+  .cs-faq-item.cs-faq-item-active,
+  .cs-faq-item:hover {
+    border: 1px solid var(--active-border-color);
+  }
+  .cs-faq-title {
+    font-size: calc(var(--title-size) * 0.75);
+    color: var(--title-color);
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  @media screen and (min-width: 750px) {
+    .cs-faq-title {
+      font-size: var(--title-size);
+      margin-bottom: 30px;
+    }
+  }
+  .cs-faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: calc(var(--question-size) * 0.75);
+    color: var(--question-color);
+    padding: 0 5px;
+  }
+  @media screen and (min-width: 750px) {
+    .cs-faq-question {
+      font-size: var(--question-size);
+      padding: 5px 15px;
+    }
+  }
+  .cs-faq-answer {
+    display: none;
+    color: var(--answer-color);
+    font-size: calc(var(--answer-size) * 0.75);
+    padding: 5px 5px;
+  }
+  @media screen and (min-width: 750px) {
+    .cs-faq-answer {
+      font-size: var(--answer-size);
+      padding: 0 15px;
+    }
+  }
+  .cs-faq-item-active .cs-faq-answer {
+    display: block;
+  }
+</style>
+<div class="cs-faq cs-faq-template--18378690462025__16476480-098b-401e-9b95-e869b998ee8f" id="threads-faq" style="
+    --border-color: #e5e5e5;
+    --active-border-color: #000000;
+    --title-size: 20px;
+    --title-color: #000000;
+
+    --question-size: 16px;
+    --question-color: #000000;
+
+    --answer-size: 14px;
+    --answer-color: #000000;
+  ">
+<div class="cs-faq-title">
+    FAQs
+  </div>
+<div class="cs-faq-item">
+<div class="cs-faq-question">
+        Do you provide free delivery?
+        <span>+</span>
+</div>
+<div class="cs-faq-answer">Yes all orders &gt; $50.</div>
+</div>
+<div class="cs-faq-item">
+<div class="cs-faq-question">
+        What sizes are available?
+        <span>+</span>
+</div>
+<div class="cs-faq-answer">This is the answer.</div>
+</div>
+<div class="cs-faq-item">
+<div class="cs-faq-question">
+        Can i pick it up at the store?
+        <span>+</span>
+</div>
+<div class="cs-faq-answer">This is the answer.</div>
+</div>
+<div class="cs-faq-item">
+<div class="cs-faq-question">
+        Best price guarantee?
+        <span>+</span>
+</div>
+<div class="cs-faq-answer">This is the answer.</div>
+</div>
+</div>
+<script>
+  (function () {
+    var faq = document.querySelector('.cs-faq-template--18378690462025__16476480-098b-401e-9b95-e869b998ee8f');
+    var items = faq.querySelectorAll('.cs-faq-item');
+    var answers = faq.querySelectorAll('.cs-faq-answer');
+
+    items.forEach(function (item) {
+      item.addEventListener('click', function () {
+        const question = item.querySelector('.cs-faq-question');
+        const answer = item.querySelector('.cs-faq-answer');
+
+        item.classList.toggle('cs-faq-item-active');
+        if (item.classList.contains('cs-faq-item-active')) {
+          question.querySelector('span').innerHTML = '-';
+        } else {
+          question.querySelector('span').innerHTML = '+';
+        }
+      });
+    });
+  })();
+</script>
+</div>
+</div>
+</div>
+{% schema %}
+{
+  "name": "Threads FAQ 🧵",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Threads FAQ 🧵"
+    }
+  ]
+}
+{% endschema %}

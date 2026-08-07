@@ -1,0 +1,94 @@
+<section id="section-{{ section.id }}" class="section-store-header-13 section-style-3">
+<style>
+.section-store-header-13 {
+  --bg: #fff7ed;
+  --fg: #431407;
+  --accent: #f59e0b;
+  --radius: 8px;
+  --align: center;
+  --shadow: 0 6px 24px rgba(0,0,0,0.08);
+  --sectionPadding: 88px 20px;
+  background: var(--bg);
+  color: var(--fg);
+}
+.section-store-header-13 .ss-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--sectionPadding);
+  text-align: var(--align);
+}
+.section-store-header-13 .ss-title {
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 18px;
+  letter-spacing: -0.02em;
+}
+.section-store-header-13 .ss-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+.section-store-header-13 .ss-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 32px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.section-store-header-13 .ss-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+}
+.section-store-header-13 img { max-width: 100%; height: auto; border-radius: var(--radius); }
+.section-store-header-13 .placeholder-image {
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+}
+</style>
+<div class="ss-wrap">
+  <div style="padding: 12px 20px; background: var(--accent); color: #fff; text-align: center; font-weight: 600; font-size: 0.9375rem;">
+    {{ section.settings.heading }}
+    {% if section.settings.button_link != blank %}<a href="{{ section.settings.button_link }}" style="color: #fff; text-decoration: underline; margin-left: 8px;">{{ section.settings.button_label }}</a>{% endif %}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Header #13",
+  "tag": "section",
+  "class": "section-store-header-13",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Announcement",
+      "default": "Free shipping on orders over $50"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header #13"
+    }
+  ]
+}
+{% endschema %}
+</section>

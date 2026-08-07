@@ -1,0 +1,973 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n1.2f0714cbd41857ba00d5d4fafdce92c40aadb8e6.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n1.7bec1bf4c4d0f77c37dc95cf9616413eceba9082.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n1.2f0714cbd41857ba00d5d4fafdce92c40aadb8e6.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n1.7bec1bf4c4d0f77c37dc95cf9616413eceba9082.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n1.2f0714cbd41857ba00d5d4fafdce92c40aadb8e6.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n1.7bec1bf4c4d0f77c37dc95cf9616413eceba9082.woff") format("woff");
+}
+
+
+  .section-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  } 
+  
+  .section-template--24072642134345__ss_product_ingredients_8_rNegcz-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+  }
+
+  .ingredients-body-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: 100%;
+  }
+
+  .ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz img,
+  .ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ingredients-slider-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    display: grid;
+    grid-area: slider;
+  }
+
+  .ingredients-slider-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    min-width: 0 !important;
+    width: 100% !important;
+    padding: 30px 0px !important;
+  }
+
+  .ingredients-slider-template--24072642134345__ss_product_ingredients_8_rNegcz .swiper-wrapper {
+    align-items: stretch;
+  }
+
+  .ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz svg {
+    background-color: #AFAFAF;
+  }
+
+  .ingredients-content-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;   
+  }
+
+  .ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform .5s linear;
+    height: 100%;
+  }
+
+  .ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz.flipped {
+    transform: rotateY(180deg); 
+  }
+
+  .ingredients-slide-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    pointer-events: all !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    cursor: pointer;
+    backface-visibility: hidden;
+    position: relative;
+    height: 100%;
+  }
+
+  .ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backface-visibility: hidden;
+    position: absolute;
+    padding: 0 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1
+  }
+
+  .ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz,
+  .ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    border: 0px solid #ffb4cd;
+    border-radius: 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz {    
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 16px;   
+  }
+
+  .ingredients-slide-content-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    width: 100%;
+  }
+
+  .ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    margin: 0px;  
+    text-align: left;
+    font-size: 10px;
+    line-height: 150%;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700;
+  }
+
+  .ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    margin: 0px;  
+    margin-top: 4px;
+    text-align: left;
+    font-size: 10px;
+    line-height: 150%;
+    color: #292929;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 400;
+  }
+
+  .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    padding: 4.0px;
+    background-color: #ffb4cd;
+    transition: all 0.25s ease 0s;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz svg {
+    display: block;
+    width: 8px;
+    height: 8px;
+    object-fit: cover;
+  }
+
+  .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz svg path {
+    fill: #121212;
+  }
+
+  .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz:hover {
+    background-color: #ffd5e3;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz:hover svg path {
+    fill: #121212;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    margin: 0px;  
+    text-align: center;
+    font-size: 14px;
+    line-height: 130%;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700;
+  }
+
+  .ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    margin: 0px;  
+    margin-top: 12px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 100%;
+    background-color: #ffb4cd;
+    padding: 4px 12px;
+    border-radius: 20px;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700;
+  }
+
+  .ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz * {
+    margin: 0px; 
+    font-size: 12px;
+    line-height: 150%;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 400;
+  }
+
+   .ingredients-navigation-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz,
+  .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    border: 0px solid #c7c7c7;
+    border-radius: 0px;
+    background: transparent;
+    background: rgba(0,0,0,0);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    /* box-shadow: 0px 0px 10px 0px rgba(0,0,0,.15); */
+  }
+
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon,
+  .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon {
+    pointer-events: none;
+    place-items: center;
+    display: grid;
+  }
+
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:before,
+  .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:before {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease;
+    width: 10px;
+    height: 10px;
+    transform: rotate(calc(1 * 45deg));
+    box-sizing: border-box;
+    border-style: solid;
+    border: 0px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    position: relative;
+    left: -1px;
+  }
+
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:before {
+    left: unset;
+    right: -1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:after,
+  .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:after {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease;
+    width: 9.7px;
+    height: 1.6px;
+    transform-origin: center;
+    opacity: 0;
+    background: currentColor;
+    transform: scaleX(.5);
+  }
+
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz span,
+  .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz span {
+    color: #121212;
+  }
+
+  .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz.swiper-button-disabled,
+  .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz.swiper-button-disabled {
+    opacity: 0.5;
+  }
+
+  .ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz {
+    padding: 0 !important;
+    margin: 0 !important;
+    left: initial !important;
+    bottom: initial !important;
+    top: initial !important;
+    position: relative !important;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+  }
+
+  .ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz .swiper-pagination-bullet {
+    width: 15px;
+    height: 2px;
+    border-radius: 0 !important;
+    border: 1px solid #121212;
+    background-color: transparent;
+    opacity: 0.4;
+  }
+
+  .ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: #121212
+  }
+
+  .ingredients-slider-template--24072642134345__ss_product_ingredients_8_rNegcz .swiper-slide-shadow {
+    display: none !important;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--24072642134345__ss_product_ingredients_8_rNegcz-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .ingredients-content-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      align-items: center;
+    }
+
+    .ingredients-body-template--24072642134345__ss_product_ingredients_8_rNegcz { 
+      grid-template-columns: 1fr 1fr;     
+      gap: 48px;
+    }
+
+    .ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      padding: 16px;   
+    }
+
+    .ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz {     
+      text-align: left;
+      font-size: 14px;     
+    }
+
+    .ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz {  
+      margin-top: 4px;  
+      text-align: left;
+      font-size: 14px;    
+    }
+
+    .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      padding: 10.0px;
+    }
+
+    .ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz svg {      
+      width: 20px;
+      height: 20px;    
+    }
+
+    .ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz {  
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz {    
+      text-align: center;
+      margin-top: 15px;    
+      font-size: 12px;     
+    }
+
+    .ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    .ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz * {
+      font-size: 14px;    
+    }
+      
+    .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz,
+    .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      width: 30px;
+      height: 30px;
+      transition: all 0.25s ease 0s;
+    }
+
+    .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:before,
+    .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:before {
+      width: 10px;
+      height: 10px;
+    }
+
+    .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:after,
+    .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz .animate-icon:after {
+      width: 9.7px;
+    }
+
+    .ingredients-navigation-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      margin-top: 12px;
+    }
+
+    .ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz .swiper-pagination-bullet {
+      width: 15px;
+      height: 2px;
+    }
+
+    .ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      align-items: center;   
+    }
+  }</style>
+<style>
+    .section-template--24072642134345__ss_product_ingredients_8_rNegcz-settings {
+      max-width: 1300px;
+    }
+  </style>
+<style>
+    .ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      text-transform: uppercase;
+    }
+  </style>
+<style>
+    .ingredients-body-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      grid-template-areas: 
+        "content"
+        "slider";     
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .ingredients-body-template--24072642134345__ss_product_ingredients_8_rNegcz {
+        grid-template-areas: "content slider";     
+      }
+    }   
+  </style>
+<style>
+    .ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      aspect-ratio: 12/12;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz {
+        aspect-ratio: 12/12;
+      }
+    }    
+  </style>
+<style>
+    .ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      display: flex !important;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz {
+        display: flex !important;
+      }
+    }
+  </style>
+<style>
+    .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz:hover,
+    .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz:hover {
+      transform: scale(0.9);
+    }
+
+    @media(min-width: 1024px) {
+      .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz:hover,
+      .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz:hover {
+        transform: scale(0.9);
+      }
+    }
+  </style>
+<style>
+    .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz,
+    .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      display: flex;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz,
+      .ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz {
+        display: flex;
+      }
+    }
+  </style>
+<style>
+    .ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz,
+    .ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz {
+      box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    }
+  </style>
+<style>
+        @font-face {
+  font-family: Jost;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/jost/jost_n7.921dc18c13fa0b0c94c5e2517ffe06139c3615a3.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/jost/jost_n7.cbfc16c98c1e195f46c536e775e4e959c5f2f22b.woff") format("woff");
+}
+
+
+        .ingredients-heading-heading_Ai9444 {
+          margin-top: 0px;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+        }
+      
+        .ingredients-heading-heading_Ai9444 * {
+          margin: 0;
+          font-size: 24px;
+          color: #292929;
+          line-height: 130%;
+          text-transform: unset;
+          word-break: break-word;
+          font-weight: 700;
+        }
+
+        .ingredients-heading-heading_Ai9444 * strong {
+          font-style: italic;
+          color: ;
+        }
+
+        @media(min-width: 1024px) {
+          
+          .ingredients-heading-heading_Ai9444 {
+            margin-top: 0px;
+            text-align: center;
+          }
+        
+          .ingredients-heading-heading_Ai9444 * {
+            font-size: 24px;
+          }
+        }          
+      </style>
+<style>
+          .ingredients-heading-heading_Ai9444 * {
+            font-family: Jost, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+        
+        .ingredients-text-text_MnNBe3 {
+          margin-top: 16px;
+          text-align: center;
+          position: relative;
+          z-index: 1;
+        }
+      
+        .ingredients-text-text_MnNBe3 * {
+          margin: 0;
+          font-size: 13px;
+          color: #292929;
+          line-height: 170%;
+          text-transform: unset;
+        }
+
+        @media(min-width: 1024px) {
+          
+          .ingredients-text-text_MnNBe3 {
+            margin-top: 24px;
+            text-align: center;
+          }
+      
+          .ingredients-text-text_MnNBe3 * {
+            font-size: 14px;
+          }
+          
+        }
+      </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+        .ingredients-button-button_44U6AT {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: fit-content;
+          gap: 10px;
+          width: 100%;
+          margin: 0;         
+          font-size: 14px;
+          color: #121212;
+          line-height: 100%;
+          text-align: center;
+          text-transform: unset;
+          text-decoration: none;
+          padding: 16px 30px;
+          border-radius: 0px;
+          transition: all 0.3s ease 0s;
+          background-color: transparent;
+          border: 0px;
+          margin-top: 24px;
+          cursor: pointer;
+          font-weight: 700;
+          position: relative;
+          z-index: 1;
+        }
+
+        .ingredients-button-inner-button_44U6AT {
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        .ingredients-button-button_44U6AT:hover {
+          color: #121212;
+          transition: all 0.25s ease 0s;
+        }
+
+        .ingredients-button-button_44U6AT svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .ingredients-button-button_44U6AT svg path {
+          fill: #121212;
+          transition: all 0.25s ease 0s;
+        }
+
+        .ingredients-button-button_44U6AT:hover svg path {
+          fill: #121212;
+          transition: all 0.25s ease 0s;
+        }
+
+        @media (min-width: 1024px) {
+          .ingredients-button-button_44U6AT {
+            margin-top: 32px;
+            padding: 16px 32px;
+            font-size: 14px;
+          }
+        }
+      </style>
+<style>
+          .ingredients-button-button_44U6AT {
+            padding: 0px !important;
+            text-decoration: underline;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            box-shadow: none !important;
+          }
+        </style>
+<div class="section-template--24072642134345__ss_product_ingredients_8_rNegcz ingredients-template--24072642134345__ss_product_ingredients_8_rNegcz" style="background-image: linear-gradient(133.18deg, rgba(255, 180, 205, 1) 26.61%, rgba(247, 247, 247, 1) 65.21%);">
+<div class="section-template--24072642134345__ss_product_ingredients_8_rNegcz-settings">
+<div class="ingredients-body-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-content-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-heading-heading_Ai9444">
+<h2>Key Ingredients</h2>
+</div>
+<div class="ingredients-text-text_MnNBe3">
+<p>At the heart of our products are carefully chosen key ingredients, and we're committed to showing you exactly where they come from.</p>
+</div>
+<a class="ingredients-button-button_44U6AT" href="/pages/404-2" target="_blank">
+<p class="ingredients-button-inner-button_44U6AT">
+                      See all ingredients
+                      
+                    </p>
+</a>
+</div>
+<div class="ingredients-slider-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slider-template--24072642134345__ss_product_ingredients_8_rNegcz swiper">
+<div class="swiper-wrapper" style="pointer-events: none !important;">
+<div class="ingredients-slide-template--24072642134345__ss_product_ingredients_8_rNegcz swiper-slide">
+<div class="ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<img alt="" height="714" loading="eiger" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/101320.jpg?v=1748282404&amp;width=1070" srcset="//section.store/cdn/shop/files/101320.jpg?v=1748282404&amp;width=165 165w, //section.store/cdn/shop/files/101320.jpg?v=1748282404&amp;width=360 360w, //section.store/cdn/shop/files/101320.jpg?v=1748282404&amp;width=535 535w, //section.store/cdn/shop/files/101320.jpg?v=1748282404&amp;width=750 750w, //section.store/cdn/shop/files/101320.jpg?v=1748282404&amp;width=1070 1070w" width="1070"/>
+</div>
+<div class="ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-content-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Lion's mane</h3>
+<h3 class="ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Fighting inflammation</h3>
+</div>
+<div class="ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Lion's mane</h3>
+<h3 class="ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Fighting inflammation</h3>
+<h3 class="ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz"><p>Lion's Mane Mushroom is a revered functional mushroom, increasingly recognized for its neurotrophic properties.</p></h3>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-template--24072642134345__ss_product_ingredients_8_rNegcz swiper-slide">
+<div class="ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<img alt="" height="713" loading="eiger" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/146.jpg?v=1748284601&amp;width=1070" srcset="//section.store/cdn/shop/files/146.jpg?v=1748284601&amp;width=165 165w, //section.store/cdn/shop/files/146.jpg?v=1748284601&amp;width=360 360w, //section.store/cdn/shop/files/146.jpg?v=1748284601&amp;width=535 535w, //section.store/cdn/shop/files/146.jpg?v=1748284601&amp;width=750 750w, //section.store/cdn/shop/files/146.jpg?v=1748284601&amp;width=1070 1070w" width="1070"/>
+</div>
+<div class="ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-content-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Artichoke leaf</h3>
+<h3 class="ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Antioxidant</h3>
+</div>
+<div class="ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Artichoke leaf</h3>
+<h3 class="ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Antioxidant</h3>
+<h3 class="ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz"><p>Artichoke Leaf contains compounds like cynarin and chlorogenic acid, which possess antioxidant properties and support liver health.</p></h3>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-template--24072642134345__ss_product_ingredients_8_rNegcz swiper-slide">
+<div class="ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<img alt="" height="713" loading="eiger" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/67.jpg?v=1748281999&amp;width=1070" srcset="//section.store/cdn/shop/files/67.jpg?v=1748281999&amp;width=165 165w, //section.store/cdn/shop/files/67.jpg?v=1748281999&amp;width=360 360w, //section.store/cdn/shop/files/67.jpg?v=1748281999&amp;width=535 535w, //section.store/cdn/shop/files/67.jpg?v=1748281999&amp;width=750 750w, //section.store/cdn/shop/files/67.jpg?v=1748281999&amp;width=1070 1070w" width="1070"/>
+</div>
+<div class="ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-content-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Coenzyme Q10</h3>
+<h3 class="ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Enhances energy</h3>
+</div>
+<div class="ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Coenzyme Q10</h3>
+<h3 class="ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Enhances energy</h3>
+<h3 class="ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz"><p>Our Wellness Supplement provides CoQ10 to support your body's vital energy processes, ensuring cells have the fuel they need to perform optimally.</p></h3>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-template--24072642134345__ss_product_ingredients_8_rNegcz swiper-slide">
+<div class="ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<img alt="" height="713" loading="eiger" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/905.jpg?v=1748280911&amp;width=1070" srcset="//section.store/cdn/shop/files/905.jpg?v=1748280911&amp;width=165 165w, //section.store/cdn/shop/files/905.jpg?v=1748280911&amp;width=360 360w, //section.store/cdn/shop/files/905.jpg?v=1748280911&amp;width=535 535w, //section.store/cdn/shop/files/905.jpg?v=1748280911&amp;width=750 750w, //section.store/cdn/shop/files/905.jpg?v=1748280911&amp;width=1070 1070w" width="1070"/>
+</div>
+<div class="ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-content-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz">L-Theanine</h3>
+<h3 class="ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Improves focus</h3>
+</div>
+<div class="ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz">L-Theanine</h3>
+<h3 class="ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Improves focus</h3>
+<h3 class="ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz"><p>L-Theanine, an amino acid predominantly found in green tea, is a unique addition to our Wellness Supplement due to its calming yet non-drowsy effects.</p></h3>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-template--24072642134345__ss_product_ingredients_8_rNegcz swiper-slide">
+<div class="ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-front-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-image-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<img alt="" height="714" loading="eiger" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/pexels-marina-zasorina-7717461.jpg?v=1740134910&amp;width=1070" srcset="//section.store/cdn/shop/files/pexels-marina-zasorina-7717461.jpg?v=1740134910&amp;width=165 165w, //section.store/cdn/shop/files/pexels-marina-zasorina-7717461.jpg?v=1740134910&amp;width=360 360w, //section.store/cdn/shop/files/pexels-marina-zasorina-7717461.jpg?v=1740134910&amp;width=535 535w, //section.store/cdn/shop/files/pexels-marina-zasorina-7717461.jpg?v=1740134910&amp;width=750 750w, //section.store/cdn/shop/files/pexels-marina-zasorina-7717461.jpg?v=1740134910&amp;width=1070 1070w" width="1070"/>
+</div>
+<div class="ingredients-slide-content-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<div class="ingredients-slide-content-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Natural Sea Salt</h3>
+<h3 class="ingredients-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Balance</h3>
+</div>
+<div class="ingredients-flip-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="ingredients-slide-back-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<h3 class="ingredients-back-title-template--24072642134345__ss_product_ingredients_8_rNegcz">Natural Sea Salt</h3>
+<h3 class="ingredients-back-badge-template--24072642134345__ss_product_ingredients_8_rNegcz">Balance</h3>
+<h3 class="ingredients-text-template--24072642134345__ss_product_ingredients_8_rNegcz"><p>Regulates fluid balance, maintains blood and cell volume, supports nerve &amp; muscle function, and facilitates the transport of key nutrients into cells.</p></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="ingredients-navigation-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<button class="ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<span class="animate-icon"></span>
+</button>
+<div class="ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz swiper-pagination"></div>
+<button class="ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz">
+<span class="animate-icon"></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  function initProductIngredients8() {
+    document.querySelector('.ingredients-slider-template--24072642134345__ss_product_ingredients_8_rNegcz').classList.remove('preview');
+
+    const slider = new Swiper(".ingredients-slider-template--24072642134345__ss_product_ingredients_8_rNegcz", {
+      grabCursor: false,
+      loop: false,
+      effect: "creative",
+      slidesPerView: 1.5,
+      loopedSlides: 1.5,
+      observer: true,
+      navigation: {
+        nextEl: '.ingredients-btn-next-template--24072642134345__ss_product_ingredients_8_rNegcz',
+        prevEl: '.ingredients-btn-prev-template--24072642134345__ss_product_ingredients_8_rNegcz',
+      },
+      pagination: {
+        el: '.ingredients-pagination-template--24072642134345__ss_product_ingredients_8_rNegcz',
+        type: 'bullets',
+        clickable: true,
+      },
+      creativeEffect: {
+          limitProgress:2,
+          prev: {
+          shadow: true,
+          translate: ["-105%", 0, -426],
+          },
+          next: {
+          shadow: true,
+          translate: ["20%", 0, -250],
+          translate: ["40%", 0, -245],
+          },
+      },
+      breakpoints: {
+          640: {
+          slidesPerView: 1.25,
+           slidesPerView: 1.50,
+          spaceBetween: 0,
+          }
+      }
+    }); 
+
+    const wrapperSlide = document.querySelectorAll('.ingredients-slide-wrapper-template--24072642134345__ss_product_ingredients_8_rNegcz');
+
+    wrapperSlide.forEach(i => {
+      i.addEventListener('click', () => {
+        i.classList.toggle('flipped');
+      })
+    })
+  }
+
+  document.addEventListener('DOMContentLoaded', initProductIngredients8);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initProductIngredients8);
+     document.addEventListener('shopify:section:load', initProductIngredients8);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Product ingredients #8",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Product ingredients #8"
+    }
+  ]
+}
+{% endschema %}

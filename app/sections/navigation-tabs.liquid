@@ -1,0 +1,261 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+  .section-template--21626811187529__ss_navigation_tabs_WzE3RC {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--21626811187529__ss_navigation_tabs_WzE3RC-settings {
+    margin: 0 auto;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .navigation-tabs-body-template--21626811187529__ss_navigation_tabs_WzE3RC {
+    display: flex;
+    align-items: stretch;
+    gap: 4px;
+    overflow-x: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+
+  .navigation-tabs-body-template--21626811187529__ss_navigation_tabs_WzE3RC::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC {
+    margin-top: 0px;
+    width: 100%;
+    max-width: fit-content;
+    min-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 100%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: 16px 16px;
+    border-radius: 0px;
+    border: 0px;
+    border: 3px solid rgba(0,0,0,0);
+    background-color: transparent;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.25s ease 0s;
+    box-shadow: none;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC:hover {
+    color: #4dc19b;
+    border-color: #356253;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.25s ease 0s;
+  }
+
+  .navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC.active {
+    color: #4dc19b;
+    border-color: #356253;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.25s ease 0s;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--21626811187529__ss_navigation_tabs_WzE3RC {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+
+    .section-template--21626811187529__ss_navigation_tabs_WzE3RC-settings {
+      padding: 0 5rem;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .navigation-tabs-body-template--21626811187529__ss_navigation_tabs_WzE3RC {
+      gap: 10px;
+      flex-wrap: wrap;
+      overflow-x: hidden;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin-left: 0rem;
+      margin-right: 0rem;
+    }
+
+    .navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC {
+      padding: 16px 16px;
+      font-size: 16px;
+    }
+  }</style>
+<style>
+    @media(min-width: 1024px) {
+      .navigation-tabs-body-template--21626811187529__ss_navigation_tabs_WzE3RC {
+        justify-content: center;
+      }
+    }
+  </style>
+<style>
+    .navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC {
+      border: 0px;
+      border-bottom: 3px solid rgba(0,0,0,0);
+    }
+  </style>
+<div class="section-template--21626811187529__ss_navigation_tabs_WzE3RC navigation-tabs-sticky-template--21626811187529__ss_navigation_tabs_WzE3RC navigation-tabs-template--21626811187529__ss_navigation_tabs_WzE3RC" style="background-color:#faf7f1; background-image: ;">
+<div class="section-template--21626811187529__ss_navigation_tabs_WzE3RC-settings">
+<div class="navigation-tabs-body-template--21626811187529__ss_navigation_tabs_WzE3RC"></div>
+</div>
+</div>
+<script>
+  function isSafari() {  
+    const userAgent = navigator.userAgent;  
+    return /^((?!chrome|android).)*safari/i.test(userAgent);  
+  } 
+  
+  function initNavigationTabs() {
+    let sections = document.querySelectorAll('.shopify-section');  
+    let body = document.querySelector('.navigation-tabs-body-template--21626811187529__ss_navigation_tabs_WzE3RC');
+    let titles = "Product Details,Design History, Product Benefits,Comparison Chart,Similar Products";
+    let titlesArray = titles.split(",");
+    let belowThisSection = false;
+    let count = 0;
+    if (sections) {  
+      sections.forEach((el, i) => {
+        let itemId = el.id;
+        if (![...el.children].some(child => child.tagName === 'TEMPLATE')) {  
+          
+if(itemId != "shopify-section-header" && !itemId.includes("footer") && itemId != "shopify-section-announcement-bar") {
+  if(belowThisSection) {
+    let anchorText = titlesArray[count] || "Title";
+    let anchor = `<a href="#${itemId}" class="navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC">${anchorText}</a>`;
+    body.insertAdjacentHTML('beforeend', anchor);   
+    count++;
+  }
+  if(itemId == "shopify-section-template--21626811187529__ss_navigation_tabs_WzE3RC") {
+    belowThisSection = true;
+  }
+}
+
+          
+        } 
+        
+      });  
+    }
+
+    setTimeout(() => {
+      let items = document.querySelectorAll('.navigation-tabs-item-template--21626811187529__ss_navigation_tabs_WzE3RC');
+      
+      if (items) {  
+        items.forEach(el => {
+          
+          el.addEventListener('click', (event) => {  
+              event.preventDefault();  
+              const targetId = el.getAttribute('href');  
+              if (targetId) {  
+                  const targetElement = document.querySelector(targetId);  
+                  if (targetElement) {  
+                      const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                      const offsetPosition = elementPosition - 100;
+                      
+                      window.scrollTo({  
+                          top: offsetPosition,  
+                          behavior: 'smooth'
+                      });  
+                  }  
+              }  
+          });
+        });
+
+        
+          window.addEventListener('scroll', () => {  
+            let foundActive = false;  
+        
+            items.forEach(el => {  
+                const targetId = el.getAttribute('href');  
+                if (targetId) {  
+                    const targetElement = document.querySelector(targetId);  
+                    if (targetElement) {  
+                        const rect = targetElement.getBoundingClientRect();  
+                        const windowHeight = window.innerHeight;  
+        
+                        const visibleHeight = Math.max(0, Math.min(rect.bottom, windowHeight) - Math.max(rect.top, 0));  
+         
+                        if (visibleHeight >= (rect.height / 2)) {  
+                            if (!foundActive) {  
+                                el.classList.add('active');  
+                                foundActive = true;
+                                const offsetLeft = el.offsetLeft;
+                                if (!isSafari()) {
+                                  body.scrollTo({  
+                                    left: offsetLeft,  
+                                    behavior: 'smooth'
+                                  });
+                                }
+                            }  
+                        } else {  
+                            el.classList.remove('active');  
+                        }  
+                    }  
+                }  
+            });  
+        }); 
+      
+      }
+
+      
+        if(sections) {
+          sections.forEach(section => {
+            if(section.id.includes('template--21626811187529__ss_navigation_tabs_WzE3RC')) {
+              section.style.position = 'sticky';
+              section.style.top = '0px';
+              section.style.backgroundColor = '#faf7f1';
+              section.style.backgroundImage = '';
+              section.style.zIndex = '3';
+            }
+          })
+        }
+      
+    }, 400);   
+  }
+
+  document.addEventListener('DOMContentLoaded', initNavigationTabs);
+</script>
+{% schema %}
+{
+  "name": "Navigation tabs",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Navigation tabs"
+    }
+  ]
+}
+{% endschema %}

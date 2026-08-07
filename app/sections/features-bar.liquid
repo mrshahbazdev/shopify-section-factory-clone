@@ -1,0 +1,188 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+  .section-template--21931440963913__ss_product_features_bar_EYBHyd {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  
+  .section-template--21931440963913__ss_product_features_bar_EYBHyd-settings {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    position: relative;
+  }
+  
+  .features-bar-heading-template--21931440963913__ss_product_features_bar_EYBHyd {
+    margin: 0px;
+    font-size: 13px;
+    color: #121212;
+    line-height: 130%;
+    text-transform: unset;
+    text-align: left;
+  }
+
+  .features-bar-items-template--21931440963913__ss_product_features_bar_EYBHyd {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 6px;
+    margin-top: 14px;
+  }
+
+  .features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd {
+    display: block;
+    height: 3px;
+    border-radius: 0px;
+    background-color: #efe9e3;
+  }
+
+  .features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd.active {
+    background-color: #ba4e38;
+  }
+
+  .features-bar-labels-template--21931440963913__ss_product_features_bar_EYBHyd {
+    margin-top: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .features-bar-label-text-template--21931440963913__ss_product_features_bar_EYBHyd {
+    margin: 0px;
+    font-size: 11px;
+    color: #616161;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .features-bar-label-template--21931440963913__ss_product_features_bar_EYBHyd:nth-child(2) {
+    text-align: center;
+  }
+
+  .features-bar-label-template--21931440963913__ss_product_features_bar_EYBHyd:nth-child(3) {
+    text-align: right;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--21931440963913__ss_product_features_bar_EYBHyd {
+      margin-top: 0px !important;
+      margin-bottom: 0px !important;
+    }
+    
+    .section-template--21931440963913__ss_product_features_bar_EYBHyd-settings {
+      padding: 0 5rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+    
+    .features-bar-heading-template--21931440963913__ss_product_features_bar_EYBHyd {
+      text-align: left;
+      font-size: 13px;
+    }
+
+    .features-bar-items-template--21931440963913__ss_product_features_bar_EYBHyd {
+      gap: 6px;
+      margin-top: 14px;
+    }
+
+    .features-bar-labels-template--21931440963913__ss_product_features_bar_EYBHyd {
+      margin-top: 8px;
+    }
+
+    .features-bar-label-text-template--21931440963913__ss_product_features_bar_EYBHyd {
+      font-size: 11px;
+    }
+
+  }</style>
+<script>
+  (function () {
+    function moreLoadProductForm() {
+      var productForm = document.querySelector('#ss-features-bar');
+      if (!productForm){
+        var productForm = document.querySelector('.button--add-to-cart, .product .product-form, .product-single__add-to-cart, .shopify-payment-button, .shopify-payment-button__button, .ProductForm__BuyButtons, .add-to-cart');
+        if (!productForm) return;
+        }
+        const templateContent = document.querySelector(
+          '#ss-features-bar-template--21931440963913__ss_product_features_bar_EYBHyd'
+        ).content;
+
+        productForm.insertAdjacentElement(
+          'beforebegin',
+          templateContent.firstElementChild
+        );
+
+      var bodyInner = document.querySelector('body');
+      const templateContent2 = document.querySelector(
+        '#ss-features-bar-modal-template--21931440963913__ss_product_features_bar_EYBHyd'
+      ).content;
+      
+      bodyInner.insertAdjacentElement(
+        'beforeend',
+        templateContent2.firstElementChild
+      );
+      
+    }
+    window.addEventListener('DOMContentLoaded', moreLoadProductForm);
+  })();
+</script>
+<template id="ss-features-bar-template--21931440963913__ss_product_features_bar_EYBHyd">
+<div class="section-template--21931440963913__ss_product_features_bar_EYBHyd features-bar-template--21931440963913__ss_product_features_bar_EYBHyd" style="background-color:; background-image: ;">
+<div class="section-template--21931440963913__ss_product_features_bar_EYBHyd-settings">
+<h2 class="features-bar-heading-template--21931440963913__ss_product_features_bar_EYBHyd">
+          Fit
+        </h2>
+<div class="features-bar-items-template--21931440963913__ss_product_features_bar_EYBHyd">
+<span class="features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd"></span>
+<span class="features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd"></span>
+<span class="features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd active"></span>
+<span class="features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd"></span>
+<span class="features-bar-item-template--21931440963913__ss_product_features_bar_EYBHyd"></span>
+</div>
+<div class="features-bar-labels-template--21931440963913__ss_product_features_bar_EYBHyd">
+<div class="features-bar-label-template--21931440963913__ss_product_features_bar_EYBHyd">
+<p class="features-bar-label-text-template--21931440963913__ss_product_features_bar_EYBHyd">Small</p>
+</div>
+<div class="features-bar-label-template--21931440963913__ss_product_features_bar_EYBHyd">
+<p class="features-bar-label-text-template--21931440963913__ss_product_features_bar_EYBHyd">Regular</p>
+</div>
+<div class="features-bar-label-template--21931440963913__ss_product_features_bar_EYBHyd">
+<p class="features-bar-label-text-template--21931440963913__ss_product_features_bar_EYBHyd">Large</p>
+</div>
+</div>
+</div>
+</div>
+</template>
+{% schema %}
+{
+  "name": "Features bar",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Features bar"
+    }
+  ]
+}
+{% endschema %}

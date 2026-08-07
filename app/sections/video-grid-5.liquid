@@ -1,0 +1,911 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+  .section-template--23398907445577__ss_video_grid_5_4mrgmY {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .section-template--23398907445577__ss_video_grid_5_4mrgmY-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .video-grid-cards-template--23398907445577__ss_video_grid_5_4mrgmY {
+    display: none;
+    margin-top: 20px;
+    gap: 16px;
+  }
+
+  .video-grid-slider-template--23398907445577__ss_video_grid_5_4mrgmY {
+    display: flex !important;
+    margin-top: 20px !important;
+    margin-right: -1.5rem !important;
+    padding-right: 1.5rem !important;
+    margin-left: -1.5rem !important;
+    padding-left: 1.5rem !important;
+  } 
+
+  .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY {
+    border: 0px solid #121212;
+    border-radius: 16px;
+    transition: all 0.45s ease 0s;
+    height: 400px !important;
+    box-sizing: border-box !important;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(18,18,18,0.2);
+  }
+
+  .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY.swiper-slide-active .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.25s ease 0s;
+  }
+
+  .video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY {
+    height: 100%;
+    width: 100%;
+  }
+
+  .video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY,
+  .video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY img,
+  .video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY svg,
+  .video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY video,
+  .video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY iframe {
+    border: 0px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY svg {
+    background-color: #AFAFAF;
+  }
+
+  .video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY {
+    display: none;
+  }
+
+  .video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY.active {
+    display: block;
+  }
+
+  .video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+    display: none;
+  }
+
+  .video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY.active {
+    display: block;
+  }
+  
+  .video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    z-index: 2;
+  }
+
+  .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY {
+    text-align: left;
+  }
+
+  .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY * {
+    margin: 0;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 150%;
+    text-transform: unset;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  .video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY {
+    margin: 0;
+    font-size: 28px;
+    color: #FFFFFF;
+    line-height: 130%;
+    text-transform: unset;
+    text-decoration: none;
+    word-break: break-word;
+    transition: all 0.25s ease 0s;
+    text-align: left;
+    font-weight: 700;
+  }
+  
+  .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY {
+    opacity: 0;
+    max-width: calc(100% - 48px);
+    transform: translateY(-20px);
+    transition: all 0.1s ease 0s;
+  }
+
+  .video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 2;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    background-color: rgba(112,112,112,0.4);
+    padding: 10px;
+    border-radius: 100px;
+    opacity: 1;
+    transition: all 0.1s ease 0s;
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+  }
+
+  .video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY:hover {
+    background-color: rgba(112,112,112,0.6);
+    transition: all 0.25s ease 0s;
+  }
+
+  .video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY svg path {
+    fill: #FFFFFF;
+  }
+
+  .video-grid-modal-template--23398907445577__ss_video_grid_5_4mrgmY {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    background: rgba(18,18,18,0.5);
+    z-index: -1;
+  }
+
+  .video-grid-modal-template--23398907445577__ss_video_grid_5_4mrgmY.active {
+    opacity: 1;
+    z-index: 100;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .video-grid-modal-inner-template--23398907445577__ss_video_grid_5_4mrgmY {
+    position: relative;
+    max-height: 70vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+    display: none;
+    height: 100%;    
+    position: relative;
+    overflow: hidden;   
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .video-grid-modal-video-element-template--23398907445577__ss_video_grid_5_4mrgmY {
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-grid-modal-video-element-template--23398907445577__ss_video_grid_5_4mrgmY {
+    border: 0px solid #121212;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY.active {
+    display: flex;
+  }
+
+  .video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY video,
+  .video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0px;
+    box-shadow: none;
+  }
+
+  .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY {
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    align-items: center;
+    transition: all 0.25s ease 0s;
+  }  
+
+  .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY svg rect {
+    transition: all 0.25s ease 0s;
+  }
+
+  .portrait-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  .landspace-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY {
+    padding: 10.0px;
+    border-radius: 10px;
+    background-color: #FFFFFF;    
+  }  
+
+  .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY svg rect {
+    fill: #121212;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23398907445577__ss_video_grid_5_4mrgmY {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--23398907445577__ss_video_grid_5_4mrgmY-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .video-grid-cards-template--23398907445577__ss_video_grid_5_4mrgmY {
+      display: flex;
+      margin-top: 48px;
+      gap: 20px;
+    }
+
+    .video-grid-slider-template--23398907445577__ss_video_grid_5_4mrgmY {
+      display: none !important;
+    }
+
+    .video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY {
+      padding: 16px 24px;
+    }
+    
+    .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY {
+      height: 500px !important;
+      flex: 1 1 0 !important;
+    }
+
+    .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY:hover {
+      flex: 2 !important;
+      transition: all 0.45s ease 0s;
+    }
+    
+    .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY:hover .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY {
+      opacity: 1;      
+      overflow: visible;
+      transform: translateY(0px);
+      transition: all 0.1s ease 0.4s;
+    }
+
+    .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY {
+      max-width: calc(100% - 54px);
+      text-align: left;
+      overflow: hidden;
+    }
+
+    .video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY * {
+      font-size: 24px;
+    }
+    
+    .video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY {
+      text-align: left;
+      font-size: 32px;
+    }
+
+    .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY.hide-template--23398907445577__ss_video_grid_5_4mrgmY .video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY {
+      opacity: 0;
+    }
+
+    .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY.active .video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY {
+      opacity: 1;
+    }
+
+    .video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY {
+      opacity: 0;
+      width: 24px;
+      height: 24px;
+    }
+
+    .video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY:hover .video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY {
+      opacity: 1;
+      transition: all 0.25s ease 0.5s;
+    }
+
+    .video-grid-modal-inner-template--23398907445577__ss_video_grid_5_4mrgmY {
+      max-height: 95vh;
+      height: 100%;
+      padding: 20px;
+    } 
+      
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY {
+      position: absolute;
+      top: 0px;
+      bottom: unset;
+      left: 98%;
+      cursor: pointer;
+      transform: translateX(-50%);
+    }
+
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY:hover { 
+      transition: all 0.25s ease 0s;
+    }
+    
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY:hover svg rect {
+      transition: all 0.25s ease 0s;
+    }    
+
+    .portrait-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+      max-width: 40%;
+    }
+
+    .landspace-video-template--23398907445577__ss_video_grid_5_4mrgmY {
+      max-width: 80%;
+    }
+
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY {
+      padding: 10.0px;
+    }
+
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY:hover {
+      background-color: #121212;    
+    }
+    
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY:hover svg rect {
+      fill: #FFFFFF;
+    }
+    
+    .video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY svg {
+      width: 20px;
+      height: 20px;
+    }
+  }</style>
+<style>
+    .section-template--23398907445577__ss_video_grid_5_4mrgmY-settings {
+      max-width: 1200px;
+    }
+  </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+ 
+        .video-grid-heading-heading_VWmFf7 {
+          padding: 0 0%;
+          margin-top: 0px;
+          text-align: center;
+        }
+
+        .video-grid-heading-heading_VWmFf7 * {
+          margin: 0;
+          font-size: 32px;
+          color: #121212;
+          line-height: 130%;
+          text-transform: unset;
+          text-decoration: none;
+          word-break: break-word;
+          font-weight: 700;
+        }
+        @media(min-width: 1024px) {
+          .video-grid-heading-heading_VWmFf7 {
+            padding: 0 20%;
+            margin-top: 0px;
+            text-align: center;
+          }
+        
+          .video-grid-heading-heading_VWmFf7 * {
+            font-size: 48px;
+          }
+        }
+      </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+        .video-grid-text-text_zUwbjM {
+          padding: 0 0%;
+          margin-top: 12px;
+          text-align: center;
+        }
+
+        .video-grid-text-text_zUwbjM * {
+          margin: 0;
+          font-size: 16px;
+          color: #121212;
+          line-height: 150%;
+          text-transform: unset;
+          text-decoration: none;
+          word-break: break-word;
+          font-weight: 400;
+        }
+        @media(min-width: 1024px) {
+          .video-grid-text-text_zUwbjM {
+            padding: 0 20%;
+            margin-top: 24px;
+            text-align: center;
+          }
+        
+          .video-grid-text-text_zUwbjM * {
+            font-size: 18px;
+          }
+        }
+      </style>
+<div class="section-template--23398907445577__ss_video_grid_5_4mrgmY vidoe-grid-template--23398907445577__ss_video_grid_5_4mrgmY" style="background-color:#FFFFFF; background-image: ;">
+<div class="section-template--23398907445577__ss_video_grid_5_4mrgmY-settings">
+<div class="video-grid-heading-heading_VWmFf7"><h2>Video grid #5</h2></div>
+<div class="video-grid-text-text_zUwbjM"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<div class="video-grid-cards-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY active">
+<svg viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<div class="video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<p class="video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY">Title</p>
+</div>
+<div class="video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY" id="video_ttdqQU">
+<svg class="text-white" fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11035_329)"><path d="M9.92005 4.76133C9.92005 5.24886 10.3189 5.64775 10.8065 5.64775H13.1023L5.00928 13.7408C4.66357 14.0865 4.66357 14.6449 5.00928 14.9906C5.35498 15.3363 5.91343 15.3363 6.25913 14.9906L14.3522 6.8976V9.19343C14.3522 9.68096 14.751 10.0799 15.2386 10.0799C15.7261 10.0799 16.125 9.68096 16.125 9.19343V3.87488L10.8065 3.87491C10.3189 3.87491 9.92005 4.2738 9.92005 4.76133Z" fill="#FEFCF5"></path><path d="M10.0799 15.2384C10.0799 14.7509 9.68106 14.352 9.19353 14.352L6.8977 14.352L14.9907 6.25901C15.3364 5.9133 15.3364 5.35486 14.9907 5.00915C14.645 4.66345 14.0866 4.66345 13.7409 5.00915L5.64784 13.1022L5.64784 10.8063C5.64784 10.3188 5.24895 9.91991 4.76142 9.91991C4.27389 9.91991 3.875 10.3188 3.875 10.8063L3.875 16.1249L9.19353 16.1248C9.68106 16.1248 10.0799 15.726 10.0799 15.2384Z" fill="#FEFCF5"></path></g><defs><clippath id="clip0_11035_329"><rect fill="white" height="14" transform="translate(3 3)" width="14"></rect></clippath></defs></svg>
+</div>
+</div>
+<div class="video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY active">
+<svg viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<div class="video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<p class="video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY">Title</p>
+</div>
+<div class="video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY" id="video_EFpGFb">
+<svg class="text-white" fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11035_329)"><path d="M9.92005 4.76133C9.92005 5.24886 10.3189 5.64775 10.8065 5.64775H13.1023L5.00928 13.7408C4.66357 14.0865 4.66357 14.6449 5.00928 14.9906C5.35498 15.3363 5.91343 15.3363 6.25913 14.9906L14.3522 6.8976V9.19343C14.3522 9.68096 14.751 10.0799 15.2386 10.0799C15.7261 10.0799 16.125 9.68096 16.125 9.19343V3.87488L10.8065 3.87491C10.3189 3.87491 9.92005 4.2738 9.92005 4.76133Z" fill="#FEFCF5"></path><path d="M10.0799 15.2384C10.0799 14.7509 9.68106 14.352 9.19353 14.352L6.8977 14.352L14.9907 6.25901C15.3364 5.9133 15.3364 5.35486 14.9907 5.00915C14.645 4.66345 14.0866 4.66345 13.7409 5.00915L5.64784 13.1022L5.64784 10.8063C5.64784 10.3188 5.24895 9.91991 4.76142 9.91991C4.27389 9.91991 3.875 10.3188 3.875 10.8063L3.875 16.1249L9.19353 16.1248C9.68106 16.1248 10.0799 15.726 10.0799 15.2384Z" fill="#FEFCF5"></path></g><defs><clippath id="clip0_11035_329"><rect fill="white" height="14" transform="translate(3 3)" width="14"></rect></clippath></defs></svg>
+</div>
+</div>
+<div class="video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY active">
+<svg viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<div class="video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<p class="video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY">Title</p>
+</div>
+<div class="video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY" id="video_URQFPk">
+<svg class="text-white" fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11035_329)"><path d="M9.92005 4.76133C9.92005 5.24886 10.3189 5.64775 10.8065 5.64775H13.1023L5.00928 13.7408C4.66357 14.0865 4.66357 14.6449 5.00928 14.9906C5.35498 15.3363 5.91343 15.3363 6.25913 14.9906L14.3522 6.8976V9.19343C14.3522 9.68096 14.751 10.0799 15.2386 10.0799C15.7261 10.0799 16.125 9.68096 16.125 9.19343V3.87488L10.8065 3.87491C10.3189 3.87491 9.92005 4.2738 9.92005 4.76133Z" fill="#FEFCF5"></path><path d="M10.0799 15.2384C10.0799 14.7509 9.68106 14.352 9.19353 14.352L6.8977 14.352L14.9907 6.25901C15.3364 5.9133 15.3364 5.35486 14.9907 5.00915C14.645 4.66345 14.0866 4.66345 13.7409 5.00915L5.64784 13.1022L5.64784 10.8063C5.64784 10.3188 5.24895 9.91991 4.76142 9.91991C4.27389 9.91991 3.875 10.3188 3.875 10.8063L3.875 16.1249L9.19353 16.1248C9.68106 16.1248 10.0799 15.726 10.0799 15.2384Z" fill="#FEFCF5"></path></g><defs><clippath id="clip0_11035_329"><rect fill="white" height="14" transform="translate(3 3)" width="14"></rect></clippath></defs></svg>
+</div>
+</div>
+</div>
+<div class="video-grid-slider-template--23398907445577__ss_video_grid_5_4mrgmY swiper" data-gap-mobile="16">
+<div class="swiper-wrapper">
+<div class="video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY swiper-slide" id="video_ttdqQU">
+<div class="video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY active">
+<svg viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<div class="video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<p class="video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY">Title</p>
+</div>
+<div class="video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY" id="video_ttdqQU">
+<svg class="text-white" fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11035_329)"><path d="M9.92005 4.76133C9.92005 5.24886 10.3189 5.64775 10.8065 5.64775H13.1023L5.00928 13.7408C4.66357 14.0865 4.66357 14.6449 5.00928 14.9906C5.35498 15.3363 5.91343 15.3363 6.25913 14.9906L14.3522 6.8976V9.19343C14.3522 9.68096 14.751 10.0799 15.2386 10.0799C15.7261 10.0799 16.125 9.68096 16.125 9.19343V3.87488L10.8065 3.87491C10.3189 3.87491 9.92005 4.2738 9.92005 4.76133Z" fill="#FEFCF5"></path><path d="M10.0799 15.2384C10.0799 14.7509 9.68106 14.352 9.19353 14.352L6.8977 14.352L14.9907 6.25901C15.3364 5.9133 15.3364 5.35486 14.9907 5.00915C14.645 4.66345 14.0866 4.66345 13.7409 5.00915L5.64784 13.1022L5.64784 10.8063C5.64784 10.3188 5.24895 9.91991 4.76142 9.91991C4.27389 9.91991 3.875 10.3188 3.875 10.8063L3.875 16.1249L9.19353 16.1248C9.68106 16.1248 10.0799 15.726 10.0799 15.2384Z" fill="#FEFCF5"></path></g><defs><clippath id="clip0_11035_329"><rect fill="white" height="14" transform="translate(3 3)" width="14"></rect></clippath></defs></svg>
+</div>
+</div>
+<div class="video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY swiper-slide" id="video_EFpGFb">
+<div class="video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY active">
+<svg viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<div class="video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<p class="video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY">Title</p>
+</div>
+<div class="video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY" id="video_EFpGFb">
+<svg class="text-white" fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11035_329)"><path d="M9.92005 4.76133C9.92005 5.24886 10.3189 5.64775 10.8065 5.64775H13.1023L5.00928 13.7408C4.66357 14.0865 4.66357 14.6449 5.00928 14.9906C5.35498 15.3363 5.91343 15.3363 6.25913 14.9906L14.3522 6.8976V9.19343C14.3522 9.68096 14.751 10.0799 15.2386 10.0799C15.7261 10.0799 16.125 9.68096 16.125 9.19343V3.87488L10.8065 3.87491C10.3189 3.87491 9.92005 4.2738 9.92005 4.76133Z" fill="#FEFCF5"></path><path d="M10.0799 15.2384C10.0799 14.7509 9.68106 14.352 9.19353 14.352L6.8977 14.352L14.9907 6.25901C15.3364 5.9133 15.3364 5.35486 14.9907 5.00915C14.645 4.66345 14.0866 4.66345 13.7409 5.00915L5.64784 13.1022L5.64784 10.8063C5.64784 10.3188 5.24895 9.91991 4.76142 9.91991C4.27389 9.91991 3.875 10.3188 3.875 10.8063L3.875 16.1249L9.19353 16.1248C9.68106 16.1248 10.0799 15.726 10.0799 15.2384Z" fill="#FEFCF5"></path></g><defs><clippath id="clip0_11035_329"><rect fill="white" height="14" transform="translate(3 3)" width="14"></rect></clippath></defs></svg>
+</div>
+</div>
+<div class="video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY swiper-slide" id="video_URQFPk">
+<div class="video-grid-media-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY active">
+<svg viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<div class="video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-card-content-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-card-text-template--23398907445577__ss_video_grid_5_4mrgmY"><p>Tell a story, explain a product detail, or describe a new promotion.</p></div>
+<p class="video-grid-card-title-template--23398907445577__ss_video_grid_5_4mrgmY">Title</p>
+</div>
+<div class="video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY" id="video_URQFPk">
+<svg class="text-white" fill="none" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_11035_329)"><path d="M9.92005 4.76133C9.92005 5.24886 10.3189 5.64775 10.8065 5.64775H13.1023L5.00928 13.7408C4.66357 14.0865 4.66357 14.6449 5.00928 14.9906C5.35498 15.3363 5.91343 15.3363 6.25913 14.9906L14.3522 6.8976V9.19343C14.3522 9.68096 14.751 10.0799 15.2386 10.0799C15.7261 10.0799 16.125 9.68096 16.125 9.19343V3.87488L10.8065 3.87491C10.3189 3.87491 9.92005 4.2738 9.92005 4.76133Z" fill="#FEFCF5"></path><path d="M10.0799 15.2384C10.0799 14.7509 9.68106 14.352 9.19353 14.352L6.8977 14.352L14.9907 6.25901C15.3364 5.9133 15.3364 5.35486 14.9907 5.00915C14.645 4.66345 14.0866 4.66345 13.7409 5.00915L5.64784 13.1022L5.64784 10.8063C5.64784 10.3188 5.24895 9.91991 4.76142 9.91991C4.27389 9.91991 3.875 10.3188 3.875 10.8063L3.875 16.1249L9.19353 16.1248C9.68106 16.1248 10.0799 15.726 10.0799 15.2384Z" fill="#FEFCF5"></path></g><defs><clippath id="clip0_11035_329"><rect fill="white" height="14" transform="translate(3 3)" width="14"></rect></clippath></defs></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="video-grid-modal-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-modal-inner-template--23398907445577__ss_video_grid_5_4mrgmY">
+<div class="video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY" data-id="video_ttdqQU">
+<div class="video-grid-modal-video-element-template--23398907445577__ss_video_grid_5_4mrgmY landscape-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" controls="" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY" data-id="video_EFpGFb">
+<div class="video-grid-modal-video-element-template--23398907445577__ss_video_grid_5_4mrgmY landscape-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" controls="" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY" data-id="video_URQFPk">
+<div class="video-grid-modal-video-element-template--23398907445577__ss_video_grid_5_4mrgmY landscape-video-template--23398907445577__ss_video_grid_5_4mrgmY">
+<video autoplay="" class="lazy" controls="" data-src="https://cdn.shopify.com/videos/c/o/v/fbb140fd46e3429eba459e1549dbbe38.mp4" loop="" playsinline="" preload="none"></video>
+</div>
+</div>
+<div class="video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY">
+<svg class="w-5 text-white" fill="none" viewbox="0 0 22 24" xmlns="http://www.w3.org/2000/svg"><rect fill="currentColor" height="4" transform="rotate(-45 1.25391 19.4238)" width="25" x="1.25391" y="19.4238"></rect><rect fill="currentColor" height="4" transform="rotate(45 4.08203 1.74609)" width="25" x="4.08203" y="1.74609"></rect></svg>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  function initVideoGrid5() {
+    let lazyLoadInstance = new LazyLoad();
+
+    window.addEventListener(
+      "LazyLoad::Initialized",
+      function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+      },
+      false
+    );
+
+    const slider = new Swiper(`.video-grid-slider-template--23398907445577__ss_video_grid_5_4mrgmY`, {
+      speed: 300,
+      spaceBetween: parseInt(document.querySelector(`.video-grid-slider-template--23398907445577__ss_video_grid_5_4mrgmY`).dataset.gapMobile || 0),
+      slidesPerView: 1.2,
+    });
+
+    const modal = document.querySelector('.video-grid-modal-template--23398907445577__ss_video_grid_5_4mrgmY');
+
+    function handleDesktopBehavior(item) {
+      const videoWrapper = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY');
+      const image = item.querySelector('.video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY');
+      const cardVideo = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY');
+      const video = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY video');
+      const iframe = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY iframe');
+
+      item.addEventListener('mouseenter', () => {
+        const cards = document.querySelectorAll('.video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY');
+        cards.forEach(el => {     
+          if(item != el) {
+            el.classList.add('hide-template--23398907445577__ss_video_grid_5_4mrgmY')    
+          }                   
+        });
+
+        cardVideo.classList.add('active');
+        item.classList.add('active');
+        if (image) {
+          image.classList.remove('active');
+        } 
+
+        if (video && video.paused) {
+          try {
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise.catch(err => console.warn('Play interrupted:', err));
+            }
+            videoWrapper.classList.add('active');
+          } catch (err) {
+            console.warn('Video play error:', err);
+          }
+        }
+
+        if (iframe) {
+          iframe.src = iframe.getAttribute('data-src1');
+        }
+      });
+
+      item.addEventListener('mouseleave', () => {
+        const cards = document.querySelectorAll('.video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY');
+        cards.forEach(el => el.classList.remove('hide-template--23398907445577__ss_video_grid_5_4mrgmY'));
+
+        cardVideo.classList.remove('active');
+        item.classList.remove('active');
+        if (image) image.classList.add('active');
+
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+          videoWrapper.classList.remove('active');
+        }
+
+        if (iframe) {
+          iframe.src = iframe.getAttribute('data-src2');
+        }
+      });
+    }
+
+    function handleMobileBehavior(item) {
+      const videoWrapper = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY');
+      const image = item.querySelector('.video-grid-card-image-template--23398907445577__ss_video_grid_5_4mrgmY');
+      const video = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY video');
+      const iframe = item.querySelector('.video-grid-card-video-template--23398907445577__ss_video_grid_5_4mrgmY iframe');
+
+      item.addEventListener('click', () => {
+        const isActive = videoWrapper.classList.contains('active');
+        if (image) image.classList.toggle('active', isActive);
+
+        if (video) {
+          if (isActive) {
+            video.pause();
+            video.currentTime = 0;
+          } else if (video.paused) {
+            try {
+              const playPromise = video.play();
+              if (playPromise !== undefined) {
+                playPromise.catch(err => console.warn('Play interrupted:', err));
+              }
+            } catch (err) {
+              console.warn('Video play error:', err);
+            }
+          }
+          videoWrapper.classList.toggle('active');
+        }
+
+        if (iframe) {
+          iframe.src = isActive ? iframe.dataset.src2 : iframe.dataset.src1;
+          videoWrapper.classList.toggle('active');
+        }
+      });
+    }
+
+    function applyBehavior() {
+      const isMobile = window.innerWidth <= 768;
+
+      document.querySelectorAll('.video-grid-card-template--23398907445577__ss_video_grid_5_4mrgmY').forEach(item => {
+        const itemzoom = item.querySelector('.video-grid-card-zoom-template--23398907445577__ss_video_grid_5_4mrgmY');
+
+        if (isMobile) {
+          handleMobileBehavior(item);
+
+          itemzoom.addEventListener('click', () => {
+            const itemId = itemzoom.id;
+            const modalVideo = document.querySelector(`.video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY[data-id="${itemId}"]`);
+
+            if (modalVideo) {
+              setTimeout(() => {
+                const videoTag = modalVideo.querySelector('video');
+                const iframeTag = modalVideo.querySelector('iframe');
+                if (videoTag && videoTag.paused) {
+                  try {
+                    const playPromise = videoTag.play();
+                    if (playPromise !== undefined) {
+                      playPromise.catch(err => console.warn('Modal video play interrupted:', err));
+                    }
+                  } catch (err) {
+                    console.warn('Modal video play error:', err);
+                  }
+                }
+                if (iframeTag) {
+                  iframeTag.src = iframeTag.getAttribute("data-src1");
+                }
+
+                document.body.style.overflow = 'hidden';
+                modal.classList.add('active');
+                modalVideo.classList.add('active');
+              }, 400);
+            }
+          });
+
+        } else {
+          handleDesktopBehavior(item);
+
+          itemzoom.addEventListener('click', () => {
+            const itemId = itemzoom.id;
+            const modalVideo = document.querySelector(`.video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY[data-id="${itemId}"]`);
+
+            if (modalVideo) {
+              setTimeout(() => {
+                const videoTag = modalVideo.querySelector('video');
+                const iframeTag = modalVideo.querySelector('iframe');
+                if (videoTag && videoTag.paused) {
+                  try {
+                    const playPromise = videoTag.play();
+                    if (playPromise !== undefined) {
+                      playPromise.catch(err => console.warn('Modal video play interrupted:', err));
+                    }
+                  } catch (err) {
+                    console.warn('Modal video play error:', err);
+                  }
+                }
+                if (iframeTag) {
+                  iframeTag.src = iframeTag.getAttribute("data-src1");
+                }
+
+                document.body.style.overflow = 'hidden';
+                modal.classList.add('active');
+                modalVideo.classList.add('active');
+              }, 400);
+            }
+          });
+        }
+      });
+    }
+
+    const closeModal = document.querySelector('.video-grid-modal-close-template--23398907445577__ss_video_grid_5_4mrgmY');
+    if (closeModal) {
+      closeModal.addEventListener('click', () => {
+        document.body.style.overflow = '';
+        modal.classList.remove('active');
+        document.querySelectorAll('.video-grid-modal-video-template--23398907445577__ss_video_grid_5_4mrgmY').forEach(video => {
+          const videoTag = video.querySelector('video');
+          const iframeTag = video.querySelector('iframe');
+          if (videoTag) {
+            videoTag.pause();
+          }
+          if (iframeTag) {
+            iframeTag.src = iframeTag.dataset.src2;
+          }
+          video.classList.remove('active');
+        });
+      });
+    }
+
+    applyBehavior();
+    window.addEventListener('resize', applyBehavior);
+
+    document.addEventListener('click', (e) => {
+      if (e.target == modal) {
+        document.body.style.overflow = '';
+        modal.classList.remove('active');
+        let frames = modal.querySelectorAll('iframe');
+        let videos = modal.querySelectorAll('video');
+        if (frames) {
+          frames.forEach(el => {
+            el.src = el.getAttribute('data-src1');
+          });
+        }
+        if (videos) {
+          videos.forEach(el => {
+            el.pause();
+          });
+        }
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initVideoGrid5);
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initVideoGrid5);
+    document.addEventListener('shopify:section:load', initVideoGrid5);
+  }
+</script>
+{% schema %}
+{
+  "name": "Video grid #5",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Video grid #5"
+    }
+  ]
+}
+{% endschema %}

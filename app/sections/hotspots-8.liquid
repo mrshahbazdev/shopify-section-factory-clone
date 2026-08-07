@@ -1,0 +1,951 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+  .section-template--23104005341513__ss_hotspots_8_w7LryL {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .section-template--23104005341513__ss_hotspots_8_w7LryL-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hotspot-body-template--23104005341513__ss_hotspots_8_w7LryL {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL {
+    grid-area: image;
+    position: relative;    
+    border: 0px solid #121212;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL {
+    position: absolute;
+    z-index: 1;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL.active {
+    z-index: 2;
+  }
+
+  .hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL {
+    padding: 5.0px;
+    border-radius: 50%; 
+    position: relative;
+    z-index: 2;
+    background-color: #fdef6e !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: transparent;
+  }
+
+  .hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL img,
+  .hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL svg {
+    background: #AFAFAF;
+  }
+
+  .hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL path {
+    fill: #121212;
+    transition: all 0.25s ease 0s;
+  }
+
+  .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL.active .hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL path {
+    fill: #fdef6e;
+    transition: all 0.25s ease 0s;
+  }
+
+  .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL.active .hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL {
+    background-color: #121212 !important;
+  }
+
+  .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+    display: none;
+    position: absolute;
+    align-items: center;
+    gap: 10px;
+    left: 50%;
+    min-width: 260px;
+    transform-origin: left;
+    transform: translateX(-50%);
+    padding: 8px 8px;
+    border-radius: 16px;
+    border: 0px solid #121212;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+
+  .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL {
+    width: 25%;
+    flex-shrink: 0;
+    border: 0px solid #121212;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL img,
+  .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL svg {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+  }
+
+  .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL svg path {
+    fill: #000 !important;
+  }
+
+  .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL svg {
+    background-color: #AFAFAF;
+  }
+
+  .hotspot-product-title-template--23104005341513__ss_hotspots_8_w7LryL {
+    margin: 0;    
+    display: block;
+    text-transform: unset;
+    font-size: 14px;
+    line-height: 130%;
+    color: #121212;  
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .hotspot-product-description-template--23104005341513__ss_hotspots_8_w7LryL {
+    margin-top: 8px;
+  }
+
+  .hotspot-product-description-template--23104005341513__ss_hotspots_8_w7LryL * {
+    margin: 0;    
+    display: block;
+    text-transform: unset;
+    font-size: 14px;
+    line-height: 130%;
+    color: #121212;  
+    text-decoration: none;
+  }
+
+  .hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL * {
+    margin: 0;
+    font-size: 12px;
+    color: #121212;
+    line-height: 100%;
+    text-transform: unset;
+    font-style: normal;
+  }
+
+  .hotspot-compare-price-template--23104005341513__ss_hotspots_8_w7LryL {
+    opacity: 0.8;
+    color: #afafaf;
+    text-decoration: line-through !important;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23104005341513__ss_hotspots_8_w7LryL {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--23104005341513__ss_hotspots_8_w7LryL-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .hotspot-body-template--23104005341513__ss_hotspots_8_w7LryL {
+      gap: 40px;
+    }
+
+      .hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL {
+      padding: 6.0px;
+    }
+
+    .hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+      align-items: start;
+    }
+
+    .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL {
+      padding: 12px;
+    }
+
+    .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL .hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL {
+      width: 24px !important;
+      height: 24px !important;
+    }
+
+    .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+      padding: 8px 8px;
+    }
+
+    .hotspot-product-title-template--23104005341513__ss_hotspots_8_w7LryL {
+      font-size: 14px;
+    }
+
+    .hotspot-product-description-template--23104005341513__ss_hotspots_8_w7LryL {
+      margin-top: 8px;
+    }
+
+    .hotspot-product-description-template--23104005341513__ss_hotspots_8_w7LryL * {
+      font-size: 18px;
+    }
+
+    .hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL {
+      margin-top: 8px;
+    }
+
+    .hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL * {
+      font-size: 14px;
+    }
+  }</style>
+<style>
+    .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL {
+      aspect-ratio: 9.6/13;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL {
+        aspect-ratio: 9.6/13;
+      }
+    }
+    
+  </style>
+<style>
+    .hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL{
+     aspect-ratio: 12/9; 
+    }
+
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL{
+       aspect-ratio: 12/9; 
+      }
+    }
+  </style>
+<style>
+    .hotspot-body-template--23104005341513__ss_hotspots_8_w7LryL {
+      grid-template-areas: 
+        "content"
+        "image";     
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .hotspot-body-template--23104005341513__ss_hotspots_8_w7LryL {
+        grid-template-areas: "content image";    
+        grid-template-columns: auto 65%;   
+      }
+    }   
+  </style>
+<style>
+    .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL.active:after {
+      display: none;
+    }
+    
+    .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%; 
+      top: 50%;   
+      -webkit-animation: pulseMobiletemplate23104005341513__ss_hotspots_8_w7LryL 1.25s ease-in-out infinite;
+      animation: pulseMobiletemplate23104005341513__ss_hotspots_8_w7LryL 1.25s ease-in-out infinite;
+      border: 1px solid #fdef6e;
+      border-radius: 50%;
+      box-sizing: border-box;
+      transform: translate3d(-50%, -50%, 0);
+      transition: opacity 0.25s linear;
+      height: 20px;
+      width: 20px;
+      z-index: -1;
+    }
+    
+    @keyframes pulseMobiletemplate23104005341513__ss_hotspots_8_w7LryL {
+      0% {
+        transform: translate3d(-50%, -50%, 0) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translate3d(-50%, -50%, 0) scale(2.5);
+        opacity: 0;
+      }
+    }
+
+    @media(min-width: 1024px) {
+      .hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL::after {
+        -webkit-animation: pulseDesktoptemplate23104005341513__ss_hotspots_8_w7LryL 1.25s ease-in-out infinite;
+        animation: pulseDesktoptemplate23104005341513__ss_hotspots_8_w7LryL 1.25s ease-in-out infinite;
+        height: 24px;
+        width: 24px;
+      }
+
+      @keyframes pulseDesktoptemplate23104005341513__ss_hotspots_8_w7LryL {
+        0% {
+          transform: translate3d(-50%, -50%, 0) scale(1);
+          opacity: 1;
+        }
+        100% {
+          transform: translate3d(-50%, -50%, 0) scale(1.8);
+          opacity: 0;
+        }
+      }
+    }
+  </style>
+<style>
+        @font-face {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n6.1326b3e84230700ef15b3a29fb520639977513e0.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n6.652f051080eb14192330daceed8cd53dfdc5ead9.woff") format("woff");
+}
+
+
+        .hero-heading-heading_VVRnPx {
+          margin-top: 0px;
+          text-align: start;
+        }
+      
+        .hero-heading-heading_VVRnPx * {
+          margin: 0;
+          font-size: 32px;
+          color: #000000;
+          line-height: 130%;
+          text-transform: unset;
+          word-break: break-word;
+          font-weight: 700;
+        }
+
+        .hero-heading-heading_VVRnPx * strong {
+          text-decoration: underline ;
+        }
+
+        @media(min-width: 1024px) {
+          
+          .hero-heading-heading_VVRnPx {
+            margin-top: 0px;
+            text-align: start;
+          }
+        
+          .hero-heading-heading_VVRnPx * {
+            font-size: 40px;
+          }
+        }          
+      </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+        
+        .hero-text-text_tptxzi {
+          margin-top: 16px;
+          text-align: start;
+          position: relative;
+          z-index: 2;
+        }
+      
+        .hero-text-text_tptxzi * {
+          margin: 0;
+          font-size: 16px;
+          color: #121212;
+          line-height: 150%;
+          text-transform: unset;
+        }
+
+        @media(min-width: 1024px) {
+          
+          .hero-text-text_tptxzi {
+            margin-top: 16px;
+            text-align: start;
+          }
+      
+          .hero-text-text_tptxzi * {
+            font-size: 16px;
+          }
+          
+        }
+      </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+        .hero-button-button_KXgUT9 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: fit-content;
+          gap: 10px;
+          width: 100%;
+          margin: 0;         
+          font-size: 16px;
+          color: #000000;
+          line-height: 100%;
+          text-align: center;
+          text-transform: unset;
+          text-decoration: none;
+          padding: 18px 32px;
+          border-radius: 100px;
+          transition: all 0.3s ease 0s;
+          background-color: transparent;
+          border: 0px;
+          margin-top: 24px;
+          cursor: pointer;
+        }
+
+        .hero-button-inner-button_KXgUT9 {
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        .hero-button-button_KXgUT9:hover {
+          color: #ffffff;
+          transition: all 0.25s ease 0s;
+        }
+
+        .hero-button-button_KXgUT9 svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .hero-button-button_KXgUT9 svg path {
+          fill: #000000;
+          transition: all 0.25s ease 0s;
+        }
+
+        .hero-button-button_KXgUT9:hover svg path {
+          fill: #ffffff;
+          transition: all 0.25s ease 0s;
+        }
+
+        @media (min-width: 1024px) {
+          .hero-button-button_KXgUT9 {
+            margin-top: 48px;
+            padding: 18px 32px;
+            font-size: 16px;
+          }
+        }
+      </style>
+<style>          
+          .hero-button-button_KXgUT9 {
+            transition: all 0.3s ease 0s;
+            background-color: #fdef6e;
+            border: 1px solid #fdef6e;
+          }
+      
+          .hero-button-button_KXgUT9:hover {
+            transition: all 0.3s ease 0s;
+            background-color: #000000;
+            border: 1px solid #000000;
+          }
+        </style>
+<style>
+      .hotspot-hotspot-hotspot_QhpQ8W {       
+        left: 41%;
+        top: 76%;
+        transform: translate(-41%, -76%);  
+      }
+
+      .hotspot-hotspot-hotspot_QhpQ8W .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        transform: translateX(-50%) translateY(-110%) !important;
+      }
+
+      
+      .hotspot-hotspot-hotspot_QhpQ8W.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        display: flex;
+        -webkit-animation: opacityMobilehotspot_QhpQ8W 0.15s linear;
+        animation: opacityMobilehotspot_QhpQ8W 0.15s linear;   
+      }
+
+      @keyframes opacityMobilehotspot_QhpQ8W {
+        0% {
+          opacity: 0;
+          scale: 0.5;
+          transform: translateX(-50%) translateY(-110%);
+        }
+        100% {
+          opacity: 1;
+          scale: 1;
+          transform: translateX(-50%) translateY(-110%);
+        }
+      }
+
+      @media(min-width: 1024px) {
+        .hotspot-hotspot-hotspot_QhpQ8W {          
+          left: 35%;
+          top: 70%;
+          transform: translate(-35%, -70%);  
+        }
+
+        .hotspot-hotspot-hotspot_QhpQ8W .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          transform: translateX(-50%) translateY(-5%) !important;
+        }
+
+        .hotspot-hotspot-hotspot_QhpQ8W.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          display: flex;
+          -webkit-animation: opacityDesktophotspot_QhpQ8W 0.15s linear;
+          animation: opacityDesktophotspot_QhpQ8W 0.15s linear;   
+        }
+
+        @keyframes opacityDesktophotspot_QhpQ8W {
+          0% {
+            opacity: 0;
+            scale: 0.5;
+            transform: translateX(-50%) translateY(-5%);
+          }
+          100% {
+            opacity: 1;
+            scale: 1;
+            transform: translateX(-50%) translateY(-5%);
+          }
+        }
+      }
+    </style>
+<style>
+      .hotspot-hotspot-hotspot_QxfLaG {       
+        left: 57%;
+        top: 93%;
+        transform: translate(-57%, -93%);  
+      }
+
+      .hotspot-hotspot-hotspot_QxfLaG .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        transform: translateX(-50%) translateY(-110%) !important;
+      }
+
+      
+      .hotspot-hotspot-hotspot_QxfLaG.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        display: flex;
+        -webkit-animation: opacityMobilehotspot_QxfLaG 0.15s linear;
+        animation: opacityMobilehotspot_QxfLaG 0.15s linear;   
+      }
+
+      @keyframes opacityMobilehotspot_QxfLaG {
+        0% {
+          opacity: 0;
+          scale: 0.5;
+          transform: translateX(-50%) translateY(-110%);
+        }
+        100% {
+          opacity: 1;
+          scale: 1;
+          transform: translateX(-50%) translateY(-110%);
+        }
+      }
+
+      @media(min-width: 1024px) {
+        .hotspot-hotspot-hotspot_QxfLaG {          
+          left: 57%;
+          top: 91%;
+          transform: translate(-57%, -91%);  
+        }
+
+        .hotspot-hotspot-hotspot_QxfLaG .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          transform: translateX(-50%) translateY(-110%) !important;
+        }
+
+        .hotspot-hotspot-hotspot_QxfLaG.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          display: flex;
+          -webkit-animation: opacityDesktophotspot_QxfLaG 0.15s linear;
+          animation: opacityDesktophotspot_QxfLaG 0.15s linear;   
+        }
+
+        @keyframes opacityDesktophotspot_QxfLaG {
+          0% {
+            opacity: 0;
+            scale: 0.5;
+            transform: translateX(-50%) translateY(-110%);
+          }
+          100% {
+            opacity: 1;
+            scale: 1;
+            transform: translateX(-50%) translateY(-110%);
+          }
+        }
+      }
+    </style>
+<style>
+      .hotspot-hotspot-hotspot_rey3TA {       
+        left: 46%;
+        top: 19%;
+        transform: translate(-46%, -19%);  
+      }
+
+      .hotspot-hotspot-hotspot_rey3TA .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        transform: translateX(-50%) translateY(-5%) !important;
+      }
+
+      
+      .hotspot-hotspot-hotspot_rey3TA.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        display: flex;
+        -webkit-animation: opacityMobilehotspot_rey3TA 0.15s linear;
+        animation: opacityMobilehotspot_rey3TA 0.15s linear;   
+      }
+
+      @keyframes opacityMobilehotspot_rey3TA {
+        0% {
+          opacity: 0;
+          scale: 0.5;
+          transform: translateX(-50%) translateY(-5%);
+        }
+        100% {
+          opacity: 1;
+          scale: 1;
+          transform: translateX(-50%) translateY(-5%);
+        }
+      }
+
+      @media(min-width: 1024px) {
+        .hotspot-hotspot-hotspot_rey3TA {          
+          left: 46%;
+          top: 19%;
+          transform: translate(-46%, -19%);  
+        }
+
+        .hotspot-hotspot-hotspot_rey3TA .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          transform: translateX(-50%) translateY(-5%) !important;
+        }
+
+        .hotspot-hotspot-hotspot_rey3TA.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          display: flex;
+          -webkit-animation: opacityDesktophotspot_rey3TA 0.15s linear;
+          animation: opacityDesktophotspot_rey3TA 0.15s linear;   
+        }
+
+        @keyframes opacityDesktophotspot_rey3TA {
+          0% {
+            opacity: 0;
+            scale: 0.5;
+            transform: translateX(-50%) translateY(-5%);
+          }
+          100% {
+            opacity: 1;
+            scale: 1;
+            transform: translateX(-50%) translateY(-5%);
+          }
+        }
+      }
+    </style>
+<style>
+      .hotspot-hotspot-hotspot_xKtibk {       
+        left: 18%;
+        top: 55%;
+        transform: translate(-18%, -55%);  
+      }
+
+      .hotspot-hotspot-hotspot_xKtibk .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        transform: translateX(-10%) translateY(-5%) !important;
+      }
+
+      
+      .hotspot-hotspot-hotspot_xKtibk.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+        display: flex;
+        -webkit-animation: opacityMobilehotspot_xKtibk 0.15s linear;
+        animation: opacityMobilehotspot_xKtibk 0.15s linear;   
+      }
+
+      @keyframes opacityMobilehotspot_xKtibk {
+        0% {
+          opacity: 0;
+          scale: 0.5;
+          transform: translateX(-10%) translateY(-5%);
+        }
+        100% {
+          opacity: 1;
+          scale: 1;
+          transform: translateX(-10%) translateY(-5%);
+        }
+      }
+
+      @media(min-width: 1024px) {
+        .hotspot-hotspot-hotspot_xKtibk {          
+          left: 19%;
+          top: 60%;
+          transform: translate(-19%, -60%);  
+        }
+
+        .hotspot-hotspot-hotspot_xKtibk .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          transform: translateX(-10%) translateY(-5%) !important;
+        }
+
+        .hotspot-hotspot-hotspot_xKtibk.active .hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL {
+          display: flex;
+          -webkit-animation: opacityDesktophotspot_xKtibk 0.15s linear;
+          animation: opacityDesktophotspot_xKtibk 0.15s linear;   
+        }
+
+        @keyframes opacityDesktophotspot_xKtibk {
+          0% {
+            opacity: 0;
+            scale: 0.5;
+            transform: translateX(-10%) translateY(-5%);
+          }
+          100% {
+            opacity: 1;
+            scale: 1;
+            transform: translateX(-10%) translateY(-5%);
+          }
+        }
+      }
+    </style>
+<div class="section-template--23104005341513__ss_hotspots_8_w7LryL hotspot-template--23104005341513__ss_hotspots_8_w7LryL" style="background-color:#ffffff; background-image: ;">
+<div class="section-template--23104005341513__ss_hotspots_8_w7LryL-settings">
+<div class="hotspot-body-template--23104005341513__ss_hotspots_8_w7LryL">
+<div class="hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL">
+<div class="hero-heading-heading_VVRnPx">
+<h2>Elevate Your Everyday</h2>
+</div>
+<div class="hero-text-text_tptxzi">
+<p>Transform your living space into a sanctuary of style and serenity with our exquisite new collection of home decor.</p>
+</div>
+<a class="hero-button-button_KXgUT9" href="/pages/404-2">
+<p class="hero-button-inner-button_KXgUT9">
+                      Shop now
+                      
+                        <svg fill="none" height="192" viewbox="0 0 192 192" width="192" xmlns="http://www.w3.org/2000/svg">
+<path d="M187.827 98.7858C188.123 98.4749 188.123 98.4749 188.123 98.1761C188.419 97.8652 188.419 97.5663 188.704 97.5663C189 96.9566 189 96.6458 189 96.0361C189 95.4263 189 94.8166 188.704 94.5058C188.704 94.195 188.408 93.8961 188.123 93.5852C188.123 93.2744 187.827 93.2744 187.827 92.9755L103.287 4.21945C102.41 3.29889 101.533 3 100.668 3C99.791 3 98.6295 3.31083 98.0488 4.21945C97.1719 5.14 96.8872 6.06058 96.8872 6.96919C96.8872 7.88974 97.1833 9.10918 98.0488 9.7189L175.587 92.0539H6.79206C4.75371 92.0539 3 93.895 3 96.0351C3 98.1751 4.75365 100.016 6.79206 100.016H175.575L97.7543 182.042C96.2967 183.572 96.2967 186.322 97.7543 187.852C99.2119 189.383 101.831 189.383 103.288 187.852L187.827 98.7858Z" fill="black"></path>
+<path clip-rule="evenodd" d="M188.607 97.5657C188.432 97.5657 188.365 97.6788 188.27 97.8382C188.211 97.9378 188.141 98.0554 188.027 98.1748C188.027 98.4734 188.027 98.4734 187.731 98.7839L103.281 187.759C101.825 189.287 99.2085 189.287 97.7524 187.759C96.2963 186.23 96.2963 183.483 97.7524 181.954L175.492 100.013L6.88489 100.013C4.8486 100.013 3.09677 98.1739 3.09677 96.036C3.09677 93.8982 4.84866 92.059 6.88489 92.059L175.504 92.059L98.0465 9.80878C97.182 9.19968 96.8862 7.9815 96.8862 7.0619C96.8862 6.15422 97.1706 5.2346 98.0465 4.315C98.6267 3.40732 99.787 3.0968 100.663 3.0968C101.527 3.0968 102.403 3.39539 103.279 4.315L187.731 92.9796C187.731 93.1274 187.804 93.2021 187.877 93.2774C187.952 93.3543 188.027 93.4319 188.027 93.5887C188.046 93.6098 188.066 93.6308 188.085 93.6518C188.338 93.9267 188.584 94.1935 188.606 94.4689C188.607 94.482 188.607 94.4951 188.607 94.5083C188.903 94.8188 188.903 95.4279 188.903 96.037C188.903 96.6461 188.903 96.9566 188.607 97.5657ZM191.489 93.2767C191.79 93.8661 191.89 94.4204 191.934 94.7363C192.001 95.2226 192 95.7194 192 95.9856L192 96.037C192 96.0544 192 96.0729 192 96.0926C192 96.3523 192.001 96.8096 191.924 97.2931C191.828 97.8884 191.64 98.41 191.393 98.9184L190.546 100.663H190.212C190.127 100.759 190.038 100.852 189.988 100.905L189.974 100.92L105.527 189.891C102.85 192.701 98.1865 192.704 95.51 189.895C94.1476 188.464 93.5636 186.587 93.5636 184.857C93.5636 183.128 94.1468 181.252 95.5071 179.822M191.489 93.2767C191.316 92.7908 191.078 92.4357 190.938 92.2406C190.903 92.1912 190.866 92.142 190.828 92.0939V91.7408L105.522 2.17912C104.076 0.661813 102.397 0 100.663 0C99.3914 0 97.0569 0.401401 95.6212 2.37737C94.3151 3.83819 93.7895 5.45521 93.7895 7.0619C93.7895 8.26663 94.1183 10.6061 95.9608 12.111L168.333 88.9622L6.88489 88.9622C2.9981 88.9622 0 92.3316 0 96.036C0 99.7405 2.99801 103.11 6.88489 103.11L168.285 103.11" fill="black" fill-rule="evenodd"></path>
+<path d="M169.5 104L16.5 102.5V90H171L97.5 10.5V7L107.5 4.5C131.167 29.6667 180.2 81.5 187 87.5C193.8 93.5 191.5 99 189.5 101L105.5 184L94 181.5L169.5 104Z" fill="black"></path>
+</svg>
+</p>
+</a>
+</div>
+<div class="hotspot-image-template--23104005341513__ss_hotspots_8_w7LryL">
+<img height="2880" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/volant-8fxa6lEfrmg-unsplash.jpg?v=1737495550&amp;width=750" srcset="//section.store/cdn/shop/files/volant-8fxa6lEfrmg-unsplash.jpg?v=1737495550&amp;width=165 165w, //section.store/cdn/shop/files/volant-8fxa6lEfrmg-unsplash.jpg?v=1737495550&amp;width=360 360w, //section.store/cdn/shop/files/volant-8fxa6lEfrmg-unsplash.jpg?v=1737495550&amp;width=535 535w, //section.store/cdn/shop/files/volant-8fxa6lEfrmg-unsplash.jpg?v=1737495550&amp;width=750 750w" width="1920"/>
+<div class="hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL hotspot-hotspot-hotspot_QhpQ8W">
+<svg class="hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M7.35716 7.25354H0L0.0104732 8.87091H7.35716L7.35716 15.9895H8.92875L8.92875 8.87091H15.9895V7.25354H8.92875L8.87101 0.0104675L7.35716 0.0104735V7.25354Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+<a class="hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL" href="/products/5-panel-hat">
+<div class="hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL">
+<img height="2880" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/volant-e53YmnB2cCI-unsplash.jpg?v=1737496243&amp;width=750" srcset="//section.store/cdn/shop/files/volant-e53YmnB2cCI-unsplash.jpg?v=1737496243&amp;width=165 165w, //section.store/cdn/shop/files/volant-e53YmnB2cCI-unsplash.jpg?v=1737496243&amp;width=360 360w, //section.store/cdn/shop/files/volant-e53YmnB2cCI-unsplash.jpg?v=1737496243&amp;width=535 535w, //section.store/cdn/shop/files/volant-e53YmnB2cCI-unsplash.jpg?v=1737496243&amp;width=750 750w" width="1920"/>
+</div>
+<div class="hotspot-product-content-template--23104005341513__ss_hotspots_8_w7LryL">
+<h3 class="hotspot-product-title-template--23104005341513__ss_hotspots_8_w7LryL">Diffuser</h3>
+<div class="hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL">
+<p class="hotspot-regular-price-template--23104005341513__ss_hotspots_8_w7LryL">$48.00</p>
+</div>
+</div>
+</a>
+</div>
+<div class="hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL hotspot-hotspot-hotspot_QxfLaG">
+<svg class="hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M7.35716 7.25354H0L0.0104732 8.87091H7.35716L7.35716 15.9895H8.92875L8.92875 8.87091H15.9895V7.25354H8.92875L8.87101 0.0104675L7.35716 0.0104735V7.25354Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+<a class="hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL" href="/products/camp-stool">
+<div class="hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL">
+<img alt="Camp Stool" height="1000" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=750" srcset="//section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=165 165w, //section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=360 360w, //section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=535 535w, //section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=750 750w" width="1000"/>
+</div>
+<div class="hotspot-product-content-template--23104005341513__ss_hotspots_8_w7LryL">
+<h3 class="hotspot-product-title-template--23104005341513__ss_hotspots_8_w7LryL">Figurines</h3>
+<div class="hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL">
+<p class="hotspot-regular-price-template--23104005341513__ss_hotspots_8_w7LryL">$78.00</p>
+</div>
+</div>
+</a>
+</div>
+<div class="hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL hotspot-hotspot-hotspot_rey3TA">
+<svg class="hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M7.35716 7.25354H0L0.0104732 8.87091H7.35716L7.35716 15.9895H8.92875L8.92875 8.87091H15.9895V7.25354H8.92875L8.87101 0.0104675L7.35716 0.0104735V7.25354Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+<a class="hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL" href="/products/ayers-chambray">
+<div class="hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL">
+<img alt="Mud Scrub Soap" height="1000" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/products/soap.jpg?v=1663855296&amp;width=750" srcset="//section.store/cdn/shop/products/soap.jpg?v=1663855296&amp;width=165 165w, //section.store/cdn/shop/products/soap.jpg?v=1663855296&amp;width=360 360w, //section.store/cdn/shop/products/soap.jpg?v=1663855296&amp;width=535 535w, //section.store/cdn/shop/products/soap.jpg?v=1663855296&amp;width=750 750w" width="1000"/>
+</div>
+<div class="hotspot-product-content-template--23104005341513__ss_hotspots_8_w7LryL">
+<h3 class="hotspot-product-title-template--23104005341513__ss_hotspots_8_w7LryL">Wall Mirror</h3>
+<div class="hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL">
+<p class="hotspot-regular-price-template--23104005341513__ss_hotspots_8_w7LryL">$15.00</p>
+</div>
+</div>
+</a>
+</div>
+<div class="hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL hotspot-hotspot-hotspot_xKtibk">
+<svg class="hotspot-hotspot-icon-template--23104005341513__ss_hotspots_8_w7LryL" fill="none" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M7.35716 7.25354H0L0.0104732 8.87091H7.35716L7.35716 15.9895H8.92875L8.92875 8.87091H15.9895V7.25354H8.92875L8.87101 0.0104675L7.35716 0.0104735V7.25354Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+<a class="hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL" href="/products/5oz-scout-citronella-candle-2-pack">
+<div class="hotspot-product-image-template--23104005341513__ss_hotspots_8_w7LryL">
+<img alt="5oz Scout Citronella Candle - 2 Pack" height="800" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/710-003-50429_scoutcandle-small1_24780ab6-2d21-443d-b1c8-649f7a757e0a.webp?v=1723133103&amp;width=750" srcset="//section.store/cdn/shop/files/710-003-50429_scoutcandle-small1_24780ab6-2d21-443d-b1c8-649f7a757e0a.webp?v=1723133103&amp;width=165 165w, //section.store/cdn/shop/files/710-003-50429_scoutcandle-small1_24780ab6-2d21-443d-b1c8-649f7a757e0a.webp?v=1723133103&amp;width=360 360w, //section.store/cdn/shop/files/710-003-50429_scoutcandle-small1_24780ab6-2d21-443d-b1c8-649f7a757e0a.webp?v=1723133103&amp;width=535 535w, //section.store/cdn/shop/files/710-003-50429_scoutcandle-small1_24780ab6-2d21-443d-b1c8-649f7a757e0a.webp?v=1723133103&amp;width=750 750w" width="800"/>
+</div>
+<div class="hotspot-product-content-template--23104005341513__ss_hotspots_8_w7LryL">
+<h3 class="hotspot-product-title-template--23104005341513__ss_hotspots_8_w7LryL">Candle</h3>
+<div class="hotspot-product-price-template--23104005341513__ss_hotspots_8_w7LryL">
+<p class="hotspot-regular-price-template--23104005341513__ss_hotspots_8_w7LryL">$24.00</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function initHotspots8() {
+    const hotspots = document.querySelectorAll('.hotspot-hotspot-template--23104005341513__ss_hotspots_8_w7LryL');
+
+    if (hotspots) {
+      hotspots.forEach(hotspot => {
+        hotspot.addEventListener('click', (event) => {
+          event.stopPropagation();
+
+          const content = hotspot.querySelector('.hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL');
+
+          if (hotspot.classList.contains('active')) {
+            if (content) {
+              content.style.transition = 'opacity 0.3s ease, scale 0.3s ease';
+              content.style.opacity = '0';
+              content.style.scale = '0.5'
+
+              setTimeout(() => {
+                hotspot.classList.remove('active');
+              }, 300);
+            } else {
+              hotspot.classList.remove('active');
+            }
+          } else {
+            hotspots.forEach(otherHotspot => {
+              otherHotspot.classList.remove('active');
+              const otherContent = otherHotspot.querySelector('.hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL');
+              if (otherContent) {
+                otherContent.style.opacity = '0';
+                content.style.scale = '0.5'
+              }
+            });
+
+            hotspot.classList.add('active');
+            if (content) {
+              content.style.transition = 'opacity 0.3s ease,  scale 0.3s ease';
+              content.style.opacity = '1';
+              content.style.scale = '1'
+            }
+          }
+        });
+      });
+
+      document.addEventListener('click', (event) => {
+        const clickedInsideHotspot = Array.from(hotspots).some(hotspot => hotspot.contains(event.target));
+
+        if (!clickedInsideHotspot) {
+          hotspots.forEach(hotspot => {
+            const content = hotspot.querySelector('.hotspot-hotspot-content-template--23104005341513__ss_hotspots_8_w7LryL');
+            if (content) {
+              content.style.transition = 'opacity 0.25s ease, scale 0.3s ease';
+              content.style.opacity = '0';
+
+              setTimeout(() => {
+                hotspot.classList.remove('active');
+              }, 300);
+            } else {
+              hotspot.classList.remove('active');
+            }
+          });
+        }
+      });
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initHotspots8);
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initHotspots8);
+    document.addEventListener('shopify:section:load', initHotspots8);
+  }
+</script>
+{% schema %}
+{
+  "name": "Hotspots #8",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Hotspots #8"
+    }
+  ]
+}
+{% endschema %}

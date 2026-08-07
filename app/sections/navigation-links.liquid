@@ -1,0 +1,135 @@
+<style>
+  .url-tabs {
+    width: 100%;
+    --container-padding: 15px;
+    max-width: calc(1800px + var(--container-padding)*2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding);
+    padding-right: var(--container-padding);
+  }
+  .collection__nav-wrapper {
+    position: relative;
+  }
+  .collection__nav-wrapper::before,
+  .collection__nav-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50px;
+  }
+  
+  .collection__nav-wrapper::after {
+    right: 0;
+    width: 50px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(255, 255, 255));
+  }
+  .collection__nav {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    margin-bottom: 20px;
+    scrollbar-width: none;
+    scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  @media (min-width: 768px) {
+    .collection__nav {
+      justify-content: center;
+    }
+  }
+  .collection__nav__list {
+    line-height: 2.5;
+    display: flex;
+    padding-left: 0;
+    padding-right: calc(var(--container-padding) + 50px);
+    list-style: none;
+  }
+  @media (min-width: 768px) {
+    .collection__nav__list {
+      padding-right: 0;
+    }
+  }
+  .collection__nav__item {
+    white-space: nowrap;
+    font-size: var(--font-size, 0.75rem);
+    font-weight: 600;
+    border: 1px solid var(--color-grey-border, rgb(230, 230, 230));
+    padding: 0 15px;
+    color: var(--text-color, rgb(0, 0, 0));
+    background-color: var(--bg-color, rgb(255, 255, 255));
+    border-radius: var(--border-radius, 0px);
+  }
+  .collection__nav__item.collection__nav__item--active {
+    color: var(--active-text-color, rgb(255, 255, 255));
+    background-color: var(--active-bg-color, rgb(0, 0, 0));
+    border-color: var(--active-bg-color, rgb(0, 0, 0));
+  }
+  .collection__nav__item a {
+    color: inherit;
+    text-decoration: none;
+  }
+    .collection__nav__item:not(:last-child) {
+      margin-right: 10px;
+    }
+</style>
+<div class="url-tabs url-tabs--template--16640583401721__ce75ff81-bc77-49be-994a-1a38e8a3b8f1" style="
+    --font-size: 15px;
+    --text-color: #000000;
+    --bg-color: #ffffff;
+    --active-text-color: #ffffff;
+    --active-bg-color: #000000;
+    --border-radius: 0px;
+  ">
+<div class="collection__nav-wrapper">
+<nav class="collection__nav">
+<ul class="collection__nav__list">
+<li class="collection__nav__item">
+<a data-href="/collections/pullovers" href="/collections/pullovers">Pullover</a>
+</li>
+<li class="collection__nav__item">
+<a data-href="/collections/cardigans" href="/collections/cardigans">Cardigans</a>
+</li>
+<li class="collection__nav__item">
+<a data-href="/collections/mugs" href="/collections/mugs">Mugs</a>
+</li>
+<li class="collection__nav__item">
+<a data-href="/collections/caps" href="/collections/caps">Caps</a>
+</li>
+<li class="collection__nav__item">
+<a data-href="/collections/backpacks" href="/collections/backpacks">Backpacks</a>
+</li>
+<li class="collection__nav__item">
+<a data-href="/collections" href="/collections">All products</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navItems = document.querySelectorAll('.collection__nav__item');
+    const url = window.location.href;
+    navItems.forEach((item) => {
+      const link = item.querySelector('a');
+      if (link.href === url.split('?')[0]) {
+        item.classList.add('collection__nav__item--active');
+      } else {
+        item.classList.remove('collection__nav__item--active');
+      }
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Navigation links",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Navigation links"
+    }
+  ]
+}
+{% endschema %}

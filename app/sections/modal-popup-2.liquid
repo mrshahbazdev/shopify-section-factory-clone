@@ -1,0 +1,993 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+  .section-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--23355189723465__ss_modal_popup_2_yD6dQ6-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    font-size: 18px;
+    color: #121212;
+    line-height: 100%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 0px;
+    border: 0px;
+    border: 1px solid #121212;
+    background-color: transparent;
+    background-color: #ffffff;
+    transition: all 0.25s ease 0s;
+    box-shadow: none;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+  }
+
+  .modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6:hover {
+    color: #121212;
+    border: 1px solid #121212;
+    background-color: #f3f3f3;
+    transition: all 0.25s ease 0s;
+  }
+
+  .modal-popup-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    width: 100vw;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    overflow-y: scroll;
+    pointer-events: none;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+  }
+
+  .modal-popup-template--23355189723465__ss_modal_popup_2_yD6dQ6.active {
+    opacity: 1;
+    z-index: 100;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .modal-popup-inner-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    position: relative;
+    width: 100%;
+    max-width: 98%;
+    border: 0px solid #222222;
+    background-color: #222222;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+
+  .modal-popup-left-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+   height: 100%;
+    width: 100%;
+  }
+
+  .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    margin: 0px auto;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 img,
+  .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 svg {
+    background-color: #DEDEDE;
+  }
+
+  .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 .modal-popup-mobile-image {
+    display: block;
+  }
+
+  .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 .modal-popup-desktop-image {
+    display: none;
+  }
+
+  .modal-popup-content-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 24px;
+  } 
+
+  .modal-popup-close-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    position: absolute;;
+    top: 10px;
+    right: 8px;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+  }
+
+  .modal-popup-close-template--23355189723465__ss_modal_popup_2_yD6dQ6 svg {
+    display: block;
+    width: 24px;
+    height: 24px;
+  }
+
+  .modal-popup-close-template--23355189723465__ss_modal_popup_2_yD6dQ6 svg path {
+    fill: #e9e9e0;
+  }
+
+  .modal-popup-buttons-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+
+    .section-template--23355189723465__ss_modal_popup_2_yD6dQ6-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      padding: 12px 20px;
+      font-size: 18px;
+    }
+
+    .modal-popup-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-popup-inner-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      display: grid;
+      align-items: stretch;
+      overflow: hidden;
+      max-width: 64%;
+      grid-template-columns: 42% 58%;
+    }
+
+    .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      max-width: 100%;
+    }
+
+    .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 .modal-popup-mobile-image {
+      display: none;
+    }
+  
+     .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 .modal-popup-desktop-image {
+      display: block;
+    }
+
+    .modal-popup-content-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      padding: 40px 40px;
+    }
+
+    .modal-popup-buttons-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      justify-content: center;
+    }
+  }</style>
+<style>
+    .section-template--23355189723465__ss_modal_popup_2_yD6dQ6-settings {
+      max-width: 1200rem;
+    }
+  </style>
+<style>
+    .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6{
+     aspect-ratio: 12/9;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+     .modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+       aspect-ratio: 9.6/12;
+      }
+    }
+  </style>
+<style>
+    .modal-popup-left-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      display: none;
+    }
+
+    @media(min-width: 1024px) {
+      .modal-popup-left-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+        display: block;
+      }
+    }
+  </style>
+<style>
+    .modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+     .modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  </style>
+<style>
+        @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+    
+
+        .modal-popup-subheading-sub_heading_GeJMPJ {
+          width: 100%;
+          text-align: center;
+          margin-top: 0px;
+        }
+
+        .modal-popup-subheading-sub_heading_GeJMPJ * {
+          margin: 0;
+          font-size: 13px;
+          color: #c6c6b6;
+          line-height: 130%;
+          word-break: break-word;
+          font-weight: 400;
+          text-transform: unset;
+        }
+
+        @media(min-width: 1024px) {          
+          .modal-popup-subheading-sub_heading_GeJMPJ {
+            text-align: center;
+            margin-top: 0px;
+          }
+
+          .modal-popup-subheading-sub_heading_GeJMPJ * {
+            font-size: 13px;
+          }
+        }
+      </style>
+<style>
+          .modal-popup-subheading-sub_heading_GeJMPJ * {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>       
+        @font-face {
+  font-family: "Fjalla One";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/fjalla_one/fjallaone_n4.262edaf1abaf5ed669f7ecd26fc3e24707a0ad85.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/fjalla_one/fjallaone_n4.f67f40342efd2b34cae019d50b4b5c4da6fc5da7.woff") format("woff");
+}
+    
+        .modal-popup-heading-heading_GQCWAJ {
+          width: 100%;
+          text-align: center;
+          margin-top: 16px;
+        }
+
+        .modal-popup-heading-heading_GQCWAJ * {
+          margin: 0;
+          font-size: 28px;
+          color: #ececc6;
+          line-height: 130%;
+          word-break: break-word;
+          font-weight: 700;
+          text-transform: unset;
+        }
+        @media(min-width: 1024px) {
+
+          .modal-popup-heading-heading_GQCWAJ {
+            text-align: center;
+            margin-top: 16px;
+          }
+
+          .modal-popup-heading-heading_GQCWAJ * {
+            font-size: 32px;
+          }
+        }
+      </style>
+<style>
+          .modal-popup-heading-heading_GQCWAJ * {
+            font-family: "Fjalla One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+        
+        @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+        
+
+        .modal-popup-promocode-promocode_ELdehP {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: fit-content;
+          flex-wrap: wrap;
+          gap: 10px;
+          cursor: pointer;
+          margin-top: 32px;
+          padding: 18px 40px;
+          border: 1px dashed #c6c6b6;
+          border-radius: 2px;
+          background-color: #2d2d2d;
+        }
+
+        .modal-popup-promocode-text-promocode_ELdehP {
+          margin: 0;
+          font-size: 16px;
+          color: #c6c6b6;
+          line-height: 100%;
+          word-break: break-word;
+          text-transform: unset;
+        }
+
+        .modal-popup-promocode-icon-promocode_ELdehP {
+          flex-shrink: 0;
+          width: 16px;
+          height: 16px;
+        }
+
+        .modal-popup-promocode-icon-promocode_ELdehP img,
+        .modal-popup-promocode-icon-promocode_ELdehP svg {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .modal-popup-promocode-icon-promocode_ELdehP svg path {
+          fill: #c6c6b6;
+        }
+
+        .modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+          opacity: 0;
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          max-width: fit-content;
+          transform: translateY(-1rem) translateX(-50%);
+          z-index: 2;
+          max-width: fit-content;
+          background-color: #2d2d2d;
+          padding: 4px 12px;
+          border: 0px solid #121212;
+          border-radius: 2px;
+          text-align: center;
+          margin-top: 20px;
+          transition: all 0.25s ease 0s;
+        }
+
+        .modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6 * {
+          margin: 0;    
+          font-size: 13px;
+          color: #f6f6ee;
+          line-height: 130%;   
+          text-transform: unset;
+          text-decoration: none;
+          word-break: break-word;
+        }
+
+        .modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6.active {
+          opacity: 1;
+          pointer-events: all;
+          transform: translateY(-6rem) translateX(-50%);
+          transition: all 0.25s ease 0s;
+        }
+        
+              
+        @media(min-width: 1024px) {
+          .modal-popup-promocode-promocode_ELdehP {
+            margin-top: 32px;
+            padding: 18px 50px;
+          }
+
+          .modal-popup-promocode-text-promocode_ELdehP {
+            font-size: 16px;
+          }
+
+          .modal-popup-promocode-icon-promocode_ELdehP {
+            width: 16px;
+            height: 16px;
+          }
+
+          .modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6 {
+            padding: 4px 12px;
+          }
+
+          .modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6 * {    
+            font-size: 13px;
+          }
+        }
+      </style>
+<style>
+           .modal-popup-promocode-text-promocode_ELdehP {
+            font-family: "Courier New", Courier, monospace;
+            font-weight: 400;
+            font-style: normal;
+           }
+        </style>
+<style>
+          .modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6 * {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: "Fjalla One";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/fjalla_one/fjallaone_n4.262edaf1abaf5ed669f7ecd26fc3e24707a0ad85.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/fjalla_one/fjallaone_n4.f67f40342efd2b34cae019d50b4b5c4da6fc5da7.woff") format("woff");
+}
+
+        @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+
+        @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+
+        
+        .countdown-timer-timer_mkfDGX {
+          margin-top: 32px;
+          display: flex;
+          align-items: stretch;
+          width: 100%;
+          gap: 8px;
+          justify-content: center;
+        }
+  
+        .countdown-timer-timer_mkfDGX .time-block {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex: 0 1 100px;
+          gap: 8px;
+          background-color: #2d2d2d;
+          border-radius: 2px;
+          padding: 8px 8px;
+        }
+  
+        .countdown-timer-timer_mkfDGX .time-block__num {
+          margin: 0;
+          font-size: 32px;
+          color: #ececc6;
+          line-height: 100%;
+          text-transform: unset;
+          font-weight: 700;
+        }
+        
+        .countdown-timer-timer_mkfDGX .time-block__unit {
+          margin: 0;
+          font-size: 10px;
+          color: #ececc6;
+          line-height: 100%;
+          word-break: break-word;
+          text-transform: unset;
+        }
+
+        .countdown-timer-completed-text-timer_mkfDGX {
+          margin-top: 16px;
+        }
+  
+        .countdown-timer-completed-text-timer_mkfDGX * {
+          margin: 0;
+          font-size: 16px;
+          color: #ececc6;
+          line-height: 150%;
+          text-transform: unset;
+        }
+  
+        @media(min-width: 1024px) {
+          .countdown-timer-timer_mkfDGX {
+            margin-top: 32px;
+            gap: 8px;
+            justify-content: center;
+          }
+  
+          .countdown-timer-timer_mkfDGX .time-block {
+            flex: 0 1 100px;
+            padding: 16px 8px;
+          }
+  
+          .countdown-timer-timer_mkfDGX .time-block__num {
+            font-size: 32px;
+          }
+  
+          .countdown-timer-timer_mkfDGX .time-block__unit {
+            font-size: 10px;
+          }
+
+          .countdown-timer-completed-text-timer_mkfDGX {
+            margin-top: 16px;
+          }
+
+          .countdown-timer-completed-text-timer_mkfDGX * {
+            font-size: 16px;
+          }
+        }
+      </style>
+<style>
+          .countdown-timer-timer_mkfDGX .time-block__num {
+            font-family: "Fjalla One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+          .countdown-timer-timer_mkfDGX .time-block__unit {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+          .countdown-timer-completed-text-timer_mkfDGX * {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+
+
+        .modal-popup-button-button_fmerzh {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: fit-content;
+          gap: 10px;
+          width: 100%;
+          margin: 0;
+          margin-top: 24px;
+          font-size: 12px;
+          color: #121212;
+          line-height: 100%;
+          text-align: center;
+          text-transform: unset;
+          text-decoration: none;
+          padding: 16px 32px;
+          border-radius: 2px;
+          transition: all 0.3s ease 0s;
+          background-color: transparent;
+          border: 0px;
+          cursor: pointer;
+          font-weight: 700;
+        }
+
+        .modal-popup-button-inner-button_fmerzh {
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        .modal-popup-button-button_fmerzh:hover {
+          color: #f7aa2e;
+          transition: all 0.25s ease 0s;
+        }
+
+        .modal-popup-button-button_fmerzh svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .modal-popup-button-button_fmerzh svg path {
+          fill: #121212;
+          transition: all 0.25s ease 0s;
+        }
+
+        .modal-popup-button-button_fmerzh:hover svg path {
+          fill: #f7aa2e;
+          transition: all 0.25s ease 0s;
+        }
+
+        @media (min-width: 1024px) {
+          .modal-popup-button-button_fmerzh {
+            margin-top: 32px;
+            padding: 18px 32px;
+            font-size: 12px;
+          }
+        }
+      </style>
+<style>
+          .modal-popup-button-button_fmerzh {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>          
+          .modal-popup-button-button_fmerzh {
+            transition: all 0.3s ease 0s;
+            background-color: #f7aa2e;
+            border: 1px solid #f7aa2e;
+          }
+      
+          .modal-popup-button-button_fmerzh:hover {
+            transition: all 0.3s ease 0s;
+            background-color: rgba(0,0,0,0);
+            border: 1px solid #f7aa2e;
+          }
+        </style>
+<style>     
+        @font-face {
+  font-family: "Nunito Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.0276fe080df0ca4e6a22d9cb55aed3ed5ba6b1da.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/nunito_sans/nunitosans_n4.b4964bee2f5e7fd9c3826447e73afe2baad607b7.woff") format("woff");
+}
+   
+
+        .modal-popup-disclaimer-disclaimer_yLzgTt {
+          width: 100%;
+          margin-top: 24px;
+          text-align: center;
+        }
+
+        .modal-popup-disclaimer-disclaimer_yLzgTt * {
+          margin: 0;
+          font-size: 13px;
+          color: #c6c6b6;
+          line-height: 150%;
+          word-break: break-word;
+          text-transform: unset;
+        }
+        @media(min-width: 1024px) {
+          .modal-popup-disclaimer-disclaimer_yLzgTt {
+            margin-top: 32px;
+            text-align: center;
+          }
+
+          .modal-popup-disclaimer-disclaimer_yLzgTt * {
+            font-size: 13px;
+          }
+        }
+      </style>
+<style>
+          .modal-popup-disclaimer-disclaimer_yLzgTt * {
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<div class="section-template--23355189723465__ss_modal_popup_2_yD6dQ6 modal-template--23355189723465__ss_modal_popup_2_yD6dQ6" style="background-color:#ffffff; background-image: ;">
+<div class="section-template--23355189723465__ss_modal_popup_2_yD6dQ6-settings">
+<button class="modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6">See offer (example 1)</button>
+</div>
+</div>
+<div class="modal-popup-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<div class="modal-popup-inner-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<div class="modal-popup-left-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<div class="modal-popup-image-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<img alt="" height="1050" loading="lazy" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/smi-smi-swim-classic-13.jpg?v=1714621915&amp;width=700" srcset="//section.store/cdn/shop/files/smi-smi-swim-classic-13.jpg?v=1714621915&amp;width=165 165w, //section.store/cdn/shop/files/smi-smi-swim-classic-13.jpg?v=1714621915&amp;width=360 360w, //section.store/cdn/shop/files/smi-smi-swim-classic-13.jpg?v=1714621915&amp;width=535 535w" width="700"/>
+</div>
+</div>
+<div class="modal-popup-content-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<div class="modal-popup-subheading-sub_heading_GeJMPJ"><p>HURRY! TIME’S RUNNING OUT!</p></div>
+<div class="modal-popup-heading-heading_GQCWAJ"><h3>LAST CHANCE TO BUY MARKED-DOWN ITEMS BEFORE THEY GO</h3></div>
+<div class="modal-popup-promocode-promocode_ELdehP modal-popup-promocode-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<div class="modal-popup-promocode-icon-promocode_ELdehP">
+<svg viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+<path d="M 4 4 L 4 5 L 4 23 L 4 24 L 5 24 L 11 24 L 11 22 L 6 22 L 6 6 L 18 6 L 18 7 L 20 7 L 20 5 L 20 4 L 19 4 L 5 4 L 4 4 z M 12 8 L 12 9 L 12 27 L 12 28 L 13 28 L 27 28 L 28 28 L 28 27 L 28 9 L 28 8 L 27 8 L 13 8 L 12 8 z M 14 10 L 26 10 L 26 26 L 14 26 L 14 10 z"></path>
+</svg>
+</div>
+<div class="modal-popup-promocode-text-promocode_ELdehP modal-popup-promocode-text-template--23355189723465__ss_modal_popup_2_yD6dQ6">PROMO15</div>
+<div class="modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<p>Copied!</p>
+</div>
+</div>
+<div class="countdown-timer-timer_mkfDGX">
+<div class="time-block">
+<span class="time-block__num js-timer-days">00</span>
+<span class="time-block__unit">DAYS</span>
+</div>
+<div class="time-block">
+<span class="time-block__num js-timer-hours">00</span>
+<span class="time-block__unit">HOURS</span>
+</div>
+<div class="time-block">
+<span class="time-block__num js-timer-minutes">00</span>
+<span class="time-block__unit">MIN</span>
+</div>
+<div class="time-block">
+<span class="time-block__num js-timer-seconds">00</span>
+<span class="time-block__unit">SEC</span>
+</div>
+</div>
+<style>
+            .countdown-timer-completed-text-timer_mkfDGX {
+              display: none;
+            }
+          </style>
+<div class="countdown-timer-completed-text-timer_mkfDGX">
+<p>Completed</p>
+</div>
+<div class="modal-popup-buttons-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<a class="modal-popup-button-button_fmerzh" href="/pages/404-2">
+<p class="modal-popup-button-inner-button_fmerzh">
+                  SHOP NOW
+                  
+                </p>
+</a>
+</div>
+<div class="modal-popup-disclaimer-disclaimer_yLzgTt"><p>Final discount, cannot be combined with other offers.</p></div>
+</div>
+<button class="modal-popup-close-template--23355189723465__ss_modal_popup_2_yD6dQ6">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+</div>
+</div>
+<script>
+  function initModalPopup2() {
+    setTimeout(() => {
+      const discountCodes = document.querySelectorAll(".modal-popup-promocode-text-template--23355189723465__ss_modal_popup_2_yD6dQ6");
+      const copyIcons = document.querySelectorAll(".modal-popup-promocode-template--23355189723465__ss_modal_popup_2_yD6dQ6");
+      const message = document.querySelector(".modal-popup-message-template--23355189723465__ss_modal_popup_2_yD6dQ6");
+
+      function copyToClipboard(text) {
+        // Create temporary textarea
+        const tempInput = document.createElement("textarea");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
+
+        // Select and copy text
+        tempInput.select();
+        document.execCommand("copy");
+
+        // Remove temporary element
+        document.body.removeChild(tempInput);
+
+        // Show message
+        message.classList.add('active');
+
+        // Hide message after delay
+        setTimeout(() => {
+          message.classList.remove('active');
+        }, 1000);
+      }
+
+      discountCodes.forEach(codeElement => {
+        codeElement.addEventListener("click", () => {
+          copyToClipboard(codeElement.innerText);
+        });
+      });
+
+      copyIcons.forEach((copyIcon, index) => {
+        copyIcon.addEventListener("click", () => {
+          const codeElement = discountCodes[index];
+          if (codeElement) {
+            copyToClipboard(codeElement.innerText);
+          }
+        });
+      });
+    }, 400);
+
+    const toggle = document.querySelector('.modal-button-template--23355189723465__ss_modal_popup_2_yD6dQ6');
+    const modal = document.querySelector('.modal-popup-template--23355189723465__ss_modal_popup_2_yD6dQ6');
+    const close = document.querySelector('.modal-popup-close-template--23355189723465__ss_modal_popup_2_yD6dQ6');
+    const modalKey = 'modalDisplayedAt_template--23355189723465__ss_modal_popup_2_yD6dQ6';
+
+    if(toggle) {
+      toggle.addEventListener('click', () => {
+        if(modal) {
+          
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            document.body.style.transform = 'none';
+          
+        }
+      })
+    }
+
+    if(close) {
+       close.addEventListener('click', () => {
+        document.body.style.overflow = '';
+        document.body.style.transform = '';
+        modal.classList.remove('active');
+      });
+    }
+
+    document.addEventListener('click', (e) => {
+        if (e.target == modal) {
+          document.body.style.overflow = '';
+          document.body.style.transform = '';
+          modal.classList.remove('active');
+        }
+    });
+
+    
+
+    
+
+    
+
+    
+
+    
+      
+    
+      
+    
+      
+    
+        
+          function startTimer() {
+            const second = 1000,
+              minute = second * 60,
+              hour = minute * 60,
+              day = hour * 24,
+              wrapper = document.querySelector(
+                '.countdown-timer-timer_mkfDGX'
+              ),
+              countDown = new Date('2027-01-01T00:00:00Z').getTime();
+      
+            console.log('start timer, end date:' + countDown)
+            const interval = setInterval(function () {
+              let now = new Date().getTime(),
+                distance = countDown - now,
+                days = Math.floor(distance / day),
+                hours = Math.floor((distance % day) / hour),
+                minutes = Math.floor((distance % hour) / minute),
+                seconds = Math.floor((distance % minute) / second);
+      
+              (wrapper.querySelector('.js-timer-days').innerText = (
+                days
+              )),
+                (wrapper.querySelector('.js-timer-hours').innerText = (
+                  hours
+                )),
+                (wrapper.querySelector('.js-timer-minutes').innerText = (
+                  minutes
+                )),
+                (wrapper.querySelector('.js-timer-seconds').innerText = (
+                  seconds
+                ));
+      
+              if (distance < 0) {
+                wrapper.querySelector('.js-timer-days').innerText = '00';
+                wrapper.querySelector('.js-timer-hours').innerText = '00';
+                wrapper.querySelector('.js-timer-minutes').innerText = '00';
+                wrapper.querySelector('.js-timer-seconds').innerText = '00';
+                
+                document.querySelector(
+                  '.countdown-timer-completed-text-timer_mkfDGX'
+                ).style.display = 'block';
+      
+                clearInterval(interval);
+              }
+      
+            }, second);
+            document.addEventListener('shopify:section:unload', function (event) {
+              if (event.detail.sectionId === 'template--23355189723465__ss_modal_popup_2_yD6dQ6') clearInterval(interval);
+            });
+          }
+          startTimer()
+          if (window.Shopify && Shopify.designMode) {
+            document.addEventListener('shopify:section:load', function (event) {
+              if (event.detail.sectionId === 'template--23355189723465__ss_modal_popup_2_yD6dQ6') {
+                startTimer();
+              }
+            });
+          }
+      
+    
+      
+    
+      
+    
+  }
+
+  document.addEventListener('DOMContentLoaded', initModalPopup2);
+
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initModalPopup2);
+     document.addEventListener('shopify:section:load', initModalPopup2);
+  }
+</script>
+{% schema %}
+{
+  "name": "Modal popup #2",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Modal popup #2"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,757 @@
+<style data-shopify="">@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n4.6e9875ce64e0fefcd3f4446b7ec9036b3ddd2985.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Playfair Display";
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/playfair_display/playfairdisplay_n9.25b8b0442b16a9de210548264f9fabab9b6733a6.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/playfair_display/playfairdisplay_n9.26302b5d8902d85a9f024e427e89918021cad942.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/playfair_display/playfairdisplay_n4.9980f3e16959dc89137cc1369bfc3ae98af1deb9.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/playfair_display/playfairdisplay_n4.c562b7c8e5637886a811d2a017f9e023166064ee.woff") format("woff");
+}
+
+  
+  .section-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    position: relative;
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .section-template--23152237117769__ss_comparison_table_17_zmPiMx-settings {
+    margin: 0 auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  .comparison-body-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    display: grid;
+    gap: 44px;
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-content-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: content;
+  }
+
+  .comparison-table-wrapper-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    grid-area: table;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: calc(25px - 2px);
+    padding-bottom: calc(25px - 2px);
+  }
+
+  .comparison-table-template--23152237117769__ss_comparison_table_17_zmPiMx { 
+    display: flex;
+    max-width: fit-content;
+    margin: 0 auto;
+    flex-wrap: nowrap;  
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(:first-child) {
+    position: relative;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    width: 115px;
+    flex-shrink: 0;
+  }
+
+  .comparison-column-bg-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .comparison-column-bg-template--23152237117769__ss_comparison_table_17_zmPiMx img,
+  .comparison-column-bg-template--23152237117769__ss_comparison_table_17_zmPiMx video,
+  .comparison-column-bg-template--23152237117769__ss_comparison_table_17_zmPiMx iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0px;
+    box-shadow: none;
+  }
+
+  .comparison-column-heading-text-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    margin: 0;
+    font-size: 16px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    word-break: break-word;
+  }
+
+  .comparison-column-heading-image-template--23152237117769__ss_comparison_table_17_zmPiMx img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active .comparison-column-heading-text-template--23152237117769__ss_comparison_table_17_zmPiMx {
+     color: #ffffff;
+  }
+
+  .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    height: 60px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    padding: 8px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:first-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx:not(:first-child) {
+    border-left: 2px solid #000000;
+    background-color: #ffffff;
+  }
+
+  .comparison-column-bg-color-template--23152237117769__ss_comparison_table_17_zmPiMx .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    background-color: #ffffff;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(:first-child) .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    border-left: 2px solid #000000;
+  }
+
+  .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    border-top: 2px solid #000000;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:first-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx:first-child {
+    border: 0px;
+  }
+
+  .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx:last-child {
+    border-bottom: 2px solid #000000;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:first-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx:nth-child(2) {
+    border-top-left-radius: 16px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:first-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx:last-child {
+    border-bottom-left-radius: 16px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(.active):nth-child(2) .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx.comparison-column-heading-template--23152237117769__ss_comparison_table_17_zmPiMx{
+    border-top-left-radius: 16px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active {
+    border-radius: 16px;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding-top: calc(20px - 2px);
+    padding-bottom: calc(20px - 2px);
+    border: 2px solid #000000;
+    background-color: #ffffff;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    border: 0px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active + .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    border-left: 0px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(.active):last-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    border-right: 2px solid #000000;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(.active):last-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx.comparison-column-heading-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    border-top-right-radius: 16px;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(.active):last-child .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx:last-child {
+    border-bottom-right-radius: 16px;
+  }
+
+  .comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    margin: 0;
+    font-size: 13px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    text-align: left;
+    font-weight: 700;
+    width: 100%;
+    word-break: break-word;
+  }
+
+  .comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    margin: 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    word-break: break-word;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active .comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx {
+    color: #ffffff;
+  }
+
+  .comparison-value-icon-template--23152237117769__ss_comparison_table_17_zmPiMx svg {
+    width: 24px !important;
+    height: 24px !important;    
+  }
+
+  .comparison-value-icon-template--23152237117769__ss_comparison_table_17_zmPiMx img,
+  .comparison-value-icon-template--23152237117769__ss_comparison_table_17_zmPiMx svg {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .comparison-value-check-template--23152237117769__ss_comparison_table_17_zmPiMx path {
+    stroke: #000000;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active .comparison-value-check-template--23152237117769__ss_comparison_table_17_zmPiMx path {
+    stroke: #ffffff;
+  }
+
+  .comparison-value-cross-template--23152237117769__ss_comparison_table_17_zmPiMx path {
+    stroke: #000000;
+  }
+
+  .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx.active .comparison-value-cross-template--23152237117769__ss_comparison_table_17_zmPiMx path {
+    stroke: #ffffff;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--23152237117769__ss_comparison_table_17_zmPiMx-settings {
+      padding: 0 5rem;
+      padding-top: 64px;
+      padding-bottom: 64px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .comparison-body-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      gap: 50px;    
+    }
+
+    .comparison-table-wrapper-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      overflow-x: visible;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .comparison-table-template--23152237117769__ss_comparison_table_17_zmPiMx { 
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .comparison-content-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      justify-content: center;
+      align-items: start;
+    }  
+
+    .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      width: auto;
+    }
+
+    .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:first-child {
+      width: 20%;
+      flex-shrink: 0;
+    }
+
+    .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:not(:first-child) {
+      flex: 1 0;
+    }
+
+    .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:last-child {
+      padding-right: 0px;
+    }
+
+    .comparison-column-heading-text-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      height: 100px;
+      padding: 15px;
+    }
+
+    .comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      font-size: 17px;
+      text-align: center;
+    }
+
+    .comparison-value-icon-template--23152237117769__ss_comparison_table_17_zmPiMx svg {
+      width: 28px !important;
+      height: 28px !important;    
+    }
+  }</style>
+<style>
+    .section-template--23152237117769__ss_comparison_table_17_zmPiMx-settings {
+      max-width: 1200px;
+    }
+  </style>
+<style>
+    .comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      font-family: "Playfair Display", serif;
+      font-weight: 900;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx {
+      font-family: "Playfair Display", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+      .comparison-body-template--23152237117769__ss_comparison_table_17_zmPiMx {
+        grid-template-areas: 
+          "content" 
+          "table";    
+      }
+    </style>
+<style>
+      @media (min-width: 1024px) {
+        .comparison-body-template--23152237117769__ss_comparison_table_17_zmPiMx {
+          grid-template-areas: "content table";
+          grid-template-columns: 1fr 60%;
+        }
+      }
+    </style>
+<style>
+    .comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx:last-child {
+      padding-right: 10px;
+    }
+  </style>
+<style>
+        @font-face {
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/playfair_display/playfairdisplay_n4.9980f3e16959dc89137cc1369bfc3ae98af1deb9.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/playfair_display/playfairdisplay_n4.c562b7c8e5637886a811d2a017f9e023166064ee.woff") format("woff");
+}
+
+
+        .comparison-heading-heading_6bEMG4 {
+          margin-top: 0px;
+          text-align: center;
+          position: relative;
+          z-index: 2;
+        }
+      
+        .comparison-heading-heading_6bEMG4 * {
+          margin: 0;
+          font-size: 36px;
+          color: #121212;
+          line-height: 110%;
+          text-transform: unset;
+        }
+
+        @media(min-width: 1024px) {
+          
+          .comparison-heading-heading_6bEMG4 {
+            margin-top: 0px;
+            text-align: left;
+          }
+        
+          .comparison-heading-heading_6bEMG4 * {
+            font-size: 72px;
+          }
+        }          
+      </style>
+<style>
+          .comparison-heading-heading_6bEMG4 * {
+            font-family: "Playfair Display", serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+        .comparison-button-button_arwbP8 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: fit-content;
+          gap: 10px;
+          width: 100%;
+          margin: 0;
+          margin-top: 16px;
+          font-size: 15px;
+          color: #ffffff;
+          line-height: 100%;
+          text-align: center;
+          text-transform: unset;
+          text-decoration: none;
+          padding: 16px 42px;
+          border-radius: 100px;
+          transition: all 0.3s ease 0s;
+          background-color: transparent;
+          border: 0px;
+          cursor: pointer;
+          font-weight: 700;
+        }
+
+        .comparison-button-inner-button_arwbP8 {
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        .comparison-button-button_arwbP8:hover {
+          color: #121212;
+          transition: all 0.25s ease 0s;
+        }
+
+        .comparison-button-button_arwbP8 svg {
+          width: 14px;
+          height: 14px;
+        }
+
+        .comparison-button-button_arwbP8 svg path {
+          fill: #ffffff;
+          transition: all 0.25s ease 0s;
+        }
+
+        .comparison-button-button_arwbP8:hover svg path {
+          fill: #121212;
+          transition: all 0.25s ease 0s;
+        }
+
+        @media (min-width: 1024px) {
+          .comparison-button-button_arwbP8 {
+            margin-top: 20px;
+            padding: 16px 60px;
+            font-size: 16px;
+          }
+        }
+      </style>
+<style>          
+          .comparison-button-button_arwbP8 {
+            transition: all 0.3s ease 0s;
+            background-color: #121212;
+            border: 2px solid #121212;
+          }
+      
+          .comparison-button-button_arwbP8:hover {
+            transition: all 0.3s ease 0s;
+            background-color: #ffffff;
+            border: 2px solid #121212;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+        .comparison-review-review_GAmUhd {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: rgba(255,255,255,0);
+          padding: 0px 0px;
+          border-radius: 0px;
+          margin-top: 12px;
+        }
+
+        .comparison-review-text-review_GAmUhd * {
+          word-wrap: break-word;
+          margin: 0;
+          font-size: 13px;
+          color: #121212;
+          line-height: 130%;
+          text-align: center;
+          text-transform: unset;
+        }
+
+        .comparison-stars-review_GAmUhd {
+          display: flex;
+          align-items: center;
+          gap: 1px;
+          max-width: fit-content;
+        }
+
+        .comparison-stars-review_GAmUhd svg,
+        .comparison-stars-review_GAmUhd img {
+          display: block;
+          width: 16px;
+          height: 16px;
+          object-fit: cover;
+        }
+
+        @media (min-width: 1024px) {
+          .comparison-review-review_GAmUhd {
+            margin-top: 16px;
+            padding: 0px 0px;
+          }
+
+          .comparison-review-text-review_GAmUhd * {
+            font-size: 13px;
+          }
+
+          .comparison-stars-review_GAmUhd svg,
+          .comparison-stars-review_GAmUhd img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      </style>
+<style>
+      .comparison-column-column_zjnGVT.active:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.3);
+        z-index: 1;
+      }
+    </style>
+<style>
+      .comparison-column-column_CawPxt.active:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.2);
+        z-index: 1;
+      }
+    </style>
+<div class="section-template--23152237117769__ss_comparison_table_17_zmPiMx comparison-template--23152237117769__ss_comparison_table_17_zmPiMx" style="background-color:#e7e6dd; background-image: ;">
+<div class="section-template--23152237117769__ss_comparison_table_17_zmPiMx-settings">
+<div class="comparison-body-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-content-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-heading-heading_6bEMG4">
+<h2>See the Difference</h2>
+</div>
+<a class="comparison-button-button_arwbP8" href="/pages/404-2">
+<p class="comparison-button-inner-button_arwbP8">
+                      SHOP NOW
+                      
+                    </p>
+</a>
+<div class="comparison-review-review_GAmUhd">
+<div class="comparison-stars-template--23152237117769__ss_comparison_table_17_zmPiMx comparison-stars-review_GAmUhd">
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#121212"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#121212"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#121212"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#121212"></path>
+</svg>
+<svg fill="none" height="19" viewbox="0 0 20 19" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M10 0L12.9389 5.95492L19.5106 6.90983L14.7553 11.5451L15.8779 18.0902L10 15L4.12215 18.0902L5.24472 11.5451L0.489435 6.90983L7.06107 5.95492L10 0Z" fill="#121212"></path>
+</svg>
+</div>
+<div class="comparison-review-text-review_GAmUhd"><p>4.9 2565 Reviews</p></div>
+</div>
+</div>
+<div class="comparison-table-wrapper-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-table-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx"></div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx">Oil</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx">Zink</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx">Bee Pollen</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx">Vitamin D3</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-row-heading-template--23152237117769__ss_comparison_table_17_zmPiMx">Organic</p>
+</div>
+</div>
+<div class="comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx comparison-column-column_zjnGVT active">
+<div class="comparison-column-bg-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<video autoplay="" class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/7dc20f28d17c42e3b47390db62362ba3/7dc20f28d17c42e3b47390db62362ba3.HD-1080p-2.5Mbps-34522767.mp4?v=0" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+<div class="comparison-column-heading-template--23152237117769__ss_comparison_table_17_zmPiMx comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-column-heading-image-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<img alt="" src="//section.store/cdn/shop/files/Logo_section_store_1_300x300.png?v=1705941203"/>
+</div>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">Avocado oil</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">15mg</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">100mg</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">2000 IU</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-value-icon-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<svg class="comparison-value-check-template--23152237117769__ss_comparison_table_17_zmPiMx" fill="none" height="31" viewbox="0 0 31 31" width="31" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 17.8571L9.66667 25L28.3333 5" stroke="#00ff00" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="comparison-column-template--23152237117769__ss_comparison_table_17_zmPiMx comparison-column-column_CawPxt comparison-column-bg-color-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-column-heading-template--23152237117769__ss_comparison_table_17_zmPiMx comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-column-heading-text-template--23152237117769__ss_comparison_table_17_zmPiMx">OTHERS</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">Seed oil</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">10mg</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">50mg</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<p class="comparison-value-template--23152237117769__ss_comparison_table_17_zmPiMx">1000 IU</p>
+</div>
+<div class="comparison-row-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<div class="comparison-value-icon-template--23152237117769__ss_comparison_table_17_zmPiMx">
+<svg class="comparison-value-cross-template--23152237117769__ss_comparison_table_17_zmPiMx" fill="none" height="24" viewbox="0 0 49 49" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.5 12.5L12.5 36.5" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<path d="M12.5 12.5L36.5 36.5" stroke="#ff0000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  function initComparisonTable17() {
+    let lazyLoadInstance = new LazyLoad();
+
+    window.addEventListener(
+      "LazyLoad::Initialized",
+      function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+      },
+      false
+    );
+  }
+
+  document.addEventListener('DOMContentLoaded', initComparisonTable17);
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initComparisonTable17);
+    document.addEventListener('shopify:section:load', initComparisonTable17);
+  }
+</script>
+{% schema %}
+{
+  "name": "Comparison table #17",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Comparison table #17"
+    }
+  ]
+}
+{% endschema %}

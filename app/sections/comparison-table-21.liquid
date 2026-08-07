@@ -1,0 +1,838 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n5.07ef3781d9c78c8b93c98419da7ad4fbeebb6635.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n5.adf9b4bd8b0e4f55a0b203cdd84512667e0d5e4d.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.f8892cc1cfa3d797af6172c8eeddce62cf610e33.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.a707ca3ea5e6b6468ff0c29cf7e105dca1c09be4.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_i4.5a4ea298b4789e064f62a29aafc18d41f09ae59b.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_i4.072b5869c5e0ed5b9d2021e4c2af132e16681ad2.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.f8892cc1cfa3d797af6172c8eeddce62cf610e33.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.a707ca3ea5e6b6468ff0c29cf7e105dca1c09be4.woff") format("woff");
+}
+
+  
+  .section-template--23574782345545__ss_comparison_table_21_879WUf {
+    border-top: solid #e6e8ec 1px;
+    border-bottom: solid #e6e8ec 1px;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .section-template--23574782345545__ss_comparison_table_21_879WUf-settings {
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .comparison-layout-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .comparison-image-template--23574782345545__ss_comparison_table_21_879WUf {
+    border: 0px solid #141609;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .comparison-image-template--23574782345545__ss_comparison_table_21_879WUf img,
+  .comparison-image-template--23574782345545__ss_comparison_table_21_879WUf svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .comparison-image-template--23574782345545__ss_comparison_table_21_879WUf svg {
+    background-color: #AFAFAF;
+  }
+
+  .comparison-table-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0px;
+  }
+
+  .comparison-table-slider-wrapper-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: grid;
+  }
+
+  .comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf {
+    min-width: 0 !important;
+    width: 100%;
+  }
+
+  .comparison-table-desktop-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: none;
+  }
+
+  .comparison-table-mobile-wrapper-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: grid;
+  }
+
+  .comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf.swiper-slide {
+    opacity: 0 !important;
+  }
+
+  .comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf.swiper-slide-active {
+    opacity: 1 !important;
+  }
+  
+  .comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf.active {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.25s ease 0s;
+  }
+
+  .comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf {
+    position: relative;
+  }
+
+  .comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    background-color: #e6e8ec;
+    height: 1px;
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf:first-child {
+    gap: 20px;
+  }
+
+  .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+    padding: 16px 8px;
+  }
+
+  .comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf {
+    position: relative;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    line-height: 0;
+  }
+
+  .comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf svg path {
+    stroke: #141609;
+  }
+
+  .comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf:hover .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf {
+    opacity: 1 !important;
+    pointer-events: all !important;
+  }
+
+  .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf {
+    position: absolute;
+    top: -50px;
+    left: -7rem;
+    opacity: 0;
+    pointer-events: none;
+    width: 280px;
+    text-align: left;
+    padding: 16px 20px;
+    border: 0px solid #141609;
+    border-radius: 20px;
+    background-color: #0f8571;
+    z-index: 3;
+  }
+
+  .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf * {
+    margin: 0;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 150%;
+    text-transform: unset;   
+    display: block;
+    font-weight: 400;
+  }
+  
+  .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf h3 {
+    margin: 0;
+    display: flex !important;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: #141609;
+    line-height: 150%;
+    text-transform: unset;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf img {
+    display: block;
+    width: 40px;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+    padding: 16px 12px;
+    text-decoration: none;
+  }
+
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf.active .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+    background-color: #0f8571;
+  }
+
+  .comparison-item-heading-image-template--23574782345545__ss_comparison_table_21_879WUf img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+  }
+
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf:first-child h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #141609;
+    line-height: 130%;
+    text-transform: unset;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf.active .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf:first-child h3 {
+    color: #ffffff;
+  }
+
+  .comparison-item-text-template--23574782345545__ss_comparison_table_21_879WUf {
+    margin: 0;
+    font-size: 12px;
+    color: #616161;
+    line-height: 150%;
+    text-transform: unset;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf.active .comparison-item-text-template--23574782345545__ss_comparison_table_21_879WUf {
+    color: #ffffff;
+  }
+
+  .comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf img,
+  .comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf path {
+    stroke: #616161
+  }
+  
+  .comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf path {
+    stroke: #616161
+  }
+
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf.active .comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf path {
+    stroke: #ffffff
+  }
+  
+  .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf.active .comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf path {
+    stroke: #ffffff
+  }
+
+  .comparison-table-arrows-template--23574782345545__ss_comparison_table_21_879WUf {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: end;
+  }
+
+  .comparison-table-btn-prev-template--23574782345545__ss_comparison_table_21_879WUf,
+  .comparison-table-btn-next-template--23574782345545__ss_comparison_table_21_879WUf {
+    opacity: 1;
+    transition: all 0.25s ease 0s;
+  }
+  
+  .comparison-table-btn-prev-template--23574782345545__ss_comparison_table_21_879WUf.swiper-button-disabled,
+  .comparison-table-btn-next-template--23574782345545__ss_comparison_table_21_879WUf.swiper-button-disabled{
+    opacity: 0;
+    transition: all 0.25s ease 0s;
+  }
+
+  .comparison-table-btn-prev-template--23574782345545__ss_comparison_table_21_879WUf svg path,
+  .comparison-table-btn-next-template--23574782345545__ss_comparison_table_21_879WUf svg path  {
+    fill: #0f8571;
+    transition: all 0.25s ease 0s;
+  }
+  
+  .comparison-table-btn-prev-template--23574782345545__ss_comparison_table_21_879WUf svg {
+    width: 30px;
+    height: 30px;
+    transform: rotate(180deg);
+  }
+
+  .comparison-table-btn-next-template--23574782345545__ss_comparison_table_21_879WUf svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .comparison-grid-slide-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+    padding: 0 !important;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--23574782345545__ss_comparison_table_21_879WUf {
+      margin-top: 48px;
+      margin-bottom: 48px;
+      margin-left: 2rem;
+      margin-right: 2rem;
+      border-radius: 16px;
+    }
+    
+    .section-template--23574782345545__ss_comparison_table_21_879WUf-settings {
+      padding: 0 5rem;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .comparison-layout-template--23574782345545__ss_comparison_table_21_879WUf {
+      grid-template-columns: 30% 1fr;
+      gap: 36px;
+    }
+    
+    .comparison-table-template--23574782345545__ss_comparison_table_21_879WUf {
+      display: flex !important;
+      margin-top: 0px;
+      flex-direction: column
+    }
+
+    .comparison-table-desktop-template--23574782345545__ss_comparison_table_21_879WUf {
+      display: grid;
+    }
+
+    .comparison-table-mobile-wrapper-template--23574782345545__ss_comparison_table_21_879WUf {
+      display: none;
+    }
+
+    .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+      display: flex !important;
+    }
+
+    .comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr  ;
+    }
+
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf img {
+      width: 60px;
+    }
+
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+      padding: 24px 20px;
+    }
+
+    .comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf:last-child::after {
+      display: none;
+    }
+
+    .comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      background-color: #e6e8ec;
+      height: 60%;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+
+     .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf {
+      top: -90px;
+      left: -10rem;      
+      width: 350px;     
+    }
+
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf {
+      text-align: left;
+      padding: 16px 20px;
+    }
+
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf * {
+      font-size: 13px;
+    }
+
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf h3 {
+      justify-content: center;
+      text-align: center;
+      font-size: 12px;
+    }
+
+    .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf {
+      padding: 24px 16px;
+    }
+
+    .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf:first-child h3 {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .comparison-item-text-template--23574782345545__ss_comparison_table_21_879WUf {
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf {
+      width: 24px;
+      height: 24px;
+    }
+
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf {
+      left: -30rem;   
+    }
+
+    .comparison-table-arrows-template--23574782345545__ss_comparison_table_21_879WUf {
+      display: none;
+    }
+  }</style>
+<style>
+    .section-template--23574782345545__ss_comparison_table_21_879WUf-settings {
+      max-width: 1300px;
+    }
+  </style>
+<style>
+    .section-template--23574782345545__ss_comparison_table_21_879WUf {
+      border-left: solid #e6e8ec 1px;
+      border-right: solid #e6e8ec 1px;
+    }
+    
+    @media(min-width: 1024px) {
+      .section-template--23574782345545__ss_comparison_table_21_879WUf {
+        border-left: 0px;
+        border-right: 0px;
+      }
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .section-template--23574782345545__ss_comparison_table_21_879WUf {
+        border-left: solid #e6e8ec 1px;
+        border-right: solid #e6e8ec 1px;
+      }
+    }
+  </style>
+<style>
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf span {
+      font-family: "Anonymous Pro", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf:first-child h3 {
+      font-family: Montserrat, sans-serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+  </style>
+<style>
+    .comparison-item-text-template--23574782345545__ss_comparison_table_21_879WUf {
+      font-family: "Anonymous Pro", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-template--23574782345545__ss_comparison_table_21_879WUf .comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf {
+      box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    }
+  </style>
+<style>
+  .comparison-image-template--23574782345545__ss_comparison_table_21_879WUf {
+    aspect-ratio: 12/8;
+  }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .comparison-image-template--23574782345545__ss_comparison_table_21_879WUf {
+        aspect-ratio: 12/8;
+      }
+    }  
+  </style>
+<style>
+  .comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf.preview .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf.preview .comparison-grid-slide-template--23574782345545__ss_comparison_table_21_879WUf {
+    width: 100%;
+  }
+
+  .comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf.preview .comparison-grid-slide-template--23574782345545__ss_comparison_table_21_879WUf:not(:first-child) {
+    margin-left: px;
+  } 
+
+  @media(min-width: 1024px) {
+    .comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf.preview .comparison-grid-slide-template--23574782345545__ss_comparison_table_21_879WUf:not(:first-child) {
+      margin-left: px;
+    } 
+
+    .comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf.preview .comparison-grid-slide-template--23574782345545__ss_comparison_table_21_879WUf {
+      width: calc(100% /  - (px));
+    }
+  }
+</style>
+<div class="section-template--23574782345545__ss_comparison_table_21_879WUf comparison-template--23574782345545__ss_comparison_table_21_879WUf" style="background-color:#f9fafb; background-image: ;">
+<div class="section-template--23574782345545__ss_comparison_table_21_879WUf-settings">
+<div class="comparison-layout-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-image-template--23574782345545__ss_comparison_table_21_879WUf">
+<img alt="" height="1333" loading="lazy" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/14543.jpg?v=1746003586&amp;width=1500" srcset="//section.store/cdn/shop/files/14543.jpg?v=1746003586&amp;width=535 535w, //section.store/cdn/shop/files/14543.jpg?v=1746003586&amp;width=750 750w, //section.store/cdn/shop/files/14543.jpg?v=1746003586&amp;width=1070 1070w, //section.store/cdn/shop/files/14543.jpg?v=1746003586&amp;width=1500 1500w" width="2000"/>
+</div>
+<div class="comparison-table-template--23574782345545__ss_comparison_table_21_879WUf comparison-table-desktop-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf" style="display: block !important;"></div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>ADJUSTABLE</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>Adjust firmness easily using dual zippers</p></div>
+</div>
+</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>OPTIMAL SUPPORT</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>An exclusive mix of firmness and loft for ultimate support</p></div>
+</div>
+</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>COOLING FIBERS</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>Memory foam infused with gel</p></div>
+</div>
+</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>ANTI-MICROBAL</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>Hypoallergenic</p></div>
+</div>
+</h3>
+</div>
+</div>
+<div class="comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf active">
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-item-heading-image-template--23574782345545__ss_comparison_table_21_879WUf"><img alt="" loading="lazy" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/Logo_section_store_1_12e802d5-2161-4493-a4da-8c5b5e620682.png?v=1709682756&amp;width=280"/>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>Others</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+</div>
+</div>
+<div class="comparison-table-mobile-wrapper-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-table-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-mobile-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-header-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf" style="display: block !important;"></div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>ADJUSTABLE</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>Adjust firmness easily using dual zippers</p></div>
+</div>
+</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>OPTIMAL SUPPORT</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>An exclusive mix of firmness and loft for ultimate support</p></div>
+</div>
+</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>COOLING FIBERS</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>Memory foam infused with gel</p></div>
+</div>
+</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>
+<span>ANTI-MICROBAL</span>
+<div class="comparison-item-info-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg fill="none" height="16" viewbox="0 0 15 16" width="15"><path d="M7.5 15C11.366 15 14.5 11.866 14.5 8C14.5 4.13401 11.366 1 7.5 1C3.63401 1 0.5 4.13401 0.5 8C0.5 11.866 3.63401 15 7.5 15Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.49 5C7.49 5 7.49224 5 7.495 5C7.49776 5 7.5 5 7.5 5C7.5 5 7.49776 5 7.495 5C7.49224 5 7.49 5 7.49 5Z" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path><path d="M7.5 7V11" stroke="#22202F" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"></path></svg>
+<div class="comparison-item-info-text-template--23574782345545__ss_comparison_table_21_879WUf"><p>Hypoallergenic</p></div>
+</div>
+</h3>
+</div>
+</div><div class="comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf active">
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-item-heading-image-template--23574782345545__ss_comparison_table_21_879WUf"><img alt="" loading="lazy" sizes="(min-width: 1300px) 600px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/Logo_section_store_1_12e802d5-2161-4493-a4da-8c5b5e620682.png?v=1709682756&amp;width=280"/>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-yes-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="21" viewbox="0 0 28 21" width="28" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10.8L9.44828 18L26 2" stroke="#FFFFFF" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+</div><div class="comparison-table-slider-wrapper-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf swiper preview">
+<div class="swiper-wrapper">
+<div class="comparison-grid-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-rows-template--23574782345545__ss_comparison_table_21_879WUf comparison-grid-slide-template--23574782345545__ss_comparison_table_21_879WUf swiper-slide swiper-slide-active">
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<h3>Others</h3>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+<div class="comparison-item-template--23574782345545__ss_comparison_table_21_879WUf comparison-border-item-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-icon-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="comparison-no-icon-template--23574782345545__ss_comparison_table_21_879WUf" fill="none" height="4" viewbox="0 0 29 4" width="29"><path d="M0.190872 2.14214H28.4751" stroke="#121212" stroke-width="3"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="comparison-table-arrows-template--23574782345545__ss_comparison_table_21_879WUf">
+<div class="comparison-table-btn-prev-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="r-15pkctt" fill="currentColor" role="presentation" stroke="currentColor" stroke-width="0" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path></svg>
+</div>
+<div class="comparison-table-btn-next-template--23574782345545__ss_comparison_table_21_879WUf">
+<svg class="r-15pkctt" fill="currentColor" role="presentation" stroke="currentColor" stroke-width="0" viewbox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" fill-rule="evenodd"></path></svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  function initComparisonTable21() {
+    function setEqualHeightsOnMobile() {
+      const items = document.querySelectorAll(`.comparison-item-template--23574782345545__ss_comparison_table_21_879WUf`);
+      if (!items.length) return;
+  
+      if (window.innerWidth <= 768) {
+        let maxHeight = 0;
+
+        items.forEach(item => {
+          item.style.height = 'auto';
+        });
+
+        items.forEach(item => {
+          const height = item.offsetHeight;
+          if (height > maxHeight) {
+            maxHeight = height;
+          }
+        });
+
+        items.forEach(item => {
+          item.style.height = maxHeight + 'px';
+        });
+      } else {
+        items.forEach(item => {
+          item.style.height = 'auto';
+        });
+      }
+    }
+    document.querySelector(`.comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf`).classList.remove('preview');
+    
+    const slider = new Swiper(".comparison-table-slider-template--23574782345545__ss_comparison_table_21_879WUf", {
+      speed: 300, 
+      slidesPerView: 1, 
+      effect: "fade",
+      navigation: {
+        prevEl: '.comparison-table-btn-prev-template--23574782345545__ss_comparison_table_21_879WUf',       
+        nextEl: '.comparison-table-btn-next-template--23574782345545__ss_comparison_table_21_879WUf'  
+      },
+    }); 
+
+    setEqualHeightsOnMobile();     
+    let resizeTimeout;
+    window.addEventListener('resize', () => { 
+      setEqualHeightsOnMobile();     
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initComparisonTable21);
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initComparisonTable21);
+    document.addEventListener('shopify:section:load', initComparisonTable21);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Comparison table #21",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Comparison table #21"
+    }
+  ]
+}
+{% endschema %}

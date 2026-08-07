@@ -1,0 +1,949 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n1.2f0714cbd41857ba00d5d4fafdce92c40aadb8e6.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n1.7bec1bf4c4d0f77c37dc95cf9616413eceba9082.woff") format("woff");
+}
+
+
+  .section-template--24098804826441__ss_flip_cards_QhKjN7 {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  } 
+  
+  .section-template--24098804826441__ss_flip_cards_QhKjN7-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+  }
+
+  .flip-slider-template--24098804826441__ss_flip_cards_QhKjN7 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .flip-body-template--24098804826441__ss_flip_cards_QhKjN7 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    height: 100%;
+  }
+
+  .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 img,
+  .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+  }
+
+  .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 svg {
+    background-color: #AFAFAF;
+  }
+
+  .flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7 {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+    height: 100%;
+    will-change: transform;
+  }
+
+  .flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7.fliped {
+    transform: rotateY(180deg) !important;
+  }
+
+  .flip-card-template--24098804826441__ss_flip_cards_QhKjN7 {
+    transition: transform 0.25s ease;
+    height: 100%;
+  }
+
+  .flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7 {
+    cursor: pointer !important;
+    backface-visibility: hidden !important;
+    position: relative !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+     -moz-backface-visibility: hidden !important; 
+  }
+  
+  .flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7 {
+    display: flex !important;
+    flex-direction: column !important;
+    cursor: pointer !important;
+    backface-visibility: hidden !important;
+    -moz-backface-visibility: hidden !important; 
+    position: absolute !important;
+    padding: 0 30px !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    -webkit-transform: rotateY(180deg) !important;
+    transform: rotateY(180deg) !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    z-index: 1 !important;
+  }
+
+  .flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7,
+  .flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7 {
+    border: 0px solid #0052f1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7 {
+    background-color: #ffffff;
+  }  
+
+  .flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7 {
+    background-color: #f8f8f8;
+  }
+  
+  .flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7 {
+    padding: 30px;
+  }
+
+  .flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7 {       
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px 16px;   
+  }
+
+  .flip-title-template--24098804826441__ss_flip_cards_QhKjN7 {
+    margin: 0px;  
+    text-align: center;
+    font-size: 15px;
+    line-height: 130%;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700;
+  }
+
+  .flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7 {
+    margin: 0px;  
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 130%;
+    color: #707070;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 400;
+  }
+
+  .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7 {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    right: 15px;
+    padding: 7.0px;
+    background-color: #f9f2ed;
+    transition: all 0.25s ease 0s;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7 svg {
+    display: block;
+    background: transparent !important;
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+  }
+
+  .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7 svg path {
+    fill: #50000b;
+  }
+
+  .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7:hover {
+    background-color: #f9f2ed;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7:hover svg path {
+    fill: #50000b;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-text-template--24098804826441__ss_flip_cards_QhKjN7 {
+    margin-top: 16px;
+    text-align: left;
+  }
+
+  .flip-text-template--24098804826441__ss_flip_cards_QhKjN7 * {
+    margin: 0px; 
+    font-size: 14px;
+    line-height: 170%;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 400;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--24098804826441__ss_flip_cards_QhKjN7 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--24098804826441__ss_flip_cards_QhKjN7-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .flip-body-template--24098804826441__ss_flip_cards_QhKjN7 { 
+      grid-template-columns: repeat(4, 1fr);     
+      gap: 30px;
+    }
+
+    .flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7 {
+      padding: 20px 20px;   
+    }
+
+    .flip-card-template--24098804826441__ss_flip_cards_QhKjN7:hover {
+      transform: scale(1.02);
+    }
+    
+    .flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7:hover {
+      transform: scale(1.03);
+    }
+
+    .flip-title-template--24098804826441__ss_flip_cards_QhKjN7 {     
+      text-align: center;
+      font-size: 20px;     
+    }
+
+    .flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7 {  
+      margin-top: 12px;  
+      text-align: center;
+      font-size: 15px;    
+    }
+
+    .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7 {  
+      padding: 7.0px;
+    }
+
+    
+    .flip-icon-template--24098804826441__ss_flip_cards_QhKjN7 svg {      
+      width: 14px;
+      height: 14px;    
+    }
+
+    .flip-text-template--24098804826441__ss_flip_cards_QhKjN7 {
+      margin-top: 32px;
+      text-align: left;
+    }
+
+    .flip-text-template--24098804826441__ss_flip_cards_QhKjN7 * {
+      font-size: 14px;    
+    }
+  }</style>
+<style>
+    .section-template--24098804826441__ss_flip_cards_QhKjN7-settings {
+      max-width: 1500px;
+    }
+  </style>
+<style>
+  .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 {
+    aspect-ratio: 12/8;
+  }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 {
+        aspect-ratio: 12/8;
+      }
+    }  
+  </style>
+<style>
+    .flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7:hover .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 img,
+    .flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7:hover .flip-image-template--24098804826441__ss_flip_cards_QhKjN7 svg {
+      transform: scale(1.06);
+    }
+  </style>
+<style>
+    .flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7,
+    .flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7 {
+      box-shadow: #00000026 0px 4px 12px;
+    }
+  </style>
+<style>
+    .flip-body-template--24098804826441__ss_flip_cards_QhKjN7 {
+      display: none !important;
+    }
+
+    .flip-slider-template--24098804826441__ss_flip_cards_QhKjN7 {
+      display: flex !important;
+    }
+
+    @media(min-width: 1024px) {
+      .flip-body-template--24098804826441__ss_flip_cards_QhKjN7 {
+        display: grid !important;
+      }
+
+      .flip-slider-template--24098804826441__ss_flip_cards_QhKjN7 {
+        display: none !important;
+      }
+    }
+  </style>
+<div class="section-template--24098804826441__ss_flip_cards_QhKjN7 flip-template--24098804826441__ss_flip_cards_QhKjN7" style="background-color:#f9f2ed;">
+<div class="section-template--24098804826441__ss_flip_cards_QhKjN7-settings">
+<div class="flip-body-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/2148205221.jpg?v=1753098752"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Peptides</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Elasticity</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Enhance collagen production, reduce the look of fines lines and wrinkles, and improve skin elasticity.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/6253.jpg?v=1753098046"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Ceramides</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Skin barrier</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Aid in enhancing and sustaining a resilient skin barrier to minimize moisture loss from the skin.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/304777.jpg?v=1753102317"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Squalane</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Soften</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>A natural antioxidant that helps to hydrate and soften skin.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/the-new-york-public-library-idFo1JJbLQs-unsplash.jpg?v=1752761823"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Pink Algae</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Brighten</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>The algae’s natural beta-carotene acts as a powerful antioxidant to brighten skin.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/2149286744.jpg?v=1748275941"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Hyaluronic Acid</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Anti-ageing</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Hyaluronic Acid instantly plumps fine lines and wrinkles, creating a smoother, more supple appearance.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/905.jpg?v=1748280911"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Heartleaf</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Hydrate</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>A potent plant extract aiding in skin hydration and barrier repair.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/pexels-rajesh-s-balouria-1289088-32112804.jpg?v=1753097346"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Amla Berry</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Brighten</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>20x more vitamin C than an orange for skin brightening, dark spot fading, and sun damage protection.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/getty-images-tbUqbekfgMY-unsplash.jpg?v=1752761916"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Triple Milk Complex</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Balance</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Goat, coconut, and rice milk rebalance, replenish, and restore the skin barrier.</p></h3>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-slider-template--24098804826441__ss_flip_cards_QhKjN7 swiper" style="padding-top: 30px !important; padding-bottom: 30px !important;">
+<div class="swiper-wrapper">
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/2148205221.jpg?v=1753098752"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Peptides</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Elasticity</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Enhance collagen production, reduce the look of fines lines and wrinkles, and improve skin elasticity.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/6253.jpg?v=1753098046"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Ceramides</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Skin barrier</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Aid in enhancing and sustaining a resilient skin barrier to minimize moisture loss from the skin.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/304777.jpg?v=1753102317"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Squalane</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Soften</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>A natural antioxidant that helps to hydrate and soften skin.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/the-new-york-public-library-idFo1JJbLQs-unsplash.jpg?v=1752761823"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Pink Algae</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Brighten</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>The algae’s natural beta-carotene acts as a powerful antioxidant to brighten skin.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/2149286744.jpg?v=1748275941"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Hyaluronic Acid</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Anti-ageing</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Hyaluronic Acid instantly plumps fine lines and wrinkles, creating a smoother, more supple appearance.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/905.jpg?v=1748280911"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Heartleaf</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Hydrate</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>A potent plant extract aiding in skin hydration and barrier repair.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/pexels-rajesh-s-balouria-1289088-32112804.jpg?v=1753097346"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Amla Berry</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Brighten</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>20x more vitamin C than an orange for skin brightening, dark spot fading, and sun damage protection.</p></h3>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24098804826441__ss_flip_cards_QhKjN7 swiper-slide">
+<div class="flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-front-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-image-template--24098804826441__ss_flip_cards_QhKjN7">
+<img alt="" src="//section.store/cdn/shop/files/getty-images-tbUqbekfgMY-unsplash.jpg?v=1752761916"/>
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+<div class="flip-card-content-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-card-content-wrapper">
+<h3 class="flip-title-template--24098804826441__ss_flip_cards_QhKjN7">Triple Milk Complex</h3>
+<h3 class="flip-subtitle-template--24098804826441__ss_flip_cards_QhKjN7">Balance</h3>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24098804826441__ss_flip_cards_QhKjN7">
+<div class="flip-icon-template--24098804826441__ss_flip_cards_QhKjN7">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h3 class="flip-text-template--24098804826441__ss_flip_cards_QhKjN7"><p>Goat, coconut, and rice milk rebalance, replenish, and restore the skin barrier.</p></h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<style>
+  @media( width < 800px ){
+    .flip-text-template--24098804826441__ss_flip_cards_QhKjN7 {
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+      overflow: hidden;    
+    }    
+  }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  const eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7 = {};
+
+  function handleCardClicktemplate24098804826441__ss_flip_cards_QhKjN7(e) {
+    console.log('click');
+    const card = e.currentTarget.querySelector('.flip-card-wrapper-template--24098804826441__ss_flip_cards_QhKjN7');
+    if (card.classList.contains('fliped')) {
+      card.classList.remove('fliped');
+    } else {
+      card.classList.add('fliped');
+    }
+  }
+
+  function initFlipCardstemplate24098804826441__ss_flip_cards_QhKjN7() {
+    
+      new Swiper(`.flip-slider-template--24098804826441__ss_flip_cards_QhKjN7`, {
+        speed: 300,
+        spaceBetween: 15,
+        slidesPerView: 1.5,
+      });
+    
+
+    const wrapperCards = document.querySelectorAll('.flip-card-template--24098804826441__ss_flip_cards_QhKjN7');
+    wrapperCards.forEach(card => {
+      card.addEventListener('click', handleCardClicktemplate24098804826441__ss_flip_cards_QhKjN7);
+
+      if (!eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.cards) {
+        eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.cards = [];
+      }
+      eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.cards.push({ element: card, handler: handleCardClicktemplate24098804826441__ss_flip_cards_QhKjN7 });
+    });
+
+    if (window.innerWidth > 1024) {
+      const cards = document.querySelectorAll('.flip-card-template--24098804826441__ss_flip_cards_QhKjN7');
+      cards.forEach((el) => {
+        const width = el.clientWidth;
+        const height = el.clientHeight;
+
+        const mouseMoveHandler = (e) => {
+          const xVal = e.layerX;
+          const yVal = e.layerY;
+          const yRotation = 15 * ((xVal - width / 2) / width);
+          const xRotation = -15 * ((yVal - height / 2) / height);
+          el.style.transform = `perspective(500px) rotateX(${xRotation}deg) rotateY(${yRotation}deg)`;
+        };
+
+        const mouseOutHandler = () => {
+          el.style.transform = 'perspective(500px) rotateX(0) rotateY(0)';
+        };
+
+        el.addEventListener('mousemove', mouseMoveHandler);
+        el.addEventListener('mouseout', mouseOutHandler);
+        el.addEventListener('mousedown', mouseOutHandler); 
+        el.addEventListener('mouseup', mouseOutHandler);  
+
+        if (!eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.mouse) {
+          eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.mouse = [];
+        }
+        eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.mouse.push({
+          element: el,
+          handlers: {
+            mousemove: mouseMoveHandler,
+            mouseout: mouseOutHandler,
+            mousedown: mouseOutHandler,
+            mouseup: mouseOutHandler,
+          }
+        });
+      });
+    }
+  }
+
+  function destroyFlipCardstemplate24098804826441__ss_flip_cards_QhKjN7() {
+    if (eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.cards) {
+      eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.cards.forEach(({ element, handler }) => {
+        element.removeEventListener('click', handler);
+      });
+      eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.cards = [];
+    }
+
+    if (eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.mouse) {
+      eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.mouse.forEach(({ element, handlers }) => {
+        element.removeEventListener('mousemove', handlers.mousemove);
+        element.removeEventListener('mouseout', handlers.mouseout);
+        element.removeEventListener('mousedown', handlers.mousedown);
+        element.removeEventListener('mouseup', handlers.mouseup);
+      });
+      eventHandlerstemplate24098804826441__ss_flip_cards_QhKjN7.mouse = [];
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initFlipCardstemplate24098804826441__ss_flip_cards_QhKjN7);
+  
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:load', initFlipCardstemplate24098804826441__ss_flip_cards_QhKjN7);
+    document.addEventListener('shopify:section:unload', destroyFlipCardstemplate24098804826441__ss_flip_cards_QhKjN7);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Flip cards",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Flip cards"
+    }
+  ]
+}
+{% endschema %}

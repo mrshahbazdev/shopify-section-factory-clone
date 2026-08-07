@@ -1,0 +1,293 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+<style data-shopify="">
+@font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n7.bf44452348ec8b8efa3aa3068825305886b1c83c.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n7.0c887fee83f6b3bda822f1150b912c72da0f7b64.woff") format("woff");
+}
+
+@font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n7.bf44452348ec8b8efa3aa3068825305886b1c83c.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n7.0c887fee83f6b3bda822f1150b912c72da0f7b64.woff") format("woff");
+}
+
+@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n4.6e9875ce64e0fefcd3f4446b7ec9036b3ddd2985.woff") format("woff");
+}
+
+
+.item-slider__image {
+    background-color: #f5f5f5;
+  }
+
+.template--16650886906105__166385657636d0bd31-wrapper {
+    padding: 0 30px;
+    min-height: 100%;
+    padding-top: 27px;
+    padding-bottom: 0px;
+  }
+
+  @media(min-width: 768px) {
+    .template--16650886906105__166385657636d0bd31-wrapper {
+      padding-top: 36px;
+      padding-bottom: px;
+    }
+  }
+  .swiper_title {
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.32;
+    letter-spacing: 0.5px;
+    color: #1a1b18;
+    padding: 30px 0px 20px 70px;
+  }
+  .item-slider {
+    padding-left: 70px;
+    position: relative;
+	overflow: hidden;
+	padding-bottom:70px;
+  }
+  .item-slider__image {
+	overflow:hidden;
+    text-align: center;
+	margin-bottom:-10px;
+  }
+  .item-slider__image img {
+    max-height:400px;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+  }  
+  .item-slider .swiper-button-next,
+  .item-slider .swiper-button-prev {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid rgb(211, 212, 213);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 25%) 0px 0px 24px 0px;
+    transition: border-color 125ms ease-in-out 0s;
+	top: calc(50% - 45px);
+  }
+  .item-slider .swiper-button-next:hover,
+  .item-slider .swiper-button-prev:hover {
+    border-color: rgb(116, 121, 124);
+  }
+  
+  .item-slider .swiper-button-prev::after,
+  .item-slider .swiper-button-next::after {
+    color: rgb(77, 85, 89);
+    font-size: 0px;
+  }
+  .item-slider .swiper-button-next::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    border-bottom: 3px solid rgb(77, 85, 89);
+    border-right: 3px solid rgb(77, 85, 89);
+    margin-left: -5px;
+  }
+  .item-slider .swiper-button-prev::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(135deg);
+    border-bottom: 3px solid rgb(77, 85, 89);
+    border-right: 3px solid rgb(77, 85, 89);
+    margin-left: 5px;
+  }
+  .item-slider .swiper-slide {
+    width: auto;
+    height: auto;
+    box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px 0px;
+  }
+  .item-slider__image img:hover {
+    transform: scale(1.1);
+  }
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    display: none;
+  }
+  .swiper-button-prev {
+    left: 2%;
+  }
+  .swiper-button-next {
+    right: 0%;
+  }
+  .slide_info {
+    background-color: #ffffff;
+    padding: 18px;
+  }
+  .slider-links {
+    text-decoration: none!important;
+  }
+  .slide_info-name {
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #212a2f;
+	margin:0;
+	padding-bottom: 2px;
+  }
+  .slide_info-description {
+    font-family: Assistant;
+    font-weight: 400;
+    color:#212a2f;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+	margin:0;	
+  }
+  
+  .slide_info-price {
+    font-family: Assistant;
+    font-weight: 400;
+    color:#212a2f;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Media */
+  
+  @media (max-width: 992px) {
+
+     .item-slider__image img {
+      max-height:400px;
+     }
+
+	.template--16650886906105__166385657636d0bd31-wrapper {
+	 padding:20px;
+	}
+    .swiper_title {
+      padding-left: 0;
+    }
+    .item-slider {
+      padding-left: 0;
+    }
+    .item-slider .swiper-button-prev,
+    .item-slider .swiper-button-next {
+      display: none;
+  }
+  }
+</style>
+<div class="template--16650886906105__166385657636d0bd31-wrapper" style="background:#ffffff;overflow:hidden">
+<div class="swiper_title">New Arrivals
+    </div>
+<div class="slider-template--16650886906105__166385657636d0bd31 item-slider swiper-container" style="overflow:visible">
+<div class="item-slider__wrapper swiper-wrapper"><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/products/5-panel-hat"><div class="item-slider__image"><img alt="5 Panel Camp Cap" class="cover-image" height="480" loading="lazy" src="//section.store/cdn/shop/products/5-panel-hat_4ee20a27-8d5a-490e-a2fc-1f9c3beb7bf5.jpg?v=1663855324&amp;width=480" srcset="//section.store/cdn/shop/products/5-panel-hat_4ee20a27-8d5a-490e-a2fc-1f9c3beb7bf5.jpg?v=1663855324&amp;width=352 352w, //section.store/cdn/shop/products/5-panel-hat_4ee20a27-8d5a-490e-a2fc-1f9c3beb7bf5.jpg?v=1663855324&amp;width=480 480w" width="480"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">5 Panel Camp Cap</p>
+<p class="slide_info-description">
+                        Lush Green - $39
+                        
+                      </p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/products/snow-peak-titanium-single-wall-cup"><div class="item-slider__image"><img alt="Double Wall Mug" class="cover-image" height="1000" loading="lazy" src="//section.store/cdn/shop/products/mug.jpg?v=1663855357&amp;width=1000" srcset="//section.store/cdn/shop/products/mug.jpg?v=1663855357&amp;width=352 352w, //section.store/cdn/shop/products/mug.jpg?v=1663855357&amp;width=832 832w, //section.store/cdn/shop/products/mug.jpg?v=1663855357&amp;width=1000 1000w" width="1000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">Double Wall Mug</p>
+<p class="slide_info-description">
+                        Silver gray - $19
+                        
+                      </p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/products/camp-stool"><div class="item-slider__image"><img alt="Camp Stool" class="cover-image" height="1000" loading="lazy" src="//section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=1000" srcset="//section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=352 352w, //section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=832 832w, //section.store/cdn/shop/products/campstool-1.jpg?v=1663855362&amp;width=1000 1000w" width="1000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">Camp Stool</p>
+<p class="slide_info-description">
+                        One color - $119
+                        
+                      </p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/products/canvas-lunch-bag"><div class="item-slider__image"><img alt="Canvas Lunch Bag" class="cover-image" height="1000" loading="lazy" src="//section.store/cdn/shop/products/Lunchbag_Khaki_Front_8ae0e1f4-407d-4ac0-89e6-961b306ef351.jpg?v=1663855333&amp;width=1000" srcset="//section.store/cdn/shop/products/Lunchbag_Khaki_Front_8ae0e1f4-407d-4ac0-89e6-961b306ef351.jpg?v=1663855333&amp;width=352 352w, //section.store/cdn/shop/products/Lunchbag_Khaki_Front_8ae0e1f4-407d-4ac0-89e6-961b306ef351.jpg?v=1663855333&amp;width=832 832w, //section.store/cdn/shop/products/Lunchbag_Khaki_Front_8ae0e1f4-407d-4ac0-89e6-961b306ef351.jpg?v=1663855333&amp;width=1000 1000w" width="1000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">Canvas Lunch Bag</p>
+<p class="slide_info-description">
+                        Some description text
+                        
+                      </p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/products/derby-tier-backpack"><div class="item-slider__image"><img alt="Derby Tier Backpack" class="cover-image" height="1000" loading="lazy" src="//section.store/cdn/shop/products/derbytier_nutmeg_810294de-9152-4bf7-b5e0-b88fc94a1ff8.jpg?v=1663855313&amp;width=1000" srcset="//section.store/cdn/shop/products/derbytier_nutmeg_810294de-9152-4bf7-b5e0-b88fc94a1ff8.jpg?v=1663855313&amp;width=352 352w, //section.store/cdn/shop/products/derbytier_nutmeg_810294de-9152-4bf7-b5e0-b88fc94a1ff8.jpg?v=1663855313&amp;width=832 832w, //section.store/cdn/shop/products/derbytier_nutmeg_810294de-9152-4bf7-b5e0-b88fc94a1ff8.jpg?v=1663855313&amp;width=1000 1000w" width="1000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">Derby Tier Backpack</p>
+<p class="slide_info-description">
+                        Some description text
+                        
+                      </p>
+</div></a></div></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    new Swiper('.slider-template--16650886906105__166385657636d0bd31', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+        simulateTouch: true,
+        touchRatio: 1,
+        touchAngle: 45,
+        grabCursor: true,
+        slidesPerView: 3.3,
+        watchOverflow: true,
+        spaceBetween: 30,
+        loop: false,
+        speed: 300,
+        effect: 'slide',
+
+        breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+        },
+        768: {
+            slidesPerView: 2.2,
+        },
+        992: {
+            slidesPerView: 3.3,
+        }
+        },  
+    });
+</script>
+</link>
+{% schema %}
+{
+  "name": "Product slider #1",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Product slider #1"
+    }
+  ]
+}
+{% endschema %}

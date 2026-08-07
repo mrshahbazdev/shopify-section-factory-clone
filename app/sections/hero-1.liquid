@@ -1,0 +1,428 @@
+<style>
+
+  @font-face {
+  font-family: Newsreader;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/newsreader/newsreader_i4.b6c896efb016d5bce4e554059dfe501c6316187d.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/newsreader/newsreader_i4.09e7328c6ebf6de7a11f1c4b9d76fc90424e3a85.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Figtree;
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/figtree/figtree_n3.e4cc0323f8b9feb279bf6ced9d868d88ce80289f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/figtree/figtree_n3.db79ac3fb83d054d99bd79fccf8e8782b5cf449e.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Figtree;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/figtree/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/figtree/figtree_n4.c0575d1db21fc3821f17fd6617d3dee552312137.woff") format("woff");
+}
+
+
+  .section-template--21215004393801__hero_1_ReE38r {
+    margin-top: 36px;
+    margin-bottom: 36px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    overflow: hidden;
+    border-radius: 34px;
+  }
+  
+  #shopify-section-template--21215004393801__hero_1_ReE38r {
+    padding: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  #shopify-section-template--21215004393801__hero_1_ReE38r img {
+    height: 100%;
+  }
+
+  .section-template--21215004393801__hero_1_ReE38r-padding {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+    height: 100%;
+  }
+
+  .ab-banner-button-wrapper-template--21215004393801__hero_1_ReE38r {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .section-template--21215004393801__hero_1_ReE38r .ab-banner-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease-in-out;
+    overflow: hidden;
+    opacity: 0;
+    border-radius: 0px;
+  }
+
+  .section-template--21215004393801__hero_1_ReE38r .ab-banner-image-wrapper--active {
+    opacity: 1;
+  }
+
+  .section-template--21215004393801__hero_1_ReE38r .ab-banner-image-wrapper img,
+  .section-template--21215004393801__hero_1_ReE38r .ab-banner-image-wrapper svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+   .section-template--21215004393801__hero_1_ReE38r .ab-banner-image-wrapper:after {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(61,57,52,0.3);
+   }
+  
+  .section-template--21215004393801__hero_1_ReE38r .ab-banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .section-template--21215004393801__hero_1_ReE38r .ab-banner-image--desktop {
+    display: none;
+  }
+
+  .ab-banner-content-template--21215004393801__hero_1_ReE38r {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1;
+  }
+
+  .ab-banner-title-template--21215004393801__hero_1_ReE38r {
+    text-align: center;
+  }
+
+  .ab-banner-title-template--21215004393801__hero_1_ReE38r * {
+    margin: 0;
+    font-size: 36px;
+    color: #d4ea33;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .ab-banner-subtitle-template--21215004393801__hero_1_ReE38r {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .ab-banner-subtitle-template--21215004393801__hero_1_ReE38r * {
+    margin: 0;
+    font-size: 16px;
+    color: #d4ea33;
+    line-height: 150%;
+    text-transform: unset;
+  }
+
+  .ab-banner-button-template--21215004393801__hero_1_ReE38r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: fit-content;
+    font-size: 15px;
+    color: #121212;
+    line-height: 100%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 2px;
+    background-color: #d4ea33;
+    border: 1px solid #d4ea33;
+    transition: all 0.25s ease 0s;
+    position: relative;
+    font-weight: 700;
+    z-index: 2;
+  }
+
+  .ab-banner-button-template--21215004393801__hero_1_ReE38r:hover {
+    background-color: #121212;
+    border: 1px solid #121212;
+    color: #d4ea33;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ab-banner-button-second-template--21215004393801__hero_1_ReE38r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: fit-content;
+    font-size: 15px;
+    color: #d4ea33;
+    line-height: 100%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 2px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #d4ea33;
+    transition: all 0.25s ease 0s;
+    position: relative;
+    font-weight: 700;
+    z-index: 2;
+  }
+
+  .ab-banner-button-second-template--21215004393801__hero_1_ReE38r:hover {
+    background-color: #d4ea33;
+    border: 1px solid #d4ea33;
+    color: #121212;
+    transition: all 0.25s ease 0s;
+  }
+
+  @media screen and (min-width: 750px) {
+
+    .section-template--21215004393801__hero_1_ReE38r {
+      margin-top: 48px;
+      margin-bottom: 48px;
+      margin-left: 5rem;
+      margin-right: 5rem;
+      border-radius: 56px;
+    }
+
+    .section-template--21215004393801__hero_1_ReE38r-padding {
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    
+    .section-template--21215004393801__hero_1_ReE38r .ab-banner-image-wrapper {
+      border-radius: 0px;
+    }
+
+    .section-template--21215004393801__hero_1_ReE38r .ab-banner-image--desktop {
+      display: block;
+    }
+    
+    .section-template--21215004393801__hero_1_ReE38r .ab-banner-image--mobile {
+      display: none;
+    }
+    
+    .ab-banner-content-template--21215004393801__hero_1_ReE38r {
+      padding-top: 36px;
+      padding-bottom: 36px;;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ab-banner-button-wrapper-template--21215004393801__hero_1_ReE38r {
+      margin-top: 32px;
+      gap: 16px;
+    }
+
+    .ab-banner-title-template--21215004393801__hero_1_ReE38r {
+      text-align: center;
+    }
+
+    .ab-banner-title-template--21215004393801__hero_1_ReE38r * {
+      font-size: 72px;
+    }
+    
+    .ab-banner-subtitle-template--21215004393801__hero_1_ReE38r {
+      margin-top: 20px;
+      text-align: center;
+    }
+  
+    .ab-banner-subtitle-template--21215004393801__hero_1_ReE38r * {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .ab-banner-button-template--21215004393801__hero_1_ReE38r {
+      padding: 16px 32px;
+      font-size: 15px;
+    }
+    
+    .ab-banner-button-second-template--21215004393801__hero_1_ReE38r {
+      padding: 16px 32px;
+      font-size: 15px;
+    }
+  }
+
+</style>
+<style>      
+    .section-template--21215004393801__hero_1_ReE38r-padding {
+      height: 100%;
+    }
+
+    .section-template--21215004393801__hero_1_ReE38r {
+      height: 600px;
+    }
+
+    @media(min-width: 1024px) {
+      .section-template--21215004393801__hero_1_ReE38r-padding {
+        height: 100%;
+      }
+
+      .section-template--21215004393801__hero_1_ReE38r {
+        height: 700px;
+      }
+    }
+  </style>
+<style>
+    .ab-banner-title-template--21215004393801__hero_1_ReE38r * {
+      font-family: Newsreader, serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+  </style>
+<style>
+    .ab-banner-subtitle-template--21215004393801__hero_1_ReE38r * {
+      font-family: Figtree, sans-serif;
+      font-weight: 300;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .ab-banner-button-template--21215004393801__hero_1_ReE38r {
+      font-family: Figtree, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .ab-banner-button-second-template--21215004393801__hero_1_ReE38r {
+      font-family: Figtree, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .ab-banner-button-wrapper-template--21215004393801__hero_1_ReE38r {
+      justify-content: center;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .ab-banner-button-wrapper-template--21215004393801__hero_1_ReE38r {
+        justify-content: center;
+      } 
+    }
+  </style>
+<div class="section-template--21215004393801__hero_1_ReE38r ab-banner-template--21215004393801__hero_1_ReE38r" style="background-color:#ffffff;">
+<div class="section-template--21215004393801__hero_1_ReE38r-padding">
+<div class="ab-banner-image-wrapper ab-banner-image-wrapper--active" data-ab-banner-image="0">
+<img alt="" class="ab-banner-image" height="1500" loading="eiger" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/thoughtful-younsgter-dressed-hoody-leggings-looks-pensively-aside.jpg?v=1743843491&amp;width=1500" srcset="//section.store/cdn/shop/files/thoughtful-younsgter-dressed-hoody-leggings-looks-pensively-aside.jpg?v=1743843491&amp;width=375 375w, //section.store/cdn/shop/files/thoughtful-younsgter-dressed-hoody-leggings-looks-pensively-aside.jpg?v=1743843491&amp;width=550 550w, //section.store/cdn/shop/files/thoughtful-younsgter-dressed-hoody-leggings-looks-pensively-aside.jpg?v=1743843491&amp;width=750 750w, //section.store/cdn/shop/files/thoughtful-younsgter-dressed-hoody-leggings-looks-pensively-aside.jpg?v=1743843491&amp;width=1100 1100w, //section.store/cdn/shop/files/thoughtful-younsgter-dressed-hoody-leggings-looks-pensively-aside.jpg?v=1743843491&amp;width=1500 1500w" width="1500"/>
+</div>
+<div class="ab-banner-image-wrapper" data-ab-banner-image="1">
+<img alt="" class="ab-banner-image" height="1500" loading="eiger" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/woman-with-visible-abs-doing-fitness.jpg?v=1743926045&amp;width=1500" srcset="//section.store/cdn/shop/files/woman-with-visible-abs-doing-fitness.jpg?v=1743926045&amp;width=375 375w, //section.store/cdn/shop/files/woman-with-visible-abs-doing-fitness.jpg?v=1743926045&amp;width=550 550w, //section.store/cdn/shop/files/woman-with-visible-abs-doing-fitness.jpg?v=1743926045&amp;width=750 750w, //section.store/cdn/shop/files/woman-with-visible-abs-doing-fitness.jpg?v=1743926045&amp;width=1100 1100w, //section.store/cdn/shop/files/woman-with-visible-abs-doing-fitness.jpg?v=1743926045&amp;width=1500 1500w" width="1500"/>
+</div>
+<div class="ab-banner-image-wrapper" data-ab-banner-image="2">
+<img alt="" class="ab-banner-image" height="1001" loading="eiger" sizes="(min-width: 1200px) 550px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/1867.jpg?v=1743268161&amp;width=1500" srcset="//section.store/cdn/shop/files/1867.jpg?v=1743268161&amp;width=375 375w, //section.store/cdn/shop/files/1867.jpg?v=1743268161&amp;width=550 550w, //section.store/cdn/shop/files/1867.jpg?v=1743268161&amp;width=750 750w, //section.store/cdn/shop/files/1867.jpg?v=1743268161&amp;width=1100 1100w, //section.store/cdn/shop/files/1867.jpg?v=1743268161&amp;width=1500 1500w" width="1500"/>
+</div>
+<div class="ab-banner-content-template--21215004393801__hero_1_ReE38r">
+<div class="ab-banner-title-template--21215004393801__hero_1_ReE38r">
+<h1>Meet The Perfect Regimen</h1>
+</div>
+<div class="ab-banner-subtitle-template--21215004393801__hero_1_ReE38r">
+<p>Super Packable. Versatile. And All-Day (And Night) Adventure Ready.</p>
+</div>
+<div class="ab-banner-button-wrapper-template--21215004393801__hero_1_ReE38r">
+<a class="ab-banner-button-template--21215004393801__hero_1_ReE38r" href="/pages/404-2">
+            Shop this
+          </a>
+<a class="ab-banner-button-second-template--21215004393801__hero_1_ReE38r" href="/collections/all">
+            Shop all
+          </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    function setActiveBannerImage(index) {
+      var banner = document.querySelector('.ab-banner-template--21215004393801__hero_1_ReE38r');
+      var images = banner.querySelectorAll('.ab-banner-image-wrapper');
+      var activeImage = banner.querySelector(
+        '.ab-banner-image-wrapper--active'
+      );
+      var activeIndex = Array.prototype.indexOf.call(images, activeImage);
+      var newActiveImage = images[index];
+
+      if (activeIndex === index) {
+        return;
+      }
+
+      activeImage.classList.remove('ab-banner-image-wrapper--active');
+      newActiveImage.classList.add('ab-banner-image-wrapper--active');
+    }
+
+    var index = 0;
+    var interval;
+    function Init() {
+      // for every 5s, switch to next image:
+      var size = 3;
+      if(size <= 1) return;
+      interval = setInterval(function () {
+        index = (index + 1) % size;
+        setActiveBannerImage(index);
+      }, 5000);
+
+      document.addEventListener('shopify:section:unload', function (event) {
+        clearInterval(interval);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      Init();
+    });
+
+  })();
+</script>
+{% schema %}
+{
+  "name": "Hero #1",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Hero #1"
+    }
+  ]
+}
+{% endschema %}

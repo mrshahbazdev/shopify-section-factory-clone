@@ -1,0 +1,101 @@
+<div class="section-template--24792697176393__ss_schedule_fqrgy6 schedule-template--24792697176393__ss_schedule_fqrgy6">
+<div class="section-template--24792697176393__ss_schedule_fqrgy6-settings">
+</div>
+</div>
+<script>
+  function initSchedule() {
+    const inEditor = typeof Shopify !== 'undefined' && Shopify.designMode;
+
+    // Find THIS scheduler section
+    const currentContainer = document.querySelector('.schedule-template--24792697176393__ss_schedule_fqrgy6');
+    const currentSectionElement = currentContainer ? currentContainer.closest('.shopify-section') : null;
+
+    // Find the NEXT real .shopify-section (controls the section BELOW)
+    let sectionToControl = currentSectionElement ? currentSectionElement.nextElementSibling : null;
+    while (sectionToControl && !sectionToControl.classList.contains('shopify-section')) {
+      sectionToControl = sectionToControl.nextElementSibling;
+    }
+    if (!sectionToControl) return;
+
+    const enableSchedule = true;
+
+    // If scheduling is disabled → always show the controlled section (and keep scheduler visible)
+    if (!enableSchedule) {
+      sectionToControl.style.display = 'block';
+      if (currentSectionElement) currentSectionElement.style.display = 'block';
+      return;
+    }
+
+    // ---- Timezone-safe comparison (Fix #1) ----
+    const pad = (n) => n.toString().padStart(2, '0');
+    const tzToHours = (tz) => {
+      // accepts formats like "UTC-6", "UTC+2", "UTC+0"
+      const n = parseInt(String(tz).replace('UTC', ''), 10);
+      return isNaN(n) ? 0 : n;
+    };
+    const toInstantUTC = (y, m, d, h, min, tzHours) => {
+      // Build a UTC instant that corresponds to the "wall time" at the chosen timezone.
+      // Example: 2025-10-18 09:00 at UTC+7 -> UTC hour = 09 - (+7) = 02
+      return new Date(Date.UTC(y, parseInt(m, 10) - 1, d, h - tzHours, min, 0));
+    };
+
+    // Read begin/end values as numbers where relevant
+    const beginMonth = '10';
+    const beginDay = 24;
+    const beginYear = 'this_year' === 'this_year'
+      ? new Date().getFullYear()
+      : new Date().getFullYear() + 1;
+    const beginHour = parseInt('15', 10);
+    const beginMinute = parseInt('15', 10);
+    const beginTimezone = 'UTC+1';
+
+    const endMonth = '12';
+    const endDay = 31;
+    const endYear = 'this_year' === 'this_year'
+      ? new Date().getFullYear()
+      : new Date().getFullYear() + 1;
+    const endHour = parseInt('23', 10);
+    const endMinute = parseInt('59', 10);
+    const endTimezone = 'UTC-6';
+
+    const beginInstant = toInstantUTC(
+      beginYear, beginMonth, beginDay, beginHour, beginMinute, tzToHours(beginTimezone)
+    );
+    const endInstant = toInstantUTC(
+      endYear, endMonth, endDay, endHour, endMinute, tzToHours(endTimezone)
+    );
+
+    const nowInstant = new Date(); // already UTC-based for comparisons
+
+    const withinWindow = nowInstant >= beginInstant && nowInstant <= endInstant;
+
+    if (withinWindow) {
+      sectionToControl.style.display = 'block';
+      if (currentSectionElement) currentSectionElement.style.display = 'block';
+    } else {
+      // Hide controlled section; keep scheduler visible in Theme Editor (Fix #2)
+      sectionToControl.style.display = 'none';
+      if (!inEditor && currentSectionElement) currentSectionElement.style.display = 'none';
+      return;
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initSchedule);
+
+  if (typeof Shopify !== 'undefined' && Shopify.designMode) {
+    // Re-run when the section is reloaded/selected in the editor
+    ['shopify:section:load', 'shopify:section:unload', 'shopify:section:select', 'shopify:section:deselect']
+      .forEach(ev => document.addEventListener(ev, initSchedule));
+  }
+</script>
+{% schema %}
+{
+  "name": "Schedule section",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Schedule section"
+    }
+  ]
+}
+{% endschema %}

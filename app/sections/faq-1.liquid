@@ -1,0 +1,108 @@
+<div class="rb-faq-shopify-section">
+<h1 style="text-align: center; padding: 20px 20px 0px 20px;"> Frequently Asked Questions </h1>
+<div class="rb-faq-container">
+<div class="rb-faq-container-item">
+<input class="tab-toggle" id="tab1" style="display:none!important;" type="checkbox"/>
+<label class="rb-faq-question" for="tab1">Do you offer free shipping?</label>
+<div class="rb-faq-answer"><p>Yes, we provide free standard shipping on all orders over $100. For orders under $100, a small shipping fee applies, which will be shown at checkout.</p></div>
+</div>
+<div class="rb-faq-container-item">
+<input class="tab-toggle" id="tab2" style="display:none!important;" type="checkbox"/>
+<label class="rb-faq-question" for="tab2">What is your refund policy?</label>
+<div class="rb-faq-answer"><p>If you're not completely satisfied with your purchase, you can return it within 14 for a full refund. Please ensure the item is unused and in its original packaging.</p></div>
+</div>
+<div class="rb-faq-container-item">
+<input class="tab-toggle" id="tab3" style="display:none!important;" type="checkbox"/>
+<label class="rb-faq-question" for="tab3">How can I create headshots with AI?</label>
+<div class="rb-faq-answer"><p>Need professional headshots quickly? <a href="https://headshots.so">headshots.so</a>, <a href="https://headshots.dk">headshots.dk</a>, <a href="https://headshots.se">headshots.se</a>, and <a href="https://headshots.no">headshots.no</a> make it easy to produce high-quality images in just a few minutes. Whether you’re updating your LinkedIn profile or website, these platforms help you get a polished look without any hassle.</p></div>
+</div>
+</div>
+</div>
+<style data-shopify="">
+
+    .rb-faq-answer a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+    .rb-faq-shopify-section {
+      padding-right:30px;
+      padding-left:30px;
+      margin-bottom:50px
+    }
+
+    .rb-faq-container {
+        margin:auto;
+        max-width:1000px;
+        margin-top:20px;
+    }
+
+    .rb-faq-container-item {
+          border-radius: 8px;
+          margin-bottom:10px;
+          overflow: hidden;
+    }
+
+    .rb-faq-question::after{
+          color: #ffffff;
+          content: '\276F';
+          transition: all 0.2s ease;
+      }
+
+    .rb-faq-question {
+        border-radius: 8px;
+        display:flex !important;
+        justify-content: space-between;
+        background-color:#121212;
+        padding:15px 20px;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 1.6rem;
+    }
+
+    .rb-faq-question:hover {
+          color: #efefef;
+      }
+    .rb-faq-answer {
+          padding: 0px 20px;
+          position: relative;
+          width: 100%;
+          height: 0;
+          opacity: 0;
+          overflow: hidden;
+          visibility: hidden;
+          will-change: height;
+          transform: translateY(25px);
+          transition: all .2s ease;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+    }
+    .tab-toggle:checked ~ .rb-faq-answer {
+      transform: translateY(0);
+      padding: 15px 20px;
+      height:auto;
+      opacity: 1;
+      overflow: unset;
+      visibility: visible;
+      transition: all .3s ease,opacity 1s ease,height .3s ease;
+      color: #000000;
+      background-color: #ffffff;
+    }
+    .tab-toggle:checked ~ .rb-faq-question::after {
+          transform: rotate(90deg);
+    }
+    .tab-toggle{
+          display:none;
+    }
+  </style>
+{% schema %}
+{
+  "name": "FAQ #1",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "FAQ #1"
+    }
+  ]
+}
+{% endschema %}

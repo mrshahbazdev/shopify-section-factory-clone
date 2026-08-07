@@ -1,0 +1,889 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+  .section-template--21801842966857__ss_hotspots_6_jdN9JK {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .section-template--21801842966857__ss_hotspots_6_jdN9JK-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .hotspots-body-template--21801842966857__ss_hotspots_6_jdN9JK {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .hotspots-content-template--21801842966857__ss_hotspots_6_jdN9JK {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    border: 2px solid #ffffff;
+  }
+
+  .hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK img,
+  .hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    background-color: #adadad;
+  }
+
+  .hotspots-item-template--21801842966857__ss_hotspots_6_jdN9JK {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow-y: scroll;
+    pointer-events: none;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+  }
+
+  .hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK.active {
+    opacity: 1;
+    z-index: 100;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK {
+    position: relative;
+    width: 100%;
+    max-height: 96vh;
+    border: 0px solid #000000;
+    border-radius: 12px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+
+  .hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK video,
+  .hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: none;
+    border: 0px;
+  }
+
+  .hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK iframe {
+    min-height: 70vh;
+  }
+
+  .hotspots-modal-inner-videos-template--21801842966857__ss_hotspots_6_jdN9JK:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK {
+    position: absolute;;
+    top: 10px;
+    right: 8px;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  .hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK svg path {
+    fill: #000000;
+  }
+
+  .portrait-video-template--21801842966857__ss_hotspots_6_jdN9JK {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+  
+  .landspace-video-template--21801842966857__ss_hotspots_6_jdN9JK {
+    max-width: 100%;
+    margin: 0px auto;
+  }
+
+  .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK {
+    width: 48px;
+    height: 48px;
+    border: 0px solid #ffffff;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    transition: all 0.25s ease 0s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+
+  .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK.active {
+    display: flex;
+  }
+
+  .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK:hover {
+    transition: all 0.25s ease 0s;
+    border: 0px solid #ffffff;
+    background: rgba(0,0,0,0.3);
+  }
+
+  .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    height: 50%;
+    width: 50%;
+  }
+
+  .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK:hover svg {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .hotspots-item-template--21801842966857__ss_hotspots_6_jdN9JK {
+    display: flex;
+  }
+
+  .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK {
+    width: 46px;
+    height: 46px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 8px;
+    animation: 1.4s ease-in-out infinite playButtonRipplet;
+  }
+
+  .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK svg,
+  .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    background-color: transparent;
+  }
+
+  @keyframes playButtonRipplet {
+    0% {
+      box-shadow: 0 0 #e1e1e1, 0 0 #e1e1e1;
+    }
+    100% {
+        box-shadow: 0 0 0 9px #e1e1e100, 0 0 0 18px #e1e1e100;
+    }
+  }
+
+  .hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 130%;
+    text-transform: unset;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .hotspots-modal-inner-grid-template--21801842966857__ss_hotspots_6_jdN9JK {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+    background-color: #ffffff;
+  }
+
+  .hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK {
+    overflow: hidden;
+    border-radius: 12px;
+    border: 0px solid #000000;
+  }
+
+  .hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK img,
+  .hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 90vh;
+  }
+
+  .hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK svg {
+    background-color: #adadad;
+  }
+
+  .hotspots-modal-content-template--21801842966857__ss_hotspots_6_jdN9JK {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hotspots-modal-heading-template--21801842966857__ss_hotspots_6_jdN9JK {
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    color: #9e1515;
+    line-height: 130%;
+    text-transform: unset;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  .hotspots-modal-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+    margin: 0;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #1d1919;
+    line-height: 160%;
+    text-transform: unset;
+    font-style: normal;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--21801842966857__ss_hotspots_6_jdN9JK {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--21801842966857__ss_hotspots_6_jdN9JK-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .hotspots-body-template--21801842966857__ss_hotspots_6_jdN9JK {
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+    }
+
+    .hotspots-content-template--21801842966857__ss_hotspots_6_jdN9JK {
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK {
+      max-width: 70%;
+    }
+
+    .portrait-video-template--21801842966857__ss_hotspots_6_jdN9JK {
+      max-width: 40%;
+    }
+
+    .landspace-video-template--21801842966857__ss_hotspots_6_jdN9JK {
+      max-width: 80%;
+    }
+
+    .hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK {
+      width: 52px;
+      height: 52px;
+    }
+
+    .hotspots-item-template--21801842966857__ss_hotspots_6_jdN9JK {
+      gap: 10px;
+    }
+
+    .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK {
+      width: 50px;
+      height: 50px;
+    }
+
+    .hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+      font-size: 16px;
+    }
+
+    .hotspots-modal-inner-grid-template--21801842966857__ss_hotspots_6_jdN9JK {
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+
+    .hotspots-modal-content-template--21801842966857__ss_hotspots_6_jdN9JK {
+      align-items: start;
+      justify-content: center;
+    }
+
+    .hotspots-modal-heading-template--21801842966857__ss_hotspots_6_jdN9JK {
+      text-align: left;
+      font-size: 32px;
+    }
+
+    .hotspots-modal-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+      text-align: left;
+      margin-top: 12px;
+      font-size: 16px;
+    }
+  }</style>
+<style>
+    .section-template--21801842966857__ss_hotspots_6_jdN9JK-settings {
+      max-width: 130rem;
+    }
+  </style>
+<style>
+    .hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK {
+     aspect-ratio: 12/12; 
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK {
+       aspect-ratio: 12/12; 
+      }
+    }
+  </style>
+<style>
+      @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+      
+      .hotspots-heading-heading_bPdcBx {
+          margin-top: 0px;
+          text-align: center;
+      }
+
+      .hotspots-heading-heading_bPdcBx * {
+          margin: 0;
+          font-size: 28px;
+          color: #ffffff;
+          line-height: 130%;
+          text-transform: unset;
+      }
+
+      @media(min-width: 1024px) {
+          
+          .hotspots-heading-heading_bPdcBx {
+              margin-top: 0px;
+              text-align: center;
+          }
+
+          .hotspots-heading-heading_bPdcBx * {
+              font-size: 40px;
+          }
+      }
+    </style>
+<style>
+      @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+      
+      .hotspots-text-text_cJxeM3 {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .hotspots-text-text_cJxeM3 * {
+        margin: 0;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 150%;
+        text-transform: unset;
+      }
+
+      @media(min-width: 1024px) {
+          
+        .hotspots-text-text_cJxeM3 {
+          text-align: center;
+          margin-top: 30px;
+        }
+
+        .hotspots-text-text_cJxeM3 * {
+          font-size: 18px;
+        }
+      }
+    </style>
+<style>
+      @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+      .hotspots-video-toggle-video_kDMHPJ {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        max-width: fit-content;
+        margin: 0px;
+        margin-top: 16px;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 130%;
+        text-transform: unset;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      .hotspots-video-toggle-video_kDMHPJ svg {
+        display: block;
+        width: 48px;
+        height: 48px;
+      }
+
+      @media(min-width: 1024px) {
+        .hotspots-video-toggle-video_kDMHPJ {
+          margin-top: 20px;
+          font-size: 16px;
+        }
+
+        .hotspots-video-toggle-video_kDMHPJ svg {
+          width: 48px;
+          height: 48px;
+        }
+      }
+    </style>
+<style>
+      .hotspots-item-hotspot_Ce6XhT {
+        width: 100%;
+        max-width: 130px;
+        left: 10%;
+        top: 40%;
+        transform: translate(-10%, -40%);
+      }
+
+      .hotspots-item-hotspot_Ce6XhT .hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+        text-align: center
+      }
+      
+      @media(min-width: 1024px) {
+        .hotspots-item-hotspot_Ce6XhT {
+          max-width: 130px;
+          left: 10%;
+          top: 40%;
+          transform: translate(-10%, -40%);
+        }
+      }
+    </style>
+<style>
+        .hotspots-item-hotspot_Ce6XhT {
+          flex-direction: column-reverse;
+        }
+      </style>
+<style>
+        .hotspots-item-hotspot_Ce6XhT .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+<style>
+      .hotspots-item-hotspot_Qwjiy6 {
+        width: 100%;
+        max-width: 110px;
+        left: 92%;
+        top: 36%;
+        transform: translate(-92%, -36%);
+      }
+
+      .hotspots-item-hotspot_Qwjiy6 .hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+        text-align: center
+      }
+      
+      @media(min-width: 1024px) {
+        .hotspots-item-hotspot_Qwjiy6 {
+          max-width: 130px;
+          left: 86%;
+          top: 32%;
+          transform: translate(-86%, -32%);
+        }
+      }
+    </style>
+<style>
+        .hotspots-item-hotspot_Qwjiy6 {
+          flex-direction: column-reverse;
+        }
+      </style>
+<style>
+        .hotspots-item-hotspot_Qwjiy6 .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+<style>
+      .hotspots-item-hotspot_XdeaVk {
+        width: 100%;
+        max-width: 130px;
+        left: 98%;
+        top: 78%;
+        transform: translate(-98%, -78%);
+      }
+
+      .hotspots-item-hotspot_XdeaVk .hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK {
+        text-align: center
+      }
+      
+      @media(min-width: 1024px) {
+        .hotspots-item-hotspot_XdeaVk {
+          max-width: 130px;
+          left: 80%;
+          top: 75%;
+          transform: translate(-80%, -75%);
+        }
+      }
+    </style>
+<style>
+        .hotspots-item-hotspot_XdeaVk {
+          flex-direction: column;
+        }
+      </style>
+<style>
+        .hotspots-item-hotspot_XdeaVk .hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      </style>
+<div class="section-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-template--21801842966857__ss_hotspots_6_jdN9JK" style="background-color:#9e1515; background-image: ;">
+<div class="section-template--21801842966857__ss_hotspots_6_jdN9JK-settings">
+<div class="hotspots-body-template--21801842966857__ss_hotspots_6_jdN9JK">
+<div class="hotspots-content-template--21801842966857__ss_hotspots_6_jdN9JK">
+<div class="hotspots-heading-heading_bPdcBx">
+<h2>Grind Fresh Bundles</h2>
+</div>
+<div class="hotspots-text-text_cJxeM3">
+<p>Exclusive speciality pour over coffee equipment bundles. Choose from glass, ceramic, metal or plastic.</p>
+</div>
+<p class="hotspots-video-toggle-video_kDMHPJ hotspots-toggle-template--21801842966857__ss_hotspots_6_jdN9JK" id="video_kDMHPJ">
+<svg fill="none" height="49" viewbox="0 0 48 49" width="48" xmlns="http://www.w3.org/2000/svg">
+<circle cx="24" cy="24.4617" r="23.5" stroke="#ffffff"></circle>
+<path d="M36.1384 22.9031L19.7639 12.7334C19.4879 12.5618 19.1717 12.4681 18.848 12.462C18.5244 12.4559 18.205 12.5376 17.9228 12.6988C17.6434 12.8574 17.4106 13.0887 17.2484 13.369C17.0862 13.6493 17.0005 13.9683 17 14.2934V34.6305C17.0021 35.1181 17.1948 35.5849 17.5358 35.9283C17.8768 36.2716 18.3381 36.4635 18.8184 36.4617C19.1536 36.4615 19.4823 36.3677 19.7685 36.1905L36.1384 26.0208C36.4015 25.8579 36.619 25.6291 36.7699 25.3563C36.9207 25.0836 37 24.776 37 24.4631C37 24.1502 36.9207 23.8426 36.7699 23.5699C36.619 23.2971 36.4015 23.0683 36.1384 22.9055V22.9031ZM18.8184 34.6086V14.3084L35.1644 24.462L18.8184 34.6086Z" fill="#ffffff"></path>
+</svg>
+                
+                
+                  See in action
+                
+              </p>
+</div>
+<div class="hotspots-items-template--21801842966857__ss_hotspots_6_jdN9JK">
+<div class="hotspots-image-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-tim-douglas-6205717.jpg?v=1721737843"/>
+<div class="hotspots-item-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-item-hotspot_Ce6XhT hotspots-toggle-template--21801842966857__ss_hotspots_6_jdN9JK" id="hotspot_Ce6XhT">
+<div class="hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/water-drop_1.svg?v=1721835786"/>
+</div>
+<p class="hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK">Coffee Kettles</p>
+</div>
+<div class="hotspots-item-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-item-hotspot_Qwjiy6 hotspots-toggle-template--21801842966857__ss_hotspots_6_jdN9JK" id="hotspot_Qwjiy6">
+<div class="hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/coffee-filter.svg?v=1721835938"/>
+</div>
+<p class="hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK">V60 Drippers</p>
+</div>
+<div class="hotspots-item-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-item-hotspot_XdeaVk hotspots-toggle-template--21801842966857__ss_hotspots_6_jdN9JK" id="hotspot_XdeaVk">
+<div class="hotspots-item-icon-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/hot-food.svg?v=1721835868"/>
+</div>
+<p class="hotspots-item-text-template--21801842966857__ss_hotspots_6_jdN9JK">Coffee Servers</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK" data-id="video_kDMHPJ">
+<div class="hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-modal-inner-videos-template--21801842966857__ss_hotspots_6_jdN9JK">
+<button class="hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<div class="hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK active">
+<svg aria-hidden="true" viewbox="0 0 24 24">
+<path d="m6 21 15-9L6 3v18Z"></path>
+</svg>
+</div>
+<div class="hotspots-modal-inner-video-template--21801842966857__ss_hotspots_6_jdN9JK landscape-video-template--21801842966857__ss_hotspots_6_jdN9JK">
+<video class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/ff1c3429deca4952bb22d569f1fd46d9/ff1c3429deca4952bb22d569f1fd46d9.HD-720p-4.5Mbps-32261904.mp4?v=0" loop="" playsinline="" preload="none"></video>
+</div>
+</div>
+</div>
+<div class="hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK" data-id="hotspot_Ce6XhT">
+<div class="hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-modal-inner-grid-template--21801842966857__ss_hotspots_6_jdN9JK">
+<button class="hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<div class="hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-tim-douglas-6205739.jpg?v=1721741045"/>
+</div>
+<div class="hotspots-modal-content-template--21801842966857__ss_hotspots_6_jdN9JK">
+<p class="hotspots-modal-heading-template--21801842966857__ss_hotspots_6_jdN9JK">Coffee Kettles</p>
+<p class="hotspots-modal-text-template--21801842966857__ss_hotspots_6_jdN9JK">Control temperature and flow rate precisely with a coffee drip kettle. Make the most of your V60 dripper by upgrading your manual pour over brews. The most ergonomic designs mean you’re always in command of your coffee kettle.</p>
+</div>
+</div>
+</div>
+<div class="hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK" data-id="hotspot_Qwjiy6">
+<div class="hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-modal-inner-grid-template--21801842966857__ss_hotspots_6_jdN9JK">
+<button class="hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<div class="hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-tim-douglas-6205729.jpg?v=1721740752"/>
+</div>
+<div class="hotspots-modal-content-template--21801842966857__ss_hotspots_6_jdN9JK">
+<p class="hotspots-modal-heading-template--21801842966857__ss_hotspots_6_jdN9JK">V60 Drippers</p>
+<p class="hotspots-modal-text-template--21801842966857__ss_hotspots_6_jdN9JK">The iconic V60 is available as a glass, metal, plastic, copper, or ceramic coffee dripper in a range of sizes and colours. Whichever one you choose, we think pour over coffee makers are a great way to enjoy filter coffee.</p>
+</div>
+</div>
+</div>
+<div class="hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK" data-id="hotspot_XdeaVk">
+<div class="hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK hotspots-modal-inner-grid-template--21801842966857__ss_hotspots_6_jdN9JK">
+<button class="hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<div class="hotspots-modal-image-template--21801842966857__ss_hotspots_6_jdN9JK">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-mizunokozuki-13737066.jpg?v=1721741694"/>
+</div>
+<div class="hotspots-modal-content-template--21801842966857__ss_hotspots_6_jdN9JK">
+<p class="hotspots-modal-heading-template--21801842966857__ss_hotspots_6_jdN9JK">Coffee Servers</p>
+<p class="hotspots-modal-text-template--21801842966857__ss_hotspots_6_jdN9JK">A coffee server is a must-have addition to your brewing kit. Make and serve your coffee in style with the selection of coffee servers.</p>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  function initHotspots6() {
+
+    let lazyLoadInstance = new LazyLoad();
+
+    window.addEventListener(
+      "LazyLoad::Initialized",
+      function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+      },
+      false
+    );
+    
+    let btns = document.querySelectorAll('.hotspots-toggle-template--21801842966857__ss_hotspots_6_jdN9JK');
+    let modals = document.querySelectorAll('.hotspots-modal-template--21801842966857__ss_hotspots_6_jdN9JK');
+
+    if(btns) {
+      btns.forEach(el => {
+        el.addEventListener('click', () => {
+          if(modals) {
+            modals.forEach(element => {
+              let dataId = element.getAttribute('data-id');
+              let video = element.querySelector('video');
+              let frame = element.querySelector('iframe');
+              if(el.id == dataId) {
+                element.classList.add('active');
+                document.body.style.overflow = 'hidden';
+
+              }
+            })
+          }
+        })
+      })
+    }
+
+    if(modals) {
+      modals.forEach(el => {
+        let video = el.querySelector('video');
+        let frame = el.querySelector('iframe');
+        let close = el.querySelector('.hotspots-close-template--21801842966857__ss_hotspots_6_jdN9JK');
+        let close_path = close.querySelector('path');
+        let videoEleemnt = el.querySelector('.hotspots-modal-inner-template--21801842966857__ss_hotspots_6_jdN9JK');
+        let playBtn = el.querySelector('.hotspots-play-template--21801842966857__ss_hotspots_6_jdN9JK');
+
+        if(close) {
+           close.addEventListener('click', (e) => {
+            console.log(e.target);
+            document.body.style.overflow = '';
+            el.classList.remove('active');
+            playBtn.classList.add('active');
+
+            if(video) {
+              video.pause();
+            }
+
+            if(frame) {
+              let dataSrc2 = frame.getAttribute('data-src2');
+              frame.src = dataSrc2;
+            }
+          }); 
+        }
+
+        if(videoEleemnt) {
+        videoEleemnt.addEventListener('click', (e) => {
+          if(e.target == videoEleemnt) {
+            if(playBtn.classList.contains('active')) {
+              playBtn.classList.remove('active');
+  
+              if (video) {
+                video.play();
+              }
+  
+              if (frame) {
+                frame.src = frame.getAttribute('data-src1');
+              }
+  
+            } else {
+              playBtn.classList.add('active');
+              if (video) {
+                video.pause();
+              }
+  
+              if (frame) {
+                frame.src = frame.getAttribute('data-src2');
+              }
+  
+            } 
+          }
+        })
+      }
+      if(playBtn) {
+       playBtn.addEventListener('click', (e) => {
+            if(playBtn.classList.contains('active')) {
+              playBtn.classList.remove('active');
+  
+              if (video) {
+                video.play();
+              }
+  
+              if (frame) {
+                frame.src = frame.getAttribute('data-src1');
+              }
+  
+            } else {
+              playBtn.classList.add('active');
+              if (video) {
+                video.pause();
+              }
+  
+              if (frame) {
+                frame.src = frame.getAttribute('data-src2');
+              }
+  
+            } 
+        }); 
+      }
+    
+        document.addEventListener('click', (e) => {
+            if (e.target == el) {
+              document.body.style.overflow = '';
+              el.classList.remove('active');
+              playBtn.classList.add('active');
+
+              if(video) {
+                video.pause();
+              }
+  
+              if(frame) {
+                let dataSrc2 = frame.getAttribute('data-src2');
+                frame.src = dataSrc2;
+              }
+            }
+        });
+      })
+    }
+    
+  }
+
+  document.addEventListener('DOMContentLoaded', initHotspots6);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initHotspots6);
+     document.addEventListener('shopify:section:load', initHotspots6);
+  }
+</script>
+{% schema %}
+{
+  "name": "Hotspots #6",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Hotspots #6"
+    }
+  ]
+}
+{% endschema %}

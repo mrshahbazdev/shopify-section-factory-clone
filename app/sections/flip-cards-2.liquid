@@ -1,0 +1,943 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: "Abril Fatface";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/abril_fatface/abrilfatface_n4.002841dd08a4d39b2c2d7fe9d598d4782afb7225.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/abril_fatface/abrilfatface_n4.0d8f922831420cd750572c7a70f4c623018424d8.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.f8892cc1cfa3d797af6172c8eeddce62cf610e33.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.a707ca3ea5e6b6468ff0c29cf7e105dca1c09be4.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Anonymous Pro";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.f8892cc1cfa3d797af6172c8eeddce62cf610e33.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/anonymous_pro/anonymouspro_n4.a707ca3ea5e6b6468ff0c29cf7e105dca1c09be4.woff") format("woff");
+}
+
+
+  .section-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  } 
+  
+  .section-template--24386508554569__ss_flip_cards_2_xBeMtj-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+  }
+
+  .flip-slider-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .flip-body-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    height: 100%;
+  }
+
+  .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj img,
+  .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.25s ease;
+  }
+
+  .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj svg {
+    background-color: #AFAFAF;
+  }
+
+  .flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    position: relative;
+    transform-style: preserve-3d;
+    transition-duration: .8s;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    height: 100%;
+    will-change: transform;
+  }
+
+  .flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj.fliped {
+    transform: rotateY(180deg) !important;
+  }
+
+  .flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    perspective: 1000px;
+    transition-duration: .8s;
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    height: 100%;
+  }
+
+  .flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    cursor: pointer !important;
+    backface-visibility: hidden !important;
+    position: relative !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+     -moz-backface-visibility: hidden !important; 
+  }
+  
+  .flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    display: flex !important;
+    flex-direction: column !important;
+    cursor: pointer !important;
+    backface-visibility: hidden !important;
+    -moz-backface-visibility: hidden !important; 
+    position: absolute !important;
+    padding: 0 30px !important;
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    -webkit-transform: rotateY(180deg) !important;
+    transform: rotateY(180deg) !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    z-index: 1 !important;
+    overflow-y: scroll !important;
+    scrollbar-width: none;
+  }
+
+  .flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj,
+  .flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    border: 0px solid #ff0000;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    background-color: #fbf8f4;
+  }  
+
+  .flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    background-color: #fbf8f4;
+  }
+  
+  .flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    padding: 30px !important;
+  }
+
+  .flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj {       
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 45%;
+    transform: translate(-50%);    
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    margin: 0px;  
+    text-align: center;
+    font-size: 20px;
+    line-height: 130%;
+    color: #fbf8f4;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700;
+  }
+
+  .flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj .flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 30px !important;
+    width: 100% !important;
+  }
+
+  .flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    color: #121212;
+  }
+
+  .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj {   
+    padding: 9.6px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fbf8f4;
+    transition: all 0.25s ease 0s;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj svg {
+    display: block;
+    background: transparent !important;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+  }
+
+  .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj svg path {
+    fill: #fbf8f4;
+  }
+
+  .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj:hover {
+    background-color: ;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj:hover svg path {
+    fill: ;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj * {
+    margin: 0px; 
+    font-size: 14px;
+    line-height: 170%;
+    color: #121212;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 400;
+  }
+
+  .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj a {
+    color: #121212;
+    text-decoration: underline;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj a:hover {
+    color: #c20019;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-card-heading-wrap-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .flip-card-heading-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    margin: 0px; 
+    text-align: left;
+    font-size: 52px;
+    line-height: 150%;
+    color: #fbf8f4;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  
+  .flip-modal-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    display: flex;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+    align-items: center;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(15px);
+    background-color: #00000029;   
+    transition: all 0.25s ease 0s;
+  }
+  
+  .flip-modal-template--24386508554569__ss_flip_cards_2_xBeMtj.active {
+    opacity: 1;
+    z-index: 9999;
+    pointer-events: all;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-modal-inner-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+    padding: 20px;
+  }
+
+  .flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    max-width: fit-content;
+    position: relative;
+    display: none;
+    background-color: #fbf8f4;     
+    border: 0px solid #ff0000;
+    border-radius: 24px;
+    padding: 30px;   
+    padding-bottom: 56px important;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj.active {
+    display: block;
+  }
+
+  .flip-modal-inner-template--24386508554569__ss_flip_cards_2_xBeMtj.active {
+    transition: all 0.25s ease 0s;
+    opacity: 1;
+  }
+
+  .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj {
+    padding: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: none;
+    border: 0px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 2;
+    padding: 9.6px;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #121212;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+  }
+
+
+  .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj:hover {
+    border: 1px solid #121212;
+    background-color: #121212;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj svg {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 16px;
+    height: 16px;
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj svg path {
+    fill: #121212;   
+    transition: all 0.25s ease 0s;
+  }
+
+  .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj:hover svg path {
+    fill: #fbf8f4; 
+    transition: all 0.25s ease 0s;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--24386508554569__ss_flip_cards_2_xBeMtj-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .flip-body-template--24386508554569__ss_flip_cards_2_xBeMtj { 
+      grid-template-columns: repeat(3, 1fr);     
+      gap: 60px;
+    }
+
+    .flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj {     
+      text-align: center;
+      font-size: 24px;     
+    }
+
+    .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj {  
+      padding: 12.0px;
+    }
+    
+    .flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj svg {      
+      width: 20px;
+      height: 20px;    
+    }
+
+    .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj * {
+      font-size: 14px;    
+    }
+
+    .flip-card-heading-wrap-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      justify-content: start;
+    }
+
+    .flip-card-heading-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      text-align: left;
+      font-size: 120px;   
+    }
+
+    .flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj {   
+      padding-bottom: 60px !important;
+    }
+    
+    .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      padding: 9.6px;
+    }
+
+    .flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj svg {
+      width: 16px;
+      height: 16px;
+    }
+  }</style>
+<style>
+    .section-template--24386508554569__ss_flip_cards_2_xBeMtj-settings {
+      max-width: 1100px;
+    }
+  </style>
+<style>
+    .flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      font-family: "Anonymous Pro", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj * {
+      font-family: "Anonymous Pro", monospace;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .flip-card-heading-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      font-family: "Abril Fatface", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj,
+    .flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      aspect-ratio: 9.6/13;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj,
+      .flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj {
+        aspect-ratio: 9.6/13;
+      }
+    }
+    
+  </style>
+<style>
+    .flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj,
+    .flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj {
+      box-shadow: #0000001A -4px 9px 25px -6px;
+    }
+  </style>
+<div class="section-template--24386508554569__ss_flip_cards_2_xBeMtj flip-template--24386508554569__ss_flip_cards_2_xBeMtj" style="background-color:#c3001a;">
+<div class="section-template--24386508554569__ss_flip_cards_2_xBeMtj-settings">
+<div class="flip-body-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-heading-wrap-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<p class="flip-card-heading-template--24386508554569__ss_flip_cards_2_xBeMtj">A</p>
+</div>
+<div class="flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj" id="card_mQfQFg">
+<div class="flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<img alt="" height="2400" sizes="(min-width: 1100px) 500px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/miguel-bruna-FPhfi9O-qqI-unsplash.jpg?v=1756765712&amp;width=750" srcset="//section.store/cdn/shop/files/miguel-bruna-FPhfi9O-qqI-unsplash.jpg?v=1756765712&amp;width=750 750w" width="1920"/>
+</div>
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj">Aloe Vera</h3>
+<div class="flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Aloe Vera</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Aloe Vera Leaf Juice Powder is an extract of aloe vera which helps support skin hydration.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/the-scout-skincare-kit">The Scout Skincare Kit</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/cydney-plaid">Cydney Plaid</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj" id="card_UyKibK">
+<div class="flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<img alt="" height="2880" sizes="(min-width: 1100px) 500px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/olivie-strauss-Wt63uEeb6x8-unsplash.jpg?v=1756768564&amp;width=750" srcset="//section.store/cdn/shop/files/olivie-strauss-Wt63uEeb6x8-unsplash.jpg?v=1756768564&amp;width=750 750w" width="1920"/>
+</div>
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj">Ascorbic Acid</h3>
+<div class="flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Ascorbic Acid</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Vitamin C targets uneven tone, texture, and signs of aging, while also offering antioxidant support.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/the-scout-skincare-kit">The Scout Skincare Kit</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/harriet-chambray">Harriet Chambray</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj" id="card_WeGgT7">
+<div class="flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<img alt="" height="2688" sizes="(min-width: 1100px) 500px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/alexander-mils-24DpOj_WM_I-unsplash.jpg?v=1756790663&amp;width=750" srcset="//section.store/cdn/shop/files/alexander-mils-24DpOj_WM_I-unsplash.jpg?v=1756790663&amp;width=750 750w" width="1920"/>
+</div>
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj">Avocado Oil</h3>
+<div class="flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Avocado Oil</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Aids in maintaining skin hydration and minimizing free radical damage.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/the-scout-skincare-kit">The Scout Skincare Kit</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/harriet-chambray">Harriet Chambray</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-card-heading-wrap-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<p class="flip-card-heading-template--24386508554569__ss_flip_cards_2_xBeMtj">C</p>
+</div>
+<div class="flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj" id="card_ycbTc4">
+<div class="flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<img alt="" height="1500" sizes="(min-width: 1100px) 500px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/1562.jpg?v=1756767613&amp;width=750" srcset="//section.store/cdn/shop/files/1562.jpg?v=1756767613&amp;width=750 750w" width="1095"/>
+</div>
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj">Caffeine</h3>
+<div class="flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Caffeine</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Caffeine has a wide range of uses in formulations and can help improve the appearance of puffiness/dark circles.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/lodge-womens-shirt">Lodge</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/lunar-cirque">Moon Cycle</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-card-heading-wrap-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<p class="flip-card-heading-template--24386508554569__ss_flip_cards_2_xBeMtj">S</p>
+</div>
+<div class="flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj" id="card_JctGbx">
+<div class="flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<img alt="" height="1500" sizes="(min-width: 1100px) 500px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/2151914056.jpg?v=1756767171&amp;width=750" srcset="//section.store/cdn/shop/files/2151914056.jpg?v=1756767171&amp;width=750 750w" width="1026"/>
+</div>
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj">Salicylic Acid</h3>
+<div class="flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Salicylic Acid</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Salicylic Acid is a beta-hydroxy Acid (BHA) used to target signs of congestion and improve skin texture by exfoliating the skins surface.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/mud-scrub-soap">Mud Scrub Soap</a>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj" id="card_6qhTwi">
+<div class="flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-card-front-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-image-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<img alt="" height="2880" sizes="(min-width: 1100px) 500px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" src="//section.store/cdn/shop/files/polina-kuzovkova-iDRA2p6sbTQ-unsplash.jpg?v=1756768305&amp;width=750" srcset="//section.store/cdn/shop/files/polina-kuzovkova-iDRA2p6sbTQ-unsplash.jpg?v=1756768305&amp;width=750 750w" width="1920"/>
+</div>
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj">Squalane</h3>
+<div class="flip-card-content-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-icon-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M8.31201 17.062V0.812012H9.56201V17.062H8.31201Z" fill="black" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M0.812013 8.31201H17.062V9.56201H0.812013V8.31201Z" fill="black" fill-rule="evenodd"></path>
+</svg>
+</div>
+</div>
+</div>
+<div class="flip-card-back-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Squalane</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Squalane is an oil-like molecule which helps reduce water loss.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/harriet-chambray">Harriet Chambray</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flip-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-modal-inner-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<div class="flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj" data-id="card_mQfQFg">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Aloe Vera</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Aloe Vera Leaf Juice Powder is an extract of aloe vera which helps support skin hydration.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/the-scout-skincare-kit">The Scout Skincare Kit</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/cydney-plaid">Cydney Plaid</a>
+</div>
+<button class="flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj" data-id="card_UyKibK">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Ascorbic Acid</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Vitamin C targets uneven tone, texture, and signs of aging, while also offering antioxidant support.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/the-scout-skincare-kit">The Scout Skincare Kit</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/harriet-chambray">Harriet Chambray</a>
+</div>
+<button class="flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj" data-id="card_WeGgT7">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Avocado Oil</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Aids in maintaining skin hydration and minimizing free radical damage.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/the-scout-skincare-kit">The Scout Skincare Kit</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/harriet-chambray">Harriet Chambray</a>
+</div>
+<button class="flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj" data-id="card_ycbTc4">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Caffeine</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Caffeine has a wide range of uses in formulations and can help improve the appearance of puffiness/dark circles.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/lodge-womens-shirt">Lodge</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/lunar-cirque">Moon Cycle</a>
+</div>
+<button class="flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj" data-id="card_JctGbx">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Salicylic Acid</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Salicylic Acid is a beta-hydroxy Acid (BHA) used to target signs of congestion and improve skin texture by exfoliating the skins surface.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/mud-scrub-soap">Mud Scrub Soap</a>
+</div>
+<button class="flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+<div class="flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj" data-id="card_6qhTwi">
+<h3 class="flip-title-template--24386508554569__ss_flip_cards_2_xBeMtj flip-title-back-template--24386508554569__ss_flip_cards_2_xBeMtj">Squalane</h3>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj"><p>Squalane is an oil-like molecule which helps reduce water loss.</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-bottom: 8px !important;"><p>FOUND IN:</p></div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/ayers-chambray">Ayres Chambray</a>
+</div>
+<div class="flip-text-template--24386508554569__ss_flip_cards_2_xBeMtj" style="margin-top: 0 !important;">
+<a href="/products/harriet-chambray">Harriet Chambray</a>
+</div>
+<button class="flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+</div>
+</div>
+</div>
+<script>
+  const eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj = {};
+
+  function handleCardFliptemplate24386508554569__ss_flip_cards_2_xBeMtj(e) {
+    const card = e.currentTarget.querySelector('.flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj');
+    card.classList.toggle('fliped');
+  }
+
+  function handleCardClicktemplate24386508554569__ss_flip_cards_2_xBeMtj(e) {
+    const card = e.currentTarget.querySelector('.flip-card-wrapper-template--24386508554569__ss_flip_cards_2_xBeMtj');
+    if (card) {
+        card.classList.toggle('fliped');
+    }
+  }
+
+  function initFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj() {
+    const isMobile = window.matchMedia("(max-width: 1024px)").matches;
+    const wrapperCards = document.querySelectorAll('.flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj');
+
+    wrapperCards.forEach(card => {
+        if (!isMobile) {
+          card.addEventListener('mouseenter', handleCardFliptemplate24386508554569__ss_flip_cards_2_xBeMtj);
+          card.addEventListener('mouseleave', handleCardFliptemplate24386508554569__ss_flip_cards_2_xBeMtj);
+        }
+    });
+
+    if (!eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj.cards) {
+        eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj.cards = [];
+    }
+    eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj.cards = Array.from(wrapperCards).map(card => {
+        return { 
+            element: card, 
+            handler: isMobile ? handleCardClicktemplate24386508554569__ss_flip_cards_2_xBeMtj : handleCardFliptemplate24386508554569__ss_flip_cards_2_xBeMtj,
+            eventType: isMobile ? 'click' : 'mouseenter'
+        };
+    });
+
+    const tabs = document.querySelectorAll('.flip-card-template--24386508554569__ss_flip_cards_2_xBeMtj');
+    const modal = document.querySelector('.flip-modal-template--24386508554569__ss_flip_cards_2_xBeMtj');
+    const modalInner = document.querySelector('.flip-modal-inner-template--24386508554569__ss_flip_cards_2_xBeMtj');
+    const modalText = document.querySelectorAll('.flip-modal-content-template--24386508554569__ss_flip_cards_2_xBeMtj');
+    const closeModal = document.querySelectorAll('.flip-close-modal-template--24386508554569__ss_flip_cards_2_xBeMtj');
+
+    if(tabs) {
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {              
+          if(modalText) {
+            document.body.style.overflow = 'hidden';     
+            if(modal) {
+              modal.classList.add('active');
+              setTimeout(() => {
+                modalInner.classList.add('active');
+              }, 200)
+            } else {              
+              modalInner.classList.remove('active');             
+              setTimeout(() => {
+                modal.classList.remove('active');      
+              }, 200)        
+            }
+            modalText.forEach(e => {
+              if(tab.id === e.getAttribute('data-id')) {
+                e.classList.add('active');
+              } else {
+                setTimeout(() => {
+                  e.classList.remove('active')  
+                }, 200)               
+              }
+            })
+          }
+        })
+      })
+    }
+
+    if(closeModal) {
+      closeModal.forEach((i) => {
+        i.addEventListener("click", () => {
+          document.body.style.overflow = '';   
+          if(modal) {     
+            modalInner.classList.remove('active');             
+            setTimeout(() => {
+              modal.classList.remove('active');      
+            }, 200)            
+          }
+          modalText.forEach(e => {          
+            setTimeout(() => {
+              e.classList.remove('active')  
+            }, 200)      
+          })
+        })
+      })
+      
+    }
+
+    document.addEventListener('click', function(e) {
+      if (e.target == modal) {
+        document.body.style.overflow = '';   
+        modalInner.classList.remove('active');             
+        setTimeout(() => {
+          modal.classList.remove('active');      
+        }, 200)
+      }
+    });
+  }
+
+  function destroyFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj() {
+    if (eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj.cards) {
+        eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj.cards.forEach(({ element, handler, eventType }) => {
+            if (element && handler) {
+                element.removeEventListener(eventType, handler);
+                if (eventType === 'mouseenter') {
+                    element.removeEventListener('mouseleave', handler);
+                }
+            }
+        });
+        eventHandlerstemplate24386508554569__ss_flip_cards_2_xBeMtj.cards = [];
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', initFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj);
+  window.addEventListener('resize', () => {
+    destroyFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj();
+    initFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj();
+  });
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:load', initFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj);
+    document.addEventListener('shopify:section:unload', destroyFlipCardstemplate24386508554569__ss_flip_cards_2_xBeMtj);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Flip cards #2",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Flip cards #2"
+    }
+  ]
+}
+{% endschema %}

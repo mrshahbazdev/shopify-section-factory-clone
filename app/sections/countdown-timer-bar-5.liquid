@@ -1,0 +1,564 @@
+<style data-shopify="">.section-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;    
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe-settings {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .countdown-timer-content-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .timer-close-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    z-index: 9999;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+  }
+
+  .timer-close-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .timer-close-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe svg rect {
+    fill: #121212;
+  }
+
+  @media(min-width: 1024px) {
+    .section-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe {
+      margin-top: 0px;
+      margin-bottom: 0px;      
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+
+    .section-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe-settings {
+      padding: 0 5rem;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .countdown-timer-content-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe {  
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .timer-close-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe {    
+      top: 50%;
+      right: -24px;
+      transform: translateY(-50%);    
+    }
+
+  }</style>
+<style>
+        @font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/roboto/roboto_n4.2019d890f07b1852f56ce63ba45b2db45d852cba.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/roboto/roboto_n4.238690e0007583582327135619c5f7971652fa9d.woff") format("woff");
+}
+
+
+        .countdown-text-text_neJ7Nn {
+          text-align: center;
+          max-width: 80%;
+        }
+
+        .countdown-text-text_neJ7Nn * {          
+          margin: 0;            
+          font-size: 14px;
+          color: #1c1c1c;
+          line-height: 180%;
+          text-transform: unset;
+          text-decoration: none;
+          word-break: break-word;
+        }  
+
+        .countdown-text-text_neJ7Nn strong {
+          color: #ffffff;
+          background-color: #1c1c1c;
+          padding: 5px;
+          border-radius: 6px;
+        }
+
+        @media(min-width: 1024px) {
+          .countdown-text-text_neJ7Nn {
+            text-align: left;
+            max-width: 60%;
+          }
+
+          .countdown-text-text_neJ7Nn * {                
+            font-size: 14px;
+          }  
+        }
+      </style>
+<style>
+          .countdown-text-text_neJ7Nn * {
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: "Roboto Mono";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/roboto_mono/robotomono_n5.29a963c13062654edff960e0fc0769528bdca7e5.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/roboto_mono/robotomono_n5.ba11b9a58fc32158ddb2acccd36cc62c012f4109.woff") format("woff");
+}
+
+        @font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/roboto/roboto_n4.2019d890f07b1852f56ce63ba45b2db45d852cba.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/roboto/roboto_n4.238690e0007583582327135619c5f7971652fa9d.woff") format("woff");
+}
+
+        @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+        
+        .countdown-timer-timer_zGxHk3 {
+          display: flex;
+          align-items: stretch;
+          gap: 16px;
+
+        }
+
+        .countdown-timer-timer_zGxHk3 .time-block {
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          justify-content: start;
+          text-align: center; 
+          width: 56px;              
+        }
+
+        .countdown-timer-timer_zGxHk3 .time-block__num {
+          margin: 0;          
+          border-radius: 8px; 
+          border: 0px solid #121212;
+          padding: 12px 4px;
+          background-color: #1c1c1c;
+          font-size: 16px;
+          color: #ffffff;
+          line-height: 100%;
+          text-transform: unset;
+        }
+        
+        .countdown-timer-timer_zGxHk3 .time-block__unit {
+          margin: 0;
+          margin-top: 8px;
+          font-size: 10px;
+          color: #1c1c1c;
+          line-height: 100%;
+          text-transform: unset;
+          word-break: break-word;
+        }
+
+        .countdown-timer-completed-text-timer_zGxHk3 * {
+          margin: 0;
+          font-size: 12px;
+          color: #1c1c1c;
+          line-height: 150%;
+          text-transform: unset;
+          text-align: center;
+        }
+
+        @media(min-width: 1024px) {
+          .countdown-timer-timer_zGxHk3 {
+            gap: 20px;
+          }
+
+          .countdown-timer-timer_zGxHk3 .time-block {
+            width: 56px;      
+          }
+
+          .countdown-timer-timer_zGxHk3 .time-block__num { 
+            font-size: 18px;
+            padding: 12px 4px;
+          }
+
+          .countdown-timer-timer_zGxHk3 .time-block__unit {
+            margin-top: 8px;
+            font-size: 12px;
+          }
+
+          .countdown-timer-completed-text-timer_zGxHk3 * {
+            font-size: 14px;
+          }
+        }
+      </style>
+<style>
+          .countdown-timer-timer_zGxHk3 .time-block__num {
+            font-family: "Roboto Mono", monospace;
+            font-weight: 500;
+            font-style: normal;
+          }
+        </style>
+<style>
+          .countdown-timer-timer_zGxHk3 .time-block__unit {
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+        @font-face {
+  font-family: Roboto;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/roboto/roboto_n5.250d51708d76acbac296b0e21ede8f81de4e37aa.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/roboto/roboto_n5.535e8c56f4cbbdea416167af50ab0ff1360a3949.woff") format("woff");
+}
+
+        @font-face {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/roboto/roboto_n4.2019d890f07b1852f56ce63ba45b2db45d852cba.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/roboto/roboto_n4.238690e0007583582327135619c5f7971652fa9d.woff") format("woff");
+}
+
+
+        .countdown-button-copy_button_8Ybgtp {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          max-width: fit-content;
+          gap: 10px;
+          width: 100%;
+          margin: 0;
+          font-size: 16px;
+          color: #ffffff;
+          line-height: 100%;
+          text-align: center;
+          text-transform: unset;
+          text-decoration: none;
+          padding: 18px 24px;
+          border-radius: 100px;
+          transition: all 0.3s ease 0s;
+          background-color: transparent;
+          border: 0px;
+          cursor: pointer;
+          font-weight: 700;
+          background-color: #1c1c1c;
+          border: 0px solid #121212;
+        }
+
+        .countdown-button-inner-copy_button_8Ybgtp {
+          margin: 0px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          text-decoration: none;
+        }
+
+        .countdown-button-copy_button_8Ybgtp:hover {
+          background-color: #1c1c1c;
+          border: 0px solid #121212;
+          color: #b98141;
+          transition: all 0.25s ease 0s;
+        }
+
+        .countdown-button-copy_button_8Ybgtp svg {
+          width: 16px;
+          height: 16px;
+        }
+
+        .countdown-button-copy_button_8Ybgtp svg path {
+          stroke: #ffffff;
+          transition: all 0.25s ease 0s;
+        }
+
+        .countdown-button-copy_button_8Ybgtp:hover svg path {
+          stroke: #b98141;
+          transition: all 0.25s ease 0s;
+        }
+
+        .countdown-copy-success-copy_button_8Ybgtp {
+          margin: 0;
+          display: none;
+          padding: 6px 8px;
+          border-radius: 100px;
+          border: 0px solid #ffffff;
+          position: absolute;
+          top: 80%;
+          left: 8%;
+          background-color: #ffffff;
+          font-size: 12px;
+          color: #1c1c1c;
+          line-height: 100%;
+          text-align: center;
+          text-transform: unset;
+          text-decoration: none;
+          font-weight: 400;
+        }
+
+        .countdown-copy-success-copy_button_8Ybgtp.active {
+          display: block;
+        }
+
+        @media (min-width: 1024px) {
+          .countdown-button-copy_button_8Ybgtp {
+            padding: 18px 24px;
+            font-size: 16px;
+          }
+
+          .countdown-button-copy_button_8Ybgtp svg {
+            width: 16px;
+            height: 16px;
+          }
+
+          .countdown-copy-success-copy_button_8Ybgtp {
+            font-size: 12px;        
+          }
+        }
+      </style>
+<style>
+          .countdown-button-copy_button_8Ybgtp {
+            font-family: Roboto, sans-serif;
+            font-weight: 500;
+            font-style: normal;
+          }
+        </style>
+<style>
+          .countdown-copy-success-copy_button_8Ybgtp {
+            font-family: Roboto, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<template id="countdown-timer-template-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe">
+<div class="section-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe countdown-timer-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe" style="background-image: linear-gradient(180deg, rgba(160, 104, 38, 1), rgba(240, 205, 154, 1) 100%);">
+<div class="section-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe-settings">
+<div class="countdown-timer-content-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe">
+<div class="countdown-text-text_neJ7Nn"><p>Hurry up, the offer is only valid until <strong>November 30</strong></p></div>
+<div class="countdown-timer-timer_zGxHk3">
+<div class="time-block">
+<span class="time-block__num js-timer-days">00</span>
+<span class="time-block__unit">Days</span>
+</div>
+<div class="time-block">
+<span class="time-block__num js-timer-hours">00</span>
+<span class="time-block__unit">Hours</span>
+</div>
+<div class="time-block">
+<span class="time-block__num js-timer-minutes">00</span>
+<span class="time-block__unit">Minutes</span>
+</div>
+<div class="time-block">
+<span class="time-block__num js-timer-seconds">00</span>
+<span class="time-block__unit">Seconds</span>
+</div>
+</div>
+<style>
+                .countdown-timer-completed-text-timer_zGxHk3 {
+                  display: none;
+                }
+              </style>
+<div class="countdown-timer-completed-text-timer_zGxHk3">
+<p>This offer has expired.</p>
+</div>
+<div class="countdown-button-copy_button_8Ybgtp">
+<p class="countdown-button-inner-copy_button_8Ybgtp">
+<svg fill="none" height="18" viewbox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.64973 14.3333V14.9661C3.64973 16.0894 4.56034 17 5.68363 17H14.9661C16.0894 17 17 16.0894 17 14.9661V5.70054C17 4.57725 16.0894 3.66664 14.9661 3.66664H14.3503M1 12.2994V3.0339C1 1.91058 1.91061 1 3.0339 1H12.3164C13.4397 1 14.3503 1.91058 14.3503 3.0339V12.2994C14.3503 13.4227 13.4397 14.3333 12.3164 14.3333H3.0339C1.91061 14.3333 1 13.4227 1 12.2994Z" stroke="#121212" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.8"></path>
+</svg>
+                      Copy Code
+                                  
+                  </p>
+<p class="coutdown-copy-code-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe" style="display: none;">GAFFDS</p>
+<p class="countdown-copy-success-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe countdown-copy-success-copy_button_8Ybgtp">Copied!</p>
+</div>
+</div>
+</div>
+</div>
+</template>
+<div id="countdown-timer-local-target-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe"></div>
+<script>
+      function initCountdownTimerBar5() {
+        setTimeout(() => {
+        
+          
+        
+          
+                
+                  let cssTarget = '.header, .pageheader, .section-header, #announcement, .toolbar, .header__wrapper';
+                  let productForm = cssTarget
+                    ? document.querySelector(cssTarget)
+                    : document.querySelector('#countdown-timer-local-target-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe');
+              
+                  if (!productForm) return;
+              
+                  const templateContent = document.querySelector(
+                    '#countdown-timer-template-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe'
+                  ).content;
+              
+                  productForm.insertAdjacentElement(
+                    'beforebegin',
+                    templateContent.firstElementChild
+                  );
+                
+
+                let section = document.querySelector('.countdown-timer-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe');
+
+                let close = document.querySelector('.timer-close-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe');
+
+                if(close) {
+                  close.addEventListener('click', () => {
+                    section.style.display = "none";
+                  })
+                }
+
+                function startTimer() {
+                  const second = 1000,
+                    minute = second * 60,
+                    hour = minute * 60,
+                    day = hour * 24,
+                    wrapper = document.querySelector(
+                      '.countdown-timer-timer_zGxHk3'
+                    ),
+                    countDown = new Date('2027-01-01T00:00:00Z').getTime();
+
+                  console.log('start timer, end date:' + countDown)
+                  const interval = setInterval(function () {
+                    let now = new Date().getTime(),
+                      distance = countDown - now,
+                      days = Math.floor(distance / day),
+                      hours = Math.floor((distance % day) / hour),
+                      minutes = Math.floor((distance % hour) / minute),
+                      seconds = Math.floor((distance % minute) / second);
+
+                    (wrapper.querySelector('.js-timer-days').innerText = (
+                      days
+                    )),
+                      (wrapper.querySelector('.js-timer-hours').innerText = (
+                        hours
+                      )),
+                      (wrapper.querySelector('.js-timer-minutes').innerText = (
+                        minutes
+                      )),
+                      (wrapper.querySelector('.js-timer-seconds').innerText = (
+                        seconds
+                      ));
+
+                    if (distance < 0) {
+                      wrapper.querySelector('.js-timer-days').innerText = '00';
+                      wrapper.querySelector('.js-timer-hours').innerText = '00';
+                      wrapper.querySelector('.js-timer-minutes').innerText = '00';
+                      wrapper.querySelector('.js-timer-seconds').innerText = '00';
+                      
+                      document.querySelector(
+                        '.countdown-timer-completed-text-timer_zGxHk3'
+                      ).style.display = 'block';
+
+                      clearInterval(interval);
+                    }
+
+                  }, second);
+                  document.addEventListener('shopify:section:unload', function (event) {
+                    if (event.detail.sectionId === 'template--24246228549961__ss_countdown_timer_bar_5_BHGxUe') clearInterval(interval);
+                  });
+                }
+
+                startTimer()
+                if (window.Shopify && Shopify.designMode) {
+                  document.addEventListener('shopify:section:load', function (event) {
+                    if (event.detail.sectionId === 'template--24246228549961__ss_countdown_timer_bar_5_BHGxUe') {
+                      startTimer();
+                    }
+                  });
+                }
+
+            
+        
+          
+              const copyButton = document.querySelector('.countdown-button-copy_button_8Ybgtp');
+              const copyCodeElement = document.querySelector('.coutdown-copy-code-template--24246228549961__ss_countdown_timer_bar_5_BHGxUe');
+              const copyCodeText = document.querySelector('.countdown-copy-success-copy_button_8Ybgtp');
+                  
+              if (copyButton && copyCodeElement) {
+                copyButton.addEventListener('click', function() {
+                  const textarea = document.createElement('textarea');
+                  textarea.value = copyCodeElement.textContent;
+                  
+                  document.body.appendChild(textarea);
+                  
+                  textarea.select();
+                  document.execCommand('copy');
+                  
+                  document.body.removeChild(textarea);
+
+                  copyCodeText.classList.add('active');
+
+                  setTimeout(() => {
+                    copyCodeText.classList.remove('active');
+                  }, 2000)
+                });
+              }
+
+          
+                
+        }, 500);
+      }
+      document.addEventListener('DOMContentLoaded', initCountdownTimerBar5);  
+    </script>
+{% schema %}
+{
+  "name": "Countdown timer bar #5",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Countdown timer bar #5"
+    }
+  ]
+}
+{% endschema %}

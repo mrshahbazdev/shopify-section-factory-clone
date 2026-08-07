@@ -1,0 +1,1262 @@
+<style>
+  
+
+  .ss-ctbp-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {--ctbp-bg: radial-gradient(ellipse at top, #1a1530 0%, #07060f 72%);
+          --ctbp-glow: #e8b84b;
+          --ctbp-title: #ffffff; --ctbp-number: #ffffff; --ctbp-label: #e6dcc0;
+          --ctbp-tile-bg: #211b33; --ctbp-accent: #e8b84b;
+          --ctbp-code: #ffffff; --ctbp-code-border: #e8b84b;--ctbp-title-shadow: #000000;
+    --ctbp-ribbon: var(--ctbp-accent);
+    --ctbp-ribbon-shade: #7a1418;
+    --ctbp-ribbon-shade: color-mix(in srgb, var(--ctbp-accent) 56%, #000);
+    --ctbp-ribbon-hi: #ff8a8a;
+    --ctbp-ribbon-hi: color-mix(in srgb, var(--ctbp-accent) 68%, #fff);
+    --ctbp-decor-scale: 1.0;
+    --ctbp-code-radius: 50px;
+    --ctbp-close: #ffffff;
+    --ctbp-close-size: 14px;
+    --ctbp-top-offset: 0px;
+    --ctbp-title-size: 38px;
+    --ctbp-number-size: 28px;
+    --ctbp-label-size: 10px;
+    --ctbp-gap: 28px;
+    --ctbp-z: 1000;
+
+    width: 100%;
+    
+      position: sticky;
+    
+    inset-block-start: var(--ctbp-top-offset);
+    z-index: var(--ctbp-z);
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    
+  }
+
+  .ss-ctbp__card-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: relative;
+    width: 100%;
+    background: var(--ctbp-bg);
+    padding-block: 14px;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: var(--ctbp-gap);
+    box-sizing: border-box;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  /* Accent halo glow that arcs over the top of the bar. The gradient ellipse is positioned slightly
+     above center horizontally and just above the top edge vertically. The -50% start stop lets the
+     color saturate at the visible peak (top-center) instead of starting from the unreachable
+     gradient origin. Sits above the merchant-set background, below the content. */
+  .ss-ctbp__card-template--26906774339913__ss_sticky_ctb_pro_9RzDcT::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      ellipse at 50% -20%,
+      var(--ctbp-glow) -50%,
+      transparent 50%
+    );
+    pointer-events: none;
+    z-index: -2;
+  }
+
+  .ss-ctbp__title-wrap-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-inline-size: min(100%, 320px);
+    isolation: isolate;
+  }
+
+  .ss-ctbp__title-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: relative;
+    z-index: 1;
+    color: var(--ctbp-title);
+    font-size: var(--ctbp-title-size);
+    font-weight: 700;
+    line-height: 1.05;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 0.03em;animation: ss-ctbp-titlebob-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.6s ease-in-out infinite alternate;}
+
+  @keyframes ss-ctbp-titlebob-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    from { transform: translateY(-4px); }
+    to { transform: translateY(4px); }
+  }.ss-ctbp__title-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { text-shadow: -3px 3px 0 var(--ctbp-title-shadow), 0 3px 18px rgb(0 0 0 / 45%); }.ss-ctbp__ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 50%;
+    z-index: 0;
+    inline-size: clamp(260px, 150%, 460px);
+    block-size: 180px;
+    object-fit: contain;
+    object-position: center;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(5deg);
+    transform-origin: center;
+    animation: ss-ctbp-ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes ss-ctbp-ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    from { transform: translate(-50%, -50%) rotate(5deg); }
+    to { transform: translate(-50%, -50%) rotate(-5deg); }
+  }
+
+  .ss-ctbp__timer-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4em 1.4em;
+    color: var(--ctbp-number);
+  }
+
+  .ss-ctbp__unit-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    display: flex;
+    align-items: baseline;
+    gap: 0.45em;
+  }
+
+  .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    font-size: var(--ctbp-number-size);
+    font-weight: 700;
+    color: var(--ctbp-number);
+    line-height: 1.2;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+  }
+
+  
+
+  .ss-ctbp__label-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    font-size: var(--ctbp-label-size);
+    font-weight: 400;
+    color: var(--ctbp-label);
+    line-height: 1;
+  }
+
+  
+    /* Flip-clock split-card pattern. Each digit is a perspective container with four absolutely
+       positioned layers:
+         --top  : static, shows the NEW digit (revealed when --flip-top folds away)
+         --bot  : static, shows the OLD digit (covered when --flip-bot unfolds)
+         --flip-top : OLD digit's top half, rotates 0deg -> -90deg around its bottom edge
+         --flip-bot : NEW digit's bottom half, rotates 90deg -> 0deg around its top edge
+       Each half's `overflow: hidden` clips a full-height text element so only its half of the glyph
+       shows. The transitional half-and-half frame (NEW top + OLD bot) is the characteristic
+       flip-clock moment. */
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      display: inline-flex;
+      gap: 0.18em;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit {
+      position: relative;
+      display: inline-block;
+      inline-size: 0.95em;
+      block-size: 1.4em;
+      perspective: 6em;
+      vertical-align: baseline;
+      border-radius: 0.14em;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card {
+      position: absolute;
+      inset-inline: 0;
+      block-size: 50%;
+      overflow: hidden;
+      background: var(--ctbp-tile-bg);
+      color: var(--ctbp-number);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--top,
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-top {
+      inset-block-start: 0;
+      border-start-start-radius: 0.14em;
+      border-start-end-radius: 0.14em;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--bot,
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-bot {
+      inset-block-end: 0;
+      border-end-start-radius: 0.14em;
+      border-end-end-radius: 0.14em;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-top {
+      z-index: 2;
+      transform-origin: bottom;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-bot {
+      z-index: 2;
+      transform-origin: top;
+      transform: rotateX(90deg);
+    }
+
+    /* Subtle highlight/shade gradient on each half — depth like a physical card. */
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--top::before,
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-top::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+      pointer-events: none;
+    }
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--bot::before,
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-bot::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+      pointer-events: none;
+    }
+
+    /* Text is 200% of the half-card so it spans the FULL digit container, flex-centered inside that
+       full span. For the top half, the text's top edge sits at the card's top, so the glyph (at the
+       text element's vertical center) lands right on the fold line — only its upper half pokes
+       above. For the bottom half, the text's bottom edge sits at the card's bottom, mirroring it. */
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-text {
+      position: absolute;
+      inset-inline: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      block-size: 200%;
+      line-height: 1;
+      font-variant-numeric: tabular-nums;
+      font-weight: inherit;
+      color: inherit;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--top .ss-ctbp__digit-text,
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-top .ss-ctbp__digit-text {
+      inset-block-start: 0;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--bot .ss-ctbp__digit-text,
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit-card--flip-bot .ss-ctbp__digit-text {
+      inset-block-end: 0;
+    }
+
+    /* Visible hinge line between the halves. */
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit::after {
+      content: '';
+      position: absolute;
+      inset-inline: 0;
+      inset-block-start: calc(50% - 1px);
+      block-size: 2px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.15) 100%);
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit--flipping .ss-ctbp__digit-card--flip-top {
+      animation: ss-ctbp-fold-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 0.3s ease-in forwards;
+    }
+
+    .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit--flipping .ss-ctbp__digit-card--flip-bot {
+      animation: ss-ctbp-unfold-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 0.3s 0.3s ease-out forwards;
+    }
+
+    @keyframes ss-ctbp-fold-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      0% { transform: rotateX(0); }
+      100% { transform: rotateX(-90deg); }
+    }
+
+    @keyframes ss-ctbp-unfold-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      0% { transform: rotateX(90deg); }
+      100% { transform: rotateX(0); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit--flipping .ss-ctbp__digit-card--flip-top,
+      .ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__digit--flipping .ss-ctbp__digit-card--flip-bot {
+        animation: none;
+      }
+    }
+
+    .ss-ctbp__unit-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.55em;
+    }
+
+    /* Column-flex units don't have a clean inline baseline. Align units to the bottom so labels
+       line up across hours/minutes/seconds even if any one of them wraps content. */
+    .ss-ctbp__timer-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      align-items: flex-end;
+    }
+  
+
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    appearance: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    padding-block: 0.65em;
+    padding-inline: 1.25em;
+    border: 1px dashed var(--ctbp-code-border);
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border-radius: var(--ctbp-code-radius);
+    color: var(--ctbp-code);
+    font: inherit;
+    font-size: var(--ctbp-label-size);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    isolation: isolate;
+    transition:
+      background 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      scale 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  /* Link variant acts as a button, so it gets a solid border instead of the copy chip's dashed ticket edge. */
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--link {
+    border-style: solid;
+  }
+
+  /* Base hover/focus: subtle background + solid border so the chip always reads as interactive,
+     even when the hover animation is turned off. */
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:hover,
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:focus-visible {
+    background:
+      linear-gradient(135deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border-color: var(--ctbp-code-border);
+    border-style: solid;
+  }
+
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:active {
+    scale: 0.98;
+  }
+
+  .ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    display: inline-flex;
+    inline-size: 1em;
+    block-size: 1em;
+    transition: rotate 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), scale 0.3s ease;
+  }
+
+  .ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT svg {
+    inline-size: 100%;
+    block-size: 100%;
+  }/* Hover animation: shimmer sweep + lift + icon nudge. Gated by the "Hover animation" setting. */
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT::before {
+    content: '';
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: -120%;
+    inline-size: 120%;
+    background: linear-gradient(
+      120deg,
+      transparent 30%,
+      rgba(255, 255, 255, 0.22) 50%,
+      transparent 70%
+    );
+    pointer-events: none;
+    z-index: -1;
+    transition: translate 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:hover,
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:focus-visible {
+    scale: 1.03;
+    box-shadow:
+      0 8px 24px rgba(0, 0, 0, 0.35),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  }
+
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:hover::before,
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:focus-visible::before {
+    translate: 200% 0;
+  }
+
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:hover .ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:focus-visible .ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    rotate: -12deg;
+    scale: 1.1;
+  }/* Confirmation state: copy text + clipboard swap to success text + check icon. The whole button
+     gets a soft green glow plus a brief micro-pop for premium feedback. */
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT[data-copied='1'] {
+    background:
+      linear-gradient(135deg, rgba(40, 200, 110, 0.22) 0%, rgba(40, 200, 110, 0.05) 100%);
+    border-color: rgba(40, 200, 110, 0.7);
+    border-style: solid;
+    box-shadow:
+      0 6px 24px rgba(40, 200, 110, 0.25),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+    animation: ss-ctbp-pop-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+
+  .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT[data-copied='1'] .ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    rotate: 0deg;
+    scale: 1.05;
+  }
+
+  @keyframes ss-ctbp-pop-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%   { scale: 1; }
+    45%  { scale: 1.06; }
+    100% { scale: 1.03; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+    .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT::before,
+    .ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      transition: none;
+      animation: none;
+    }
+    .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:hover,
+    .ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT:focus-visible {
+      scale: 1;
+    }
+  }.ss-ctbp__timer-block-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+  .ss-ctbp__code-block-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.45em;
+  }
+
+  .ss-ctbp__timer-title-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    color: var(--ctbp-title);
+    font-size: clamp(15px, calc(var(--ctbp-title-size) * 0.5), 26px);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .ss-ctbp__discount-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    color: var(--ctbp-label);
+    font-size: clamp(14px, calc(var(--ctbp-title-size) * 0.44), 25px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: center;
+    max-inline-size: 22ch;
+  }
+
+  .ss-ctbp__discount-template--26906774339913__ss_sticky_ctb_pro_9RzDcT b,
+  .ss-ctbp__discount-template--26906774339913__ss_sticky_ctb_pro_9RzDcT strong {
+    color: var(--ctbp-accent);
+    font-weight: 800;
+  }
+
+  .ss-ctbp__decor-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+  }
+
+  .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    inset-block-end: 0;
+    block-size: 100%;
+    display: flex;
+    align-items: flex-end;
+    transform: scale(var(--ctbp-decor-scale, 1));
+    z-index: 2;
+  }
+
+  .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--left {
+    inset-inline-start: 0;
+    transform-origin: bottom left;
+  }
+
+  .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--right {
+    inset-inline-end: 0;
+    transform-origin: bottom right;
+  }
+
+  .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT svg,
+  .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT img {
+    display: block;
+    block-size: 100%;
+    inline-size: auto;
+    max-block-size: 168px;
+  }
+
+  .ss-ctbp__flash-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { color: var(--ctbp-accent); }
+  .ss-ctbp__flash-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--bolt { animation: ss-ctbp-float-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 3s ease-in-out infinite; }
+  .ss-ctbp__spark-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { animation: ss-ctbp-twinkle-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+  .ss-ctbp__spark-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--2 { animation-delay: 0.8s; }
+  .ss-ctbp__spark-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--3 { animation-delay: 1.5s; }
+
+  @keyframes ss-ctbp-float-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+  }
+
+  @keyframes ss-ctbp-twinkle-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%, 100% { opacity: 0.35; scale: 0.8; }
+    50% { opacity: 1; scale: 1.1; }
+  }
+
+  .ss-ctbp__balloon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    animation: ss-ctbp-balloon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.8s ease-in-out infinite alternate;
+  }
+  .ss-ctbp__balloon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--b {
+    animation-duration: 3.5s;
+    animation-delay: -1.2s;
+  }
+  .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--right .ss-ctbp__balloons-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform: scaleX(-1); }
+  @keyframes ss-ctbp-balloon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    from { transform: translateY(-5px); }
+    to { transform: translateY(7px); }
+  }
+
+  .ss-ctbp__bat-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform-box: fill-box; transform-origin: center; }
+  .ss-ctbp__bat-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--l { animation: ss-ctbp-bat-l-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 8s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; }
+  .ss-ctbp__bat-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--r1 { animation: ss-ctbp-bat-r1-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 10s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; }
+  .ss-ctbp__bat-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--r2 { animation: ss-ctbp-bat-r2-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 7s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite; }
+  .ss-ctbp__pumpkin-face-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    filter: drop-shadow(0 0 3px rgba(255, 178, 70, 0.85));
+    animation: ss-ctbp-flicker-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 3.2s ease-in-out infinite;
+  }
+  @keyframes ss-ctbp-flicker-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%, 100% { opacity: 1; }
+    45% { opacity: 0.82; }
+    70% { opacity: 0.95; }
+  }
+  @keyframes ss-ctbp-bat-l-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%, 100% { transform: translate(0, 0); opacity: 0.7; }
+    15% { transform: translate(5px, -8px); opacity: 0.8; }
+    35% { transform: translate(10px, -15px); opacity: 0.9; }
+    50% { transform: translate(8px, -12px); opacity: 1; }
+    65% { transform: translate(-3px, -18px); opacity: 0.85; }
+    85% { transform: translate(-5px, -10px); opacity: 0.75; }
+  }
+  @keyframes ss-ctbp-bat-r1-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%, 100% { transform: translate(0, 0); opacity: 0.6; }
+    20% { transform: translate(-5px, -8px); opacity: 0.75; }
+    40% { transform: translate(-10px, -15px); opacity: 0.9; }
+    50% { transform: translate(3px, -18px); opacity: 1; }
+    70% { transform: translate(5px, -12px); opacity: 0.85; }
+    90% { transform: translate(-2px, -5px); opacity: 0.7; }
+  }
+  @keyframes ss-ctbp-bat-r2-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); opacity: 0.8; }
+    15% { transform: translate(5px, -6px) rotate(1deg); opacity: 0.9; }
+    30% { transform: translate(8px, -12px) rotate(2deg); opacity: 1; }
+    50% { transform: translate(-3px, -20px) rotate(-2deg); opacity: 0.95; }
+    70% { transform: translate(10px, -15px) rotate(1deg); opacity: 0.9; }
+    85% { transform: translate(3px, -8px) rotate(-1deg); opacity: 0.85; }
+  }
+
+  .ss-ctbp__candy-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform-box: fill-box; transform-origin: bottom center; }
+  .ss-ctbp__candy-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--1 { animation: ss-ctbp-candy1-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.4s ease-in-out infinite alternate; }
+  .ss-ctbp__candy-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--2 { animation: ss-ctbp-candy2-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.7s ease-in-out infinite alternate; }
+  @keyframes ss-ctbp-candy1-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(6px) rotate(-5deg); } }
+  @keyframes ss-ctbp-candy2-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { from { transform: translateY(0) rotate(0deg); } to { transform: translateY(6px) rotate(8deg); } }.ss-ctbp__spin-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform-box: fill-box; transform-origin: center; animation: ss-ctbp-spin-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 16s linear infinite; }
+  .ss-ctbp__sway-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform-box: fill-box; transform-origin: bottom center; animation: ss-ctbp-sway-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 3.4s ease-in-out infinite alternate; }
+  .ss-ctbp__flutter-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform-box: fill-box; transform-origin: center; animation: ss-ctbp-flutter-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.2s ease-in-out infinite; }
+  @keyframes ss-ctbp-spin-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { to { transform: rotate(360deg); } }
+  @keyframes ss-ctbp-sway-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { from { transform: rotate(-4deg); } to { transform: rotate(4deg); } }
+  @keyframes ss-ctbp-flutter-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { 0%, 100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-8px) rotate(4deg); } }
+  .ss-ctbp__flutter-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--2 { animation-duration: 2.8s; animation-delay: 0.4s; }
+  .ss-ctbp__flutter-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--3 { animation-duration: 3.2s; animation-delay: 0.8s; }
+  .ss-ctbp__burst-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform-box: fill-box; transform-origin: center; animation: ss-ctbp-burst-template--26906774339913__ss_sticky_ctb_pro_9RzDcT 2.4s ease-in-out infinite; }
+  .ss-ctbp__burst-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--2 { animation-duration: 1.8s; animation-delay: 0.3s; }
+  @keyframes ss-ctbp-burst-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { 0%, 100% { transform: scale(0.82); opacity: 0.65; } 50% { transform: scale(1.06); opacity: 1; } }
+
+  .ss-ctbp__drift-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    inset-inline: 0;
+    inset-block-end: 0;
+    z-index: 1;
+    block-size: clamp(16px, 24%, 34px);
+    line-height: 0;
+  }
+  .ss-ctbp__drift-template--26906774339913__ss_sticky_ctb_pro_9RzDcT svg { inline-size: 100%; block-size: 100%; display: block; }
+
+  .ss-ctbp__fall-wrap-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+    container-type: size;
+  }
+  /* Falling effect = a handful of individual flake elements, not a full-bar gradient layer. The GPU
+     only composites ~18 tiny dots per frame instead of re-blending the whole bar, which is what made
+     the old approach lag weak GPUs. Each flake's position, size, speed and start offset are varied
+     per element (inline), so the snow scatters naturally instead of sitting on a grid. */
+  .ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    inset-block-start: 0;
+    border-radius: 50%;
+    background: var(--ctbp-fall, #fff);
+    animation-name: ss-ctbp-snow-template--26906774339913__ss_sticky_ctb_pro_9RzDcT;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  .ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--img {
+    border-radius: 0;
+    background-color: transparent;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  @keyframes ss-ctbp-snow-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    from { transform: translateY(-14px); }
+    to { transform: translateY(calc(100cqh + 14px)); }
+  }
+  .ss-ctbp-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__fall-wrap-template--26906774339913__ss_sticky_ctb_pro_9RzDcT .ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT[data-ctbp-flake] { display: block !important; }@media (prefers-reduced-motion: reduce) {
+    .ss-ctbp__candy-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+    .ss-ctbp__burst-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+    .ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      animation: none !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+    .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT *,
+    .ss-ctbp__flash-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--bolt,
+    .ss-ctbp__spark-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+    .ss-ctbp__ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT,
+    .ss-ctbp__title-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      animation: none !important;
+    }
+  }@media (max-width: 1199px) {
+    .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { transform: scale(calc(var(--ctbp-decor-scale, 1) * 0.84)); }
+  }
+
+  @media (max-width: 899px) {
+    .ss-ctbp__ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { display: none; }
+  }
+
+  .ss-ctbp__sr-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  @media (max-width: 749px) {
+    .ss-ctbp-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      --ctbp-title-size: 24px;
+      --ctbp-number-size: 18px;
+      --ctbp-gap: 4px;
+    }
+    .ss-ctbp__timer-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      gap: 0.35em 0.85em;
+    }
+    .ss-ctbp__card-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      padding-inline: 0.85rem;
+      flex-direction: column;
+    }
+    .ss-ctbp__title-wrap-template--26906774339913__ss_sticky_ctb_pro_9RzDcT { max-inline-size: 100%; }
+    .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT {
+      block-size: 62%;
+      inset-block-start: auto;
+      inset-block-end: 0;
+      transform: scale(calc(var(--ctbp-decor-scale, 1) * 0.58));
+    }
+    .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--left { inset-inline-start: 0; transform-origin: bottom left; }
+    .ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--right { inset-inline-end: 0; transform-origin: bottom right; }}
+    /* Sticky inside a section wrapper only sticks for ~bar height because the auto wrapper is its
+       containing block. display:contents removes that wrapper's box so the bar's containing block
+       becomes the next ancestor (<main> in templates, <body> in header-groups), letting it stick
+       across the full page scroll. */
+    .shopify-section:has(> .ss-ctbp-template--26906774339913__ss_sticky_ctb_pro_9RzDcT) {
+      display: contents;
+    }
+  
+
+  .shopify-section-header-sticky:not(.shopify-section-header-hidden) {
+    inset-block-start: var(--ss-bar-target-margin, 0px) !important;
+  }
+
+  
+</style>
+<div aria-label="Countdown" class="ss-ctbp-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-id="template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-style="new_year" data-skip-subtree-update="" data-ss-bar-id="template--26906774339913__ss_sticky_ctb_pro_9RzDcT" role="region">
+<div class="ss-ctbp__card-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><div aria-hidden="true" class="ss-ctbp__decor-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<div class="ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--left"><svg aria-hidden="true" class="ss-ctbp__deco-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" fill="none" focusable="false" viewbox="0 0 140 152" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="ctbp-bubbly-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0" stop-color="#fff3c4"></stop><stop offset="1" stop-color="#f0b733"></stop>
+</lineargradient>
+<lineargradient id="ctbp-flute-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" x1="0" x2="1" y1="0" y2="0">
+<stop offset="0" stop-color="#ffffff" stop-opacity="0.12"></stop>
+<stop offset="0.5" stop-color="#bfe0ff" stop-opacity="0.45"></stop>
+<stop offset="1" stop-color="#ffffff" stop-opacity="0.12"></stop>
+</lineargradient>
+</defs>
+<g class="ss-ctbp__sway-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<g transform="translate(58 88) rotate(-15)">
+<path d="M-13 -52 L13 -52 L8 -14 L-8 -14 Z" fill="url(#ctbp-flute-template--26906774339913__ss_sticky_ctb_pro_9RzDcT)" stroke="#dcecff" stroke-width="1.6"></path>
+<path d="M-10 -28 L10 -28 L8 -14 L-8 -14 Z" fill="url(#ctbp-bubbly-template--26906774339913__ss_sticky_ctb_pro_9RzDcT)"></path>
+<line stroke="#dcecff" stroke-width="2.4" x1="0" x2="0" y1="-14" y2="28"></line>
+<path d="M-12 30 H12" stroke="#dcecff" stroke-linecap="round" stroke-width="3"></path>
+<ellipse cx="-5" cy="-40" fill="#ffffff" opacity="0.5" rx="2.4" ry="8"></ellipse>
+</g>
+<g transform="translate(86 88) rotate(15)">
+<path d="M-13 -52 L13 -52 L8 -14 L-8 -14 Z" fill="url(#ctbp-flute-template--26906774339913__ss_sticky_ctb_pro_9RzDcT)" stroke="#dcecff" stroke-width="1.6"></path>
+<path d="M-10 -28 L10 -28 L8 -14 L-8 -14 Z" fill="url(#ctbp-bubbly-template--26906774339913__ss_sticky_ctb_pro_9RzDcT)"></path>
+<line stroke="#dcecff" stroke-width="2.4" x1="0" x2="0" y1="-14" y2="28"></line>
+<path d="M-12 30 H12" stroke="#dcecff" stroke-linecap="round" stroke-width="3"></path>
+<ellipse cx="5" cy="-40" fill="#ffffff" opacity="0.5" rx="2.4" ry="8"></ellipse>
+</g>
+</g>
+<circle cx="70" cy="26" fill="#fff7d8" r="2.4"></circle>
+<circle cx="60" cy="17" fill="#ffe9a8" r="1.8"></circle>
+<circle cx="82" cy="19" fill="#ffe9a8" r="1.6"></circle>
+<path d="M72 6 l1.4 3.6 3.6 1.4 -3.6 1.4 -1.4 3.6 -1.4 -3.6 -3.6 -1.4 3.6 -1.4 Z" fill="#fff3c4"></path>
+</svg>
+</div>
+<div class="ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT ss-ctbp__edge-template--26906774339913__ss_sticky_ctb_pro_9RzDcT--right"><img alt="" height="600" src="//section.store/cdn/shop/files/fireworks.png?v=1780671860&amp;width=600" srcset="//section.store/cdn/shop/files/fireworks.png?v=1780671860&amp;width=352 352w, //section.store/cdn/shop/files/fireworks.png?v=1780671860&amp;width=600 600w" width="600"/>
+</div><div aria-hidden="true" class="ss-ctbp__fall-wrap-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:47%;inline-size:4px;block-size:4px;animation-duration:6s;animation-delay:-3.1s;background:#ffffff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:94%;inline-size:5px;block-size:5px;animation-duration:7s;animation-delay:-6.2s;background:#6bd0ff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:41%;inline-size:3px;block-size:3px;animation-duration:8s;animation-delay:-9.3s;background:#e8b84b;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:88%;inline-size:4px;block-size:4px;animation-duration:9s;animation-delay:-2.4s;background:#ffffff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:35%;inline-size:5px;block-size:5px;animation-duration:5s;animation-delay:-5.5s;background:#6bd0ff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:82%;inline-size:3px;block-size:3px;animation-duration:6s;animation-delay:-8.6s;background:#e8b84b;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:29%;inline-size:4px;block-size:4px;animation-duration:7s;animation-delay:-1.7s;background:#ffffff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:76%;inline-size:5px;block-size:5px;animation-duration:8s;animation-delay:-4.8s;background:#6bd0ff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:23%;inline-size:3px;block-size:3px;animation-duration:9s;animation-delay:-7.9s;background:#e8b84b;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:70%;inline-size:4px;block-size:4px;animation-duration:5s;animation-delay:-1.0s;background:#ffffff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:17%;inline-size:5px;block-size:5px;animation-duration:6s;animation-delay:-4.1s;background:#6bd0ff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:64%;inline-size:3px;block-size:3px;animation-duration:7s;animation-delay:-7.2s;background:#e8b84b;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:11%;inline-size:4px;block-size:4px;animation-duration:8s;animation-delay:-0.3s;background:#ffffff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:58%;inline-size:5px;block-size:5px;animation-duration:9s;animation-delay:-3.4s;background:#6bd0ff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:5%;inline-size:3px;block-size:3px;animation-duration:5s;animation-delay:-6.5s;background:#e8b84b;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:52%;inline-size:4px;block-size:4px;animation-duration:6s;animation-delay:-9.6s;background:#ffffff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:99%;inline-size:5px;block-size:5px;animation-duration:7s;animation-delay:-2.7s;background:#6bd0ff;"></span><span class="ss-ctbp__flake-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-flake="" style="left:46%;inline-size:3px;block-size:3px;animation-duration:8s;animation-delay:-5.8s;background:#e8b84b;"></span></div></div><div class="ss-ctbp__title-wrap-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><svg aria-hidden="true" class="ss-ctbp__ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-ribbon-fallback="" fill="none" focusable="false" style="display:none" viewbox="0 0 280 184" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="ctbp-rib-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" x1="0.12" x2="0.34" y1="1" y2="0">
+<stop offset="0.06" stop-color="var(--ctbp-ribbon-hi)"></stop>
+<stop offset="0.46" stop-color="var(--ctbp-ribbon)"></stop>
+<stop offset="0.96" stop-color="var(--ctbp-ribbon-shade)"></stop>
+</lineargradient>
+</defs>
+<path d="M12 114 C 62 40 170 24 258 60 C 275 66 278 87 264 97 C 214 76 120 92 28 156 C 18 163 5 156 12 114 Z" fill="url(#ctbp-rib-template--26906774339913__ss_sticky_ctb_pro_9RzDcT)" stroke="var(--ctbp-ribbon)" stroke-opacity="0.5" stroke-width="1.5"></path>
+<path d="M196 70 C 236 60 262 74 270 96 C 248 92 226 86 200 96 C 194 88 192 78 196 70 Z" fill="var(--ctbp-ribbon-shade)" opacity="0.5"></path>
+</svg>
+<img alt="" aria-hidden="true" class="ss-ctbp__ribbon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" height="150" loading="lazy" onerror="this.style.display='none';this.previousElementSibling.style.display='block'" src="https://cdn.shopify.com/s/files/1/0670/4834/1753/files/ribbon_4.png?v=1780251575" width="360"/><div class="ss-ctbp__title-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><strong>NEW YEAR SALE</strong></div>
+</div><div class="ss-ctbp__timer-block-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><p class="ss-ctbp__timer-title-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">Countdown</p><div aria-live="off" class="ss-ctbp__timer-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><span class="ss-ctbp__unit-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<span class="ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-unit="hours"><span class="ss-ctbp__digit" data-current="0">
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">0</span></span>
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot"><span class="ss-ctbp__digit-text">0</span></span>
+</span><span class="ss-ctbp__digit" data-current="0">
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">0</span></span>
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot"><span class="ss-ctbp__digit-text">0</span></span>
+</span></span>
+<span class="ss-ctbp__label-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">Hours</span>
+</span>
+<span class="ss-ctbp__unit-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<span class="ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-unit="minutes"><span class="ss-ctbp__digit" data-current="0">
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">0</span></span>
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot"><span class="ss-ctbp__digit-text">0</span></span>
+</span><span class="ss-ctbp__digit" data-current="0">
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">0</span></span>
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot"><span class="ss-ctbp__digit-text">0</span></span>
+</span></span>
+<span class="ss-ctbp__label-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">Minutes</span>
+</span>
+<span class="ss-ctbp__unit-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<span class="ss-ctbp__num-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-unit="seconds"><span class="ss-ctbp__digit" data-current="0">
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">0</span></span>
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot"><span class="ss-ctbp__digit-text">0</span></span>
+</span><span class="ss-ctbp__digit" data-current="0">
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">0</span></span>
+<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top"><span class="ss-ctbp__digit-text">0</span></span>
+<span aria-hidden="true" class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot"><span class="ss-ctbp__digit-text">0</span></span>
+</span></span>
+<span class="ss-ctbp__label-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">Seconds</span>
+</span>
+<span aria-live="polite" class="ss-ctbp__sr-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-ctbp-sr=""></span>
+</div>
+</div><div class="ss-ctbp__code-block-template--26906774339913__ss_sticky_ctb_pro_9RzDcT"><div class="ss-ctbp__discount-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">Save up to <strong>50%</strong> with code</div><button aria-label="Copy discount code SAVE50" class="ss-ctbp__code-template--26906774339913__ss_sticky_ctb_pro_9RzDcT" data-code="SAVE50" data-ctbp-copy="" type="button">
+<span data-ctbp-code-content="">
+<span class="ss-ctbp__code-text-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">SAVE50</span>
+<span aria-hidden="true" class="ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="13" rx="2" ry="2" width="13" x="9" y="9"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+</span>
+</span>
+<template data-ctbp-success-template="">
+<span class="ss-ctbp__code-text-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">Copied!</span>
+<span aria-hidden="true" class="ss-ctbp__code-icon-template--26906774339913__ss_sticky_ctb_pro_9RzDcT">
+<svg fill="none" focusable="false" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 6L9 17l-5-5"></path></svg>
+</span>
+</template>
+</button></div></div>
+</div>
+<script>
+  (function () {
+    var sid = "template--26906774339913__ss_sticky_ctb_pro_9RzDcT";
+    var mode = "daily";
+    var numberStyle = "tiles";
+    var hideWhenExpired = true;
+    var showDays = false;
+    var endIso = "";
+    var resetHour = parseInt("00", 10) || 0;
+    var resetMinute = parseInt("00", 10) || 0;
+    var resetWeekday = parseInt("1", 10) || 0;
+
+    var positionMode = "sticky";
+    var staticOnMobile = false;
+    var showClose = false;
+    var topOffset = parseInt(0, 10) || 0;
+    var targetSelector = "";
+
+    var CLOSE_STORAGE_KEY = 'ctbp-closed:' + "template--26906774339913__ss_sticky_ctb_pro_9RzDcT";
+    var CLOSE_ANIM_MS = 320;
+
+    var MOBILE_MQ = window.matchMedia ? window.matchMedia('(max-width: 749px)') : null;
+
+    var ns = window.__SS_CTBP__ = window.__SS_CTBP__ || {};
+    var node = null;
+    var targetMs = 0;
+
+    function destroyInstance(id) {
+      var rec = ns[id];
+      if (!rec) return;
+      if (rec.interval) { clearInterval(rec.interval); }
+      if (rec.ro) { try { rec.ro.disconnect(); } catch (e) {} }
+      if (rec.mqListener && MOBILE_MQ) {
+        if (MOBILE_MQ.removeEventListener) MOBILE_MQ.removeEventListener('change', rec.mqListener);
+        else if (MOBILE_MQ.removeListener) MOBILE_MQ.removeListener(rec.mqListener);
+      }
+      delete ns[id];
+    }
+
+    function pad(n) { return n < 10 ? '0' + n : String(n); }
+
+    function getTargetMs() {
+      var now = new Date();
+      if (mode === 'fixed_date') {
+        var t = new Date(endIso);
+        if (isNaN(t.getTime())) return now.getTime();
+        return t.getTime();
+      }
+      if (mode === 'daily') {
+        var d = new Date(now);
+        d.setHours(resetHour, resetMinute, 0, 0);
+        if (d.getTime() <= now.getTime()) d.setDate(d.getDate() + 1);
+        return d.getTime();
+      }
+      if (mode === 'weekly') {
+        var d2 = new Date(now);
+        var diff = (resetWeekday - d2.getDay() + 7) % 7;
+        d2.setDate(d2.getDate() + diff);
+        d2.setHours(resetHour, resetMinute, 0, 0);
+        if (d2.getTime() <= now.getTime()) d2.setDate(d2.getDate() + 7);
+        return d2.getTime();
+      }
+      return now.getTime();
+    }
+
+    var FLIP_TOTAL_MS = 600;
+    var REDUCE_MOTION = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+
+    function buildFlipStructure(el, padded) {
+      var html = '';
+      for (var i = 0; i < padded.length; i++) {
+        var c = padded.charAt(i);
+        html +=
+          '<span class="ss-ctbp__digit" data-current="' + c + '">' +
+            '<span class="ss-ctbp__digit-card ss-ctbp__digit-card--top"><span class="ss-ctbp__digit-text">' + c + '</span></span>' +
+            '<span class="ss-ctbp__digit-card ss-ctbp__digit-card--bot"><span class="ss-ctbp__digit-text">' + c + '</span></span>' +
+            '<span class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-top" aria-hidden="true"><span class="ss-ctbp__digit-text">' + c + '</span></span>' +
+            '<span class="ss-ctbp__digit-card ss-ctbp__digit-card--flip-bot" aria-hidden="true"><span class="ss-ctbp__digit-text">' + c + '</span></span>' +
+          '</span>';
+      }
+      el.innerHTML = html;
+    }
+
+    function flipDigit(digit, newChar, instant) {
+      var current = digit.getAttribute('data-current');
+      if (current === newChar) return;
+
+      var topText = digit.querySelector('.ss-ctbp__digit-card--top .ss-ctbp__digit-text');
+      var botText = digit.querySelector('.ss-ctbp__digit-card--bot .ss-ctbp__digit-text');
+      var flipTopText = digit.querySelector('.ss-ctbp__digit-card--flip-top .ss-ctbp__digit-text');
+      var flipBotText = digit.querySelector('.ss-ctbp__digit-card--flip-bot .ss-ctbp__digit-text');
+      if (!topText || !botText || !flipTopText || !flipBotText) return;
+
+      if (instant || REDUCE_MOTION) {
+        topText.textContent = newChar;
+        botText.textContent = newChar;
+        flipTopText.textContent = newChar;
+        flipBotText.textContent = newChar;
+        digit.setAttribute('data-current', newChar);
+        return;
+      }
+
+      // Pre-animation state:
+      //   top      = NEW (revealed when flip-top folds down)
+      //   bot      = OLD (still visible until flip-bot covers it)
+      //   flip-top = OLD (the card that falls forward)
+      //   flip-bot = NEW (the card that swings up from 90deg)
+      topText.textContent = newChar;
+      flipTopText.textContent = current;
+      flipBotText.textContent = newChar;
+      // bot keeps OLD until the unfold finishes.
+
+      digit.setAttribute('data-current', newChar);
+      digit.classList.remove('ss-ctbp__digit--flipping');
+      // Force reflow so removing+adding the class restarts the animation.
+      void digit.offsetWidth;
+      digit.classList.add('ss-ctbp__digit--flipping');
+
+      if (digit._ctbpFlipTimer) clearTimeout(digit._ctbpFlipTimer);
+      digit._ctbpFlipTimer = setTimeout(function () {
+        // Sync all four layers to NEW before clearing the flipping class so the flip-top card
+        // doesn't snap back showing the OLD digit on top of the now-correct static --top.
+        flipTopText.textContent = newChar;
+        botText.textContent = newChar;
+        digit.classList.remove('ss-ctbp__digit--flipping');
+      }, FLIP_TOTAL_MS);
+    }
+
+    var ROLL_TOTAL_MS = 400;
+
+    function setUnit(el, value, instant) {
+      var padded = pad(value);
+      if (numberStyle === 'tiles') {
+        var digits = el.querySelectorAll(':scope > .ss-ctbp__digit');
+        if (digits.length !== padded.length) {
+          buildFlipStructure(el, padded);
+          return;
+        }
+        for (var i = 0; i < padded.length; i++) {
+          flipDigit(digits[i], padded.charAt(i), instant);
+        }
+      } else {
+        if (el.textContent === padded) return;
+        if (instant || REDUCE_MOTION) {
+          el.textContent = padded;
+          return;
+        }
+        // Swap text and trigger the roll animation in the same frame, matching the reference. The
+        // brain interpolates the down-out + up-in as a single roll because opacity wipes to 0 at
+        // the seam.
+        el.textContent = padded;
+        el.setAttribute('data-changing', '1');
+        if (el._ctbpRollTimer) clearTimeout(el._ctbpRollTimer);
+        el._ctbpRollTimer = setTimeout(function () {
+          el.removeAttribute('data-changing');
+        }, ROLL_TOTAL_MS);
+      }
+    }
+
+    var firstRender = true;
+
+    function render(distance) {
+      if (!node) return;
+      if (distance < 0) distance = 0;
+      var d = Math.floor(distance / 86400000);
+      var h = Math.floor((distance % 86400000) / 3600000);
+      var m = Math.floor((distance % 3600000) / 60000);
+      var sec = Math.floor((distance % 60000) / 1000);
+
+      if (!showDays) {
+        h = h + d * 24;
+      }
+
+      var instant = firstRender;
+      var units = node.querySelectorAll('[data-unit]');
+      for (var i = 0; i < units.length; i++) {
+        var u = units[i].getAttribute('data-unit');
+        if (u === 'days') setUnit(units[i], d, instant);
+        else if (u === 'hours') setUnit(units[i], h, instant);
+        else if (u === 'minutes') setUnit(units[i], m, instant);
+        else if (u === 'seconds') setUnit(units[i], sec, instant);
+      }
+      firstRender = false;
+
+      // Update screen-reader summary on minute boundaries so AT users get a periodic readout
+      // without spam every second.
+      if (sec === 0) {
+        var sr = node.querySelector('[data-ctbp-sr]');
+        if (sr) {
+          var parts = [];
+          if (showDays) parts.push(d + ' days');
+          parts.push(h + ' hours');
+          parts.push(m + ' minutes');
+          sr.textContent = parts.join(', ') + ' remaining';
+        }
+      }
+    }
+
+    function tick() {
+      var now = Date.now();
+      var distance = targetMs - now;
+      if (distance <= 0) {
+        if (mode === 'fixed_date') {
+          render(0);
+          if (hideWhenExpired) {
+            node.style.display = 'none';
+            applyLayout();
+          }
+          if (ns[sid] && ns[sid].interval) { clearInterval(ns[sid].interval); ns[sid].interval = null; }
+          return;
+        }
+        targetMs = getTargetMs();
+        distance = targetMs - Date.now();
+      }
+      render(distance);
+    }
+
+    function initCountdown() {
+      targetMs = getTargetMs();
+      tick();
+      ns[sid].interval = setInterval(tick, 1000);
+    }
+
+    function initCopy() {
+      var btn = node.querySelector('[data-ctbp-copy]');
+      if (!btn) return;
+      var content = btn.querySelector('[data-ctbp-code-content]');
+      var successTpl = btn.querySelector('[data-ctbp-success-template]');
+      if (!content || !successTpl) return;
+      var idleHTML = content.innerHTML;
+      var successHTML = successTpl.innerHTML;
+
+      btn.addEventListener('click', function () {
+        var code = btn.getAttribute('data-code') || '';
+        if (!code) return;
+        var done = function () {
+          if (btn._ctbpCopyTimer) clearTimeout(btn._ctbpCopyTimer);
+          btn.setAttribute('data-copied', '1');
+          content.innerHTML = successHTML;
+          btn._ctbpCopyTimer = setTimeout(function () {
+            btn.removeAttribute('data-copied');
+            content.innerHTML = idleHTML;
+          }, 1800);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(code).then(done).catch(fallback);
+        } else {
+          fallback();
+        }
+        function fallback() {
+          try {
+            var ta = document.createElement('textarea');
+            ta.value = code;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'absolute';
+            ta.style.left = '-9999px';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+            done();
+          } catch (e) {}
+        }
+      });
+    }
+
+    function autoDetectThemeHeader() {
+      var probes = ['#header-group', 'header.shopify-section.header-section', 'sticky-header', '.header-wrapper'];
+      for (var i = 0; i < probes.length; i++) {
+        var el = document.querySelector(probes[i]);
+        if (el) return el;
+      }
+      return null;
+    }
+
+    function applyLayout() {
+      // Shared with ss-sticky-bar: max-height across all bars sets one header-push value.
+      // Each section's script runs this idempotently.
+      var bodyBars = document.querySelectorAll('[data-ss-bar-body-pad="1"]');
+      var targetBars = document.querySelectorAll('[data-ss-bar-target-pad="1"]');
+
+      function maxBottom(list) {
+        var m = 0;
+        for (var i = 0; i < list.length; i++) {
+          var b = list[i];
+          if (b.style.display === 'none') continue;
+          var h = b.getBoundingClientRect().height;
+          var off = parseInt(b.getAttribute('data-ss-bar-top-offset') || '0', 10);
+          if (h + off > m) m = h + off;
+        }
+        return m;
+      }
+
+      // Every top bar (sticky OR fixed) defines how far the theme's sticky header must clear.
+      if (bodyBars.length || targetBars.length) {
+        var offset = Math.max(maxBottom(bodyBars), maxBottom(targetBars));
+        document.documentElement.style.setProperty('--ss-bar-target-margin', offset + 'px');
+      } else {
+        document.documentElement.style.removeProperty('--ss-bar-target-margin');
+      }
+
+      // Only fixed bars are out of flow, so only they pad the page down.
+      if (bodyBars.length) {
+        document.body.style.paddingBlockStart = maxBottom(bodyBars) + 'px';
+      } else {
+        document.body.style.removeProperty('padding-block-start');
+      }
+    }
+
+    function initPositioning() {
+      var target = null;
+      if (targetSelector) {
+        try { target = document.querySelector(targetSelector); } catch (e) {}
+      } else if (positionMode === 'fixed') {
+        target = autoDetectThemeHeader();
+      }
+
+      node.setAttribute('data-ss-bar-top-offset', String(topOffset));
+      ns[sid].target = target;
+
+      function syncPadFlags() {
+        var onMobile = MOBILE_MQ ? MOBILE_MQ.matches : false;
+        // Static-on-mobile under the breakpoint: the bar scrolls inline, so it contributes nothing
+        // to the shared offset and needs no page padding.
+        if (staticOnMobile && onMobile) {
+          node.removeAttribute('data-ss-bar-target-pad');
+          node.removeAttribute('data-ss-bar-body-pad');
+          return;
+        }
+        // Both flags feed --ss-bar-target-margin (so the theme's sticky header clears the bar).
+        // Fixed bars are out of flow and additionally pad the page; sticky bars sit in flow.
+        if (positionMode === 'fixed') {
+          node.setAttribute('data-ss-bar-body-pad', '1');
+          node.removeAttribute('data-ss-bar-target-pad');
+        } else {
+          node.setAttribute('data-ss-bar-target-pad', '1');
+          node.removeAttribute('data-ss-bar-body-pad');
+        }
+      }
+
+      syncPadFlags();
+      ns[sid].syncPadFlags = syncPadFlags;
+
+      // React to viewport crossing the mobile breakpoint so the bar can leave/re-enter the shared
+      // header-push stack without a page reload.
+      if (MOBILE_MQ && staticOnMobile) {
+        var onMqChange = function () { syncPadFlags(); applyLayout(); };
+        if (MOBILE_MQ.addEventListener) MOBILE_MQ.addEventListener('change', onMqChange);
+        else if (MOBILE_MQ.addListener) MOBILE_MQ.addListener(onMqChange);
+        ns[sid].mqListener = onMqChange;
+      }
+
+      applyLayout();
+
+      if (typeof ResizeObserver !== 'undefined') {
+        // Coalesce resize bursts (common in the theme editor as the panel/iframe resizes) into one
+        // layout pass per frame so applyLayout's getBoundingClientRect + body writes don't thrash.
+        var roPending = false;
+        var ro = new ResizeObserver(function () {
+          if (roPending) return;
+          roPending = true;
+          requestAnimationFrame(function () { roPending = false; applyLayout(); });
+        });
+        ro.observe(node);
+        ns[sid].ro = ro;
+      }
+    }
+
+    function hideBarPermanently() {
+      // Stop the countdown interval so a hidden bar doesn't keep doing work.
+      if (ns[sid] && ns[sid].interval) {
+        clearInterval(ns[sid].interval);
+        ns[sid].interval = null;
+      }
+      node.style.display = 'none';
+      applyLayout();
+    }
+
+    function initClose() {
+      if (!showClose) return;
+      var btn = node.querySelector('[data-ctbp-close]');
+      if (!btn) return;
+
+      // Theme editor stays interactive on close so merchants can repeatedly test the dismissal
+      // without clearing storage. On the storefront, dismissal persists for the session.
+      var isDesignMode = !!(window.Shopify && window.Shopify.designMode);
+
+      if (!isDesignMode) {
+        try {
+          if (window.sessionStorage && sessionStorage.getItem(CLOSE_STORAGE_KEY) === '1') {
+            hideBarPermanently();
+            return;
+          }
+        } catch (e) {}
+      }
+
+      btn.addEventListener('click', function () {
+        node.setAttribute('data-ctbp-closing', '1');
+        if (!isDesignMode) {
+          try { sessionStorage.setItem(CLOSE_STORAGE_KEY, '1'); } catch (e) {}
+        }
+        setTimeout(hideBarPermanently, CLOSE_ANIM_MS);
+      });
+    }
+
+    function init() {
+      // Clear any prior instance for this sid (theme-editor hot reload, morphed HTML, etc.).
+      destroyInstance(sid);
+      node = document.querySelector('[data-ctbp-id="' + sid + '"]');
+      if (!node) return;
+      ns[sid] = { interval: null, ro: null };
+      initCountdown();
+      initCopy();
+      initClose();
+      initPositioning();
+    }
+
+    function cleanup(sectionId) {
+      if (!sectionId) return;
+      destroyInstance(sectionId);
+      setTimeout(applyLayout, 0);
+    }
+
+    // Theme editor only; section:load re-runs this inline script so init re-fires on its own.
+    // Bound once per page so re-injections don't stack listeners.
+    if (!window.__ssCtbpEvtBound) {
+      window.__ssCtbpEvtBound = true;
+      document.addEventListener('shopify:section:unload', function (e) {
+        cleanup(e.detail && e.detail.sectionId);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+{% schema %}
+{
+  "name": "Sticky countdown pro",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Sticky countdown pro"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,203 @@
+<style>
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n4.81949fa0ac9fd2021e16436151e8eaa539321637.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n4.a6c632ca7b62da89c3594789ba828388aac693fe.woff") format("woff");
+}
+
+
+  .ss-announcement-bar,
+  .ss-announcement-bar__message {
+    overflow: hidden;
+  }
+  .ss-announcement-bar:hover {
+    opacity: 0.8;
+  }
+  .ss-announcement-bar__link {
+    display: block;
+    width: 100%;
+    padding: 1.5rem 0rem;
+    text-decoration: none;
+    color: var(--text-color);
+    line-height:0;
+  }
+  .ss-announcement-bar__link:hover {
+    color: var(--text-color);
+  }
+  #marq {
+    width: 100%;
+    border: inset;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: unset;
+    border: 0;
+    box-shadow: unset;
+    border-color: currentcolor;
+    vertical-align: middle;
+  }
+  
+  @keyframes marquesina-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 {
+    from {
+      transform: translateX(-50%);
+    }
+    to {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes marquesina-reverse-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(50%);
+    }
+  }
+  
+  .ss-announcement-bar-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 #orig {
+    display: inline-block;
+    overflow: hidden;
+    transform: translate(0);
+  }
+
+  .ss-announcement-bar__message {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-size: 12px;
+  }
+  #orig.reverse .announcement-bar__message {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .ss-announcement-bar__message li {
+
+    line-height: 1;
+    font-size: 12px;
+    display: inline-block;
+    padding-right: 114px;
+    position: relative;
+
+  }
+  .ss-announcement-bar__message li::after {
+    content: '';
+    width: 3.5px;
+    height: 3.5px;
+    background-color: var(--text-color);
+    background-image: none;
+    opacity: 0.3;
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    right: 50px;
+  }
+  @media (max-width: 480px) {
+    #marq {
+      max-height: 39px;
+    }
+    .ss-announcement-bar__message li {
+      padding-right: 55px;
+    }
+    .ss-announcement-bar__message li::after {
+      right: 25px;
+    }
+  }
+  .ss-announcement-bar-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 #orig {
+    animation: marquesina-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 var(--animation-duration, 45s) infinite normal linear 1s;
+  }
+
+  .ss-announcement-bar-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 #orig.reverse {
+   animation: marquesina-reverse-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218 var(--animation-duration, 45s) infinite normal linear 2s;
+  }
+</style>
+<template id="marquee-announcement-bar-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218">
+<div aria-label="Announcement" class="ss-announcement-bar ss-announcement-bar-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218" style="background-color: #cbdf83; --text-color: #181818; --animation-duration: 78s;"><a href="/pages/contact" style="cursor: pointer;">
+<div class="ss-announcement-bar__link">
+<div class="" id="marq">
+<span id="orig">
+<ul class="ss-announcement-bar__message">
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<li>FREE SHIPPING</li>
+<li>FREE RETURNS</li>
+<li>10% OFF TODAY</li>
+<!-- <li>FREE SHIPPING</li> -->
+</ul>
+</span>
+</div>
+</div></a>
+</div>
+</template>
+<div id="marquee-local-target-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218"></div>
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    let cssTarget = '.header';
+    let productForm = cssTarget
+      ? document.querySelector(cssTarget)
+      : document.querySelector('#marquee-local-target-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218');
+
+    if (!productForm) return;
+
+    const templateContent = document.querySelector(
+      '#marquee-announcement-bar-template--18530902081865__544cc299-03ac-453b-8dfe-9de97830b218'
+    ).content;
+
+    productForm.insertAdjacentElement(
+      'beforebegin',
+      templateContent.firstElementChild
+    );
+
+    setTimeout(()=> {
+      var htmlElement = document.documentElement;
+
+      if (window.getComputedStyle(htmlElement).getPropertyValue('direction') === 'rtl') {
+          document.querySelector('#orig').classList.add('reverse');
+      }
+    }, 1000);
+  });
+</script>
+{% schema %}
+{
+  "name": "Scrolling announcement bar pro 💎",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Scrolling announcement bar pro 💎"
+    }
+  ]
+}
+{% endschema %}

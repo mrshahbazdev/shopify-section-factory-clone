@@ -1,0 +1,813 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_i4.5a4ea298b4789e064f62a29aafc18d41f09ae59b.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_i4.072b5869c5e0ed5b9d2021e4c2af132e16681ad2.woff") format("woff");
+}
+
+  
+  .section-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px !important;
+    margin-bottom: -8px !important;
+  }
+  
+  .section-template--22090900635977__ss_size_guide_2_tdHCK7-settings {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    position: relative;
+  }
+
+  .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: fit-content;
+    cursor: pointer;
+  }
+
+  .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 * {
+    margin: 0px;
+    font-size: 13px;
+    color: #4d4d4d;
+    line-height: 130%;
+    text-transform: unset;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: all 0.25s ease 0s;
+  }
+
+  .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7:hover * {
+    transition: all 0.25s ease 0s;
+    color: #999999;
+  }
+
+  .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    flex: 0 0 14px;
+  }
+
+  .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 img,
+  .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 svg {
+    display: block;
+    width: 14px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 svg path {
+    transition: all 0.25s ease 0s;
+    stroke: #4d4d4d;
+  }
+
+  .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7:hover .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 svg path {
+    transition: all 0.25s ease 0s;
+    stroke: #999999;
+  }
+
+  .size-modal-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    pointer-events: none;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+  }
+
+  .size-modal-template--22090900635977__ss_size_guide_2_tdHCK7.active {
+    opacity: 1;
+    z-index: 999;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .size-modal-inner-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    position: relative;
+    width: 100%;
+    max-height: 96vh;
+    height: 100%;
+    padding: 40px 20px;
+    border: 0px solid #000000;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 100%;
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .size-modal-body-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    flex: 1 0;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7 img,
+  .size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7 svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7 svg {
+    background-color: #AFAFAF;
+  }
+
+  .size-modal-heading-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    text-align: left;
+  }
+
+  .size-modal-heading-template--22090900635977__ss_size_guide_2_tdHCK7 * {
+    margin: 0px;
+    font-size: 24px;
+    color: #121212;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .size-modal-content-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    flex: 1 0;
+    width: calc(100% + 20px);
+  }
+
+  .size-modal-content-top-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .size-modal-title-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    margin: 0px;
+    font-size: 18px;
+    color: #121212;
+    line-height: 130%;
+    text-transform: unset;
+    word-break: break-word;
+    font-weight: 700
+  }
+
+  .size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    text-align: left;
+    min-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    scrollbar-width: thin;
+  }
+
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7::-webkit-scrollbar {
+    background-color: #f9f9fd;
+  }
+
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 table {
+    border: 1px solid rgba(var(--color-foreground),.2);
+    box-shadow: none;
+  }
+
+  .size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7 *,
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 * {
+    font-size: 12px;
+    color: #121212;
+    line-height: 130%;
+    text-transform: unset;
+    word-break: break-word;
+  }
+
+  .size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7 *:first-child,
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 *:first-child {
+    margin-top: 0px;
+  }
+
+  .size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7 ul,
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+  }
+
+  .size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20px !important;
+    right: 10px !important;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 99;
+    position: absolute;
+    margin: 0px;
+  }
+
+  .size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7 svg {
+    width: 18px;
+  }
+
+  .size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7 svg path {
+    fill: #4d4d4d;
+  }
+
+  .size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    max-width: fit-content;
+    padding: 5px;
+    border-radius: 200px;
+    border: 1px solid #cfcfcf;
+    min-width: 150px;
+    cursor: pointer;
+  }
+
+  .size-modal-toggles-inner-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    width: 100%;
+  }
+
+  .size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    flex: 1 0;
+    display: block;
+    padding: 10px;
+    font-size: 12px;
+    color: #121212;
+    line-height: 100%;
+    text-transform: unset;
+    transition: all 0.25s ease 0s;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7 .size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7:first-child {
+    transition: all 0.25s ease 0s;
+    color: #ffffff; 
+  }
+
+  .size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7.active .size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7:first-child {
+    transition: all 0.25s ease 0s;
+    color: #121212; 
+  }
+
+  .size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7.active .size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7:nth-child(2) {
+    transition: all 0.25s ease 0s;
+    color: #ffffff; 
+  }
+
+  .size-modal-toggle-active-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    background-color: #334fb4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% / 2);
+    height: 100%;
+    border-radius: 200px;
+    z-index: 1;
+    transition: all 0.25s ease 0s;
+  }
+
+  .size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7.active .size-modal-toggle-active-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    left: 50%;
+    transition: all 0.25s ease 0s;
+  }
+
+  .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    display: none;
+  }
+
+  .size-modal-tables-template--22090900635977__ss_size_guide_2_tdHCK7 .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7:first-child {
+    display: block; 
+  }
+
+  .size-modal-tables-template--22090900635977__ss_size_guide_2_tdHCK7.active .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7:first-child {
+    display: none;
+  }
+
+  .size-modal-tables-template--22090900635977__ss_size_guide_2_tdHCK7.active .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7:last-child {
+    display: block; 
+  }
+
+  .size-modal-content-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    order: 2;
+  }
+
+  .size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7 {
+    order: 1;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      margin-top: 0px !important;
+      margin-bottom: -10px !important;
+    }
+    
+    .section-template--22090900635977__ss_size_guide_2_tdHCK7-settings {
+      padding: 0 5rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 * {
+      font-size: 13px;
+    }
+
+    .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      flex: 0 0 14px;
+    }
+
+    .size-modal-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      padding: 80px;
+    }
+
+    .size-modal-inner-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      max-width: 100%;
+      padding: 40px 40px;
+    }
+
+    .size-modal-heading-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      text-align: left;
+    }
+  
+    .size-modal-heading-template--22090900635977__ss_size_guide_2_tdHCK7 * {
+      font-size: 32px;
+    }
+
+    .size-modal-body-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      gap: 40px;
+      margin-top: 20px;
+      flex-direction: row;
+    }
+
+    .size-modal-content-top-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      margin-top: 40px;
+    }
+
+    .size-modal-title-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      font-size: 24px;
+    }
+
+    .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 img,
+    .size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7 svg {
+      width: 14px;
+    }
+
+    .size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      text-align: left;
+      margin-left: -40px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  
+    .size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7 *,
+    .size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7 * {
+      font-size: 14px;
+    }
+
+    .size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      top: 30px !important;
+      right: 30px !important;
+    }
+
+    .size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7 svg {
+      width: 24px;
+    }
+
+    .size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      font-size: 15px;
+    }
+
+    .size-modal-content-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      order: 1;
+      width: auto;
+    }
+
+    .size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      order: 2;
+    }
+
+  }</style>
+<style>
+    .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 {
+      margin-left: auto;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7 {
+        margin-left: auto;
+        margin-right: 0px;
+      } 
+    }
+  </style>
+<script>
+  (function () {
+  function moreLoadProductForm() {
+    var productForm = document.querySelector('#ss-size-guide-2');
+    if (!productForm) {
+      var productForm = document.querySelector('.button--add-to-cart, .product .product-form, .product-single__add-to-cart, .shopify-payment-button, .shopify-payment-button__button, .ProductForm__BuyButtons, .add-to-cart');
+      if (!productForm) return;
+    }
+
+    if (!document.querySelector('.section-template--22090900635977__ss_size_guide_2_tdHCK7')) {
+      const template = document.querySelector('#ss-size-guide-2-template--22090900635977__ss_size_guide_2_tdHCK7');
+      if (template) {
+        const clone = template.content.cloneNode(true);
+        const element = clone.firstElementChild;
+        
+        productForm.insertAdjacentElement(
+          'beforebegin',
+          element
+        );
+      }
+    }
+
+    if (!document.querySelector('.size-modal-template--22090900635977__ss_size_guide_2_tdHCK7')) {
+      var bodyInner = document.querySelector('body');
+      const modalTemplate = document.querySelector('#ss-size-guide-2-modal-template--22090900635977__ss_size_guide_2_tdHCK7');
+      if (modalTemplate) {
+        const modalClone = modalTemplate.content.cloneNode(true);
+        const modalElement = modalClone.firstElementChild;
+        
+        bodyInner.insertAdjacentElement('beforeend', modalElement);
+      }
+    }
+  }
+
+  function initObserver() {
+    const targetNode = document.querySelector('.product-section') || document.body;
+    
+    const config = { 
+      childList: true, 
+      subtree: true 
+    };
+    
+    const callback = function(mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'childList') {
+          if (!document.querySelector('.section-template--22090900635977__ss_size_guide_2_tdHCK7')) {
+            moreLoadProductForm();
+            initSizeGuide();
+          }
+        }
+      }
+    };
+    
+    const observer = new MutationObserver(callback);
+    observer.observe(targetNode, config);
+  }
+
+  window.addEventListener('DOMContentLoaded', () => {
+    moreLoadProductForm();
+    initObserver();
+  });
+})();
+</script>
+<template id="ss-size-guide-2-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="section-template--22090900635977__ss_size_guide_2_tdHCK7 size-guide-template--22090900635977__ss_size_guide_2_tdHCK7" style="background-color:; background-image: ;">
+<div class="section-template--22090900635977__ss_size_guide_2_tdHCK7-settings">
+<div class="size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7">
+<span>Size Guide</span>
+<div class="size-toggle-icon-template--22090900635977__ss_size_guide_2_tdHCK7">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_1_3)">
+<path clip-rule="evenodd" d="M0.625863 16.1183C-0.0280383 16.7722 -0.0280383 17.8324 0.625863 18.4863L5.36183 23.2223C6.01573 23.8762 7.07592 23.8762 7.72982 23.2223L23.1217 7.83037C23.7756 7.17647 23.7756 6.11629 23.1217 5.46239L18.3858 0.726418C17.7319 0.0725167 16.6717 0.0725178 16.0178 0.726418L0.625863 16.1183ZM6.74316 11.5797L4.37515 13.9477L6.34849 15.921C6.67544 16.248 6.67544 16.7781 6.34849 17.105C6.02154 17.432 5.49145 17.432 5.1645 17.105L3.19116 15.1317L1.41519 16.9077C1.19722 17.1256 1.19722 17.479 1.41519 17.697L6.15116 22.433C6.36913 22.6509 6.72252 22.6509 6.94049 22.433L22.3324 7.04105C22.5504 6.82308 22.5504 6.46968 22.3324 6.25172L17.5964 1.51575C17.3785 1.29778 17.0251 1.29778 16.8071 1.51575L15.0311 3.29175L17.0044 5.26507C17.3314 5.59202 17.3314 6.12211 17.0044 6.44906C16.6775 6.77601 16.1474 6.77601 15.8204 6.44906L13.8471 4.47574L11.4791 6.84372L13.4524 8.81704C13.7794 9.14399 13.7794 9.67409 13.4524 10.001C13.1255 10.328 12.5954 10.328 12.2685 10.001L10.2951 8.02771L7.92715 10.3957L9.90047 12.369C10.2274 12.696 10.2274 13.2261 9.90047 13.553C9.57352 13.88 9.04343 13.88 8.71648 13.553L6.74316 11.5797Z" fill="black" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_1_3">
+<rect fill="white" height="24" width="24"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</template>
+<template class="size-modal-wrapper-template--22090900635977__ss_size_guide_2_tdHCK7" id="ss-size-guide-2-modal-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="size-modal-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="size-modal-inner-template--22090900635977__ss_size_guide_2_tdHCK7">
+<button class="size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7">
+<svg fill="none" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<div class="size-modal-heading-template--22090900635977__ss_size_guide_2_tdHCK7">
+<h2>Size Guide</h2>
+</div>
+<div class="size-modal-content-top-template--22090900635977__ss_size_guide_2_tdHCK7">
+<p class="size-modal-title-template--22090900635977__ss_size_guide_2_tdHCK7">Product Measurements</p>
+<div class="size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="size-modal-toggles-inner-template--22090900635977__ss_size_guide_2_tdHCK7">
+<span class="size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7">INCH</span>
+<span class="size-modal-toggle-template--22090900635977__ss_size_guide_2_tdHCK7">CM</span>
+<span class="size-modal-toggle-active-template--22090900635977__ss_size_guide_2_tdHCK7"></span>
+</div>
+</div>
+</div>
+<div class="size-modal-body-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="size-modal-content-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="size-modal-tables-template--22090900635977__ss_size_guide_2_tdHCK7">
+<div class="size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7">
+<table>
+<tbody>
+<tr>
+<td>Size</td>
+<td>XS</td>
+<td>S</td>
+<td>M</td>
+<td>L</td>
+<td>XL</td>
+<td>2XL</td>
+</tr>
+<tr>
+<td>1. Chest Width</td>
+<td>17.9</td>
+<td>18.7</td>
+<td>19.5</td>
+<td>20.3</td>
+<td>21.1</td>
+<td>22.2</td>
+</tr>
+<tr>
+<td>2. Sleeve width</td>
+<td>6.9</td>
+<td>7.1</td>
+<td>7.3</td>
+<td>7.5</td>
+<td>7.7</td>
+<td>7.9</td>
+</tr>
+<tr>
+<td>3. Sleeve length</td>
+<td>24.6</td>
+<td>25.0</td>
+<td>25.4</td>
+<td>25.8</td>
+<td>26.2</td>
+<td>26.6</td>
+</tr>
+<tr>
+<td>4. Shoulder width</td>
+<td>15.4</td>
+<td>15.7</td>
+<td>16.1</td>
+<td>16.5</td>
+<td>16.9</td>
+<td>17.3</td>
+</tr>
+<tr>
+<td>5. Body length</td>
+<td>45.9</td>
+<td>46.3</td>
+<td>46.7</td>
+<td>47.0</td>
+<td>47.4</td>
+<td>47.8</td>
+</tr>
+<tr>
+<td>6. Hip width</td>
+<td>20.1</td>
+<td>20.9</td>
+<td>21.7</td>
+<td>22.4</td>
+<td>23.2</td>
+<td>24.4</td>
+</tr>
+<tr>
+<td>7. Waist width</td>
+<td>16.7</td>
+<td>17.5</td>
+<td>18.3</td>
+<td>19.1</td>
+<td>19.9</td>
+<td>21.1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="size-modal-table-template--22090900635977__ss_size_guide_2_tdHCK7">
+<table>
+<tbody>
+<tr>
+<td>Size</td>
+<td>XS</td>
+<td>S</td>
+<td>M</td>
+<td>L</td>
+<td>XL</td>
+<td>2XL</td>
+</tr>
+<tr>
+<td>1. Chest Width</td>
+<td>45.5</td>
+<td>47.5</td>
+<td>49.5</td>
+<td>51.5</td>
+<td>53.5</td>
+<td>56.5</td>
+</tr>
+<tr>
+<td>2. Sleeve width</td>
+<td>17.5</td>
+<td>18</td>
+<td>18.5</td>
+<td>19</td>
+<td>19.5</td>
+<td>20</td>
+</tr>
+<tr>
+<td>3. Sleeve length</td>
+<td>62.5</td>
+<td>63.5</td>
+<td>64.5</td>
+<td>65.5</td>
+<td>66.5</td>
+<td>67.5</td>
+</tr>
+<tr>
+<td>4. Shoulder width</td>
+<td>39</td>
+<td>40</td>
+<td>41</td>
+<td>42</td>
+<td>43</td>
+<td>44</td>
+</tr>
+<tr>
+<td>5. Body length</td>
+<td>116.5</td>
+<td>117.5</td>
+<td>118.5</td>
+<td>119.5</td>
+<td>120.5</td>
+<td>121.5</td>
+</tr>
+<tr>
+<td>6. Hip width</td>
+<td>51</td>
+<td>53</td>
+<td>55</td>
+<td>57</td>
+<td>59</td>
+<td>62</td>
+</tr>
+<tr>
+<td>7. Waist width</td>
+<td>42.5</td>
+<td>44.5</td>
+<td>46.5</td>
+<td>48.5</td>
+<td>50.5</td>
+<td>53.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="size-modal-text-template--22090900635977__ss_size_guide_2_tdHCK7">
+<p><em>Model is wearing size </em><em>S</em></p>
+</div>
+</div>
+<div class="size-modal-image-template--22090900635977__ss_size_guide_2_tdHCK7">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/size-guide_741edb62-e131-4ae4-a2eb-f59406da3717.jpg?v=1725353422"/>
+</div>
+</div>
+</div>
+</div>
+</template>
+<script>
+  function initSizeGuide() {
+    setTimeout(() => {
+
+      let toggle = document.querySelector('.size-toggle-template--22090900635977__ss_size_guide_2_tdHCK7');
+      const modal = document.querySelector('.size-modal-template--22090900635977__ss_size_guide_2_tdHCK7');
+      const close = document.querySelector('.size-modal-close-template--22090900635977__ss_size_guide_2_tdHCK7');
+      if(toggle) {
+        toggle.addEventListener('click', () => {
+          document.body.style.overflow = 'hidden';
+          modal.classList.add('active');
+        })
+      }
+
+      close.addEventListener('click', () => {
+          document.body.style.overflow = '';
+          modal.classList.remove('active');
+      });
+      
+      document.addEventListener('click', (e) => {
+          if (e.target == modal) {
+            document.body.style.overflow = '';
+            modal.classList.remove('active');
+          }
+      });
+
+    let toggles = document.querySelector('.size-modal-toggles-template--22090900635977__ss_size_guide_2_tdHCK7');
+    let tables = document.querySelector('.size-modal-tables-template--22090900635977__ss_size_guide_2_tdHCK7');
+    if(toggles) {
+      toggles.addEventListener('click', () => {
+        toggles.classList.toggle('active');
+        tables.classList.toggle('active');
+      })
+    }
+      
+    }, 400)
+  }
+  
+  document.addEventListener('DOMContentLoaded', initSizeGuide);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initSizeGuide);
+     document.addEventListener('shopify:section:load', initSizeGuide);
+  }
+</script>
+<style> @media (width < 800px) {#shopify-section-template--22090900635977__ss_size_guide_2_tdHCK7 div[class*="size-guide-template-"] {margin-top: 6rem; /* adjust top margin */ margin-bottom: 2rem; /* adjust bottom margin */ }} </style>
+{% schema %}
+{
+  "name": "Size guide #2",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Size guide #2"
+    }
+  ]
+}
+{% endschema %}

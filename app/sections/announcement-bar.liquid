@@ -1,0 +1,97 @@
+<style>
+
+  .ss-annoucement-banner-wrapper {
+    padding: 10px 0;
+    background-color: #ead5d9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ss-anouncement-banner-paragraph {
+    color: #000000;
+    margin:0;
+    padding:0;
+    line-height:1;
+    font-size:10px;
+    text-transform:uppercase;
+  }
+
+  .ss-announcement-banner-center {
+    border-right: 1px solid #000000;
+    border-left: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .ss-anouncement-banner-stars {
+    color: #000000;
+    font-size:8px;
+  }
+
+  @media (min-width: 500px){
+    .ss-announcement-banner-center {
+        padding: 0 20px;
+    }
+    
+    .ss-anouncement-banner-paragraph {
+      font-size:14px;
+    }
+    
+    .ss-anouncement-banner-stars {
+      font-size:8px;
+    }
+  }
+  
+  
+</style>
+<template id="ss-announcement-banner-template--16882743050489__c40b966e-2378-45e1-88e1-6f07f84a0e15">
+<div class="ss-annoucement-banner-wrapper">
+<div style="padding-right:20px">
+<p class="ss-anouncement-banner-paragraph">Free shipping</p>
+</div>
+<div class="ss-announcement-banner-center">
+<p class="ss-anouncement-banner-paragraph">Trusted by 1000+ ⭐⭐⭐⭐⭐</p>
+</div>
+<div style="padding-left:20px">
+<p class="ss-anouncement-banner-paragraph">Easy returns</p>
+</div>
+</div>
+</template>
+<div id="announcement-local-target-template--16882743050489__c40b966e-2378-45e1-88e1-6f07f84a0e15"></div>
+<script>
+  function initAnnouncementBar() {
+    let cssTarget = '.header, .pageheader, .section-header, #announcement, .toolbar, .header_wrapper';
+    let productForm = cssTarget
+      ? document.querySelector(cssTarget)
+      : document.querySelector('#announcement-local-target-template--16882743050489__c40b966e-2378-45e1-88e1-6f07f84a0e15');
+
+    if (!productForm) return;
+
+    const templateContent = document.querySelector(
+      '#ss-announcement-banner-template--16882743050489__c40b966e-2378-45e1-88e1-6f07f84a0e15'
+    ).content;
+
+    productForm.insertAdjacentElement(
+      'beforebegin',
+      templateContent.firstElementChild
+    );
+  }
+
+  document.addEventListener('DOMContentLoaded', initAnnouncementBar);
+  
+</script>
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
+}
+{% endschema %}

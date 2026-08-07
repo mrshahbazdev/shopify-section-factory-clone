@@ -1,0 +1,564 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Montserrat;
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n1.2f0714cbd41857ba00d5d4fafdce92c40aadb8e6.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n1.7bec1bf4c4d0f77c37dc95cf9616413eceba9082.woff") format("woff");
+}
+
+
+  .section-template--24221064495433__ss_promo_slider_BY9pxr {
+    border-top: solid #121212 0px;
+    border-bottom: solid #121212 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+  }
+  
+  .section-template--24221064495433__ss_promo_slider_BY9pxr-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    position: relative;
+  }
+
+  .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr {
+    display: flex !important;
+    align-items: end !important;
+    position: relative !important;
+    margin-left: -1.5rem !important;
+    margin-right: -1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+  }
+
+  .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr {   
+    z-index: 0 !important;
+    text-decoration: none !important;
+    position: inherit !important;
+    box-sizing: border-box !important;
+    padding: 12px 12px; 
+    border-radius: 8px !important;
+  }
+  .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr.swiper-slide-active {
+    z-index: 1 !important;
+  }
+
+  .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+  }
+
+  .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr * {    
+    margin: 0;  
+    font-size: 12px;
+    color: #121212;
+    line-height: 150%;
+    text-transform: unset;
+    text-decoration: none;
+    word-break: break-word;
+  }
+
+  .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr svg {
+    display: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 12px;
+    object-fit: cover;
+  }
+
+  .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr svg path {
+    fill: #121212;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    display: flex;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border: 0px;
+    border: 0px solid #121212;
+    border-radius: 100px;
+    background: transparent;
+    background: #ffffff;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr {
+    left: 2%;
+  }
+
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr {
+    right: 2%;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon {
+    pointer-events: none;
+    place-items: center;
+    display: grid;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:before,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:before {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease;
+    width: 8px;
+    height: 8px;
+    transform: rotate(calc(1 * 45deg));
+    box-sizing: border-box;
+    border-style: solid;
+    border: 0px;
+    border-right: 2px solid currentColor;
+    border-top: 2px solid currentColor;
+    position: relative;
+    left: -1px;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:before {
+    left: unset;
+    right: -1px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid currentColor;
+    border-left: 2px solid currentColor;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:after,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:after {
+    content: "";
+    grid-area: 1 / -1;
+    transition: all .2s ease;
+    width: 7.7px;
+    height: 1.6px;
+    transform-origin: center;
+    opacity: 0;
+    background: currentColor;
+    transform: scaleX(.5);
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr span,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr span {
+    color: #4d4d4d;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr.swiper-button-disabled,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr.swiper-button-disabled {
+    opacity: 0;
+    transition: all 0.25s ease 0s;
+  }
+
+  .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr.swiper-button-lock,
+  .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr.swiper-button-lock {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr {
+    display: none;
+  }
+
+  .promo-slide-text-mobile-template--24221064495433__ss_promo_slider_BY9pxr {
+    display: flex;
+  }
+
+  .promo-slide-text-desktop-template--24221064495433__ss_promo_slider_BY9pxr {
+    display: none;
+  }
+
+  @media(min-width: 1024px) {
+
+    .section-template--24221064495433__ss_promo_slider_BY9pxr {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--24221064495433__ss_promo_slider_BY9pxr-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr {
+      margin-left: -5rem !important;
+      margin-right: -5rem !important;
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+    }
+
+    .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr {      
+      padding: 16px 16px; 
+    }
+
+    .promo-slide-text-mobile-template--24221064495433__ss_promo_slider_BY9pxr {
+      display: none;
+    }
+
+    .promo-slide-text-desktop-template--24221064495433__ss_promo_slider_BY9pxr {
+      display: flex;
+    }
+
+    .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr {
+      text-align: center;
+      justify-content: center;
+    }
+
+    .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr * {  
+      font-size: 12px;
+    }
+
+    .promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr svg {
+      display: block;
+      width: 12px;
+    }   
+
+    .promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      pointer-events: none;
+      margin: 0 auto;
+      max-width: 75vw;
+      width: 100%;
+      opacity: 0;
+      border-radius: 8px;
+      border: 0px solid #121212;
+      transition: all 0.25s ease 0s;
+      padding: 16px 16px;     
+      text-align: center;
+      background-color: #4d4d4d;
+    }
+
+    .promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr.active {
+      opacity: 1;
+      transition: all 0.25s ease 0s;
+    }
+
+    .promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr * {
+      margin: 0;  
+      font-size: 12px;
+      color: #ffffff;
+      line-height: 150%;
+      text-transform: unset;
+      text-decoration: none;
+      word-break: break-word;
+      text-wrap: wrap;
+      text-align: center;
+    }
+
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr {
+      width: 28px;
+      height: 28px;
+      transition: all 0.25s ease 0s;
+    }
+
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:before,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:before {
+      width: 8px;
+      height: 8px;
+    }
+
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:after,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr .animate-icon:after {
+      width: 7.7px;
+    }   
+  }</style>
+<style>
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr:hover,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr:hover {
+      transition: all 0.3s ease 0s;
+      border: 0px solid #121212;
+      background: #4d4d4d;
+    }
+  
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr:hover .animate-icon,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr:hover .animate-icon {
+      color: #ffffff;
+    }
+  </style>
+<style>
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr {
+      display: none;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr,
+      .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr {
+        display: flex;
+      }
+
+      .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr {
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      }
+
+      
+      .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.is-beginning {
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 85%, rgba(0,0,0,0) 100%);
+      }
+
+      .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.is-end {
+        -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%);
+        mask-image: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 100%, rgba(0,0,0,0) 100%);
+      }
+    }
+  </style>
+<style>
+    .slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr,
+    .slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr {
+      box-shadow: 0px 0px 6px 0px rgba(0,0,0,.08);
+    }
+  </style>
+<style>
+    .promo-slide-slide_7TmiCa {
+      background-color: #fde5e8;
+      border: 0px solid #78cb80;
+    }
+  </style>
+<style>
+    .promo-slide-slide_D6Wa4D {
+      background-color: #fdf59b;
+      border: 0px solid #c6e7c9;
+    }
+  </style>
+<style>
+    .promo-slide-slide_zHGjdz {
+      background-color: #d1dbee;
+      border: 0px solid #c6e7c9;
+    }
+  </style>
+<style>
+  .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.preview .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 15px;    
+  }
+
+  .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.preview .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr {
+    width: 100%;
+  }
+
+  .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.preview .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr:not(:first-child) {
+    margin-left: 24px;
+  } 
+
+  @media(min-width: 1024px) {
+    .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.preview .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr:not(:first-child) {
+      margin-left: 24px;
+    } 
+
+    .promo-slider-template--24221064495433__ss_promo_slider_BY9pxr.preview .promo-slide-template--24221064495433__ss_promo_slider_BY9pxr {
+      width: calc((100% / 2) - 24px);
+    }
+  }
+</style>
+<div class="section-template--24221064495433__ss_promo_slider_BY9pxr promo-template--24221064495433__ss_promo_slider_BY9pxr" style="background-color:#ffffff;">
+<div class="section-template--24221064495433__ss_promo_slider_BY9pxr-settings">
+<div class="promo-slider-template--24221064495433__ss_promo_slider_BY9pxr preview swiper">
+<div class="swiper-wrapper">
+<div class="promo-slide-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-slide_7TmiCa swiper-slide">
+<div class="promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-text-desktop-template--24221064495433__ss_promo_slider_BY9pxr">
+<p>Last chance: Save 20% on all* makeup💄 NYX, Clinique, MAC, Clarins and many more!*</p>
+<svg aria-hidden="true" class="disclaimer__StyledIcon-sc-u02bah-1 jxbHQy" height="16" id="slide_7TmiCa" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7.4 7.60244C7.4 7.27107 7.66863 7.00244 8 7.00244C8.33137 7.00244 8.6 7.27107 8.6 7.60244V10.9024C8.6 11.2338 8.33137 11.5024 8 11.5024C7.66863 11.5024 7.4 11.2338 7.4 10.9024V7.60244Z"></path><path d="M8 5.70244C8.33137 5.70244 8.6 5.43381 8.6 5.10244C8.6 4.77107 8.33137 4.50244 8 4.50244C7.66863 4.50244 7.4 4.77107 7.4 5.10244C7.4 5.43381 7.66863 5.70244 8 5.70244Z"></path><path clip-rule="evenodd" d="M7.99998 15.0024C11.866 15.0024 15 11.8684 15 8.00244C15 4.13645 11.866 1.00244 7.99998 1.00244C4.13398 1.00244 0.999977 4.13645 0.999977 8.00244C0.999977 11.8684 4.13398 15.0024 7.99998 15.0024ZM7.99998 13.8024C11.2032 13.8024 13.8 11.2057 13.8 8.00244C13.8 4.79919 11.2032 2.20244 7.99998 2.20244C4.79673 2.20244 2.19998 4.79919 2.19998 8.00244C2.19998 11.2057 4.79673 13.8024 7.99998 13.8024Z" fill-rule="evenodd"></path></svg>
+</div>
+<div class="promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-text-mobile-template--24221064495433__ss_promo_slider_BY9pxr">
+<p>Save 20% on all* makeup💄 </p>
+<svg aria-hidden="true" class="disclaimer__StyledIcon-sc-u02bah-1 jxbHQy" height="16" id="slide_7TmiCa" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7.4 7.60244C7.4 7.27107 7.66863 7.00244 8 7.00244C8.33137 7.00244 8.6 7.27107 8.6 7.60244V10.9024C8.6 11.2338 8.33137 11.5024 8 11.5024C7.66863 11.5024 7.4 11.2338 7.4 10.9024V7.60244Z"></path><path d="M8 5.70244C8.33137 5.70244 8.6 5.43381 8.6 5.10244C8.6 4.77107 8.33137 4.50244 8 4.50244C7.66863 4.50244 7.4 4.77107 7.4 5.10244C7.4 5.43381 7.66863 5.70244 8 5.70244Z"></path><path clip-rule="evenodd" d="M7.99998 15.0024C11.866 15.0024 15 11.8684 15 8.00244C15 4.13645 11.866 1.00244 7.99998 1.00244C4.13398 1.00244 0.999977 4.13645 0.999977 8.00244C0.999977 11.8684 4.13398 15.0024 7.99998 15.0024ZM7.99998 13.8024C11.2032 13.8024 13.8 11.2057 13.8 8.00244C13.8 4.79919 11.2032 2.20244 7.99998 2.20244C4.79673 2.20244 2.19998 4.79919 2.19998 8.00244C2.19998 11.2057 4.79673 13.8024 7.99998 13.8024Z" fill-rule="evenodd"></path></svg>
+</div>
+</div>
+<div class="promo-slide-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-slide_D6Wa4D swiper-slide">
+<div class="promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-text-desktop-template--24221064495433__ss_promo_slider_BY9pxr">
+<p>You can still get a tan even when the sun is hiding ☀️ Shop self-tanner here</p>
+</div>
+<div class="promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-text-mobile-template--24221064495433__ss_promo_slider_BY9pxr">
+<p>☀️ Shop self-tanner here</p>
+</div>
+</div>
+<div class="promo-slide-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-slide_zHGjdz swiper-slide">
+<div class="promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-text-desktop-template--24221064495433__ss_promo_slider_BY9pxr">
+<p>Section Store from head to toe: 💙 Find your favorites here</p>
+</div>
+<div class="promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr promo-slide-text-mobile-template--24221064495433__ss_promo_slider_BY9pxr">
+<p>💙 Find your favorites here</p>
+</div>
+</div>
+</div>
+</div>
+<div class="promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr" data-id="slide_7TmiCa"><p>Certain items are excluded from all discounts. Discounts cannot be combined.</p></div>
+<button class="slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr">
+<span class="animate-icon"></span>
+</button>
+<button class="slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr">
+<span class="animate-icon"></span>
+</button>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  function initSlider12() {
+    document.querySelector('.promo-slider-template--24221064495433__ss_promo_slider_BY9pxr').classList.remove('preview');    
+    const slider = new Swiper(".promo-slider-template--24221064495433__ss_promo_slider_BY9pxr", {
+      speed: 500,
+      navigation: {
+        nextEl: '.slider-btn-next-template--24221064495433__ss_promo_slider_BY9pxr',
+        prevEl: '.slider-btn-prev-template--24221064495433__ss_promo_slider_BY9pxr',
+      },
+      breakpoints: {
+        320: {
+            spaceBetween: 8,
+            slidesPerView: 1.3
+          },
+          768: {
+            spaceBetween: 8,
+            slidesPerView: 1
+          },
+          1024: {
+            spaceBetween: 16,
+            slidesPerView: 2
+          }
+      }
+    });
+
+    const sliderContainer = document.querySelector('.promo-slider-template--24221064495433__ss_promo_slider_BY9pxr');
+
+    function updateSliderEffects() {
+      if (slider.isBeginning) {
+        sliderContainer.classList.add('is-beginning');
+      } else {
+        sliderContainer.classList.remove('is-beginning');
+      }
+
+      if (slider.isEnd) {
+        sliderContainer.classList.add('is-end');
+      } else {
+        sliderContainer.classList.remove('is-end');
+      }
+    }
+
+    updateSliderEffects();
+
+    slider.on('slideChange', updateSliderEffects);
+
+    const svgIcons = document.querySelectorAll('.promo-slide-text-template--24221064495433__ss_promo_slider_BY9pxr svg');
+    const hoverTexts = document.querySelectorAll('.promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr');
+
+    function applyHoverOrClickEvents() {
+      hoverTexts.forEach(text => text.classList.remove('active'));
+
+      const isMobile = window.matchMedia("(max-width: 1024px)").matches;
+
+      svgIcons.forEach(svg => {
+        const hoverText = document.querySelector(`.promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr[data-id="${svg.id}"]`);
+
+        if (!hoverText) return;
+
+        svg.removeEventListener('mouseenter', handleMouseEnter);
+        svg.removeEventListener('mouseleave', handleMouseLeave);
+        svg.removeEventListener('click', handleClick);
+        document.removeEventListener('click', handleDocumentClick);
+
+        if (isMobile) {
+          svg.addEventListener('click', handleClick);
+          document.addEventListener('click', handleDocumentClick);
+        } else {
+          svg.addEventListener('mouseenter', handleMouseEnter);
+          svg.addEventListener('mouseleave', handleMouseLeave);
+        }
+
+        function handleMouseEnter() {
+          hoverText.classList.add('active');
+        }
+
+        function handleMouseLeave() {
+          hoverText.classList.remove('active');
+        }
+
+        function handleClick(event) {
+          event.stopPropagation(); 
+          document.querySelectorAll('.promo-slide-hover-text-template--24221064495433__ss_promo_slider_BY9pxr.active').forEach(openText => {
+            if (openText !== hoverText) {
+              openText.classList.remove('active');
+            }
+          });
+          hoverText.classList.toggle('active');
+        }
+
+        function handleDocumentClick(event) {
+          if (!svg.contains(event.target) && !hoverText.contains(event.target)) {
+            hoverText.classList.remove('active');
+          }
+        }
+      });
+    }
+
+    applyHoverOrClickEvents();
+
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        applyHoverOrClickEvents();
+      }, 200);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initSlider12);
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initSlider12);
+    document.addEventListener('shopify:section:load', initSlider12);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Promo slider",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Promo slider"
+    }
+  ]
+}
+{% endschema %}

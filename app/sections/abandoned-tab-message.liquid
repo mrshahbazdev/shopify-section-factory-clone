@@ -1,0 +1,99 @@
+<section id="section-{{ section.id }}" class="section-store-abandoned-tab-message section-style-2">
+<style>
+.section-store-abandoned-tab-message {
+  --bg: #f9fafb;
+  --fg: #111827;
+  --accent: #10b981;
+  --radius: 16px;
+  --align: right;
+  --shadow: 0 4px 24px rgba(0,0,0,0.05);
+  --sectionPadding: 80px 20px;
+  background: var(--bg);
+  color: var(--fg);
+}
+.section-store-abandoned-tab-message .ss-wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--sectionPadding);
+  text-align: var(--align);
+}
+.section-store-abandoned-tab-message .ss-title {
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 18px;
+  letter-spacing: -0.02em;
+}
+.section-store-abandoned-tab-message .ss-subtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 680px;
+  margin: 0 auto 28px;
+}
+.section-store-abandoned-tab-message .ss-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 32px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.section-store-abandoned-tab-message .ss-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
+}
+.section-store-abandoned-tab-message img { max-width: 100%; height: auto; border-radius: var(--radius); }
+.section-store-abandoned-tab-message .placeholder-image {
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+}
+</style>
+<div class="ss-wrap">
+  <h2 class="ss-title">{{ section.settings.heading }}</h2>
+  <div class="ss-subtitle">{{ section.settings.subheading }}</div>
+  <a class="ss-btn" href="{{ section.settings.button_link | default: '#' }}">{{ section.settings.button_label }}</a>
+</div>
+{% schema %}
+{
+  "name": "Abandoned tab message",
+  "tag": "section",
+  "class": "section-store-abandoned-tab-message",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Section heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>Add your subheading here.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Abandoned tab message"
+    }
+  ]
+}
+{% endschema %}
+</section>

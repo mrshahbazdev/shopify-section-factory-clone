@@ -1,0 +1,807 @@
+<style>
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+  .section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    overflow: hidden;
+    border-radius: 0px;
+  }
+  
+  #shopify-section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    padding: 0;
+    max-width: none;
+    width: 100%;
+  }
+
+  #shopify-section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 img {
+    height: 100%;
+  }
+
+  .section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5-padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+  }
+  
+  .ab-banner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    height: 100%;
+  }
+
+  .ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none;
+  }
+  
+  .ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--active {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .ab-banner-image-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .ab-banner-image-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--desktop {
+    display: none;
+  }
+
+  .ab-banner-content-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    line-height: 1;
+  }
+  
+  .ab-banner-title-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    text-align: center;
+  }
+
+  .ab-banner-title-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 * {
+    margin: 0;
+    font-size: 32px;
+    color: #ffffff;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .ab-banner-subtitle-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .ab-banner-subtitle-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 * {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .ab-banner-button-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .ab-banner-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+  }
+
+  .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    color: #000000;
+    line-height: 120%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 0px;
+    transition: all 0.25s ease 0s;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover {
+    color: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg {
+    width: 14px !important;
+    height: 14px !important;
+    background: transparent;
+    min-height: auto !important;
+  }
+
+  .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg path {
+    fill: #000000;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover svg path {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ab-banner-button-second-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    position: relative;
+    text-decoration: none;
+    width: fit-content;
+  }
+
+  .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    color: #121212;
+    line-height: 120%;
+    text-align: center;
+    text-transform: unset;
+    text-decoration: none;
+    padding: 14px 32px;
+    border-radius: 0px;
+    transition: all 0.25s ease 0s;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover {
+    color: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg {
+    width: 14px !important;
+    height: 14px !important;
+    background: transparent;
+    min-height: auto !important;
+  }
+
+  .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg path {
+    fill: #121212;
+    transition: all 0.25s ease 0s;
+  }
+
+  .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover svg path {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+  
+  .ab-banner-overlay-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0%;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  .ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  }
+  
+  .ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5,
+  .ab-banner-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .ab-banner-play-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    position: absolute;   
+    width: px;
+    height: px;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.25s ease 0s;
+  }
+  
+  .ab-banner-image-wrapper-playing-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 .ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: block;
+  }
+  
+  .ab-banner-image-wrapper-playing-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 .ab-banner-image-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: none;
+  }
+  
+  .as-banner-slide-has-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 .ab-svg-placeholder {
+    display: none;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    position: absolute !important;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border: 0px solid #ffffff;
+    border-radius: 50%;
+    
+      background: rgba(18,18,18,0.3);
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,.15);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    z-index: 2;    
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg {
+    background: transparent;
+    height: 24.0px;
+    width: 24.0px;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg path {
+    fill: #ffffff;
+    transition: all 0.3s ease 0s;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover {
+    transition: all 0.3s ease 0s;
+    border: 0px solid #ffffff;
+    
+      background: rgba(255,255,255,0.3);
+    
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover svg path {
+    fill: #ffffff;
+    transition: all 0.3s ease 0s;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 .ab-banner-play-icon-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: none !important;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5.active .ab-banner-play-icon-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: block !important;
+  }
+
+  .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5.active .ab-banner-pause-icon-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 750px) {
+    
+    .section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+
+    .section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5-padding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
+    .ab-banner-image-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--desktop {
+      display: block;
+    }
+    
+    .ab-banner-image-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--mobile {
+      display: none;
+    }
+
+    .ab-banner-content-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+    .ab-banner-button-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      margin-top: 20px;
+      gap: 20px;
+    }
+
+    .ab-banner-title-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 * {
+      margin: 0;
+      font-size: 50px;
+    }
+
+    .ab-banner-subtitle-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      margin-top: 20px;
+    }
+  
+    .ab-banner-subtitle-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 * {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .ab-banner-play-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {     
+      width: px;
+      height: px;
+    }
+
+    .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      padding: 14px 32px;
+      font-size: 16px;
+    }
+
+    .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      padding: 14px 32px;
+      font-size: 16px;
+    }
+
+    .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      width: 40px;
+      height: 40px;
+    }
+
+    .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 svg {
+      height: 24.0px;
+      width: 24.0px;
+    }
+  }
+  
+</style>
+<style>
+    .section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5-settings {
+      max-width: var(--page-width);
+    }
+  </style>
+<style>
+    .section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5-padding {
+      height: 90vh;
+    }
+  </style>
+<style>
+    .ab-banner-button-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      justify-content: center;
+    }
+  </style>
+<style>
+    .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      background-color: #ffffff;
+    }
+
+    .ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover {
+      background-color: #000000;
+    }
+
+    .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      background-color: #ffffff;
+    }
+
+    .ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5:hover {
+      background-color: #121212;
+    }
+  </style>
+<style>
+    .ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      right: 5%;   
+      bottom: 5%;
+    }
+  </style>
+<style>
+    .as-banner-slide-has-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 .ab-banner-play-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all;
+      transition: all 0.25s ease 0.75s;
+    }
+    
+    .ab-banner-image-wrapper-playing-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 .ab-banner-play-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all 0.25s ease 0s;
+    }
+  </style>
+<div class="section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" style="background-color:#535353;">
+<div class="section-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5-padding">
+<div class="ab-banner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" data-interval="5000">
+<div class="ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--active as-banner-slide-has-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" data-autoplay="true" data-index="0">
+<div class="ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+<video autoplay="" class="lazy ab-banner-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" data-src="//section.store/cdn/shop/videos/c/vp/551a4e5012a84ed4966d1b75e4b87758/551a4e5012a84ed4966d1b75e4b87758.HD-720p-3.0Mbps-11016697.mp4?v=0" loop="" muted="" playsinline="" poster="" preload="none"></video>
+</div>
+<div class="ab-banner-image-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+<svg class="ab-svg-placeholder ab-banner-image-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" viewbox="0 0 525.5 525.5" xmlns="http://www.w3.org/2000/svg"><path d="M324.5 212.7H203c-1.6 0-2.8 1.3-2.8 2.8V308c0 1.6 1.3 2.8 2.8 2.8h121.6c1.6 0 2.8-1.3 2.8-2.8v-92.5c0-1.6-1.3-2.8-2.9-2.8zm1.1 95.3c0 .6-.5 1.1-1.1 1.1H203c-.6 0-1.1-.5-1.1-1.1v-92.5c0-.6.5-1.1 1.1-1.1h121.6c.6 0 1.1.5 1.1 1.1V308z"></path><path d="M210.4 299.5H240v.1s.1 0 .2-.1h75.2v-76.2h-105v76.2zm1.8-7.2l20-20c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l1.5 1.5 16.8 16.8c-12.9 3.3-20.7 6.3-22.8 7.2h-27.7v-5.5zm101.5-10.1c-20.1 1.7-36.7 4.8-49.1 7.9l-16.9-16.9 26.3-26.3c1.6-1.6 3.8-2.5 6.1-2.5s4.5.9 6.1 2.5l27.5 27.5v7.8zm-68.9 15.5c9.7-3.5 33.9-10.9 68.9-13.8v13.8h-68.9zm68.9-72.7v46.8l-26.2-26.2c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-26.3 26.3-.9-.9c-1.9-1.9-4.5-3-7.3-3s-5.4 1.1-7.3 3l-18.8 18.8V225h101.4z"></path><path d="M232.8 254c4.6 0 8.3-3.7 8.3-8.3s-3.7-8.3-8.3-8.3-8.3 3.7-8.3 8.3 3.7 8.3 8.3 8.3zm0-14.9c3.6 0 6.6 2.9 6.6 6.6s-2.9 6.6-6.6 6.6-6.6-2.9-6.6-6.6 3-6.6 6.6-6.6z"></path></svg>
+</div>
+<span class="ab-banner-overlay-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5"></span>
+<div class="ab-banner-content-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+<div class="ab-banner-title-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+<h2>Meet The Perfect Beach Outfit</h2>
+</div>
+<div class="ab-banner-subtitle-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+<p>Super Packable. Versatile. And All-Day (And Night) Adventure Ready.</p>
+</div>
+<div class="ab-banner-button-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+<a class="ab-banner-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" href="/collections/all">
+<p class="ab-banner-button-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+                    Shop women
+                    
+                  </p>
+</a>
+<a class="ab-banner-button-second-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5" href="">
+<p class="ab-banner-button-second-inner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5">
+                    Shop men
+                    
+                  </p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script defer="" src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  (function () {
+
+    var lazyLoadInstance = new LazyLoad();
+
+    window.addEventListener(
+      "LazyLoad::Initialized",
+      function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+      },
+      false
+    );
+    
+    let slideSwitchTimeoutID;
+    let videoPlayers = {};
+    let hasOnlyOneSlide = false;
+    let videos = document.querySelectorAll('.ab-banner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5 video');
+    if(videos) {
+      videos.forEach(el => {
+        setTimeout(()=> {
+          el.removeAttribute('loop');
+        }, 1000);
+      })
+    }
+
+    function getNextIndex() {
+      const images = document.querySelectorAll(
+        '.ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+      );
+      const activeImage = document.querySelector(
+        '.ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--active'
+      );
+      const activeIndex = Array.prototype.indexOf.call(images, activeImage);
+      const nextIndex = (activeIndex + 1) % images.length;
+      return nextIndex;
+    }
+
+    function autoSlideSwitch(index) {
+      const images = document.querySelectorAll(
+        '.ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+      );
+      const activeSlide = document.querySelector(
+        '.ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--active'
+      );
+      
+      
+      const activeIndex = Array.prototype.indexOf.call(images, activeSlide);
+      const newActiveSlide = images[index];
+
+      activeSlide.classList.remove('ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--active');
+      newActiveSlide.classList.add('ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--active');
+
+      const oldVideoEl = activeSlide.querySelector('video');
+      if (oldVideoEl) {
+        oldVideoEl.pause();
+      }
+
+      const newVideoEl = newActiveSlide.querySelector('video');
+      if (newVideoEl) {
+        if (getIfAutoplay(newActiveSlide)) {
+          newVideoEl.play();
+        }
+        if (newVideoEl.paused) {
+          handleWhenVideoPaused(newActiveSlide);
+        } else {
+          handleWhenVideoPlay(newActiveSlide);
+        }
+        newVideoEl.addEventListener('ended', () => {
+          if (hasOnlyOneSlide) {
+            newVideoEl.play();
+          } else {
+            handleWhenVideoPaused(activeSlide);
+            autoSlideSwitch(getNextIndex());
+          }
+        });
+      }
+
+      const oldYoutubeEl = activeSlide.querySelector(
+        '.ab-banner-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+      );
+
+      const newYoutubeEl = newActiveSlide.querySelector(
+        '[data-youtube-template]'
+      );
+      if (newYoutubeEl) loadYoutubeVideo(newActiveSlide);
+
+      if (newVideoEl || newYoutubeEl) {
+        if (!getIfAutoplay(newActiveSlide)) {
+          const intervalTime = document.querySelector(
+            '.ab-banner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+          ).dataset.interval;
+          slideSwitchTimeoutID = setTimeout(() => {
+            autoSlideSwitch(getNextIndex());
+          }, intervalTime);
+        }
+      } else {
+        const intervalTime = document.querySelector(
+          '.ab-banner-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+        ).dataset.interval;
+        slideSwitchTimeoutID = setTimeout(() => {
+          autoSlideSwitch(getNextIndex());
+        }, intervalTime);
+      }
+    }
+
+    const videoPlayingClass =
+      'ab-banner-image-wrapper-playing-video-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5';
+    function handleWhenVideoPaused(slideEl) {
+      slideEl.classList.remove(videoPlayingClass);
+    }
+    function handleWhenVideoPlay(slideEl) {
+      slideEl.classList.add(videoPlayingClass);
+    }
+
+    function getIfAutoplay(slideEl) {
+      const autoplay = slideEl.dataset.autoplay;
+      if (autoplay) return true;
+      else return false;
+    }
+
+    function loadYoutubeVideo(slideEl) {
+      const index = slideEl.dataset.index;
+      if (videoPlayers[index]) {
+        if (getIfAutoplay(slideEl)) videoPlayers[index].playVideo();
+        return;
+      } else if (typeof YT !== 'undefined' && YT.loaded) {
+        const template = slideEl.querySelector('[data-youtube-template]');
+        let childEl = template.content.firstElementChild.cloneNode(true);
+
+        const videoWrapper = slideEl.querySelector(
+          '.ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+        );
+        childEl = videoWrapper.appendChild(childEl);
+
+        const videoId = childEl.dataset.videoId;
+        const player = new YT.Player(childEl, {
+          height: '100%',
+          width: '100%',
+          videoId: videoId,
+          playerVars: {
+            mute: 1,
+            playinline: 1,
+            controls: 0,
+          },
+          events: {
+            onReady: () => {
+              if (getIfAutoplay(slideEl)) {
+                player.playVideo();
+              }
+            },
+            onStateChange: (event) => {
+              if (event.data === YT.PlayerState.PLAYING) {
+                handleWhenVideoPlay(slideEl);
+              } else if (event.data === YT.PlayerState.PAUSED) {
+                handleWhenVideoPaused(slideEl);
+              } else if (event.data === YT.PlayerState.ENDED) {
+                if (hasOnlyOneSlide) {
+                  player.playVideo();
+                } else {
+                  autoSlideSwitch(getNextIndex());
+                  handleWhenVideoPaused(slideEl);
+                }
+              }
+            },
+          },
+        });
+        videoPlayers[index] = player;
+      } else {
+        setTimeout(() => loadYoutubeVideo(slideEl), 300);
+      }
+    }
+    function unloadYoutubeVideo(slideEl) {
+      const iframe = slideEl.querySelector('iframe');
+      if (iframe) {
+        iframe.remove();
+      }
+    }
+
+    function setupPlayButton(slideEl) {
+      const playButton = slideEl.querySelector(
+        '.ab-banner-play-button-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+      );
+      if (!playButton) return;
+      playButton.addEventListener('click', () => {
+        clearTimeout(slideSwitchTimeoutID);
+        handleWhenVideoPlay(slideEl);
+        try {
+          const videoWrapper = slideEl.querySelector(
+            '.ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+          );
+          videoWrapper.classList.add(
+            'ab-banner-video-wrapper-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5--playing'
+          );
+          const videoEl = slideEl.querySelector('video');
+          if (videoEl) {
+            videoEl.play();
+          } else {
+            const youtubeEl = slideEl.querySelector('iframe');
+            if (youtubeEl) {
+              const index = slideEl.dataset.index;
+              videoPlayers[index].playVideo();
+            }
+          }
+        } catch (e) {
+          console.log(e);
+        }
+      });
+    }
+
+    function setupActionButton() {
+      document.querySelectorAll('.ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5').forEach(el => {
+        let btn = el.querySelector('.ab-banner-action-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5');
+        let frame = el.querySelector('iframe');
+        let video = el.querySelector('video');
+        
+        if(btn) {
+          btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+            if(btn.classList.contains('active')) {
+              if(frame) {
+                const index = el.dataset.index;
+                if(videoPlayers[index]) {
+                  videoPlayers[index].pauseVideo();
+                }
+              }
+              if(video) {
+                video.pause();
+              }
+            } else {
+              if(frame) {
+                const index = el.dataset.index;
+                if(videoPlayers[index]) {
+                  videoPlayers[index].playVideo();
+                }
+              }
+              if(video) {
+                video.play();
+              }
+            }
+          });
+        }
+      });
+    }
+
+    function Init() {
+      const slides = document.querySelectorAll(
+        '.ab-banner-slide-template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5'
+      );
+      const size = slides.length;
+      if (size < 1) return;
+      hasOnlyOneSlide = size === 1 ? true : false;
+
+      slides.forEach((slideEl) => {
+        setupPlayButton(slideEl);
+      });
+
+      setupActionButton();
+
+      autoSlideSwitch(0);
+
+      if (window.Shopify && window.Shopify.designMode)
+        document.addEventListener('shopify:section:unload', function (event) {
+          if (event.detail.sectionId !== 'template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5') return;
+          if (slideSwitchTimeoutID) clearTimeout(slideSwitchTimeoutID);
+          videoPlayers = {};
+        });
+    }
+
+    Init();
+    if (window.Shopify && window.Shopify.designMode) {
+      document.addEventListener('shopify:section:load', function (event) {
+        if (event.detail.sectionId !== 'template--16819635945721__aa57c101-b69a-4866-ba44-bef62ada1fe5') return;
+        Init();
+      });
+    }
+  })();
+</script>
+{% schema %}
+{
+  "name": "Video banner",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Video banner"
+    }
+  ]
+}
+{% endschema %}

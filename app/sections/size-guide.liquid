@@ -1,0 +1,561 @@
+<style data-shopify="">@font-face {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/montserrat/montserrat_n5.07ef3781d9c78c8b93c98419da7ad4fbeebb6635.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/montserrat/montserrat_n5.adf9b4bd8b0e4f55a0b203cdd84512667e0d5e4d.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+  .section-template--21545953362249__ss_size_guide_7nzzFh {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px !important;
+    margin-bottom: -9px !important;
+  }
+  
+  .section-template--21545953362249__ss_size_guide_7nzzFh-settings {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: -6px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    position: relative;
+  }
+
+  .size-toggle-template--21545953362249__ss_size_guide_7nzzFh {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    max-width: fit-content;
+    cursor: pointer;
+  }
+
+  .size-toggle-template--21545953362249__ss_size_guide_7nzzFh * {
+    margin: 0px;
+    font-size: 13px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    font-weight: 700;
+    transition: all 0.25s ease 0s;
+  }
+
+  .size-toggle-template--21545953362249__ss_size_guide_7nzzFh:hover * {
+    transition: all 0.25s ease 0s;
+    color: #454545;
+  }
+
+  .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh {
+    flex: 0 0 16px;
+  }
+
+  .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh img,
+  .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh svg {
+    display: block;
+    width: 16px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh svg path {
+    transition: all 0.25s ease 0s;
+    stroke: #000000;
+  }
+
+  .size-toggle-template--21545953362249__ss_size_guide_7nzzFh:hover .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh svg path {
+    transition: all 0.25s ease 0s;
+    stroke: #454545;
+  }
+
+  .size-modal-template--21545953362249__ss_size_guide_7nzzFh {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow: hidden;
+    overflow-y: scroll;
+    pointer-events: none;
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+  }
+
+  .size-modal-template--21545953362249__ss_size_guide_7nzzFh.active {
+    opacity: 1;
+    z-index: 999;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .size-modal-inner-template--21545953362249__ss_size_guide_7nzzFh {
+    position: relative;
+    width: 100%;
+    max-height: 96vh;
+    height: 100%;
+    padding: 48px 24px;
+    border: 0px solid #000000;
+    background-color: #ffffff;
+    border-radius: 0px;
+    max-width: 95%;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .size-modal-inner-template--21545953362249__ss_size_guide_7nzzFh::-webkit-scrollbar {
+    display: none;
+  }
+
+  .size-modal-toggles-template--21545953362249__ss_size_guide_7nzzFh {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh {
+    background: transparent;
+    border: 0px;
+    box-shadow: none;
+    margin: 0px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    padding: 12px 20px;
+    border: 1px solid #e5e5e5;
+    background-color: #f6f8fa;
+    transition: all 0.25s ease 0s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh:not(:first-child) {
+    border-left: 0px !important;
+  }
+
+  .size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh:hover {
+    transition: all 0.25s ease 0s;
+    border-color: #e5e5e5;
+    background-color: #f6f8fa;
+    color: #000000;
+  }
+
+  .size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh.active {
+    transition: all 0.25s ease 0s;
+    border: 1px solid #e5e5e5;
+    background-color: #ffffff;
+    color: #000000;
+    border-bottom: 1px solid #ffffff;
+    font-weight: 700;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .size-modal-tabs-template--21545953362249__ss_size_guide_7nzzFh {
+    margin-top: 10px;
+  }
+
+  .size-modal-tab-template--21545953362249__ss_size_guide_7nzzFh {
+    display: none;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 32px;
+    overflow-x: auto;
+    padding: 2px;
+  }
+
+  .size-modal-tab-template--21545953362249__ss_size_guide_7nzzFh.active {
+    display: flex;
+  }
+
+  .size-modal-image-template--21545953362249__ss_size_guide_7nzzFh {
+    flex: 1 0;
+  }
+
+  .size-modal-image-template--21545953362249__ss_size_guide_7nzzFh img,
+  .size-modal-image-template--21545953362249__ss_size_guide_7nzzFh svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .size-modal-image-template--21545953362249__ss_size_guide_7nzzFh svg {
+    background-color: #AFAFAF;
+  }
+
+  .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh {
+    flex: 1 0;
+  }
+
+  .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh {
+    text-align: left;
+  }
+
+  .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh * {
+    font-size: 14px;
+    color: #000000;
+    line-height: 150%;
+    text-transform: unset;
+  }
+
+  .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh *:first-child {
+    margin-top: 0px;
+  }
+
+  .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+  }
+
+  .size-modal-close-template--21545953362249__ss_size_guide_7nzzFh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10px !important;
+    right: 10px !important;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    cursor: pointer;
+    z-index: 99;
+    position: absolute;
+    margin: 0px;
+  }
+
+  .size-modal-close-template--21545953362249__ss_size_guide_7nzzFh svg {
+    width: 20px;
+  }
+
+  .size-modal-close-template--21545953362249__ss_size_guide_7nzzFh svg path {
+    fill: #000000;
+  }
+
+  .size-modal-border-template--21545953362249__ss_size_guide_7nzzFh {
+    flex: 1 1 auto;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--21545953362249__ss_size_guide_7nzzFh {
+      margin-top: 0px !important;
+      margin-bottom: -12px !important;
+    }
+    
+    .section-template--21545953362249__ss_size_guide_7nzzFh-settings {
+      padding: 0 5rem;
+      padding-top: 0px;
+      padding-bottom: -8px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    .size-toggle-template--21545953362249__ss_size_guide_7nzzFh * {
+      font-size: 14px;
+    }
+
+    .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh {
+      flex: 0 0 16px;
+    }
+
+    .size-modal-template--21545953362249__ss_size_guide_7nzzFh {
+      padding: 100px;
+    }
+
+    .size-modal-inner-template--21545953362249__ss_size_guide_7nzzFh {
+      max-width: 60%;
+      padding: 48px 82px;
+    }
+
+    .size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh {
+      padding: 12px 20px;
+      font-size: 16px;
+     }
+
+    .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh img,
+    .size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh svg {
+      width: 16px;
+    }
+
+    .size-modal-tab-template--21545953362249__ss_size_guide_7nzzFh {
+      gap: 66px;
+      margin-top: 32px;
+      flex-direction: row;
+    }
+
+    .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh {
+      text-align: left;
+    }
+  
+    .size-modal-content-template--21545953362249__ss_size_guide_7nzzFh * {
+      font-size: 14px;
+    }
+
+    .size-modal-close-template--21545953362249__ss_size_guide_7nzzFh {
+      top: 30px !important;
+      right: 30px !important;
+    }
+
+    .size-modal-close-template--21545953362249__ss_size_guide_7nzzFh svg {
+      width: 20px;
+    }
+
+  }</style>
+<style>
+    .size-toggle-template--21545953362249__ss_size_guide_7nzzFh * {
+      font-family: Montserrat, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .size-toggle-template--21545953362249__ss_size_guide_7nzzFh {
+      margin-left: auto;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+      .size-toggle-template--21545953362249__ss_size_guide_7nzzFh {
+        margin-left: auto;
+        margin-right: 0px;
+      } 
+    }
+  </style>
+<script>
+  (function () {
+    function moreLoadProductForm() {
+      var productForm = document.querySelector('#ss-size-guide');
+      if (!productForm){
+        var productForm = document.querySelector('.button--add-to-cart, .product .product-form, .product-single__add-to-cart, .shopify-payment-button, .shopify-payment-button__button, .ProductForm__BuyButtons, .add-to-cart');
+        if (!productForm) return;
+        }
+        const templateContent = document.querySelector(
+          '#ss-size-guide-template--21545953362249__ss_size_guide_7nzzFh'
+        ).content;
+
+        productForm.insertAdjacentElement(
+          'beforebegin',
+          templateContent.firstElementChild
+        );
+
+      var bodyInner = document.querySelector('body');
+      const templateContent2 = document.querySelector(
+        '#ss-size-guide-modal-template--21545953362249__ss_size_guide_7nzzFh'
+      ).content;
+      
+      bodyInner.insertAdjacentElement(
+        'beforeend',
+        templateContent2.firstElementChild
+      );
+      
+    }
+    window.addEventListener('DOMContentLoaded', moreLoadProductForm);
+  })();
+</script>
+<template id="ss-size-guide-template--21545953362249__ss_size_guide_7nzzFh">
+<div class="section-template--21545953362249__ss_size_guide_7nzzFh size-guide-template--21545953362249__ss_size_guide_7nzzFh" style="background-color:rgba(0,0,0,0); background-image: ;">
+<div class="section-template--21545953362249__ss_size_guide_7nzzFh-settings">
+<div class="size-toggle-template--21545953362249__ss_size_guide_7nzzFh">
+<span>Size Guide</span>
+<div class="size-toggle-icon-template--21545953362249__ss_size_guide_7nzzFh">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 4H4V20H20V13H11V4Z" stroke-linecap="round" stroke-width="2"></path>
+<path d="M6 8H4" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M7 12H4" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M6 16H4" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M8 18V20" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M16 18V20" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></path>
+<path d="M12 17V20" stroke-linecap="square" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</template>
+<template class="size-modal-wrapper-template--21545953362249__ss_size_guide_7nzzFh" id="ss-size-guide-modal-template--21545953362249__ss_size_guide_7nzzFh">
+<div class="size-modal-template--21545953362249__ss_size_guide_7nzzFh">
+<div class="size-modal-inner-template--21545953362249__ss_size_guide_7nzzFh">
+<button class="size-modal-close-template--21545953362249__ss_size_guide_7nzzFh">
+<svg fill="none" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<div class="size-modal-toggles-template--21545953362249__ss_size_guide_7nzzFh">
+<button class="size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh active" id="tab_MfqkjB">
+              Sizes
+            </button>
+<button class="size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh" id="tab_hFG8rG">
+              How to measure
+            </button>
+<span class="size-modal-border-template--21545953362249__ss_size_guide_7nzzFh"></span>
+</div>
+<div class="size-modal-tabs-template--21545953362249__ss_size_guide_7nzzFh">
+<div class="size-modal-tab-template--21545953362249__ss_size_guide_7nzzFh active" data-id="tab_MfqkjB">
+<div class="size-modal-content-template--21545953362249__ss_size_guide_7nzzFh">
+<p>Find your size in the chart below.</p>
+<br/>
+<table>
+<thead>
+<tr>
+<th>Size</th>
+<th>Chest</th>
+<th>Hip</th>
+<th>Waist</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>XS</td>
+<td>80 - 88</td>
+<td>80 - 88</td>
+<td>65 - 73</td>
+</tr>
+<tr>
+<td>S</td>
+<td>88 - 96</td>
+<td>88 - 96</td>
+<td>73 - 81</td>
+</tr>
+<tr>
+<td>M</td>
+<td>96 - 104</td>
+<td>96 - 104</td>
+<td>81 - 89</td>
+</tr>
+<tr>
+<td>L</td>
+<td>104 - 112</td>
+<td>104 - 112</td>
+<td>89 - 97</td>
+</tr>
+<tr>
+<td>XL</td>
+<td>112 - 124</td>
+<td>112 - 120</td>
+<td>97 - 109</td>
+</tr>
+</tbody>
+</table>
+<br/>
+<p><strong>Fit Tips</strong></p>
+<p>If you're on the borderline between two sizes, order the smaller size for a tighter fit or the larger size for a looser fit. If your measurements for chest and waist correspond to two different suggested sizes, order the size indicated by your chest measurement.</p>
+<ul></ul>
+</div>
+</div>
+<div class="size-modal-tab-template--21545953362249__ss_size_guide_7nzzFh" data-id="tab_hFG8rG">
+<div class="size-modal-image-template--21545953362249__ss_size_guide_7nzzFh">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/size-guide.jpg?v=1718352974"/>
+</div>
+<div class="size-modal-content-template--21545953362249__ss_size_guide_7nzzFh">
+<p><strong>A. CHEST: </strong>Measure around the fullest part of your chest, keeping the measuring tape horizontal.</p><p><br><strong>B. WAIST: </strong>Measure around the narrowest part (typically where your body bends side to side), keeping the tape horizontal.</br></p><p><br><strong>C. HIPS: </strong>Measure around the fullest part of your hips, keeping the tape horizontal.</br></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</template>
+<script>
+  function initSizeGuide() {
+    setTimeout(() => {
+
+      let toggle = document.querySelector('.size-toggle-template--21545953362249__ss_size_guide_7nzzFh');
+      const modal = document.querySelector('.size-modal-template--21545953362249__ss_size_guide_7nzzFh');
+      const close = document.querySelector('.size-modal-close-template--21545953362249__ss_size_guide_7nzzFh');
+      if(toggle) {
+        toggle.addEventListener('click', () => {
+          document.body.style.overflow = 'hidden';
+          modal.classList.add('active');
+        })
+      }
+
+      close.addEventListener('click', () => {
+          document.body.style.overflow = '';
+          modal.classList.remove('active');
+      });
+      
+      document.addEventListener('click', (e) => {
+          if (e.target == modal) {
+            document.body.style.overflow = '';
+            modal.classList.remove('active');
+          }
+      });
+
+    let toggles = document.querySelectorAll('.size-modal-toggle-template--21545953362249__ss_size_guide_7nzzFh');
+    let tabs = document.querySelectorAll('.size-modal-tab-template--21545953362249__ss_size_guide_7nzzFh');
+    if(toggles) {
+      toggles.forEach(el => {
+        el.addEventListener('click', () => {
+
+          toggles.forEach(element => {
+            element.classList.remove('active');
+          })
+
+          el.classList.add('active');
+          
+          if(tabs) {
+            tabs.forEach(element => {
+              let dataId = element.getAttribute('data-id');
+              if(el.id == dataId) {
+                element.classList.add('active');
+              } else {
+                element.classList.remove('active');
+              }
+            })
+          };
+        })
+      })
+    }
+      
+    }, 400)
+  }
+  
+  document.addEventListener('DOMContentLoaded', initSizeGuide);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initSizeGuide);
+     document.addEventListener('shopify:section:load', initSizeGuide);
+  }
+</script>
+{% schema %}
+{
+  "name": "Size guide",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Size guide"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,729 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n4.6e9875ce64e0fefcd3f4446b7ec9036b3ddd2985.woff") format("woff");
+}
+
+  
+  .section-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  .section-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f-settings {
+    
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .scrolling-image-heading-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f > * {
+    padding:0 20px;
+    margin: 0;
+    font-size: 34.0px;
+    color: #000000;
+    line-height: 130%;
+    text-transform: unset;
+    text-align: center;
+  }
+
+  .scrolling-image-slider-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+    margin-top: 38px;
+  }
+
+  .scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+    flex: 0 0 230px;
+    width: 100%;
+    max-width: 230px;
+  }
+
+  .scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f.padding-top {
+    padding-top: 0px;
+  }
+
+  .scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+    display: block;
+    width: 100%;
+    padding: 8px 8px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 0px solid #000000;
+  }
+
+  .scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+    width: 100%;
+    height: 100%;
+  }
+
+  .scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f svg,
+  .scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 0px;
+  }
+
+  .scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f svg {
+    background-color: #a0a0a0;
+  }
+
+  .scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+    margin: 0px;
+    margin-top: 8px;
+    font-size: 20.4px;
+    line-height: 130%;
+    color: #000000;
+    font-weight: 600;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .scrolling-image-other-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f > * {
+    margin: 0px;
+    margin-top: 8px;
+    font-size: 11.9px;
+    line-height: 130%;
+    color: #000000;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .marquee-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      position: relative;
+      z-index: 2;
+      display: inline-flex;
+      overflow: hidden;
+      width: 100%;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-bottom: 25px;
+  }
+
+  .track-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      padding-left: 10px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      flex-shrink: 0;
+      
+      width: calc((280px * 14) + (100px * 14));
+      
+      gap: 10px;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      white-space: nowrap;
+      will-change: transform;
+      
+        animation: marquee-horizontal-left 60000ms linear infinite;
+      
+  }
+
+  @keyframes marquee-horizontal-left {
+    0% {
+        transform: translateZ(0);
+        visibility: visible;
+    }
+    
+    100% {
+        transform: translate3d(-100%,0,0);
+    }
+  }
+
+  @keyframes marquee-horizontal-right {
+    0% {
+        transform: translate3d(-100%,0,0);
+        visibility: visible;
+    }
+    
+    100% {
+        transform: translateZ(0);
+    }
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    
+    .section-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .scrolling-image-heading-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f > * {
+      font-size: 40px;
+    }
+
+    .scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      flex: 0 0 280px;
+      max-width: 280px;
+    }
+    
+    .scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f.padding-top {
+      padding-top: 150px;
+    }
+
+    .scrolling-image-slider-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      margin-top: 50px;
+    }
+
+    .scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      padding: 10px 10px;      
+    }
+
+    .scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      margin-top: 10px;
+      font-size: 24px;
+    }
+
+    scrolling-image-other-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f > * {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .track-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      padding-left: 100px;
+      
+      width: calc((280px * 14) + (100px * 14));
+      
+      gap: 100px;
+    }
+
+    
+    
+  }</style>
+<style>
+    .scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f {
+      box-shadow: rgba(0, 0, 0, 0.04) 7.86305px 16.7738px 16.3023px, rgba(0, 0, 0, 0.03) 5.44683px 11.6194px 10.3517px, rgba(0, 0, 0, 0.027) 3.55328px 7.57997px 6.22623px, rgba(0, 0, 0, 0.024) 2.12738px 4.5382px 3.55513px, rgba(0, 0, 0, 0.02) 1.11412px 2.37669px 1.96768px, rgba(0, 0, 0, 0.016) 0.458487px 0.978061px 1.09315px, rgba(0, 0, 0, 0.008) 0.105452px 0.224954px 0.560836px
+    }
+  </style>
+<div class="section-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f scrolling-image-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" style="background-color:#f4f4f4; background-image: ;">
+<div class="section-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f-settings">
+<div class="scrolling-image-heading-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<h2>World-Renowned Teachers and Scholars</h2>
+</div>
+<div class="scrolling-image-slider-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="marquee-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="track-horizontal track-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+</div>
+<div class="track-horizontal track-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+</div>
+<div class="track-horizontal track-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+</div>
+<div class="track-horizontal track-horizontal-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<a class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f" href="/pages/about-us">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-jack-kornfield.jpg?v=1696339185"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Jack Kornfield</p>
+</a>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-joseph-goldstein.jpg?v=1696339228"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Joseph Goldstein</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-henry-shukman.jpg?v=1696339256"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Henry Shukman</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-laurie-santos.jpg?v=1696339270"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Laurie Santos</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-diana-winston.jpg?v=1696339294"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Diana Winston</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-david-whyte.jpg?v=1696339314"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">David Whyte</p>
+</div>
+</div>
+<div class="scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-card-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<div class="scrolling-image-media-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">
+<img alt="" src="//section.store/cdn/shop/files/teacher-mingyur-rinpoche.jpg?v=1696339342"/>
+</div>
+<p class="scrolling-image-text-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f">Mingyur Rinpoche</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function initScrollingImageClass() {
+    document.querySelectorAll('.scrolling-image-slide-template--19841736606025__ece6cf4c-8309-4d93-bf98-264966cfcb8f').forEach((element, index) => {
+      if (index % 2 === 1) {
+        element.classList.add('padding-top');
+      }
+    })
+  }
+
+  document.addEventListener('DOMContentLoaded', initScrollingImageClass);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initScrollingImageClass);
+     document.addEventListener('shopify:section:load', initScrollingImageClass);
+  }
+</script>
+{% schema %}
+{
+  "name": "Scrolling images #2",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Scrolling images #2"
+    }
+  ]
+}
+{% endschema %}

@@ -659,13 +659,21 @@ def main():
     with open(SECTIONS_FILE, "r", encoding="utf-8") as f:
         sections = json.load(f)
 
+    output_dir = ROOT / "app" / "sections"
+    output_dir.mkdir(parents=True, exist_ok=True)
+
     for s in sections:
-        s["liquid"] = generate_liquid(s["title"], s["handle"], s.get("groups", []))
+        liquid = generate_liquid(s["title"], s["handle"], s.get("groups", []))
+        (output_dir / f"{s['handle']}.liquid").write_text(liquid, encoding="utf-8")
+
+    # Remove embedded liquid from JSON; runtime loads from app/sections/*.liquid
+    for s in sections:
+        s.pop("liquid", None)
 
     with open(SECTIONS_FILE, "w", encoding="utf-8") as f:
         json.dump(sections, f, ensure_ascii=False, indent=2)
 
-    print(f"Generated Liquid for {len(sections)} sections.")
+    print(f"Generated Liquid for {len(sections)} sections in {output_dir}.")
 
 
 if __name__ == "__main__":

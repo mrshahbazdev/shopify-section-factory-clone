@@ -1,0 +1,277 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+<style data-shopify="">
+@font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n7.bf44452348ec8b8efa3aa3068825305886b1c83c.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n7.0c887fee83f6b3bda822f1150b912c72da0f7b64.woff") format("woff");
+}
+
+@font-face {
+  font-family: Assistant;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n7.bf44452348ec8b8efa3aa3068825305886b1c83c.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n7.0c887fee83f6b3bda822f1150b912c72da0f7b64.woff") format("woff");
+}
+
+@font-face {
+  font-family: Assistant;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/assistant/assistant_n4.9120912a469cad1cc292572851508ca49d12e768.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/assistant/assistant_n4.6e9875ce64e0fefcd3f4446b7ec9036b3ddd2985.woff") format("woff");
+}
+
+
+  .section-template--23447238410569__ss_blog_slider_TTmgnw-padding {
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    padding-top: 27px;
+    padding-bottom: 75px;
+  }
+
+.item-slider__image {
+    background-color: #f5f5f5;
+  }
+
+.wrapper {
+    min-height: 100%;
+  }
+  .swiper_title {
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.32;
+    letter-spacing: 0.5px;
+    color: #1a1b18;
+    padding: 0px 0px 20px 0px;
+  }
+  .item-slider {
+    position: relative;
+	overflow: hidden;
+  }
+  .item-slider__image {
+	overflow:hidden;
+    text-align: center;
+	margin-bottom:-10px;
+  }
+  .item-slider__image img {
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    transition: all .3s;
+  }  
+  .item-slider .swiper-button-next,
+  .item-slider .swiper-button-prev {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border: 1px solid rgb(211, 212, 213);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 25%) 0px 0px 24px 0px;
+    transition: border-color 125ms ease-in-out 0s;
+	top: calc(50% - 45px);
+  }
+  .item-slider .swiper-button-next:hover,
+  .item-slider .swiper-button-prev:hover {
+    border-color: rgb(116, 121, 124);
+  }
+  
+  .item-slider .swiper-button-prev::after,
+  .item-slider .swiper-button-next::after {
+    color: rgb(77, 85, 89);
+    font-size: 0px;
+  }
+  .item-slider .swiper-button-next::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(-45deg);
+    border-bottom: 3px solid rgb(77, 85, 89);
+    border-right: 3px solid rgb(77, 85, 89);
+    margin-left: -5px;
+  }
+  .item-slider .swiper-button-prev::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(135deg);
+    border-bottom: 3px solid rgb(77, 85, 89);
+    border-right: 3px solid rgb(77, 85, 89);
+    margin-left: 5px;
+  }
+  .item-slider .swiper-slide {
+    width: auto;
+    height: auto;
+    box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px 0px;
+  }
+  .item-slider__image img:hover {
+    transform: scale(1.1);
+  }
+  .swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled {
+    display: none;
+  }
+  .swiper-button-prev {
+    left: 2%;
+  }
+  .swiper-button-next {
+    right: 0%;
+  }
+  .slide_info {
+    background-color: #fff;
+    padding: 18px;
+  }
+  .slider-links {
+    text-decoration: none;
+  }
+  .slide_info-name {
+    font-family: Assistant;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.5px;
+    color: #212a2f;
+	margin:0;
+	padding-bottom: 2px;
+  }
+  .slide_info-description {
+    font-family: Assistant;
+    font-weight: 400;
+    color:#212a2f;
+    line-height: 1.5;
+    font-size: 16px;
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+	margin:0;	
+  }
+  
+  /* Media */
+  
+  @media (max-width: 992px) {
+
+	.wrapper {
+	}
+    .swiper_title {
+      padding-left: 0;
+    }
+    .item-slider {
+      padding-left: 0;
+    }
+    .item-slider .swiper-button-prev,
+    .item-slider .swiper-button-next {
+      display: none;
+  }
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--23447238410569__ss_blog_slider_TTmgnw-padding {
+      
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 100px;
+    }
+  }
+</style>
+<div class="section-template--23447238410569__ss_blog_slider_TTmgnw-padding wrapper" style="background:#ffffff;overflow:hidden">
+<div class="swiper_title">
+      Articles
+    </div>
+<div class="slider-template--23447238410569__ss_blog_slider_TTmgnw item-slider swiper-container" style="overflow:visible">
+<div class="item-slider__wrapper swiper-wrapper"><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/blogs/blog-7/how-to-add-a-instafeed-section-to-shopify"><div class="item-slider__image"><img alt="How to add a Instafeed section to Shopify" class="cover-image" height="1600" loading="lazy" src="//section.store/cdn/shop/articles/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg?v=1664203914&amp;width=2000" srcset="//section.store/cdn/shop/articles/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg?v=1664203914&amp;width=352 352w, //section.store/cdn/shop/articles/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg?v=1664203914&amp;width=832 832w, //section.store/cdn/shop/articles/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg?v=1664203914&amp;width=1200 1200w, //section.store/cdn/shop/articles/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg?v=1664203914&amp;width=1920 1920w, //section.store/cdn/shop/articles/dmitry-chernyshov-mP7aPSUm7aE-unsplash.jpg?v=1664203914&amp;width=2000 2000w" width="2000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">How to add a Instafeed section to Shopify</p>
+<p class="slide_info-description">Some description text</p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/blogs/blog-7/how-to-add-trust-badges-below-add-to-cart"><div class="item-slider__image"><img alt="How to add trust badges below add to cart" class="cover-image" height="1333" loading="lazy" src="//section.store/cdn/shop/articles/jakob-owens-TMxUnMAAwFA-unsplash.jpg?v=1664203818&amp;width=2000" srcset="//section.store/cdn/shop/articles/jakob-owens-TMxUnMAAwFA-unsplash.jpg?v=1664203818&amp;width=352 352w, //section.store/cdn/shop/articles/jakob-owens-TMxUnMAAwFA-unsplash.jpg?v=1664203818&amp;width=832 832w, //section.store/cdn/shop/articles/jakob-owens-TMxUnMAAwFA-unsplash.jpg?v=1664203818&amp;width=1200 1200w, //section.store/cdn/shop/articles/jakob-owens-TMxUnMAAwFA-unsplash.jpg?v=1664203818&amp;width=1920 1920w, //section.store/cdn/shop/articles/jakob-owens-TMxUnMAAwFA-unsplash.jpg?v=1664203818&amp;width=2000 2000w" width="2000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">How to add trust badges below add to cart</p>
+<p class="slide_info-description">Some description text</p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/blogs/blog-7/how-to-add-a-faq-section-to-shopify"><div class="item-slider__image"><img alt="How to add a FAQ section to Shopify" class="cover-image" height="1333" loading="lazy" src="//section.store/cdn/shop/articles/luca-micheli-ruWkmt3nU58-unsplash.jpg?v=1664203765&amp;width=2000" srcset="//section.store/cdn/shop/articles/luca-micheli-ruWkmt3nU58-unsplash.jpg?v=1664203765&amp;width=352 352w, //section.store/cdn/shop/articles/luca-micheli-ruWkmt3nU58-unsplash.jpg?v=1664203765&amp;width=832 832w, //section.store/cdn/shop/articles/luca-micheli-ruWkmt3nU58-unsplash.jpg?v=1664203765&amp;width=1200 1200w, //section.store/cdn/shop/articles/luca-micheli-ruWkmt3nU58-unsplash.jpg?v=1664203765&amp;width=1920 1920w, //section.store/cdn/shop/articles/luca-micheli-ruWkmt3nU58-unsplash.jpg?v=1664203765&amp;width=2000 2000w" width="2000"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">How to add a FAQ section to Shopify</p>
+<p class="slide_info-description">Some description text</p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/blogs/news/shopify-landing-page-boost-sales-conversions"><div class="item-slider__image"><img alt="Shopify Landing Page: Boost Sales &amp; Conversions" class="cover-image" height="1024" loading="lazy" src="//section.store/cdn/shop/articles/featured-image-21edb815-9c2f-4c30-a057-0fea08e7979a.jpg?v=1742025344&amp;width=1820" srcset="//section.store/cdn/shop/articles/featured-image-21edb815-9c2f-4c30-a057-0fea08e7979a.jpg?v=1742025344&amp;width=352 352w, //section.store/cdn/shop/articles/featured-image-21edb815-9c2f-4c30-a057-0fea08e7979a.jpg?v=1742025344&amp;width=832 832w, //section.store/cdn/shop/articles/featured-image-21edb815-9c2f-4c30-a057-0fea08e7979a.jpg?v=1742025344&amp;width=1200 1200w, //section.store/cdn/shop/articles/featured-image-21edb815-9c2f-4c30-a057-0fea08e7979a.jpg?v=1742025344&amp;width=1820 1820w" width="1820"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">Shopify Landing Page: Boost Sales &amp; Conversions</p>
+<p class="slide_info-description">Some description text</p>
+</div></a></div><div class="item-slider__slide swiper-slide"><a class="slider-links" href="/blogs/news/creative-shop-name-ideas-get-inspired-now"><div class="item-slider__image"><img alt="Creative Shop Name Ideas: Get Inspired Now" class="cover-image" height="1024" loading="lazy" src="//section.store/cdn/shop/articles/featured-image-5a6e62ba-39bd-43f6-85d9-36e5b80e2c72.jpg?v=1741851068&amp;width=1820" srcset="//section.store/cdn/shop/articles/featured-image-5a6e62ba-39bd-43f6-85d9-36e5b80e2c72.jpg?v=1741851068&amp;width=352 352w, //section.store/cdn/shop/articles/featured-image-5a6e62ba-39bd-43f6-85d9-36e5b80e2c72.jpg?v=1741851068&amp;width=832 832w, //section.store/cdn/shop/articles/featured-image-5a6e62ba-39bd-43f6-85d9-36e5b80e2c72.jpg?v=1741851068&amp;width=1200 1200w, //section.store/cdn/shop/articles/featured-image-5a6e62ba-39bd-43f6-85d9-36e5b80e2c72.jpg?v=1741851068&amp;width=1820 1820w" width="1820"/>
+</div>
+<div class="swiper-slide_info slide_info">
+<p class="slide_info-name">Creative Shop Name Ideas: Get Inspired Now</p>
+<p class="slide_info-description">Some description text</p>
+</div></a></div></div>
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  function initBlogSlider() {
+    new Swiper('.slider-template--23447238410569__ss_blog_slider_TTmgnw', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+
+        simulateTouch: true,
+        touchRatio: 1,
+        touchAngle: 45,
+        grabCursor: true,
+        slidesPerView: 3.3,
+        watchOverflow: true,
+        spaceBetween: 30,
+        loop: false,
+        freeMode: true,
+        speed: 300,
+        effect: 'slide',
+
+        breakpoints: {
+        320: {
+            slidesPerView: 1.1,
+        },
+        768: {
+            slidesPerView: 2.2,
+        },
+        992: {
+            slidesPerView: 3.3,
+        }
+        },  
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initBlogSlider);
+
+  if (Shopify.designMode) {
+    document.addEventListener('shopify:section:unload', initBlogSlider);
+    document.addEventListener('shopify:section:load', initBlogSlider);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Blog #3 (slider)",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Blog #3 (slider)"
+    }
+  ]
+}
+{% endschema %}

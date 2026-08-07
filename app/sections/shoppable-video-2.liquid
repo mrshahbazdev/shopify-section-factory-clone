@@ -1,0 +1,1658 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">.section-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0rem;
+    margin-right: 0rem;    
+    border-radius: 0px;
+    overflow: hidden;
+  }
+
+  .section-template--21995154866505__ss_shoppable_video_2_VbnmD7-settings {
+    margin: 0 auto;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    margin-top: 28px;
+    overflow: visible !important;
+  }
+
+  .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.25s ease 0s;
+    box-sizing: border-box !important;
+  }
+
+  .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 video,
+  .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border: 0;
+  }
+
+  .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    background: none;
+    width: 56px;
+    height: 56px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: all 0.25s ease 0s;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7 path {
+    fill: #ffffff;
+  }
+
+  .shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    /* Lower alpha than the solid treatment so the blurred video reads through. */
+    background: rgba(0,0,0,0.4);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border-radius: 10px;
+    padding: 8px 8px;
+    display: flex;     
+    justify-content: center;   
+    align-items: center;
+    gap: 5px;
+    opacity: 1;
+    transition: opacity 0.25s ease 0s, bottom 0.25s ease 0s;
+    z-index: 2;
+  }
+  
+  .shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 path {
+    fill: #ffffff;
+  }
+
+  .shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    margin: 0;
+    display: block;
+    text-transform: unset;
+    word-wrap: break-word;
+    font-size: 13px;
+    line-height: 100%;
+    color: #ffffff;
+  }
+
+  .shoppable-video-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    bottom: 0; 
+    right: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+  }
+
+  .shoppable-video-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7.active {
+    opacity: 1;
+    z-index: 100;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .shoppable-video-modal-inner-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    position: relative;
+    max-height: 70vh;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .shoppable-video-modal-inner-template--21995154866505__ss_shoppable_video_2_VbnmD7 .swiper {
+    height: 100%;
+  }
+
+  .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    display: block;
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    margin: 0;
+    border: 0;
+    border-radius: 16px;
+    position: relative;
+    box-sizing: border-box !important;
+  }
+
+  .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    pointer-events: all;
+    background-color: rgba(0,0,0,0.5);
+    transition: all 0.25s ease 0s;
+    border-radius: 16px;
+  }
+
+  .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7.swiper-slide-active::after {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7 video,
+  .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7 iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+    border: 0;
+    border-radius: 16px;
+  }
+
+  .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+    border-radius: 4px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.7);
+    display: block;
+    width: 28px;
+    height: 28px;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg path {
+    fill: #ffffff   ;   
+  }
+
+  .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover svg path {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover svg {
+    background-color: #ababab;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    position: absolute;
+    top: 87%;
+    left:  50%;
+    transform: translateX(-50%);
+    box-shadow: none;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+    border-radius: 4px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.7);
+    display: block;
+    width: 28px;
+    height: 28px;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg path {
+    fill: #ffffff   ;   
+  }
+
+  .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover svg path {
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover svg {
+    background-color: #ababab;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    -webkit-backdrop-filter: blur(30px);
+    position: absolute;
+    bottom: 60px;
+    left: 16px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    width: calc(100% - 32px);
+    backdrop-filter: blur(30px);
+    border-radius: 12px;
+    padding: 7px 7px;box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.2),
+      inset 0 1px 1px rgba(255, 255, 255, 0.35),
+      inset 0 -1px 1px rgba(0, 0, 0, 0.12),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.14);
+    margin: 10px 0;
+    transition: all 0.25s ease 0s;
+    cursor: pointer;
+    text-decoration: none;
+  }  
+
+  .shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    display: block;
+    width: 56px;
+    /* Fixed by the setting rather than the photo's own ratio, so card heights
+       don't drift from one product to the next. */
+    aspect-ratio: 1;
+    margin-right: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7 img,
+  .shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+    display: block;    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;  
+  }
+
+  .shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+    background-color: #ababab; 
+  }
+
+  .shoppable-video-product-text-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    display: flex;
+    flex-direction: column;
+    /* Takes the space the image and button leave, rather than reserving a
+       fixed gutter that breaks when either of them is resized.
+       min-width: 0 lets a long product name wrap instead of stretching the row. */
+    flex: 1;
+    min-width: 0;
+    gap: 6px;
+  }
+
+  .shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    margin: 0;
+    /* Two lines maximum: the card floats over the video, so an unbounded
+       title eats the frame and makes cards uneven. */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-transform: unset;
+    word-wrap: break-word;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 150%;
+  }
+
+  .shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7 a {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+  }
+
+  .shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    /* Wrap rather than overflow: on a narrow card the badge was being clipped
+       and the whole group pushed the + button off the edge. */
+    flex-wrap: wrap;
+    min-width: 0;
+  }
+
+  .shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 * {
+    margin: 0;
+    display: block;
+    text-transform: unset;
+    word-wrap: break-word;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 150%;
+    white-space: nowrap  
+  }
+
+  /* Beats the display: block above, which would otherwise reveal [hidden] nodes. */
+  .shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 [hidden] {
+    display: none;
+  }
+
+  /* The price you pay should outrank the one you don't. */
+  .shoppable-video-product-regural-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    font-weight: 600;
+  }
+
+  .shoppable-video-product-compare-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    text-decoration: line-through;
+    color: #ffffff;
+    font-size: 12px;
+  }.shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background: #f55023;
+    color: #ffffff;
+    font-size: 11px;
+    line-height: 1.5;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+
+  .shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7[hidden] {
+    display: none;
+  }
+
+  .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7,
+  .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    display: none;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    width: 40px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover,
+  .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover {
+    background-color: rgba(0,0,0,0.6);
+  }
+
+  .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg path,
+  .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg path {    
+    fill: #ffffff;
+    transition: all 0.25s ease 0s;
+    display: block;    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;  
+  }
+
+  .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover svg path,
+  .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover svg path {
+    fill: #ababab;
+    transition: all 0.25s ease 0s;
+  }
+
+  .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7.swiper-button-disabled,
+  .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7.swiper-button-disabled{
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.25s ease 0s;
+  }
+
+  @media(min-width: 1024px) {
+    .section-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+
+    .section-template--21995154866505__ss_shoppable_video_2_VbnmD7-settings {
+      padding: 0 5rem;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      margin-top: 40px;
+      overflow: hidden !important;
+    }
+
+    .shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7 {      
+      width: 56px;
+      height: 56px;
+    }
+
+    .shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 {    
+      padding: 8px 8px;
+      bottom: -100px; 
+    }
+
+    .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover .shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      bottom: 15px; 
+      opacity: 1;
+      transition: opacity 0.25s ease 0s, bottom 0.25s ease 0s;
+    }
+    
+    .shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-size: 13px;
+    }
+
+    .shoppable-video-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      padding: 20px;
+    }
+
+    .shoppable-video-modal-inner-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      width: 100%;
+      max-height: 95vh;
+      height: auto;
+      padding: 20px 20px;
+    }
+
+    .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7.swiper-slide-active .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      opacity: 1;
+      pointer-events: all;
+      transition: all 0.25s ease 0s;
+    }
+    
+    .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      top: 2%;
+      left: 94%;
+      transform: none;
+    }
+
+    .shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+      width: 28px;
+      height: 28px;
+  }
+
+    .shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      padding: 7px 7px;
+    }
+
+    .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      height: 100%;
+    }
+    
+    .shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      width: 64px;
+    }
+
+    .shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-size: 13px;
+    }
+
+    .shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 * {
+      font-size: 13px;
+    }
+
+    /* Must follow the rule above — same specificity, so order decides. */
+    .shoppable-video-product-compare-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-size: 12px;
+    }
+
+    .shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-size: 11px;
+    }
+
+    .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      top: 20px;
+      right: 20px;
+    }
+
+    .shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7,
+    .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      width: 40px;
+      height: 40px
+    }
+
+    .shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right: 28%;
+      z-index: 3;
+    }
+
+    .shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 28%;
+      z-index: 3;
+    }  
+}</style>
+<style>
+    .section-template--21995154866505__ss_shoppable_video_2_VbnmD7-settings,
+    .shoppable-video-modal-inner-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      max-width: 1200px;
+    }
+  </style>
+<style>
+    /* Without a link wrapping the whole card, a pointer cursor here promises
+       a click that does nothing. Only the + button and the title are live. */
+    .shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      cursor: default;
+      /* Top, not centre: the content column is now much taller than the image,
+         so centring drops the image into the middle of the card. The mockup
+         lines its top edge up with the title. */
+      align-items: flex-start;
+    }
+
+    .shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      margin-right: 18px;
+    }
+
+    .shoppable-video-product-text-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      gap: 10px;
+    }
+
+    .shv-card-head-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      min-width: 0;
+    }
+
+    /* The button sits in flow beside the price rather than absolutely on top
+       of it: out of flow it could not push the divider down, so a button
+       taller than the price text overlapped the rule below. */
+    .shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7 .shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      flex: 1 1 auto;
+    }
+
+    /* Pushed to the right edge even when the price group is narrow. */
+    .shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7 .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      margin-left: auto;
+    }
+
+    /* The divider rides on the option label. An empty 1px div kept vanishing;
+       a box that already has text in it always has a paintable top edge. */
+    .shv-card-topline-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      /* 0.4 alpha, matching the select's border below it. */
+      border-top: 1px solid rgba(255,255,255,0.4);
+      padding-top: 12px;
+      margin-top: 4px;
+    }
+
+    /* Fixed size, not derived from the price: this is a caption above the
+       selector, so it should stay small and quiet however the price is sized.
+       Tracking added because uppercase sets tightly at this size. */
+    .shv-card-optlabel-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      margin: 0;
+      font-size: 11px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+      border: none;
+      border-radius: 48px;
+      background: #000000;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s ease, opacity 0.2s ease;
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7:hover {
+      background: #1c2a3d;
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7[disabled] {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7.is-loading {
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7 svg {
+      display: block;
+      /* Scales with the button so the icon keeps its proportion at any size. */
+      width: 14px;
+      height: 14px;
+    }
+
+    /* The icon swaps to a tick on success — the button holds both and CSS
+       picks one, so the JS never has to rewrite its contents. */
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7 .shv-atc-check {
+      display: none;
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7.is-added .shv-atc-plus {
+      display: none;
+    }
+
+    .shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7.is-added .shv-atc-check {
+      display: block;
+    }
+
+    .shv-variant-select-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      -webkit-appearance: none;
+      appearance: none;
+      /* Full width now that it sits on its own row rather than beside the text. */
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      /* Right padding leaves room for the chevron below. */
+      padding: 9px 34px 9px 12px;
+      /* Softened so the control doesn't outshout the price and the + button. */
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 6px;
+      background-color: rgba(255, 255, 255, 0.12);
+      /* Own chevron instead of the OS one, so it can be inset from the edge
+         and take the merchant's text colour. */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1.5 6 6.5 11 1.5' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 10px 7px;
+      color: #ffffff;
+      /* Inherits the theme font unless a custom one is picked below. */
+      font-family: inherit;
+      font-size: 13px;
+      line-height: 130%;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+
+    .shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.3;
+      font-weight: 600;
+      color: #ffffff;
+      word-wrap: break-word;
+    }
+
+    /* Explicit, because a theme's own `p { display: block }` outranks the
+       browser's default [hidden] rule. */
+    .shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7[hidden] {
+      display: none;
+    }
+
+    @media(min-width: 1024px) {
+      .shv-variant-select-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+        font-size: 13px;
+      }
+
+      .shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+        font-size: 12px;
+      }
+    }
+
+    /* No focus ring at all — the browser default is heavy over the blurred card. */
+    .shv-variant-select-template--21995154866505__ss_shoppable_video_2_VbnmD7:focus,
+    .shv-variant-select-template--21995154866505__ss_shoppable_video_2_VbnmD7:focus-visible {
+      outline: none;
+      box-shadow: none;
+    }
+
+    /* The dropdown list is OS-rendered and does not inherit the card colours. */
+    .shv-variant-select-template--21995154866505__ss_shoppable_video_2_VbnmD7 option {
+      color: #121212;
+      background-color: #FFFFFF;
+    }
+  </style>
+<style>
+    .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      aspect-ratio: 9.6/13;
+    }
+  </style>
+<style>
+    @media (min-width: 1024px) {
+      .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+        aspect-ratio: 9.6/13;
+      }
+    }
+  </style>
+<style>
+    @media (min-width: 1024px) {
+      .shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+        aspect-ratio: 9.6/13;
+      }
+    }
+  </style>
+<style>
+    @font-face {
+  font-family: Figtree;
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/figtree/figtree_n6.9d1ea52bb49a0a86cfd1b0383d00f83d3fcc14de.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/figtree/figtree_n6.f0fcdea525a0e47b2ae4ab645832a8e8a96d31d3.woff") format("woff");
+}
+
+
+    .shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-family: Figtree, sans-serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+  </style>
+<style>
+    @font-face {
+  font-family: Figtree;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/figtree/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/figtree/figtree_n4.c0575d1db21fc3821f17fd6617d3dee552312137.woff") format("woff");
+}
+
+
+    .shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-family: Figtree, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    @font-face {
+  font-family: Figtree;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/figtree/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/figtree/figtree_n4.c0575d1db21fc3821f17fd6617d3dee552312137.woff") format("woff");
+}
+
+
+    .shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-family: Figtree, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    @font-face {
+  font-family: Figtree;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/figtree/figtree_n4.3c0838aba1701047e60be6a99a1b0a40ce9b8419.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/figtree/figtree_n4.c0575d1db21fc3821f17fd6617d3dee552312137.woff") format("woff");
+}
+
+
+    .shv-variant-select-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      font-family: Figtree, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+        .shoppable-video-heading-heading_hchtEi {
+          text-align: center;
+        }
+
+        .shoppable-video-heading-heading_hchtEi * {
+          margin: 0;
+          font-size: 28px;
+          color: #000000;
+          line-height: 130%;
+          text-transform: unset;
+          text-decoration: none;
+          word-break: break-word;
+        }
+
+        @media(min-width: 1024px) {
+          .shoppable-video-heading-heading_hchtEi {
+            text-align: center;
+          }
+
+          .shoppable-video-heading-heading_hchtEi * {
+            font-size: 32px;
+          }
+        }
+      </style>
+<style>
+          @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+
+          .shoppable-video-heading-heading_hchtEi * {
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+        </style>
+<style>
+  .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7.preview .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7.preview .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+    width: 100%;
+  }
+
+  .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7.preview .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7:not(:first-child) {
+    margin-left: 24px;
+  } 
+
+  @media(min-width: 1024px) {
+    .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7.preview .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7:not(:first-child) {
+      margin-left: 24px;
+    } 
+
+    .shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7.preview .shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7 {
+      width: calc(100% / 4 - (24px * 3));
+    }
+  }
+</style>
+<div class="section-template--21995154866505__ss_shoppable_video_2_VbnmD7 shoppable-video-template--21995154866505__ss_shoppable_video_2_VbnmD7" style="background-color:#ffffff;">
+<div class="section-template--21995154866505__ss_shoppable_video_2_VbnmD7-settings">
+<div class="shoppable-video-heading-heading_hchtEi">
+<h2>Follow, share,<br/>and get inspired.</h2>
+</div>
+<div class="swiper preview shoppable-video-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="swiper-wrapper">
+<div class="swiper-slide shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7" id="item_dEjU6N">
+<video class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/9e6de5f2f59f4779a09a4e087f89e3b3/9e6de5f2f59f4779a09a4e087f89e3b3.HD-720p-1.6Mbps-86293698.mp4?v=0" loop="" muted="" playsinline="" preload="metadata"></video>
+<button class="shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+</button>
+<div class="shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+<div class="shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7">                      
+                        SONA Midnight
+                      </div>
+</div>
+</div>
+<div class="swiper-slide shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7" id="item_tyYXfP">
+<video class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/89935030de6e4c6a807d45679907c309/89935030de6e4c6a807d45679907c309.HD-720p-3.0Mbps-86671679.mp4?v=0" loop="" muted="" playsinline="" preload="metadata"></video>
+<button class="shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+</button>
+<div class="shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+<div class="shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7">                      
+                        SONA Aqua
+                      </div>
+</div>
+</div>
+<div class="swiper-slide shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7" id="item_X363nJ">
+<video class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/583ebb9888b14517a1ee9ae48f1c4960/583ebb9888b14517a1ee9ae48f1c4960.HD-720p-1.6Mbps-86298501.mp4?v=0" loop="" muted="" playsinline="" preload="metadata"></video>
+<button class="shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+</button>
+<div class="shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+<div class="shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7">                      
+                        SONA Blush
+                      </div>
+</div>
+</div>
+<div class="swiper-slide shoppable-video-item-template--21995154866505__ss_shoppable_video_2_VbnmD7" id="item_873MWP">
+<video class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/34ed33a682f3464480012a7684dd887b/34ed33a682f3464480012a7684dd887b.HD-720p-2.1Mbps-86294148.mp4?v=0" loop="" muted="" playsinline="" preload="metadata"></video>
+<button class="shoppable-video-player-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+</button>
+<div class="shoppable-video-tag-wrapper-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-play_svg__st0" d="M154.1 91.2 76.5 36.3c-7.5-5.3-17.9.1-17.9 9.3v109.8c0 9.2 10.4 14.6 17.9 9.3l77.6-54.9c6.4-4.6 6.4-14.1 0-18.6"></path></svg>
+<div class="shoppable-video-tag-template--21995154866505__ss_shoppable_video_2_VbnmD7">                      
+                        SONA Aqua
+                      </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="shoppable-video-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<button class="shoppable-video-close-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+<button class="shoppable-video-button-prev-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-arrow_svg__st0" d="M22.3 99.4c0 .3-.1.6-.2 1v1.3c.1.3.1.5.1.7l.2.7q.75 3.15 3 5.4L83 166.3c2.1 2.1 4.8 3.2 7.9 3.2 3 0 5.8-1.2 7.9-3.2 2.1-2.1 3.2-4.8 3.2-7.9 0-3-1.2-5.8-3.2-7.9l-38.6-38.6H163c2.3 0 4.4-.7 6.2-1.9s3.2-2.9 4.1-4.9c.6-1.3.9-2.8.9-4.3q0-2.25-.9-4.2c-.6-1.3-1.4-2.5-2.4-3.5-2-2-4.8-3.2-7.9-3.2H60.1l38.6-38.6c2.1-2.1 3.2-4.8 3.2-7.9 0-3-1.2-5.8-3.2-7.9-2.1-2.1-4.8-3.2-7.9-3.2-3 0-5.8 1.2-7.9 3.2L25.4 93.1c-1.5 1.5-2.5 3.4-3 5.4l-.2.7z"></path></svg>
+</button>
+<button class="shoppable-video-button-next-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg class="IconButton__Icon-sc-6jboai-1 hGZoMt" style="transform: rotate(180deg)" viewbox="0 0 200 200" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path class="icon-arrow_svg__st0" d="M22.3 99.4c0 .3-.1.6-.2 1v1.3c.1.3.1.5.1.7l.2.7q.75 3.15 3 5.4L83 166.3c2.1 2.1 4.8 3.2 7.9 3.2 3 0 5.8-1.2 7.9-3.2 2.1-2.1 3.2-4.8 3.2-7.9 0-3-1.2-5.8-3.2-7.9l-38.6-38.6H163c2.3 0 4.4-.7 6.2-1.9s3.2-2.9 4.1-4.9c.6-1.3.9-2.8.9-4.3q0-2.25-.9-4.2c-.6-1.3-1.4-2.5-2.4-3.5-2-2-4.8-3.2-7.9-3.2H60.1l38.6-38.6c2.1-2.1 3.2-4.8 3.2-7.9 0-3-1.2-5.8-3.2-7.9-2.1-2.1-4.8-3.2-7.9-3.2-3 0-5.8 1.2-7.9 3.2L25.4 93.1c-1.5 1.5-2.5 3.4-3 5.4l-.2.7z"></path></svg>
+</button>
+<div class="shoppable-video-modal-inner-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="swiper swiper-modal-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="swiper-wrapper">
+<div class="swiper-slide shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<button class="shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 shv-atc-wrap" data-shv-product="true">
+<a aria-hidden="true" class="shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7" href="/products/sona-midnight-sonic-toothbrush" tabindex="-1">
+<img alt="SONA Midnight Sonic Toothbrush" height="200" loading="lazy" sizes="(min-width: 1024px) 64px, 56px" src="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_17_20AM.png?v=1781212664&amp;width=200" srcset="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_17_20AM.png?v=1781212664&amp;width=56 56w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_17_20AM.png?v=1781212664&amp;width=100 100w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_17_20AM.png?v=1781212664&amp;width=150 150w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_17_20AM.png?v=1781212664&amp;width=200 200w" width="200"/>
+</a>
+<div class="shoppable-video-product-text-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shv-card-head-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<h3 class="shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7"><a href="/products/sona-midnight-sonic-toothbrush">SONA Midnight Sonic Toothbrush
+</a></h3>
+<div class="shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<p class="shoppable-video-product-regural-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-price="">$49.00</p>
+<p class="shoppable-video-product-compare-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-compare="" hidden=""></p>
+<span class="shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-badge="" hidden=""></span>
+</div>
+<button aria-label="Add to cart" class="shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-variant-id="54582435283273" type="button">
+<svg aria-hidden="true" class="shv-atc-plus" fill="none" viewbox="0 0 24 24">
+<path d="M12 5v14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+<path d="M5 12h14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+<svg aria-hidden="true" class="shv-atc-check" fill="none" viewbox="0 0 24 24">
+<path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+</div>
+<p aria-live="polite" class="shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-error="" hidden="" role="status"></p>
+</div>
+</div>
+<video class="lazy" controls="" data-src="//section.store/cdn/shop/videos/c/vp/9e6de5f2f59f4779a09a4e087f89e3b3/9e6de5f2f59f4779a09a4e087f89e3b3.HD-720p-1.6Mbps-86293698.mp4?v=0" loop="" playsinline="" preload="metadata"></video>
+</div>
+<div class="swiper-slide shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<button class="shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 shv-atc-wrap" data-shv-product="true">
+<a aria-hidden="true" class="shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7" href="/products/sona-aqua-sonic-toothbrush" tabindex="-1">
+<img alt="SONA Aqua Sonic Toothbrush" height="200" loading="lazy" sizes="(min-width: 1024px) 64px, 56px" src="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=200" srcset="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=56 56w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=100 100w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=150 150w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=200 200w" width="200"/>
+</a>
+<div class="shoppable-video-product-text-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shv-card-head-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<h3 class="shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7"><a href="/products/sona-aqua-sonic-toothbrush">SONA Aqua Sonic Toothbrush
+</a></h3>
+<div class="shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<p class="shoppable-video-product-regural-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-price="">$49.00</p>
+<p class="shoppable-video-product-compare-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-compare="" hidden=""></p>
+<span class="shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-badge="" hidden=""></span>
+</div>
+<button aria-label="Add to cart" class="shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-variant-id="54582450585929" type="button">
+<svg aria-hidden="true" class="shv-atc-plus" fill="none" viewbox="0 0 24 24">
+<path d="M12 5v14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+<path d="M5 12h14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+<svg aria-hidden="true" class="shv-atc-check" fill="none" viewbox="0 0 24 24">
+<path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+</div>
+<p aria-live="polite" class="shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-error="" hidden="" role="status"></p>
+</div>
+</div>
+<video class="lazy" controls="" data-src="//section.store/cdn/shop/videos/c/vp/89935030de6e4c6a807d45679907c309/89935030de6e4c6a807d45679907c309.HD-720p-3.0Mbps-86671679.mp4?v=0" loop="" playsinline="" preload="metadata"></video>
+</div>
+<div class="swiper-slide shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<button class="shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 shv-atc-wrap" data-shv-product="true">
+<a aria-hidden="true" class="shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7" href="/products/sona-blush-sonic-toothbrush" tabindex="-1">
+<img alt="SONA Blush Sonic Toothbrush" height="200" loading="lazy" sizes="(min-width: 1024px) 64px, 56px" src="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_07_47AM.png?v=1781212122&amp;width=200" srcset="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_07_47AM.png?v=1781212122&amp;width=56 56w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_07_47AM.png?v=1781212122&amp;width=100 100w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_07_47AM.png?v=1781212122&amp;width=150 150w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_07_47AM.png?v=1781212122&amp;width=200 200w" width="200"/>
+</a>
+<div class="shoppable-video-product-text-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shv-card-head-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<h3 class="shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7"><a href="/products/sona-blush-sonic-toothbrush">SONA Blush Sonic Toothbrush
+</a></h3>
+<div class="shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<p class="shoppable-video-product-regural-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-price="">$49.00</p>
+<p class="shoppable-video-product-compare-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-compare="" hidden=""></p>
+<span class="shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-badge="" hidden=""></span>
+</div>
+<button aria-label="Add to cart" class="shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-variant-id="54582439805257" type="button">
+<svg aria-hidden="true" class="shv-atc-plus" fill="none" viewbox="0 0 24 24">
+<path d="M12 5v14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+<path d="M5 12h14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+<svg aria-hidden="true" class="shv-atc-check" fill="none" viewbox="0 0 24 24">
+<path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+</div>
+<p aria-live="polite" class="shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-error="" hidden="" role="status"></p>
+</div>
+</div>
+<video class="lazy" controls="" data-src="//section.store/cdn/shop/videos/c/vp/583ebb9888b14517a1ee9ae48f1c4960/583ebb9888b14517a1ee9ae48f1c4960.HD-720p-1.6Mbps-86298501.mp4?v=0" loop="" playsinline="" preload="metadata"></video>
+</div>
+<div class="swiper-slide shoppable-video-modal-content-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<button class="shoppable-video-close-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24">
+<path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path>
+</svg>
+</button>
+<div class="shoppable-video-modal-product-template--21995154866505__ss_shoppable_video_2_VbnmD7 shv-atc-wrap" data-shv-product="true">
+<a aria-hidden="true" class="shoppable-video-product-image-template--21995154866505__ss_shoppable_video_2_VbnmD7" href="/products/sona-aqua-sonic-toothbrush" tabindex="-1">
+<img alt="SONA Aqua Sonic Toothbrush" height="200" loading="lazy" sizes="(min-width: 1024px) 64px, 56px" src="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=200" srcset="//section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=56 56w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=100 100w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=150 150w, //section.store/cdn/shop/files/ChatGPTImageJun12_2026_12_05_06AM.png?v=1781211930&amp;width=200 200w" width="200"/>
+</a>
+<div class="shoppable-video-product-text-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shv-card-head-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<h3 class="shoppable-video-product-title-template--21995154866505__ss_shoppable_video_2_VbnmD7"><a href="/products/sona-aqua-sonic-toothbrush">SONA Aqua Sonic Toothbrush
+</a></h3>
+<div class="shv-card-priceline-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<div class="shoppable-video-product-price-template--21995154866505__ss_shoppable_video_2_VbnmD7">
+<p class="shoppable-video-product-regural-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-price="">$49.00</p>
+<p class="shoppable-video-product-compare-price-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-compare="" hidden=""></p>
+<span class="shv-badge-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-badge="" hidden=""></span>
+</div>
+<button aria-label="Add to cart" class="shv-atc-btn-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-variant-id="54582450585929" type="button">
+<svg aria-hidden="true" class="shv-atc-plus" fill="none" viewbox="0 0 24 24">
+<path d="M12 5v14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+<path d="M5 12h14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+<svg aria-hidden="true" class="shv-atc-check" fill="none" viewbox="0 0 24 24">
+<path d="M5 12.5 10 17.5 19 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</button>
+</div>
+</div>
+<p aria-live="polite" class="shv-atc-error-template--21995154866505__ss_shoppable_video_2_VbnmD7" data-shv-error="" hidden="" role="status"></p>
+</div>
+</div>
+<video class="lazy" controls="" data-src="//section.store/cdn/shop/videos/c/vp/34ed33a682f3464480012a7684dd887b/34ed33a682f3464480012a7684dd887b.HD-720p-2.1Mbps-86294148.mp4?v=0" loop="" playsinline="" preload="metadata"></video>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  function loadSwiper(callback) {
+    if (window.Swiper) {
+      callback();
+    } else {
+      const script = document.createElement('script');
+      script.src = "https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js";
+      script.onload = callback;
+      document.head.appendChild(script);
+    }
+  }
+  
+function initShoppableVideo2(sectionId) {
+  const wrapper = document.querySelector(`.shoppable-video-wrapper-${sectionId}`);
+  if (!wrapper) return;
+  wrapper.classList.remove('preview');
+
+  // This script is part of the section markup, so the theme editor re-runs it on
+  // every settings change. Tear down the previous run first — otherwise Swiper
+  // instances stack up and fight over the same slider, which reads as shaking.
+  const registry = window.shoppableVideo2Registry = window.shoppableVideo2Registry || {};
+  const previous = registry[sectionId];
+  if (previous) {
+    previous.sliders.forEach(instance => {
+      try {
+        if (instance && instance.destroy) instance.destroy(true, true);
+      } catch (e) {}
+    });
+    document.removeEventListener('click', previous.outsideClick);
+  }
+
+  
+    const lazyLoadInstance = new LazyLoad();
+  
+
+  const slider = new Swiper(`.shoppable-video-wrapper-${sectionId}`, {
+    speed: 300,
+    breakpoints: {
+      320: {
+        spaceBetween: 24,
+        slidesPerView: 1.3
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      1024: {
+        spaceBetween: 24,
+        slidesPerView: 4
+      }
+    },
+  });
+
+  const slider2 = new Swiper(`.swiper-modal-${sectionId}`, {
+    speed: 300,
+    loop: true,
+    centeredSlides: true,
+    navigation: {
+      nextEl: `.shoppable-video-button-next-${sectionId}`,
+      prevEl: `.shoppable-video-button-prev-${sectionId}`,
+    },
+    breakpoints: {
+      320: {
+        spaceBetween: 0,
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 1          
+      },
+      1024: {
+        spaceBetween: 12,
+        slidesPerView: 3
+      }
+    },
+    on: {
+      slideChange: function () {
+        const slides = this.slides;
+  
+        for (let i = 0; i < slides.length; i++) {
+          let video = slides[i].querySelector('video');
+          let frame = slides[i].querySelector('iframe');
+          let src1;
+          let src2;
+          if(frame) {
+            src1 = frame.getAttribute('data-src1');
+            src2 = frame.getAttribute('data-src2');
+          }
+  
+          if (i === this.activeIndex) {
+            if (video) {
+              ensureVideoSrc(video);
+              video.muted = false;
+              video.play();
+            }
+
+            if(frame) {
+              frame.src = src1;
+            }
+
+          } else {
+            if (video) {
+              video.pause();
+            }
+
+            if(frame) {
+              frame.src = src2;
+            }
+          }
+        }
+      },
+    },
+  });
+
+  
+    // Swiper loop mode clones slides after LazyLoad has scanned the page,
+    // so the clones need to be picked up before their videos can load.
+    if (lazyLoadInstance) lazyLoadInstance.update();
+  
+
+  function ensureVideoSrc(video) {
+    if (!video) return;
+    const dataSrc = video.getAttribute('data-src');
+    if (dataSrc && !video.getAttribute('src')) {
+      video.setAttribute('src', dataSrc);
+      video.load();
+    }
+  }
+
+  const toggles = document.querySelectorAll(`.shoppable-video-item-${sectionId}`);
+  const modal = document.querySelector(`.shoppable-video-modal-${sectionId}`);
+  let modalClose = document.querySelector(`.shoppable-video-close-modal-${sectionId}`);
+  const closes = document.querySelectorAll(`.shoppable-video-close-${sectionId}`);
+
+  function stopAllVideos() {
+    [wrapper, modal].forEach(scope => {
+      if (!scope) return;
+
+      scope.querySelectorAll('video').forEach(video => {
+        video.pause();
+        video.currentTime = 0;
+      });
+
+      scope.querySelectorAll('iframe').forEach(iframe => {
+        // data-src2 is the paused variant. Skip frames that have no src yet:
+        // they are still waiting on lazy load, and assigning one here would
+        // download the embed immediately and defeat the setting.
+        const paused = iframe.getAttribute('data-src2');
+        if (paused && iframe.getAttribute('src')) iframe.src = paused;
+      });
+    });
+  }
+
+  stopAllVideos();
+
+  if(toggles) {
+    toggles.forEach((item, index) => {
+      let videoPlayer = item.querySelector(`.shoppable-video-player-${sectionId}`);
+      
+      item.addEventListener('mouseenter', function() {
+        const video = item.querySelector('video');
+        const iframe = item.querySelector('iframe');
+  
+        if (video) {
+          ensureVideoSrc(video);
+          video.play();
+          videoPlayer.style.display = 'none';
+        }
+  
+        if (iframe) {
+          iframe.src = iframe.getAttribute('data-src1');
+          videoPlayer.style.display = 'none'; 
+        }
+      });
+  
+      item.addEventListener('mouseleave', function() {
+        const video = item.querySelector('video');
+        const iframe = item.querySelector('iframe');
+  
+        if (video) {
+          video.pause();
+          video.currentTime = 0;
+          videoPlayer.style.display = ''; 
+        }
+  
+        if (iframe) {
+          iframe.src = iframe.getAttribute('data-src2');
+          videoPlayer.style.display = ''; 
+        }
+      });
+
+      item.addEventListener('click', (e) => {
+        slider2.slideToLoop(index);
+        slider2.slides.forEach(slide => {
+          if(slide.classList.contains('swiper-slide-active')) {
+            const video = slide.querySelector('video');
+            const frame = slide.querySelector('iframe');
+            const src1 = frame ? frame.getAttribute('data-src1') : null;
+            setTimeout(() => {
+                document.body.style.overflow = 'hidden';
+                modal.classList.add('active');
+                if (video) {
+                  ensureVideoSrc(video);
+                  video.muted = false;
+                  video.play();
+                }
+                if(frame) {
+                  frame.src = src1;
+                }
+            }, 200);   
+          }
+        })
+      });
+    }); 
+  }
+
+  function closeModal() {
+    document.body.style.overflow = '';
+    modal.classList.remove('active');
+
+    modal.querySelectorAll('iframe').forEach(el => {
+      // data-src2 (paused) is present whether or not lazy load is on, unlike
+      // data-src which only exists when it is.
+      const paused = el.getAttribute('data-src2');
+      if (paused) el.src = paused;
+    });
+
+    modal.querySelectorAll('video').forEach(el => el.pause());
+  }
+
+  if(closes) {
+    closes.forEach(close => close.addEventListener('click', closeModal));
+  }
+
+  if(modalClose) {
+    modalClose.addEventListener('click', closeModal);
+  }
+
+  function outsideClick(e) {
+    if (e.target == modal) closeModal();
+  }
+
+  document.addEventListener('click', outsideClick);
+
+  registry[sectionId] = { sliders: [slider, slider2], outsideClick: outsideClick };
+}
+
+function initializeAllShoppableVideo2Sections() {
+    const sections = document.querySelectorAll('[id^="shopify-section-"]');
+    sections.forEach(section => {
+      if (section.querySelector('.shoppable-video-template--21995154866505__ss_shoppable_video_2_VbnmD7')) {
+        const sectionId = section.id.replace('shopify-section-', '');
+        loadSwiper(() => initShoppableVideo2(sectionId));
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeAllShoppableVideo2Sections);
+  } else {
+    initializeAllShoppableVideo2Sections();
+  }
+
+  // Bind once per section: this script re-runs on every editor change, so an
+  // unguarded listener would be added again on each one and never removed.
+  if (Shopify.designMode) {
+    window.shoppableVideo2Bound = window.shoppableVideo2Bound || {};
+    if (!window.shoppableVideo2Bound['template--21995154866505__ss_shoppable_video_2_VbnmD7']) {
+      window.shoppableVideo2Bound['template--21995154866505__ss_shoppable_video_2_VbnmD7'] = true;
+      document.addEventListener('shopify:section:load', (event) => {
+        const sectionId = event.detail.sectionId;
+        if (event.target.querySelector('.shoppable-video-template--21995154866505__ss_shoppable_video_2_VbnmD7')) {
+          loadSwiper(() => initShoppableVideo2(sectionId));
+        }
+      });
+    }
+  }
+
+(function() {
+  var sectionId = 'template--21995154866505__ss_shoppable_video_2_VbnmD7';
+  var cartApp = 'auto-detect';
+
+  function initShvATC() {
+    document.querySelectorAll('.shv-atc-btn-' + sectionId).forEach(function(btn) {
+      if (btn.dataset.atcInit) return;
+      btn.dataset.atcInit = 'true';
+
+      var wrap = btn.closest('[data-shv-product]');
+      var sel = wrap ? wrap.querySelector('.shv-variant-select-' + sectionId) : null;
+      var priceEl = wrap ? wrap.querySelector('[data-shv-price]') : null;
+      var compareEl = wrap ? wrap.querySelector('[data-shv-compare]') : null;
+      var errorEl = wrap ? wrap.querySelector('[data-shv-error]') : null;
+      var badgeEl = wrap ? wrap.querySelector('[data-shv-badge]') : null;
+      var errorTimer;
+
+      function clearError() {
+        if (!errorEl) return;
+        clearTimeout(errorTimer);
+        errorEl.textContent = '';
+        errorEl.hidden = true;
+      }
+
+      function showError(message) {
+        if (!errorEl || !message) return;
+        clearTimeout(errorTimer);
+        // textContent, not innerHTML: this string comes back from the cart API.
+        errorEl.textContent = message;
+        errorEl.hidden = false;
+        errorTimer = setTimeout(clearError, 4000);
+      }
+
+      if (sel) {
+        sel.addEventListener('change', function() {
+          btn.setAttribute('data-variant-id', sel.value);
+          var opt = sel.options[sel.selectedIndex];
+          // The button is an icon, so state lives in classes, not in its text.
+          btn.disabled = opt ? opt.disabled : false;
+          btn.classList.remove('is-added');
+          clearError();
+
+          // innerHTML, not textContent: the money format can carry markup.
+          if (opt && priceEl) priceEl.innerHTML = opt.getAttribute('data-price') || '';
+
+          if (opt && compareEl) {
+            var compare = opt.getAttribute('data-compare') || '';
+            compareEl.innerHTML = compare;
+            compareEl.hidden = !compare;
+          }
+
+          // The saving differs per variant, so the badge is recalculated too —
+          // and hidden entirely on variants that aren't discounted.
+          if (opt && badgeEl) {
+            var badge = opt.getAttribute('data-badge') || '';
+            badgeEl.textContent = badge;
+            badgeEl.hidden = !badge;
+          }
+        });
+      }
+
+      btn.addEventListener('click', function() {
+        var variantId = btn.getAttribute('data-variant-id');
+        if (!variantId || btn.disabled) return;
+
+        clearError();
+        btn.disabled = true;
+        btn.classList.add('is-loading');
+
+        var cartEl = document.querySelector('cart-drawer, cart-notification');
+        var sections;
+        if (cartEl && typeof cartEl.getSectionsToRender === 'function') {
+          sections = cartEl.getSectionsToRender().map(function(s) { return s.id; });
+        } else {
+          sections = ['cart-notification', 'cart-drawer', 'cart-icon-bubble'];
+        }
+        document.querySelectorAll('cart-items-component').forEach(function(item) {
+          if (item instanceof HTMLElement && item.dataset.sectionId) sections.push(item.dataset.sectionId);
+        });
+
+        fetch('/cart/add.js', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest' },
+          body: JSON.stringify({ items: [{ id: parseInt(variantId, 10), quantity: 1 }], sections: sections })
+        })
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          if (data.status) {
+            // The cart rejected the add — stock limits, for instance. Say why.
+            showError(data.description);
+            btn.disabled = false;
+            btn.classList.remove('is-loading');
+            return;
+          }
+          btn.classList.remove('is-loading');
+          btn.classList.add('is-added');
+          var theme = ((window.Shopify && window.Shopify.theme && window.Shopify.theme.schema_name) ? window.Shopify.theme.schema_name : '').toLowerCase();
+          var isApp = function(n) { return cartApp === n || cartApp === 'auto-detect'; };
+
+          if (isApp('upcart') && window.upcartOpenCart) { window.upcartOpenCart(); if (window.upcartRefreshCart) window.upcartRefreshCart(); return; }
+          if (isApp('amp-cart') && window.SLIDECART_OPEN) { if (window.SLIDECART_UPDATE) window.SLIDECART_UPDATE(); window.SLIDECART_OPEN(); return; }
+          if (isApp('kaching-cart') && window.kachingCartApi) { window.kachingCartApi.openCart({ refetchCart: true }); return; }
+
+          var el = document.querySelector('cart-drawer, cart-notification');
+          if (el && !['prestige', 'symmetry'].includes(theme)) {
+            if (typeof el.renderContents === 'function') {
+              (data.items || []).forEach(function(item) { item.sections = data.sections; el.renderContents(item); });
+              el.classList.remove('is-empty');
+            } else if (data.sections) {
+              var p = new DOMParser();
+              Object.keys(data.sections).forEach(function(id) {
+                var src = p.parseFromString(data.sections[id], 'text/html').getElementById(id);
+                var dest = document.getElementById(id);
+                if (src && dest) dest.innerHTML = src.innerHTML;
+              });
+            }
+            if (typeof el.open === 'function') el.open();
+            else if (typeof el.show === 'function') el.show();
+            return;
+          }
+          var modernHorizonDrawer = document.querySelector('theme-drawer#cart-drawer');
+          if (modernHorizonDrawer) {
+            var shopRoot = (window.Shopify && window.Shopify.routes && window.Shopify.routes.root) ? window.Shopify.routes.root : '/';
+            var cartUpdatePromise = fetch(shopRoot.replace(/\/?$/, '/') + 'cart.js')
+              .then(function(response) {
+                if (!response.ok) throw new Error('Unable to refresh the cart.');
+                return response.json();
+              })
+              .then(function(cart) {
+                return {
+                  cart: { totalQuantity: cart.item_count },
+                  detail: {
+                    didError: false,
+                    itemCount: 1,
+                    items: cart.items,
+                    productId: String(data.items && data.items[0] ? data.items[0].product_id : 0),
+                    sections: data.sections,
+                    source: 'ss-shoppable-video'
+                  }
+                };
+              });
+            var horizonUpdateEvent = new Event('shopify:cart:lines-update', { bubbles: true });
+            horizonUpdateEvent.action = 'add';
+            horizonUpdateEvent.context = 'product';
+            horizonUpdateEvent.lines = [{ merchandiseId: String(variantId), quantity: 1 }];
+            horizonUpdateEvent.promise = cartUpdatePromise;
+            modernHorizonDrawer.dispatchEvent(horizonUpdateEvent);
+            cartUpdatePromise.then(function() {
+              if (modernHorizonDrawer.hasAttribute('open')) return;
+              if (window.Shopify && window.Shopify.actions && typeof window.Shopify.actions.openCart === 'function') {
+                return window.Shopify.actions.openCart().catch(function() {
+                  if (typeof modernHorizonDrawer.open === 'function') modernHorizonDrawer.open();
+                  else window.location.href = '/cart';
+                });
+              }
+              if (typeof modernHorizonDrawer.open === 'function') {
+                modernHorizonDrawer.open();
+              } else {
+                window.location.href = '/cart';
+              }
+            }).catch(function() {
+              window.location.href = '/cart';
+            });
+            return;
+          }
+          if (document.querySelector('cart-drawer-component')) {
+            var ev = new Event('cart:update', { bubbles: true });
+            ev.detail = { data: { itemCount: 1, source: 'product-form-component' } };
+            document.dispatchEvent(ev);
+            setTimeout(function() { var c = document.querySelector('cart-drawer-component'); if (c) c.open(); }, 100);
+            return;
+          }
+          if (theme === 'impulse' && window.theme && window.theme.settings && window.theme.settings.cartType !== 'page') {
+            document.dispatchEvent(new CustomEvent('ajaxProduct:added')); return;
+          }
+          if (theme === 'prestige' && window.themeVariables && window.themeVariables.settings && window.themeVariables.settings.cartType !== 'page') {
+            document.dispatchEvent(new CustomEvent('cart:refresh', { bubbles: true }));
+            var pd = document.querySelector('cart-drawer');
+            if (pd) pd.show(); else document.dispatchEvent(new CustomEvent('product:added', { detail: {} }));
+            return;
+          }
+          if (theme === 'symmetry') {
+            var after = window.theme && window.theme.settings ? (window.theme.settings.afterAddToCart || window.theme.settings.after_add_to_cart) : null;
+            if (after === 'drawer') {
+              document.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false, detail: { openDrawer: true } }));
+              document.dispatchEvent(new CustomEvent('on:cart:change'));
+              document.dispatchEvent(new CustomEvent('dispatch:cart-drawer:refresh'));
+              document.dispatchEvent(new CustomEvent('dispatch:cart-drawer:open'));
+              return;
+            } else if (after === 'notification') {
+              document.documentElement.dispatchEvent(new CustomEvent('theme:cartchanged', { bubbles: true, cancelable: false }));
+              // Symmetry renders the toast itself from a <template>; the event
+              // alone shows nothing, so each added item has to be cloned in.
+              var tpl = document.getElementById('AddedNotification');
+              if (tpl && tpl.content && tpl.content.firstElementChild) {
+                var host = document.querySelector('.pageheader--sticky') || document.body;
+                (data.items || []).forEach(function(item) {
+                  var note = tpl.content.firstElementChild.cloneNode(true);
+                  note.dataset.productTitle = item.product_title;
+                  host.appendChild(note);
+                });
+              }
+              return;
+            }
+          }
+          window.location.href = (window.theme && window.theme.routes && window.theme.routes.cartPage) ? window.theme.routes.cartPage : '/cart';
+        })
+        .catch(function() { btn.disabled = false; btn.classList.remove('is-loading'); })
+        .finally(function() {
+          setTimeout(function() {
+            btn.disabled = false;
+            btn.classList.remove('is-loading', 'is-added');
+          }, 2500);
+        });
+      });
+    });
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initShvATC);
+  else initShvATC();
+  if (typeof Shopify !== 'undefined' && Shopify.designMode) {
+    document.addEventListener('shopify:section:load', initShvATC);
+  }
+})();
+
+</script>
+</link>
+{% schema %}
+{
+  "name": "Shoppable video #2",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Shoppable video #2"
+    }
+  ]
+}
+{% endschema %}

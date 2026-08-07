@@ -1,0 +1,114 @@
+<style>
+  .popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a {
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+    max-width: 340px;
+  }
+
+  .popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a {
+    @media (min-width: 750px) {
+      max-width: 400px;
+    }
+  }
+
+  .popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a .popup-text,
+  .popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a .popup-text p {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .btn-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a {
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+  }
+  .btn-wrapper-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a {
+    display: flex;
+    gap: 12px;
+  }
+</style>
+<div class="popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a" style="
+    background-color: #f3f3f3;
+
+    border-radius: 15px;
+    padding: 20px 20px;
+
+    
+      bottom: 20px;
+      left: 20px;
+    
+
+    
+  ">
+<div class="popup-text" style="color: #000000;font-size: 16px;">
+<p>🍪 We use cookies to ensure the best possible user experience. Please agree to our cookies policy by clicking 'Accept'.</p>
+</div>
+<div class="btn-wrapper-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a">
+<div class="btn-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a" data-button-type="accept_button" style="
+            background-color: #d99d42;
+            color: #ffffff;
+            border-color: #000000;
+            border-width: 0px;
+            border-style: solid;
+            border-radius: 24px;
+          ">
+          Accept
+        </div>
+<a class="btn-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a" href="/pages/age-restriction" style="
+            background-color: #ffffff;
+            color: #000000;
+            border-color: #000000;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 24px;
+          ">
+          Decline
+        </a>
+</div>
+</div>
+<script>
+  // handle accept or decline button click:
+  (function () {
+    // check if cookie_consent cookie is set:
+    const cookieConsent = document.cookie
+      .split('; ')
+      .find((row) => row.startsWith('cookie_consent='));
+    if (cookieConsent && cookieConsent.split('=')[1] == '1') {
+      // cookie_consent cookie is set, hide popup:
+      document.querySelector('.popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a').style.display = 'none';
+      return;
+    }
+    const allButtons = document.querySelectorAll('.btn-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a');
+    allButtons.forEach((button) => {
+      button.addEventListener('click', (event) => {
+        const buttonType = event.target.dataset.buttonType;
+        if (buttonType == 'accept_button') {
+          // expire in 30 days:
+          const date = new Date();
+          date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000);
+          document.cookie = `cookie_consent=1; expires=${date.toUTCString()}; path=/`;
+        } else if (buttonType == 'decline_button') {
+          document.cookie = 'cookie_consent=0; path=/';
+        }
+        // hide popup:
+        document.querySelector('.popup-template--18968720539977__5fb27bb8-a885-4501-b4c2-ab3147d5846a').style.display =
+          'none';
+      });
+    });
+  })();
+</script>
+{% schema %}
+{
+  "name": "Cookie banner",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Cookie banner"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,400 @@
+<link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet"><style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  
+  .section-template--21500876685641__ss_gallery_4_RXMRx9 {
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 75px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+    overflow: hidden;
+  }
+  
+  .section-template--21500876685641__ss_gallery_4_RXMRx9-settings {
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .gallery-items-template--21500876685641__ss_gallery_4_RXMRx9 {
+    display: grid;
+    gap: 8px;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .gallery-item-template--21500876685641__ss_gallery_4_RXMRx9 {
+    border-radius: 0px;
+    border: 0px solid #000000;
+    overflow: hidden;
+    cursor: zoom-in;
+  }
+
+  .gallery-item-template--21500876685641__ss_gallery_4_RXMRx9 img,
+  .gallery-item-template--21500876685641__ss_gallery_4_RXMRx9 svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery-item-template--21500876685641__ss_gallery_4_RXMRx9 svg {
+    background-color: #AFAFAF;
+  }
+
+  .gallery-modal-template--21500876685641__ss_gallery_4_RXMRx9 {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    overflow-y: scroll;
+    pointer-events: none;
+    background: rgba(35,35,35,1);
+    padding: 10px;
+  }
+
+  .gallery-modal-template--21500876685641__ss_gallery_4_RXMRx9.active {
+    opacity: 1;
+    z-index: 100;
+    pointer-events: all;
+    transition: all 250ms ease-in 0s;
+  }
+
+  .gallery-modal-inner-template--21500876685641__ss_gallery_4_RXMRx9 {
+    position: relative;
+    width: 100%;
+    max-height: 95vh;
+    height: 100%;
+  }
+
+  .gallery-modal-slider-template--21500876685641__ss_gallery_4_RXMRx9 {
+    height: 100%;
+  }
+
+  .gallery-modal-slider-template--21500876685641__ss_gallery_4_RXMRx9 .swiper-wrapper {
+    align-items: center !important;
+  }
+
+  .gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box !important;
+  }
+
+  .gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    top: 10px !important;
+    right: 10px !important;
+    padding: 6px;
+    background-color: transparent;
+    background-color: rgba(0,0,0,0);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    border-radius: 50px;
+    border: 0px;
+    box-shadow: none;
+    border: 0px solid #a7a7a7;
+    cursor: pointer;
+    z-index: 99;
+    position: fixed;
+    margin: 0px;
+  }
+
+  .gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9 svg {
+    width: 20px;
+  }
+
+  .gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9 svg path {
+    fill: #ffffff;
+  }
+
+  .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9,
+  .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9 {
+    position: absolute;
+    cursor: pointer;
+    z-index: 99;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    opacity: 0.7;
+    transition: all 0.25s ease 0s;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: none;
+    padding: 5px;
+  }
+
+  .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9:hover,
+  .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9:hover {
+    opacity: 1;
+    transition: all 0.25s ease 0s;
+  }
+
+  .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9 svg,
+  .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9 svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9 svg path,
+  .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9 svg path {
+    fill: #ffffff;
+  }
+
+  .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9.swiper-button-disabled,
+  .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9.swiper-button-disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9 {
+    left: 20px;
+  }
+
+  .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9 {
+    right: 20px;
+  }
+
+  .gallery-pagination-template--21500876685641__ss_gallery_4_RXMRx9 {
+    margin: 0px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 img,
+  .gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    max-height: 94vh;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--21500876685641__ss_gallery_4_RXMRx9 {
+      margin-top: 0px;
+      margin-bottom: 100px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--21500876685641__ss_gallery_4_RXMRx9-settings {
+      padding: 0 5rem;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .gallery-items-template--21500876685641__ss_gallery_4_RXMRx9 {
+      gap: 24px;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .gallery-modal-template--21500876685641__ss_gallery_4_RXMRx9 {
+      padding: 100px;
+    }
+
+    .gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9 {
+      width: 32px;
+      height: 32px;
+      top: 20px !important;
+      right: 20px !important;
+    }
+
+    .gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9 svg {
+      width: 24px;
+    }
+
+    .gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9,
+    .gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9 {
+      width: 32px;
+    }
+
+    .gallery-pagination-template--21500876685641__ss_gallery_4_RXMRx9 {
+      font-size: 14px;
+    }
+
+  }</style>
+<style>
+    .section-template--21500876685641__ss_gallery_4_RXMRx9-settings {
+      max-width: 120rem;
+    }
+  </style>
+<style>
+    .gallery-item-template--21500876685641__ss_gallery_4_RXMRx9 {
+     aspect-ratio: 9.6/14; 
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+     .gallery-item-template--21500876685641__ss_gallery_4_RXMRx9 {
+       aspect-ratio: 9.6/14; 
+      } 
+    }
+  </style>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8.4.7/swiper-bundle.min.js"></script>
+<div class="section-template--21500876685641__ss_gallery_4_RXMRx9 gallery-template--21500876685641__ss_gallery_4_RXMRx9" style="background-color:#ffffff; background-image: ;">
+<div class="section-template--21500876685641__ss_gallery_4_RXMRx9-settings">
+<div class="gallery-items-template--21500876685641__ss_gallery_4_RXMRx9">
+<div class="gallery-item-template--21500876685641__ss_gallery_4_RXMRx9">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-seun-oderinde-325145166-14041408.jpg?v=1716552998"/>
+</div>
+<div class="gallery-item-template--21500876685641__ss_gallery_4_RXMRx9">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-majesticaljasmin-5411883.jpg?v=1716553126"/>
+</div>
+<div class="gallery-item-template--21500876685641__ss_gallery_4_RXMRx9">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/prince-akachi-LWkFHEGpleE-unsplash.jpg?v=1717073204"/>
+</div>
+<div class="gallery-item-template--21500876685641__ss_gallery_4_RXMRx9">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-n-voitkevich-4773095.jpg?v=1716560858"/>
+</div>
+</div>
+</div>
+</div>
+<div class="gallery-modal-template--21500876685641__ss_gallery_4_RXMRx9">
+<div class="gallery-modal-inner-template--21500876685641__ss_gallery_4_RXMRx9">
+<div class="gallery-modal-slider-template--21500876685641__ss_gallery_4_RXMRx9 swiper">
+<div class="swiper-wrapper">
+<div class="gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 swiper-slide">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-seun-oderinde-325145166-14041408.jpg?v=1716552998"/>
+</div>
+<div class="gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 swiper-slide">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-majesticaljasmin-5411883.jpg?v=1716553126"/>
+</div>
+<div class="gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 swiper-slide">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/prince-akachi-LWkFHEGpleE-unsplash.jpg?v=1717073204"/>
+</div>
+<div class="gallery-modal-slide-template--21500876685641__ss_gallery_4_RXMRx9 swiper-slide">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/pexels-n-voitkevich-4773095.jpg?v=1716560858"/>
+</div>
+</div>
+</div>
+</div>
+<div class="gallery-pagination-template--21500876685641__ss_gallery_4_RXMRx9">
+<span class="gallery-index-template--21500876685641__ss_gallery_4_RXMRx9">1</span>/<span>4</span>
+</div>
+<button class="gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9">
+<svg fill="none" height="24" viewbox="0 0 24 24" width="24"><path clip-rule="evenodd" d="M12.0002 10.586L4.70718 3.29297L3.29297 4.70718L10.586 12.0002L3.29297 19.2933L4.70718 20.7075L12.0002 13.4145L19.2933 20.7075L20.7075 19.2933L13.4145 12.0002L20.7075 4.70723L19.2933 3.29302L12.0002 10.586Z" fill="white" fill-rule="evenodd"></path></svg>
+</button>
+<button class="gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9">
+<svg aria-hidden="true" focusable="false" role="presentation" viewbox="0 0 50 15"><path class="target-next-template--21500876685641__ss_gallery_4_RXMRx9" d="M50 5.38v4.25H15V15L0 7.5 15 0v5.38z"></path></svg>
+</button>
+<button class="gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9">
+<svg aria-hidden="true" focusable="false" role="presentation" viewbox="0 0 50 15"><path class="target-prev-template--21500876685641__ss_gallery_4_RXMRx9" d="M0 9.63V5.38h35V0l15 7.5L35 15V9.63z"></path></svg>
+</button>
+</div>
+<script>
+  function initGallery4() {
+
+    let index = document.querySelector('.gallery-index-template--21500876685641__ss_gallery_4_RXMRx9');
+
+    const slider = new Swiper('.gallery-modal-slider-template--21500876685641__ss_gallery_4_RXMRx9',{
+        speed:300,
+        navigation: {
+          nextEl: '.gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9',
+          prevEl: '.gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9'
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: true,
+        },
+        on: {
+          slideChange: function() {
+            var currentIndex = this.activeIndex;
+            currentIndex++;
+            index.innerText = currentIndex;
+          }
+        }
+    });
+
+    const toggles = document.querySelectorAll('.gallery-item-template--21500876685641__ss_gallery_4_RXMRx9');
+    const modal = document.querySelector('.gallery-modal-template--21500876685641__ss_gallery_4_RXMRx9');
+    const close = document.querySelector('.gallery-modal-close-template--21500876685641__ss_gallery_4_RXMRx9');
+    let activeSlideIndex = 0;
+    
+    toggles.forEach((el, index) => {
+        el.addEventListener('click', (e) => {
+          index.innerText = index;
+          slider.slideTo(index);
+          activeSlideIndex = index;
+          const activeSlide = slider.slides[activeSlideIndex];
+
+          setTimeout(() => {
+              document.body.style.overflow = 'hidden';
+              modal.classList.add('active');
+          }, 200); 
+        });
+    });
+    
+    close.addEventListener('click', () => {
+        document.body.style.overflow = '';
+        modal.classList.remove('active');
+    });
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === "Escape") {
+        document.body.style.overflow = '';
+        modal.classList.remove('active');
+      }
+    });
+    
+    document.addEventListener('click', (e) => {
+      if(e.target.parentNode.classList.contains('gallery-modal-prev-template--21500876685641__ss_gallery_4_RXMRx9') && e.target.parentNode.classList.contains('gallery-modal-next-template--21500876685641__ss_gallery_4_RXMRx9')) {
+        console.log(e.target);
+        document.body.style.overflow = '';
+        modal.classList.remove('active'); 
+      }
+    });
+  }
+  
+  document.addEventListener('DOMContentLoaded', initGallery4);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initGallery4);
+     document.addEventListener('shopify:section:load', initGallery4);
+  }
+</script>
+</link>
+{% schema %}
+{
+  "name": "Gallery #4",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Gallery #4"
+    }
+  ]
+}
+{% endschema %}

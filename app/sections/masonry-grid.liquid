@@ -1,0 +1,656 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+    @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+    @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+    @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+    @font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+    
+    .section-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      border-top: solid #000000 0px;
+      border-bottom: solid #000000 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    
+    .section-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-settings {
+      margin: 0 auto;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  
+    .gallery-heading-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      text-align: center;
+    }
+  
+    .gallery-heading-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+      margin: 0;
+      font-size: 30px;
+      color: #000000;
+      line-height: 150%;
+      text-transform: unset;
+    }
+  
+    .gallery-items-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      margin-top: 12px;
+      display: grid;
+      align-items: start;
+      grid: auto-flow dense 200px / repeat(2,minmax(0,1fr));
+      gap: 20px;
+    }
+  
+    .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 16px;
+      border-radius: 10px;
+      border: 1px solid #000000;
+      background-color: #ffffff;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .gallery-item-url-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      cursor: pointer;
+      text-decoration: none;
+    }
+  
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      position: absolute;
+      left: -0.5%;
+      right: 0;
+      top: -0.5%;
+      bottom: 0;
+      width: 101%;
+      height: 101%;
+      border-radius: 10px;
+    }
+  
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0, 0.1);
+      border-radius: 10px;
+    }
+  
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 img,
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 svg,
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 iframe,
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 video {
+      display: block;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      box-shadow: none;
+      border: 0px;
+      border-radius: 10px;
+    }
+  
+    .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 iframe {
+      background-color: black;
+    }
+  
+    .gallery-content-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      padding: 10px 10px;
+      border-radius: 12px;
+      border: 1px solid #000000;
+      background-color: rgba(255,255,255,0.3);
+      text-align: center;
+    }
+  
+    .gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      width: 100%;
+    }
+  
+    .gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 120%;
+      text-transform: unset;
+    }
+  
+    .gallery-text-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      width: 100%;
+      margin-top: 12px;
+    }
+  
+    .gallery-text-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 100%;
+      text-transform: unset;
+    }
+  
+    .gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      width: 100%;
+      margin-top: 12px;
+    }
+  
+    .gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+      margin: 0;
+      font-size: 20px;
+      color: #ffffff;
+      line-height: 100%;
+      text-transform: unset;
+    }
+  
+    .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: fit-content;
+      margin: 0;
+      margin-top: 12px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 100%;
+      text-align: center;
+      text-transform: unset;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      border: 0px solid #000000;
+      background-color: #000000;
+      transition: all 0.25s ease 0s;
+    }
+  
+    .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:hover {
+      color: #ffffff;
+      border: 0px solid #000000;
+      background-color: #000000;
+      transition: all 0.25s ease 0s;
+    }
+  
+    .gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+    .gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+    .gallery-product-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+    .gallery-content-hover-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        z-index: 2;
+    }
+    
+    @media(min-width: 1024px) {
+  
+      .section-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      
+      .section-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-settings {
+        padding: 0 5rem;
+        padding-top: 36px;
+        padding-bottom: 36px;
+        padding-left: 5rem;
+        padding-right: 5rem;
+      }
+  
+      .gallery-heading-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        text-align: center;
+      }
+  
+      .gallery-heading-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+        font-size: 40px;
+      }
+  
+      .gallery-items-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        margin-top: 16px;
+        gap: 20px;
+        --calculated-row-height: max(150px, min(100vw / 5, 300px));
+        grid: auto-flow dense var(--calculated-row-height) / repeat(4,minmax(0,1fr));
+      }
+  
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        padding: 20px 16px;
+      }
+  
+      .gallery-content-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        padding: 8px 30px;
+        text-align: center;
+      }
+  
+      .gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+        font-size: 24px;
+      }
+  
+      .gallery-text-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        margin-top: 16px;
+      }
+      
+      .gallery-text-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+        font-size: 24px;
+      }
+  
+      .gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        margin-top: 16px;
+      }
+      
+      .gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 * {
+        font-size: 24px;
+      }
+  
+      .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        margin-top: 16px;
+        padding: 16px 24px;
+        font-size: 16px;
+      }
+  
+      .gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+      .gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+      .gallery-product-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+      .gallery-content-hover-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+        opacity: 0;
+        pointer-events: none;
+        z-index: -1;
+        transition: all 0.25s ease 0s;
+      }
+    
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:hover .gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:hover .gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:hover .gallery-product-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0,
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:hover .gallery-content-hover-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0{
+        opacity: 1;
+        pointer-events: all;
+        z-index: 2;
+        transition: all 0.25s ease 0s;
+      }
+    }</style>
+<style>
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 1) / span min(2,1);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 1 / span 1;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1 {
+          text-align: center;
+        }
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1 {
+            text-align: center;
+          }
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<style>
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 2) / span min(2,1);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 2 / span 1;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 {
+          text-align: center;
+        }
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 {
+            text-align: center;
+          }
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<style>
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2 .gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0:after {
+          display: none;
+        }
+      </style>
+<style>
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 1) / span min(2,1);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 1 / span 1;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1 {
+          text-align: center;
+        }
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1 {
+            text-align: center;
+          }
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<style>
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 1) / span min(2,1);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 1 / span 1;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2 {
+          text-align: center;
+        }
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2 {
+            text-align: center;
+          }
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<style>
+      .gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 1) / span min(2,1);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 1 / span 1;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4 {
+          text-align: center;
+        }
+        .gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4 {
+            text-align: center;
+          }
+          .gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<style>
+      .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 2) / span min(2,2);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 2 / span 2;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1 {
+          text-align: center;
+        }
+        .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1 {
+            text-align: center;
+          }
+          .gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<style>
+      .gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59 {
+        align-items: center;
+        justify-content: center;
+        grid-area: span min(2, 1) / span min(2,2);
+      }
+  
+      @media(min-width: 1024px) {
+        .gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59 {
+          align-items: center;
+          justify-content: center;
+          grid-area: span 1 / span 2;
+        }
+      }
+    </style>
+<style>
+        .gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59 {
+          text-align: center;
+        }
+        .gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+          margin-left: auto;
+          margin-right: auto;
+        }  
+      </style>
+<style>
+        @media(min-width: 1024px) {
+          .gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59 {
+            text-align: center;
+          }
+          .gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59 .gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 {
+            margin-left: auto;
+            margin-right: auto;
+          }  
+        }
+      </style>
+<div class="section-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0" style="background-color:#ffffff; background-image: ;">
+<div class="section-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-settings">
+<div class="gallery-items-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<div class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-1">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/skincare-popularSkincareIngredients_2x_e43e31bd-1aae-411e-b068-627c76a0fe01.jpg?v=1699497358"/>
+</div>
+<div class="gallery-content-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>Reviews</h3></div>
+<a class="gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0" href="">Read</a>
+</div>
+</div>
+<div class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-custom-2">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<video autoplay="" class="lazy" controls="" data-src="//section.store/cdn/shop/videos/c/vp/14d4babb9a1a43728b4c5ff7dc1bf515/14d4babb9a1a43728b4c5ff7dc1bf515.HD-720p-1.6Mbps-18393820.mp4?v=0" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+<div class="gallery-content-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>ALCARAZ!!</h3></div>
+</div>
+</div>
+<a class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-url-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-1" href="/products/5-panel-hat">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/products/5-panel-hat_4ee20a27-8d5a-490e-a2fc-1f9c3beb7bf5.jpg?v=1663855324"/>
+</div>
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>5 Panel Camp Cap</h3></div>
+<div class="gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-product-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><p>$48.00</p></div>
+<div class="gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">Buy now</div>
+</a>
+<a class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-url-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-product-2" href="/products/camp-stool">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/products/campstool-1.jpg?v=1663855362"/>
+</div>
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>Camp Stool</h3></div>
+<div class="gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-product-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><p>$78.00</p></div>
+<div class="gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">Buy now</div>
+</a>
+<a class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-url-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-382bf9ab-b964-4de0-8415-21a73e29f9e4" href="/products/canvas-lunch-bag">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/products/Lunchbag_Khaki_Front_8ae0e1f4-407d-4ac0-89e6-961b306ef351.jpg?v=1663855333"/>
+</div>
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>Canvas Lunch Bag</h3></div>
+<div class="gallery-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-product-price-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><p>$32.00</p></div>
+<div class="gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">Show More</div>
+</a>
+<a class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-url-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0-collection-1" href="/collections/caps">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<video autoplay="" class="lazy" data-src="//section.store/cdn/shop/videos/c/vp/496a4629d6c745e59b8a827771ebdc66/496a4629d6c745e59b8a827771ebdc66.HD-1080p-2.5Mbps-20133411.mp4?v=0" loop="" muted="" playsinline="" preload="none"></video>
+</div>
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>Caps</h3></div>
+<div class="gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">Shop caps</div>
+</a>
+<a class="gallery-item-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-url-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-item-8bcd2d41-eb2a-48aa-98af-efdb18629d59" href="/collections/under-50">
+<div class="gallery-image-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/tennis.png?v=1700622078"/>
+</div>
+<div class="gallery-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-title-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0"><h3>Under $50</h3></div>
+<div class="gallery-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0 gallery-collection-btn-template--20252255060297__4baa1e4b-d9cd-4328-b6f6-3da04f0914f0">Shop Tennis</div>
+</a>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.min.js"></script>
+<script>
+  function initMasonryGallery() {
+    let lazyLoadInstance = new LazyLoad();
+
+    window.addEventListener(
+      "LazyLoad::Initialized",
+      function (event) {
+        window.lazyLoadInstance = event.detail.instance;
+      },
+      false
+    );
+  }
+
+  document.addEventListener('DOMContentLoaded', initMasonryGallery);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initMasonryGallery);
+     document.addEventListener('shopify:section:load', initMasonryGallery);
+  }
+  
+</script>
+{% schema %}
+{
+  "name": "Masonry Grid",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Masonry Grid"
+    }
+  ]
+}
+{% endschema %}

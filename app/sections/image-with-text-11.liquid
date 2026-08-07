@@ -1,0 +1,404 @@
+<style data-shopify="">@font-face {
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.70f7efd699799949e6d9f99bc20843a2c86a2e0f.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/josefin_sans/josefinsans_n4.35d308a1bdf56e5556bc2ac79702c721e4e2e983.woff") format("woff");
+}
+
+  @font-face {
+  font-family: Trirong;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/trirong/trirong_n4.46b40419aaa69bf77077c3108d75dad5a0318d4b.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/trirong/trirong_n4.97753898e63cd7e164ad614681eba2c7fe577190.woff") format("woff");
+}
+
+  
+  .section-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    position: relative;
+    border-top: solid #000000 0px;
+    border-bottom: solid #000000 0px;
+    margin-top: 0px;
+    margin-bottom: 45px;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border-radius: 0px;
+  }
+  
+  .section-template--21222121800009__ss_image_with_text_11_ANw7ed-settings {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+  }
+
+  .image-text-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    height: 300vh;
+  }
+
+  .image-text-body-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    position: sticky;
+    top: 30px;
+    display: grid;
+    gap: 20px;
+  }
+
+  .image-text-images-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease 0s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    border-radius: 14px;
+    border: 0px solid #000000;
+    height: fit-content;
+  }
+
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed img,
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: all 1s ease 0s;
+  }
+
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed svg {
+    background-color: #AFAFAF;
+  }
+
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed.active {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+  }
+
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed.active svg,
+  .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed.active img {
+    transform: scale(1);
+  }
+
+  .image-text-image-desktop-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    display: none;
+  }
+
+  .image-text-content-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    position: relative;
+    order: 2;
+  }
+
+  .image-text-images-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    order: 1;
+  }
+
+  .image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed.active {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.25s ease 0s;
+  }
+
+  .image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    width: 100%;
+    max-width: fit-content;
+    text-align: center;
+  }
+
+  .image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed * {
+    margin: 0;
+    font-size: 13px;
+    color: #1d252d;
+    line-height: 130%;
+    text-transform: unset;
+  }
+
+  .image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    margin-top: 12px;
+    width: 100%;
+    max-width: 44px;
+  }
+
+  .image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed img,
+  .image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed svg {
+    background-color: #AFAFAF;
+  }
+
+  .image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed {
+    width: 100%;
+    max-width: fit-content;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  .image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed * {
+    margin: 0;
+    font-size: 30px;
+    line-height: 150%;
+    text-transform: unset;
+    background: linear-gradient(to right, #bbbdc0 50%, #41441c 50%) 0 0 / 200% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: slice;
+    -webkit-box-decoration-break: slice;
+  }
+  
+  @media(min-width: 1024px) {
+
+    .section-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      margin-top: 0px;
+      margin-bottom: 60px;
+      margin-left: 0rem;
+      margin-right: 0rem;
+      border-radius: 0px;
+    }
+    
+    .section-template--21222121800009__ss_image_with_text_11_ANw7ed-settings {
+      padding: 0 5rem;
+      padding-top: 36px;
+      padding-bottom: 36px;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+
+  
+    .image-text-images-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      height: calc(100vh - 60px);
+    }
+
+    .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      max-height: calc(100vh - 60px);
+    }
+
+    .image-text-body-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      gap: 40px;
+    }
+
+    .image-text-image-desktop-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      display: block;
+    }
+
+    .image-text-image-mobile-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      display: none;
+    }
+
+    .image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      align-items: start;
+    }
+
+    .image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      text-align: left;
+    }
+    
+    .image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed * {
+      font-size: 13px;
+    }
+
+    .image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      margin-top: 16px;
+      max-width: 44px;
+    }
+
+    .image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed {
+      margin-top: 16px;
+      text-align: left;
+    }
+
+    .image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed * {
+      font-size: 42px;
+    }
+  }</style>
+<style>
+    .section-template--21222121800009__ss_image_with_text_11_ANw7ed-settings {
+      max-width: 130rem;
+    }
+  </style>
+<style>
+    .image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed * {
+      font-family: "Josefin Sans", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    .image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed * {
+      font-family: Trirong, serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+       .image-text-body-template--21222121800009__ss_image_with_text_11_ANw7ed {
+         grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+       }
+
+      .image-text-content-template--21222121800009__ss_image_with_text_11_ANw7ed {
+        order: 1;
+      }
+
+      .image-text-images-template--21222121800009__ss_image_with_text_11_ANw7ed {
+        order: 2;
+      }
+    }
+  </style>
+<style>
+    .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed {
+     aspect-ratio: 12/12; 
+    }
+  </style>
+<style>
+    @media(min-width: 1024px) {
+     .image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed {
+       aspect-ratio: 9.6/12; 
+      } 
+    }
+  </style>
+<div class="section-template--21222121800009__ss_image_with_text_11_ANw7ed image-text-template--21222121800009__ss_image_with_text_11_ANw7ed" style="background-color:#ffffff; background-image: ;">
+<div class="section-template--21222121800009__ss_image_with_text_11_ANw7ed-settings">
+<div class="image-text-body-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<div class="image-text-content-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<div class="image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed active">
+<div class="image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<p>Integrity</p>
+</div>
+<div class="image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/NamingThisLater_Icons_Reversible_Moss.webp?v=1710988938"/>
+</div>
+<div class="image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<span>We are always open, truthful, authentic and respectful of our Nordic values.</span>
+</div>
+</div>
+<div class="image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<div class="image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<p>Our Mission</p>
+</div>
+<div class="image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/NamingThisLater_Icons_MachineWashable_Moss_eb6205b0-e7cf-4a3b-b31e-faa27106b91e_1.png?v=1710988909"/>
+</div>
+<div class="image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<span>Our mission is to offer high performance Nordic beauty for a better future.</span>
+</div>
+</div>
+<div class="image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<div class="image-text-heading-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<p>Inspired</p>
+</div>
+<div class="image-text-icon-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/NamingThisLater_Icons_Gift_Moss.webp?v=1710988980"/>
+</div>
+<div class="image-text-text-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<span>We encourage creativity, passion and innovation to deliver true Nordic beauty to our consumers.</span>
+</div>
+</div>
+</div>
+<div class="image-text-images-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<div class="image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed active">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/Good_Earth_Cotton_-_Australia.webp?v=1713926289"/>
+</div>
+<div class="image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/THROW_RUG_-_5_REASONS.webp?v=1713926261"/>
+</div>
+<div class="image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed">
+<img alt="" loading="lazy" src="//section.store/cdn/shop/files/5_035733d7-b682-47c0-9eeb-7b01bc45612c.webp?v=1713926319"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function initImageText11() {
+    
+    const section = document.querySelector('.image-text-template--21222121800009__ss_image_with_text_11_ANw7ed');
+const items = document.querySelectorAll('.image-text-content-item-template--21222121800009__ss_image_with_text_11_ANw7ed');
+const images = document.querySelectorAll('.image-text-image-template--21222121800009__ss_image_with_text_11_ANw7ed');
+const numItems = items.length;
+const sectionHeight = section.offsetHeight;
+const sectionTop = section.offsetTop;
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY - sectionTop;
+  const windowHeight = window.innerHeight;
+
+  const scrollProgress = scrollPosition / (sectionHeight - windowHeight);
+
+  let currentElementIndex = Math.floor(scrollProgress * numItems);
+  currentElementIndex = Math.min(numItems - 1, Math.max(0, currentElementIndex));
+
+  items.forEach((item, index) => {
+    if (index === currentElementIndex || (scrollProgress >= 1 && index === numItems - 1)) {
+      item.classList.add('active');
+      images[index].classList.add('active');
+    } else {
+      item.classList.remove('active');
+      images[index].classList.remove('active');
+    }
+  });
+
+  const span = items[currentElementIndex].querySelector('span');
+  let progressInCurrentItem = scrollProgress * numItems - currentElementIndex;
+
+  // Фиксируем backgroundPosition на 100% только если scrollProgress >= 1
+  if (scrollProgress >= 1) {
+    progressInCurrentItem = 1;
+  }
+
+  span.style.backgroundPosition = `-${progressInCurrentItem * 100}% 0`;
+});
+
+
+  }
+
+  document.addEventListener('DOMContentLoaded', initImageText11);
+  
+  if (Shopify.designMode) {
+     document.addEventListener('shopify:section:unload', initImageText11);
+     document.addEventListener('shopify:section:load', initImageText11);
+  }
+</script>
+{% schema %}
+{
+  "name": "Image with text #11",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Image with text #11"
+    }
+  ]
+}
+{% endschema %}

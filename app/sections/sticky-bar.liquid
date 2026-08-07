@@ -1,0 +1,301 @@
+<style>
+  
+    @font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("//section.store/cdn/fonts/inter/inter_n4.b2a3f24c19b4de56e8871f609e73ca7f6d2e2bb9.woff2") format("woff2"),
+       url("//section.store/cdn/fonts/inter/inter_n4.af8052d517e0c9ffac7b814872cecc27ae1fa132.woff") format("woff");
+}
+
+  
+
+  .ss-sticky-bar-template--26643330335049__ss_sticky_bar_demo {
+    
+      --ss-bg: linear-gradient(90deg, rgba(10, 10, 10, 1), rgba(42, 20, 56, 1) 35%, rgba(74, 28, 58, 1) 50%, rgba(42, 20, 56, 1) 65%, rgba(10, 10, 10, 1) 100%);
+    
+    --ss-text: #f5e9d4;
+    --ss-gap: 4rem;
+    --ss-duration: 56s;
+    --ss-pad-block: 14px;
+    --ss-text-size: 14px;
+    --ss-top-offset: 0px;
+    --ss-fade-w: 6%;
+    --ss-divider-size: 5px;
+    --ss-z: 1000;
+    --ss-content-w: none;
+    
+
+    background: var(--ss-bg);
+    color: var(--ss-text);
+    width: 100%;
+    
+      position: sticky;
+    
+    inset-block-start: var(--ss-top-offset);
+    z-index: var(--ss-z);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .ss-sticky-bar-inner-template--26643330335049__ss_sticky_bar_demo {
+    display: block;
+    width: 100%;
+    max-width: var(--ss-content-w);
+    margin-inline: auto;
+    padding-block: var(--ss-pad-block);
+    padding-inline: 1rem;
+    color: var(--ss-text);
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  .ss-sticky-bar-inner-template--26643330335049__ss_sticky_bar_demo:hover {
+    color: var(--ss-text);
+  }
+
+  .ss-sticky-bar-sr-template--26643330335049__ss_sticky_bar_demo {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+    list-style: none;
+  }
+
+  .ss-sticky-bar-marquee-template--26643330335049__ss_sticky_bar_demo {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+    user-select: none;
+    
+      -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 var(--ss-fade-w),
+        #000 calc(100% - var(--ss-fade-w)),
+        transparent
+      );
+      mask-image: linear-gradient(
+        to right,
+        transparent,
+        #000 var(--ss-fade-w),
+        #000 calc(100% - var(--ss-fade-w)),
+        transparent
+      );
+    
+  }
+
+  .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: var(--ss-gap);
+    padding: 0;
+    padding-inline-end: var(--ss-gap);
+    margin: 0;
+    list-style: none;
+    animation: ss-marquee-template--26643330335049__ss_sticky_bar_demo var(--ss-duration) linear infinite;
+  }
+
+  .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo li {
+    flex-shrink: 0;
+    white-space: nowrap;
+    font-size: var(--ss-text-size);
+    line-height: 1.4;
+    position: relative;
+    
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    
+  }
+
+  
+
+  
+
+  
+    .ss-sticky-bar-template--26643330335049__ss_sticky_bar_demo:hover .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo {
+      animation-play-state: paused;
+    }
+  
+
+  
+
+  @media (prefers-reduced-motion: reduce) {
+    .ss-sticky-bar-marquee-template--26643330335049__ss_sticky_bar_demo {
+      overflow: visible;
+      justify-content: center;
+    }
+    .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo {
+      animation: none;
+      flex-wrap: wrap;
+      padding-inline-end: 0;
+      justify-content: center;
+    }
+    .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo--clone {
+      display: none;
+    }
+    .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo li:nth-child(n+5) {
+      display: none;
+    }
+    .ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo li:nth-child(4)::after {
+      display: none;
+    }
+  }
+
+  @keyframes ss-marquee-template--26643330335049__ss_sticky_bar_demo {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+  }
+
+  @keyframes ss-marquee-rev-template--26643330335049__ss_sticky_bar_demo {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+
+  @media (max-width: 480px) {
+    .ss-sticky-bar-template--26643330335049__ss_sticky_bar_demo {
+      --ss-gap: 2.5rem;
+      --ss-duration: 78s;
+      --ss-text-size: 12px;
+    }
+  }
+    /* Without this, sticky in a template only sticks for ~bar-height of scroll because the auto-generated
+       <section class="shopify-section"> wrapper is its containing block. display:contents removes that
+       wrapper's box so the bar's containing block becomes the next block ancestor (<main> in templates,
+       effectively <body> in header-groups), letting it stick across the full page scroll. */
+    .shopify-section:has(> .ss-sticky-bar-template--26643330335049__ss_sticky_bar_demo) {
+      display: contents;
+    }
+  
+</style><div aria-label="Announcements" class="ss-sticky-bar-template--26643330335049__ss_sticky_bar_demo" data-skip-subtree-update="" data-ss-bar-id="template--26643330335049__ss_sticky_bar_demo" role="region"><div class="ss-sticky-bar-inner-template--26643330335049__ss_sticky_bar_demo"><ul class="ss-sticky-bar-sr-template--26643330335049__ss_sticky_bar_demo"><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li></ul>
+<div aria-hidden="true" class="ss-sticky-bar-marquee-template--26643330335049__ss_sticky_bar_demo">
+<ul class="ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo"><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li></ul>
+<ul class="ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo ss-sticky-bar-track-template--26643330335049__ss_sticky_bar_demo--clone"><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li><li>FREE SHIPPING ON ORDERS <strong>$75+</strong></li><li>Take 15% off with code <b>STICKY15</b></li><li>30-day returns, no questions asked</li><li>Try scrolling — it stays right here ✦</li></ul>
+</div></div></div>
+<script>
+  (function () {
+    var sid = "template--26643330335049__ss_sticky_bar_demo";
+    var targetSelector = "";
+    var positionMode = "sticky";
+    var topOffset = 0;
+
+    function autoDetectThemeHeader() {
+      // Probe broadest container first. #header-group: Shopify section-group (Horizon, modern Dawn);
+      // its presence signals target-pad mode (CSS pushes its first non-bar child).
+      // Then Horizon header, Dawn sticky-header, Dawn .header-wrapper.
+      var probes = ['#header-group', 'header.shopify-section.header-section', 'sticky-header', '.header-wrapper'];
+      for (var i = 0; i < probes.length; i++) {
+        var el = document.querySelector(probes[i]);
+        if (el) return el;
+      }
+      return null;
+    }
+
+    function init() {
+      var node = document.querySelector('[data-ss-bar-id="' + sid + '"]');
+      if (!node) return;
+
+      // Explicit selector first, then auto-detect.
+      var target = null;
+      if (targetSelector) {
+        try { target = document.querySelector(targetSelector); } catch (e) {}
+      } else if (positionMode === 'fixed') {
+        target = autoDetectThemeHeader();
+      }
+
+      // Tag role + offset so one recalc handles all instances.
+      node.setAttribute('data-ss-bar-top-offset', String(topOffset));
+      if (positionMode === 'fixed') {
+        if (target) {
+          node.setAttribute('data-ss-bar-target-pad', '1');
+          node.removeAttribute('data-ss-bar-body-pad');
+        } else {
+          node.setAttribute('data-ss-bar-body-pad', '1');
+          node.removeAttribute('data-ss-bar-target-pad');
+        }
+      }
+
+      // Sticky mode takes its own flow space; no layout sync needed.
+      if (positionMode !== 'fixed') return;
+
+      applyLayout();
+
+      if (typeof ResizeObserver !== 'undefined') {
+        var ro = new ResizeObserver(applyLayout);
+        ro.observe(node);
+        node._ssRO = ro;
+      }
+    }
+
+    function applyLayout() {
+      // Max bottom (height + offset) per role, push the matching slot.
+      var bodyBars = document.querySelectorAll('[data-ss-bar-body-pad="1"]');
+      var targetBars = document.querySelectorAll('[data-ss-bar-target-pad="1"]');
+
+      function maxBottom(list) {
+        var m = 0;
+        list.forEach(function (b) {
+          var h = b.getBoundingClientRect().height;
+          var off = parseInt(b.getAttribute('data-ss-bar-top-offset') || '0', 10);
+          if (h + off > m) m = h + off;
+        });
+        return m;
+      }
+
+      // Var on <html> survives Horizon's morph; inline style would not.
+      if (targetBars.length) {
+        document.documentElement.style.setProperty('--ss-bar-target-margin', maxBottom(targetBars) + 'px');
+        // Header carries the offset in target mode; clear body padding.
+        document.body.style.paddingBlockStart = '0px';
+      } else {
+        document.documentElement.style.removeProperty('--ss-bar-target-margin');
+      }
+
+      if (bodyBars.length) {
+        document.body.style.paddingBlockStart = maxBottom(bodyBars) + 'px';
+      } else if (!targetBars.length) {
+        document.body.style.removeProperty('padding-block-start');
+      }
+    }
+
+    function cleanup(sectionId) {
+      var node = document.querySelector('[data-ss-bar-id="' + sectionId + '"]');
+      if (!node) return;
+      if (node._ssRO) { try { node._ssRO.disconnect(); } catch (e) {} node._ssRO = null; }
+      setTimeout(applyLayout, 0);
+    }
+
+    // Theme editor only; section:load re-runs this inline script so init re-fires on its own.
+    if (!window.__ssStickyBarEvtBound) {
+      window.__ssStickyBarEvtBound = true;
+      document.addEventListener('shopify:section:unload', function (e) {
+        cleanup(e.detail && e.detail.sectionId);
+      });
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', init);
+    } else {
+      init();
+    }
+  })();
+</script>
+{% schema %}
+{
+  "name": "Sticky bar",
+  "tag": "section",
+  "presets": [
+    {
+      "name": "Sticky bar"
+    }
+  ]
+}
+{% endschema %}
