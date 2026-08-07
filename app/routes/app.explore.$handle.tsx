@@ -99,7 +99,9 @@ export const action = async ({
     const activeTheme = themes.themes.find((t) => t.role === "main");
 
     if (activeTheme) {
-      const liquid = generateSectionLiquid(section.title, section.handle);
+      const liquid =
+        (section as unknown as { liquid?: string }).liquid ??
+        generateSectionLiquid(section.title, section.handle);
       await admin.rest.put({
         path: `/themes/${activeTheme.id}/assets.json`,
         data: {

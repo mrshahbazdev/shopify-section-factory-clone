@@ -22,7 +22,7 @@ A Shopify embedded app clone of [Section Store / Section Factory](https://apps.s
 
 ## Data
 
-Section and category data was extracted from the Section Store demo store and stored in `app/data/sections.json` and `app/data/categories.json`.
+Section and category data was extracted from the Section Store demo store and stored in `app/data/sections.json` and `app/data/categories.json`. Each section now has a generated Shopify Liquid template (`liquid` field) for one-click theme installation. Run `npm run generate:liquid` to regenerate these templates.
 
 ## Getting started
 
