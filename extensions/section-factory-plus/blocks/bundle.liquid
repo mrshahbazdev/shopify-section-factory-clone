@@ -1,0 +1,42 @@
+{% comment %}
+  Section Factory Plus - Bundle / Quantity Breaks
+  Render bundle offers and volume discounts on the product page.
+{% endcomment %}
+
+{% liquid
+  assign config = shop.metafields.section_factory_plus.bundles.value
+%}
+
+{% if config.enabled %}
+  <div class="sf-bundle" data-block-id="{{ block.id }}">
+    <style>
+      .sf-bundle { margin: 24px 0; padding: 20px; border: 2px dashed #10b981; border-radius: 12px; background: #f0fdf4; }
+      .sf-bundle__title { font-weight: 700; margin-bottom: 12px; }
+      .sf-bundle__tier { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(0,0,0,0.1); }
+      .sf-bundle__cta { display: inline-block; margin-top: 16px; padding: 12px 24px; background: #10b981; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    </style>
+
+    <div class="sf-bundle__title">Bundle & Save</div>
+    {% for tier in config.tiers %}
+      <div class="sf-bundle__tier">
+        <span>Buy {{ tier.quantity }}</span>
+        <span>Save {{ tier.discount }}%</span>
+      </div>
+    {% else %}
+      <div class="sf-bundle__tier"><span>Buy 2</span><span>Save 10%</span></div>
+      <div class="sf-bundle__tier"><span>Buy 3</span><span>Save 15%</span></div>
+    {% endfor %}
+    <a class="sf-bundle__cta" href="/cart/add?id={{ product.selected_or_first_available_variant.id }}&quantity={{ config.default_quantity | default: 2 }}">Add bundle to cart</a>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Bundle / Quantity Breaks",
+  "target": "section",
+  "settings": [
+    {"type": "text", "id": "title", "label": "Title", "default": "Bundle & Save"}
+  ],
+  "presets": [{"name": "Bundle / Quantity Breaks"}]
+}
+{% endschema %}

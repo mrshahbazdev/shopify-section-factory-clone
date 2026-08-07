@@ -1,0 +1,58 @@
+{% comment %}
+  Section Factory Plus - Conversion Blocks
+  Add high-converting tabs, upsell addons, expert review and video carousel to product pages.
+{% endcomment %}
+
+{% liquid
+  assign config = shop.metafields.section_factory_plus.conversion_blocks.value
+%}
+
+{% if config.enabled %}
+  <div class="sf-conversion-blocks" data-block-id="{{ block.id }}">
+    <style>
+      .sf-conversion-blocks {
+        margin: 24px 0;
+        padding: 20px;
+        border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 12px;
+        background: #fff;
+      }
+      .sf-conversion-blocks__tabs {
+        display: flex; gap: 12px; border-bottom: 2px solid #eee; margin-bottom: 16px;
+      }
+      .sf-conversion-blocks__tab {
+        padding: 8px 16px; cursor: pointer; border-bottom: 2px solid transparent; font-weight: 600;
+      }
+      .sf-conversion-blocks__tab.active { border-color: #2563eb; color: #2563eb; }
+      .sf-conversion-blocks__panel { display: none; }
+      .sf-conversion-blocks__panel.active { display: block; }
+    </style>
+
+    <div class="sf-conversion-blocks__tabs">
+      <div class="sf-conversion-blocks__tab active">Description</div>
+      <div class="sf-conversion-blocks__tab">Shipping</div>
+      <div class="sf-conversion-blocks__tab">Reviews</div>
+    </div>
+    <div class="sf-conversion-blocks__panel active">
+      <p>{{ block.settings.description | default: product.description }}</p>
+    </div>
+    <div class="sf-conversion-blocks__panel">
+      <p>Free shipping on orders over {{ block.settings.shipping_threshold | default: '$50' }}.</p>
+    </div>
+    <div class="sf-conversion-blocks__panel">
+      <p>Customer reviews will appear here.</p>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Conversion Blocks",
+  "target": "section",
+  "settings": [
+    {"type": "text", "id": "description", "label": "Description", "default": "<p>Add product details here.</p>"},
+    {"type": "text", "id": "shipping_threshold", "label": "Shipping threshold", "default": "$50"}
+  ],
+  "presets": [{"name": "Conversion Blocks"}]
+}
+{% endschema %}

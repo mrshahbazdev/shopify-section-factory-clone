@@ -1,0 +1,65 @@
+{% comment %}
+  Section Factory Plus - Cart Drawer (app embed block)
+  Renders a slide-out cart drawer on every page.
+{% endcomment %}
+
+{% liquid
+  assign config = shop.metafields.section_factory_plus.cart_drawer.value
+%}
+
+{% if config.enabled %}
+  <div id="sf-cart-drawer" class="sf-cart-drawer" data-cart-drawer style="display:none;">
+    <style>
+      .sf-cart-drawer { position: fixed; top: 0; right: 0; width: 380px; max-width: 90vw; height: 100vh; background: #fff; box-shadow: -4px 0 24px rgba(0,0,0,0.15); z-index: 1000; transform: translateX(100%); transition: transform 0.3s ease; }
+      .sf-cart-drawer.open { transform: translateX(0); }
+      .sf-cart-drawer__overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 999; display: none; }
+      .sf-cart-drawer__overlay.open { display: block; }
+      .sf-cart-drawer__header { padding: 20px; border-bottom: 1px solid #eee; font-weight: 700; display: flex; justify-content: space-between; }
+      .sf-cart-drawer__close { cursor: pointer; }
+      .sf-cart-drawer__body { padding: 20px; }
+      .sf-cart-drawer__upsell { margin-top: 24px; padding: 16px; background: #f9fafb; border-radius: 8px; }
+    </style>
+
+    <div class="sf-cart-drawer__overlay" data-cart-overlay></div>
+    <div class="sf-cart-drawer__content">
+      <div class="sf-cart-drawer__header">
+        <span>Your cart</span>
+        <span class="sf-cart-drawer__close" data-cart-close>&times;</span>
+      </div>
+      <div class="sf-cart-drawer__body">
+        <p>Cart contents will render here via Shopify's cart API.</p>
+        <div class="sf-cart-drawer__upsell">
+          <strong>Don't miss out</strong>
+          <p>Add this recommended item to your order.</p>
+          <a href="{{ routes.all_products_collection_url }}">Shop now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      document.addEventListener('click', function(e){
+        if (e.target.matches('[data-cart-toggle]')) {
+          document.querySelector('[data-cart-drawer]').classList.add('open');
+          document.querySelector('[data-cart-overlay]').classList.add('open');
+        }
+        if (e.target.matches('[data-cart-close], [data-cart-overlay]')) {
+          document.querySelector('[data-cart-drawer]').classList.remove('open');
+          document.querySelector('[data-cart-overlay]').classList.remove('open');
+        }
+      });
+    })();
+  </script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Cart Drawer",
+  "target": "body",
+  "settings": [
+    {"type": "text", "id": "heading", "label": "Drawer heading", "default": "Your cart"},
+    {"type": "richtext", "id": "upsell_text", "label": "Upsell text", "default": "<p>Add this recommended item.</p>"}
+  ]
+}
+{% endschema %}
