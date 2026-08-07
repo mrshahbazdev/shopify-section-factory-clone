@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "f04e3343f721ca331d33b7207acfde5f"
-application_url = "https://sections.clipvaultz.online"
+application_url = "https://sections-app.clipvaultz.online"
 embedded = true
 name = "Section Factory Clone"
 
@@ -10,7 +10,7 @@ name = "Section Factory Clone"
 scopes = "read_themes,write_themes,read_products,read_metaobjects,write_metaobjects,read_files,write_files,read_orders,read_customers"
 
 [auth]
-redirect_urls = [ "https://sections.clipvaultz.online/auth/callback" ]
+redirect_urls = [ "https://sections-app.clipvaultz.online/auth/callback" ]
 
 [webhooks]
 api_version = "2024-10"
