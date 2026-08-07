@@ -12,11 +12,11 @@ ROOT = Path(__file__).parent.parent
 SECTIONS_FILE = ROOT / "app" / "data" / "sections.json"
 
 PALETTES = [
-    {"bg": "#ffffff", "fg": "#111827", "accent": "#2563eb", "radius": "8px", "align": "left"},
-    {"bg": "#111827", "fg": "#ffffff", "accent": "#38bdf8", "radius": "12px", "align": "center"},
-    {"bg": "#f9fafb", "fg": "#111827", "accent": "#10b981", "radius": "16px", "align": "right"},
-    {"bg": "#fff7ed", "fg": "#431407", "accent": "#f59e0b", "radius": "8px", "align": "center"},
-    {"bg": "#ecfeff", "fg": "#083344", "accent": "#06b6d4", "radius": "24px", "align": "left"},
+    {"bg": "#ffffff", "fg": "#111827", "accent": "#2563eb", "radius": "8px", "align": "left", "shadow": "0 4px 20px rgba(0,0,0,0.06)", "sectionPadding": "80px 20px"},
+    {"bg": "#111827", "fg": "#ffffff", "accent": "#38bdf8", "radius": "12px", "align": "center", "shadow": "0 8px 32px rgba(0,0,0,0.25)", "sectionPadding": "96px 20px"},
+    {"bg": "#f9fafb", "fg": "#111827", "accent": "#10b981", "radius": "16px", "align": "right", "shadow": "0 4px 24px rgba(0,0,0,0.05)", "sectionPadding": "80px 20px"},
+    {"bg": "#fff7ed", "fg": "#431407", "accent": "#f59e0b", "radius": "8px", "align": "center", "shadow": "0 6px 24px rgba(0,0,0,0.08)", "sectionPadding": "88px 20px"},
+    {"bg": "#ecfeff", "fg": "#083344", "accent": "#06b6d4", "radius": "24px", "align": "left", "shadow": "0 6px 28px rgba(0,0,0,0.07)", "sectionPadding": "80px 20px"},
 ]
 
 
@@ -56,40 +56,53 @@ def wrap(title: str, handle: str, style: int, inner: str, settings: list, blocks
   --accent: {p['accent']};
   --radius: {p['radius']};
   --align: {p['align']};
+  --shadow: {p['shadow']};
+  --sectionPadding: {p['sectionPadding']};
   background: var(--bg);
   color: var(--fg);
 }}
 .section-store-{handle} .ss-wrap {{
   max-width: 1200px;
   margin: 0 auto;
-  padding: 64px 20px;
+  padding: var(--sectionPadding);
   text-align: var(--align);
 }}
 .section-store-{handle} .ss-title {{
-  font-size: clamp(2rem, 5vw, 3.5rem);
-  font-weight: 700;
-  line-height: 1.1;
-  margin: 0 0 16px;
+  font-size: clamp(2.2rem, 5vw, 3.75rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 18px;
+  letter-spacing: -0.02em;
 }}
 .section-store-{handle} .ss-subtitle {{
-  font-size: 1.125rem;
-  line-height: 1.6;
-  opacity: 0.8;
-  max-width: 640px;
-  margin: 0 auto 24px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  opacity: 0.85;
+  max-width: 680px;
+  margin: 0 auto 28px;
 }}
 .section-store-{handle} .ss-btn {{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 28px;
+  padding: 15px 32px;
   background: var(--accent);
   color: #fff;
   border-radius: var(--radius);
   text-decoration: none;
   font-weight: 600;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}}
+.section-store-{handle} .ss-btn:hover {{
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.18);
 }}
 .section-store-{handle} img {{ max-width: 100%; height: auto; border-radius: var(--radius); }}
+.section-store-{handle} .placeholder-image {{
+  border-radius: var(--radius);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06);
+}}
 </style>
 <div class="ss-wrap">
 {inner}
