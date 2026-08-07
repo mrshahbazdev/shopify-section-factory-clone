@@ -7,6 +7,8 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
 
+const isReset = process.argv.includes('--reset');
+
 function stripQuotes(value) {
   if (
     typeof value === 'string' &&
@@ -60,10 +62,28 @@ if (!process.env.DATABASE_URL) {
 }
 
 const prismaBin = path.resolve(root, 'node_modules/.bin/prisma');
-const result = spawnSync(process.execPath, [prismaBin, 'migrate', 'deploy'], {
-  cwd: root,
-  env: process.env,
-  stdio: 'inherit',
-});
 
-process.exit(result.status ?? 1);
+if (isReset) {
+  const reset = spawnSync(
+    process.execPath,
+    [prismaBin, 'migrate', 'reset', '--force', '--skip-generate'],
+    {
+      cwd: root,
+      env: process.env,
+      stdio: 'inherit',
+    },
+  );
+  process.exit(reset.status ?? 1);
+}
+
+const deploy = spawnSync(
+  process.execPath,
+  [prismaBin, 'migrate', 'deploy'],
+  {
+    cwd: root,
+    env: process.env,
+    stdio: 'inherit',
+  },
+);
+
+process.exit(deploy.status ?? 1);

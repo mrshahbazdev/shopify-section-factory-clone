@@ -13,6 +13,7 @@
     "start": "node server.js",
     "setup": "prisma generate && prisma migrate deploy",
     "migrate": "node scripts/migrate.js",
+    "migrate:reset": "node scripts/migrate.js --reset",
     "postinstall": "node scripts/postinstall.js",
     "generate:liquid": "python3 scripts/generate-sections-liquid.py",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
