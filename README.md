@@ -69,7 +69,15 @@ Section Liquid is loaded at runtime from `app/sections/{handle}.liquid`. `726` o
    npm run start
    ```
 
-The app runs on `PORT` (default `3000`). Use a reverse proxy such as Nginx or Caddy for HTTPS termination, or expose the port through your cloud provider.
+The app runs on `PORT` (default `3000`).
+
+### Reverse proxy options
+
+- **Nginx** — proxy `https://sections.clipvaultz.online` to `http://127.0.0.1:3000`.
+- **Apache** — upload the included `.htaccess` file and make sure `mod_rewrite` + `mod_proxy` are enabled. It forwards all traffic to `http://127.0.0.1:3000`.
+- **Caddy** — `reverse_proxy localhost:3000`.
+
+Make sure the Node process (`node server.js` / `npm start` / PM2) is running in the background.
 
 ## Theme App Extension (Plus features)
 
