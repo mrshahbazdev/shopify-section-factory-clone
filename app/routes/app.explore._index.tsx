@@ -1,5 +1,5 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
-import { useLoaderData, useSearchParams } from "@remix-run/react";
+import { useLoaderData, useSearchParams, Link } from "@remix-run/react";
 import { useState, useMemo } from "react";
 import {
   Page,
@@ -148,52 +148,59 @@ export default function ExploreSections() {
               >
                 {filtered.map((section) => (
                   <Card key={section.handle} padding="0">
-                    <div style={{ position: "relative" }}>
-                      <img
-                        src={section.image}
-                        alt={section.title}
-                        style={{
-                          width: "100%",
-                          height: "180px",
-                          objectFit: "cover",
-                          borderRadius: "8px 8px 0 0",
-                        }}
-                      />
-                      {section.isPro && (
-                        <div style={{ position: "absolute", top: 8, right: 8 }}>
-                          <Badge tone="info">Pro</Badge>
-                        </div>
-                      )}
-                    </div>
-                    <div style={{ padding: "1rem" }}>
-                      <Text variant="headingSm" as="h3">
-                        {section.title}
-                      </Text>
-                      <div
-                        style={{
-                          display: "flex",
-                          justifyContent: "space-between",
-                          alignItems: "center",
-                          marginTop: "0.5rem",
-                        }}
-                      >
-                        <Text variant="headingMd" as="p" fontWeight="bold">
-                          {section.price === 0 ? "Free" : `$${section.price}`}
-                        </Text>
-                        <Button
-                          size="slim"
-                          onClick={() => toggleBundle(section.handle)}
-                          variant={
-                            bundle.includes(section.handle)
-                              ? "primary"
-                              : "secondary"
-                          }
-                        >
-                          {bundle.includes(section.handle)
-                            ? "Added"
-                            : "+ Add to Bundle"}
-                        </Button>
+                    <Link
+                      to={`/app/explore/${section.handle}`}
+                      style={{ textDecoration: "none", color: "inherit" }}
+                    >
+                      <div style={{ position: "relative" }}>
+                        <img
+                          src={section.image}
+                          alt={section.title}
+                          style={{
+                            width: "100%",
+                            height: "180px",
+                            objectFit: "cover",
+                            borderRadius: "8px 8px 0 0",
+                          }}
+                        />
+                        {section.isPro && (
+                          <div
+                            style={{ position: "absolute", top: 8, right: 8 }}
+                          >
+                            <Badge tone="info">Pro</Badge>
+                          </div>
+                        )}
                       </div>
+                      <div style={{ padding: "1rem" }}>
+                        <Text variant="headingSm" as="h3">
+                          {section.title}
+                        </Text>
+                      </div>
+                    </Link>
+                    <div
+                      style={{
+                        padding: "0 1rem 1rem",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Text variant="headingMd" as="p" fontWeight="bold">
+                        {section.price === 0 ? "Free" : `$${section.price}`}
+                      </Text>
+                      <Button
+                        size="slim"
+                        onClick={() => toggleBundle(section.handle)}
+                        variant={
+                          bundle.includes(section.handle)
+                            ? "primary"
+                            : "secondary"
+                        }
+                      >
+                        {bundle.includes(section.handle)
+                          ? "Added"
+                          : "+ Add to Bundle"}
+                      </Button>
                     </div>
                   </Card>
                 ))}
