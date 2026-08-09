@@ -146,8 +146,10 @@ const route2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   __proto__: null,
   action: action$5
 }, Symbol.toStringTag, { value: "Module" }));
-const loader$c = async (_args) => {
-  return redirect("/app");
+const loader$c = async ({ request }) => {
+  const url = new URL(request.url);
+  url.pathname = "/app";
+  return redirect(url.toString());
 };
 function Index() {
   return null;
