@@ -148,8 +148,7 @@ const route2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
 }, Symbol.toStringTag, { value: "Module" }));
 const loader$c = async ({ request }) => {
   const url = new URL(request.url);
-  url.pathname = "/app";
-  return redirect(url.toString());
+  return redirect(`/app${url.search}`);
 };
 function Index() {
   return null;
