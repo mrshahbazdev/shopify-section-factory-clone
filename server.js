@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { spawnSync } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -79,6 +80,33 @@ if (!process.env.DATABASE_URL && process.env.DB_HOST) {
   const database = process.env.DB_NAME || 'section_factory';
   process.env.DATABASE_URL = `mysql://${encodeURIComponent(user)}:${encodeURIComponent(password)}@${encodeURIComponent(host)}:${port}/${encodeURIComponent(database)}`;
 }
+
+// Ensure Prisma client is generated (needed for cPanel where postinstall can't access the repo root)
+function ensurePrismaClient() {
+  const prismaClientFile = path.resolve(__dirname, 'node_modules/.prisma/client/index.js');
+  if (fs.existsSync(prismaClientFile)) {
+    return;
+  }
+  const prismaBin = path.resolve(__dirname, 'node_modules/.bin/prisma');
+  if (!fs.existsSync(prismaBin)) {
+    throw new Error('Prisma CLI not found in node_modules/.bin/prisma');
+  }
+  console.log('[server] Generating Prisma client...');
+  const result = spawnSync(
+    process.execPath,
+    [prismaBin, 'generate', '--schema=./prisma/schema.prisma'],
+    {
+      cwd: __dirname,
+      env: process.env,
+      stdio: 'inherit',
+    },
+  );
+  if (result.status !== 0) {
+    throw new Error(`Prisma generate exited with status ${result.status}`);
+  }
+}
+
+ensurePrismaClient();
 
 process.env.NODE_ENV = process.env.NODE_ENV || 'production';
 process.env.PORT = process.env.PORT || '3000';
