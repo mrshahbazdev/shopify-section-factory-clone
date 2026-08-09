@@ -1,3 +1,0 @@
-2026-08-09T05:44:48.305Z unhandledRejection
-Error: Prisma session table does not exist. This could happen for a few reasons, see https://github.com/Shopify/shopify-app-js/tree/main/packages/apps/session-storage/shopify-app-session-storage-prisma#troubleshooting for more information
-    at /home/ubuntu/repos/shopify-section-factory-clone/node_modules/@shopify/src/prisma.ts:55:15
