@@ -73,7 +73,7 @@ The app runs on `PORT` (default `3000`).
 
 ### Reverse proxy options
 
-- **Nginx** — proxy `https://sections-app.clipvaultz.online` to `http://127.0.0.1:3000`.
+- **Nginx** — proxy `https://sections-apps.clipvaultz.online` to `http://127.0.0.1:3000`.
 - **Apache** — upload the included `.htaccess` file and make sure `mod_rewrite` + `mod_proxy` are enabled. It forwards all traffic to `http://127.0.0.1:3000`.
 - **Caddy** — `reverse_proxy localhost:3000`.
 
