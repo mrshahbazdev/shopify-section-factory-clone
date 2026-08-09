@@ -158,13 +158,23 @@ const route3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: Index,
   loader: loader$c
 }, Symbol.toStringTag, { value: "Module" }));
+function normalizeRequestHost(request) {
+  const url = new URL(request.url);
+  const host = url.searchParams.get("host");
+  if (host && /^[A-Za-z0-9\-_]+$/u.test(host)) {
+    const standard = Buffer.from(host, "base64url").toString("base64");
+    url.searchParams.set("host", standard);
+    return new Request(url, request);
+  }
+  return request;
+}
 const loader$b = async ({ request }) => {
   const url = new URL(request.url);
   if (url.pathname === "/auth/login") {
-    const errors = await login(request);
+    const errors = await login(normalizeRequestHost(request));
     return json(errors ?? {});
   }
-  await authenticate.admin(request);
+  await authenticate.admin(normalizeRequestHost(request));
   return null;
 };
 const route4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
@@ -203,7 +213,7 @@ const route5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
 const polarisStyles = "/assets/styles-CV7GIAUv.css";
 const links = () => [{ rel: "stylesheet", href: polarisStyles }];
 const loader$9 = async ({ request }) => {
-  await authenticate.admin(request);
+  await authenticate.admin(normalizeRequestHost(request));
   return { apiKey: process.env.SHOPIFY_API_KEY || "" };
 };
 function App() {
