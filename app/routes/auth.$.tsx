@@ -1,17 +1,8 @@
 import type { LoaderFunctionArgs } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { authenticate, login } from "../shopify.server";
+import { authenticate } from "../shopify.server";
 import { normalizeRequestHost } from "../lib/normalize-host";
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
-  const url = new URL(request.url);
-
-  // The /auth/login route must use shopify.login() rather than authenticate.admin()
-  if (url.pathname === "/auth/login") {
-    const errors = await login(normalizeRequestHost(request));
-    return json(errors ?? {});
-  }
-
   await authenticate.admin(normalizeRequestHost(request));
 
   return null;

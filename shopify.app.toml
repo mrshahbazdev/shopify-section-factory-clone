@@ -8,6 +8,7 @@ name = "Section Factory Clone"
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "read_themes,write_themes,read_products,read_metaobjects,write_metaobjects,read_files,write_files,read_orders,read_customers"
+use_legacy_install_flow = true
 
 [auth]
 redirect_urls = [ "https://sections-apps.clipvaultz.online/auth/callback" ]

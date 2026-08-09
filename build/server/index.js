@@ -2,17 +2,17 @@ var _a;
 import { jsx, jsxs } from "react/jsx-runtime";
 import { PassThrough } from "stream";
 import { renderToPipeableStream } from "react-dom/server";
-import { RemixServer, Meta, Links, Outlet, ScrollRestoration, Scripts, useLoaderData, Link, useRouteError, useActionData, Form, useSearchParams } from "@remix-run/react";
-import { createReadableStreamFromReadable, redirect, json } from "@remix-run/node";
+import { RemixServer, Meta, Links, Outlet, ScrollRestoration, Scripts, useLoaderData, useActionData, Form, Link, useRouteError, useSearchParams } from "@remix-run/react";
+import { createReadableStreamFromReadable, json, redirect } from "@remix-run/node";
 import { isbot } from "isbot";
 import "@shopify/shopify-app-remix/adapters/node";
-import { shopifyApp, AppDistribution, ApiVersion, boundary } from "@shopify/shopify-app-remix/server";
+import { shopifyApp, AppDistribution, ApiVersion, LoginErrorType, boundary } from "@shopify/shopify-app-remix/server";
 import { PrismaSessionStorage } from "@shopify/shopify-app-session-storage-prisma";
 import { PrismaClient } from "@prisma/client";
+import { Page, Layout, Card, FormLayout, Text, TextField, Button, ButtonGroup, Banner, Select, Checkbox, Badge, BlockStack, Tabs, EmptyState } from "@shopify/polaris";
 import { AppProvider } from "@shopify/shopify-app-remix/react";
 import { NavMenu } from "@shopify/app-bridge-react";
 import { useState, useMemo } from "react";
-import { Page, Layout, Card, Text, ButtonGroup, Button, Banner, Select, Checkbox, Badge, BlockStack, TextField, Tabs, EmptyState } from "@shopify/polaris";
 import { readFileSync } from "fs";
 import { resolve } from "path";
 if (process.env.NODE_ENV !== "production") {
@@ -114,7 +114,7 @@ const route0 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   __proto__: null,
   default: App$1
 }, Symbol.toStringTag, { value: "Module" }));
-const action$6 = async ({ request }) => {
+const action$7 = async ({ request }) => {
   const { payload, session, topic, shop } = await authenticate.webhook(request);
   console.log(`Received ${topic} webhook for ${shop}`);
   const current = payload.current;
@@ -132,9 +132,9 @@ const action$6 = async ({ request }) => {
 };
 const route1 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  action: action$6
+  action: action$7
 }, Symbol.toStringTag, { value: "Module" }));
-const action$5 = async ({ request }) => {
+const action$6 = async ({ request }) => {
   const { shop, session, topic } = await authenticate.webhook(request);
   console.log(`Received ${topic} webhook for ${shop}`);
   if (session) {
@@ -144,7 +144,48 @@ const action$5 = async ({ request }) => {
 };
 const route2 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  action: action$5
+  action: action$6
+}, Symbol.toStringTag, { value: "Module" }));
+const LOGIN_ERROR_MESSAGES = {
+  [LoginErrorType.MissingShop]: "Please enter your shop domain to continue.",
+  [LoginErrorType.InvalidShop]: "Invalid shop domain. Please use myshop.myshopify.com"
+};
+function loginErrorMessage(errors) {
+  if (!(errors == null ? void 0 : errors.shop)) return void 0;
+  return LOGIN_ERROR_MESSAGES[errors.shop] ?? errors.shop;
+}
+const loader$d = async ({ request }) => {
+  const errors = loginErrorMessage(await login(request));
+  return json({ errors });
+};
+const action$5 = async ({ request }) => {
+  const errors = loginErrorMessage(await login(request));
+  return json({ errors });
+};
+function AuthLogin() {
+  const { errors: loaderErrors } = useLoaderData();
+  const actionData = useActionData();
+  const errors = (actionData == null ? void 0 : actionData.errors) ?? loaderErrors;
+  return /* @__PURE__ */ jsx(Page, { title: "Install Section Factory Clone", children: /* @__PURE__ */ jsx(Layout, { children: /* @__PURE__ */ jsx(Layout.Section, { children: /* @__PURE__ */ jsx(Card, { children: /* @__PURE__ */ jsx(Form, { method: "post", children: /* @__PURE__ */ jsxs(FormLayout, { children: [
+    /* @__PURE__ */ jsx(Text, { as: "p", variant: "bodyMd", children: "Enter your shop domain to install or open the app." }),
+    /* @__PURE__ */ jsx(
+      TextField,
+      {
+        name: "shop",
+        label: "Shop domain",
+        placeholder: "my-shop.myshopify.com",
+        autoComplete: "on",
+        error: errors
+      }
+    ),
+    /* @__PURE__ */ jsx(Button, { submit: true, primary: true, children: "Install app" })
+  ] }) }) }) }) }) });
+}
+const route3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+  __proto__: null,
+  action: action$5,
+  default: AuthLogin,
+  loader: loader$d
 }, Symbol.toStringTag, { value: "Module" }));
 const loader$c = async ({ request }) => {
   const url = new URL(request.url);
@@ -153,7 +194,7 @@ const loader$c = async ({ request }) => {
 function Index() {
   return null;
 }
-const route3 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: Index,
   loader: loader$c
@@ -169,15 +210,10 @@ function normalizeRequestHost(request) {
   return request;
 }
 const loader$b = async ({ request }) => {
-  const url = new URL(request.url);
-  if (url.pathname === "/auth/login") {
-    const errors = await login(normalizeRequestHost(request));
-    return json(errors ?? {});
-  }
   await authenticate.admin(normalizeRequestHost(request));
   return null;
 };
-const route4 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   loader: loader$b
 }, Symbol.toStringTag, { value: "Module" }));
@@ -206,7 +242,7 @@ const loader$a = async () => {
     { status: healthy ? 200 : 503 }
   );
 };
-const route5 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   loader: loader$a
 }, Symbol.toStringTag, { value: "Module" }));
@@ -237,7 +273,7 @@ function ErrorBoundary() {
 const headers = (headersArgs) => {
   return boundary.headers(headersArgs);
 };
-const route6 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   ErrorBoundary,
   default: App,
@@ -412,7 +448,7 @@ function ConversionBlocks() {
     ) })
   ] }) });
 }
-const route7 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   action: action$4,
   default: ConversionBlocks,
@@ -815,7 +851,7 @@ function SectionDetail() {
     }
   );
 }
-const route8 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   action: action$3,
   default: SectionDetail,
@@ -1020,7 +1056,7 @@ function ExploreSections() {
     ] }) })
   ] }) });
 }
-const route9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: ExploreSections,
   loader: loader$6
@@ -1107,7 +1143,7 @@ function CartDrawer() {
     ] }) })
   ] }) });
 }
-const route10 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   action: action$2,
   default: CartDrawer,
@@ -1172,7 +1208,7 @@ function Settings() {
     ] })
   ] }) }) }) });
 }
-const route11 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   action: action$1,
   default: Settings,
@@ -1302,7 +1338,7 @@ function BundlesAndQuantityBreaks() {
     ] }) })
   ] }) });
 }
-const route12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   action,
   default: BundlesAndQuantityBreaks,
@@ -1312,7 +1348,7 @@ const loader$2 = async ({ request }) => {
   await authenticate.admin(request);
   return redirect("/app/explore");
 };
-const route13 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   loader: loader$2
 }, Symbol.toStringTag, { value: "Module" }));
@@ -1371,7 +1407,7 @@ function BundleAndSave() {
     ) })
   ] }) });
 }
-const route14 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: BundleAndSave,
   loader: loader$1
@@ -1430,12 +1466,12 @@ function HelpAndResources() {
     ] }, index)) })
   ] }) });
 }
-const route15 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+const route16 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   default: HelpAndResources,
   loader
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-DA910jug.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/root-qoLyrn9W.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js"], "css": [] }, "routes/webhooks.app.scopes_update": { "id": "routes/webhooks.app.scopes_update", "parentId": "root", "path": "webhooks/app/scopes_update", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/webhooks.app.scopes_update-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/webhooks.app.uninstalled": { "id": "routes/webhooks.app.uninstalled", "parentId": "root", "path": "webhooks/app/uninstalled", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/webhooks.app.uninstalled-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/_index": { "id": "routes/_index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/_index-C6d-v1ok.js", "imports": [], "css": [] }, "routes/auth.$": { "id": "routes/auth.$", "parentId": "root", "path": "auth/*", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/auth._-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/health": { "id": "routes/health", "parentId": "root", "path": "health", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/health-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/app": { "id": "routes/app", "parentId": "root", "path": "app", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/app-BL8m7GDD.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/context-COik2VfW.js", "/assets/context-Dqc0DVKX.js"], "css": [] }, "routes/app.conversion-blocks": { "id": "routes/app.conversion-blocks", "parentId": "routes/app", "path": "conversion-blocks", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.conversion-blocks-C0FNgmhx.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-CpLxfhV7.js", "/assets/Banner-BNcS6qZV.js", "/assets/Select-GiB873p6.js", "/assets/Checkbox-B-LhmOnx.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.explore.$handle": { "id": "routes/app.explore.$handle", "parentId": "routes/app", "path": "explore/:handle", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.explore._handle-D4cKvsaG.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-CpLxfhV7.js", "/assets/Banner-BNcS6qZV.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.explore._index": { "id": "routes/app.explore._index", "parentId": "routes/app", "path": "explore", "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.explore._index-b3FCircT.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-CpLxfhV7.js", "/assets/Select-GiB873p6.js", "/assets/context-COik2VfW.js", "/assets/context-Dqc0DVKX.js", "/assets/XIcon.svg-DU7TFdkq.js", "/assets/EmptyState-C7CAvQ-Z.js"], "css": [] }, "routes/app.cart-drawer": { "id": "routes/app.cart-drawer", "parentId": "routes/app", "path": "cart-drawer", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.cart-drawer-Q33Jk7uL.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-CpLxfhV7.js", "/assets/Banner-BNcS6qZV.js", "/assets/Checkbox-B-LhmOnx.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.settings": { "id": "routes/app.settings", "parentId": "routes/app", "path": "settings", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.settings-DLsuaZmg.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-CpLxfhV7.js", "/assets/Banner-BNcS6qZV.js", "/assets/Checkbox-B-LhmOnx.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.bundles": { "id": "routes/app.bundles", "parentId": "routes/app", "path": "bundles", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.bundles-CRsWkVT8.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-CpLxfhV7.js", "/assets/Banner-BNcS6qZV.js", "/assets/Checkbox-B-LhmOnx.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app._index": { "id": "routes/app._index", "parentId": "routes/app", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app._index-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/app.bundle": { "id": "routes/app.bundle", "parentId": "routes/app", "path": "bundle", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.bundle-C5qpv9Pi.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/Page-CpLxfhV7.js", "/assets/EmptyState-C7CAvQ-Z.js", "/assets/context-COik2VfW.js"], "css": [] }, "routes/app.help": { "id": "routes/app.help", "parentId": "routes/app", "path": "help", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.help-Dnw6_jf-.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/Page-CpLxfhV7.js", "/assets/context-COik2VfW.js"], "css": [] } }, "url": "/assets/manifest-61e30d78.js", "version": "61e30d78" };
+const serverManifest = { "entry": { "module": "/assets/entry.client-DA910jug.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/root-qoLyrn9W.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js"], "css": [] }, "routes/webhooks.app.scopes_update": { "id": "routes/webhooks.app.scopes_update", "parentId": "root", "path": "webhooks/app/scopes_update", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/webhooks.app.scopes_update-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/webhooks.app.uninstalled": { "id": "routes/webhooks.app.uninstalled", "parentId": "root", "path": "webhooks/app/uninstalled", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/webhooks.app.uninstalled-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/auth.login": { "id": "routes/auth.login", "parentId": "root", "path": "auth/login", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/auth.login-ufgDZOPJ.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/FormLayout-BncO4QVN.js", "/assets/context-COik2VfW.js"], "css": [] }, "routes/_index": { "id": "routes/_index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/_index-C6d-v1ok.js", "imports": [], "css": [] }, "routes/auth.$": { "id": "routes/auth.$", "parentId": "root", "path": "auth/*", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/auth._-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/health": { "id": "routes/health", "parentId": "root", "path": "health", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/health-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/app": { "id": "routes/app", "parentId": "root", "path": "app", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": true, "module": "/assets/app-BL8m7GDD.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/context-COik2VfW.js", "/assets/context-Dqc0DVKX.js"], "css": [] }, "routes/app.conversion-blocks": { "id": "routes/app.conversion-blocks", "parentId": "routes/app", "path": "conversion-blocks", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.conversion-blocks-DfjWjstP.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/Banner-C1wZxn4P.js", "/assets/Select-TQAWtPci.js", "/assets/Checkbox-R_xkOBUc.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.explore.$handle": { "id": "routes/app.explore.$handle", "parentId": "routes/app", "path": "explore/:handle", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.explore._handle-JvBb6ic-.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/Banner-C1wZxn4P.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.explore._index": { "id": "routes/app.explore._index", "parentId": "routes/app", "path": "explore", "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.explore._index-B2ZLOTYO.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/Select-TQAWtPci.js", "/assets/context-COik2VfW.js", "/assets/context-Dqc0DVKX.js", "/assets/XIcon.svg-DU7TFdkq.js", "/assets/FormLayout-BncO4QVN.js", "/assets/EmptyState-DUSzuflk.js"], "css": [] }, "routes/app.cart-drawer": { "id": "routes/app.cart-drawer", "parentId": "routes/app", "path": "cart-drawer", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.cart-drawer-Dso_d_-H.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/Banner-C1wZxn4P.js", "/assets/Checkbox-R_xkOBUc.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.settings": { "id": "routes/app.settings", "parentId": "routes/app", "path": "settings", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.settings-D0R9J8ea.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/Banner-C1wZxn4P.js", "/assets/Checkbox-R_xkOBUc.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app.bundles": { "id": "routes/app.bundles", "parentId": "routes/app", "path": "bundles", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.bundles-DadRA05s.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/components-DUp91Uk2.js", "/assets/Page-BYFvyhZg.js", "/assets/Banner-C1wZxn4P.js", "/assets/Checkbox-R_xkOBUc.js", "/assets/context-COik2VfW.js", "/assets/XIcon.svg-DU7TFdkq.js"], "css": [] }, "routes/app._index": { "id": "routes/app._index", "parentId": "routes/app", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app._index-l0sNRNKZ.js", "imports": [], "css": [] }, "routes/app.bundle": { "id": "routes/app.bundle", "parentId": "routes/app", "path": "bundle", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.bundle-Bkybv6IB.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/Page-BYFvyhZg.js", "/assets/EmptyState-DUSzuflk.js", "/assets/context-COik2VfW.js"], "css": [] }, "routes/app.help": { "id": "routes/app.help", "parentId": "routes/app", "path": "help", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": true, "hasClientAction": false, "hasClientLoader": false, "hasErrorBoundary": false, "module": "/assets/app.help-MadYiZK2.js", "imports": ["/assets/index-OtPSfN_w.js", "/assets/Page-BYFvyhZg.js", "/assets/context-COik2VfW.js"], "css": [] } }, "url": "/assets/manifest-95d9376d.js", "version": "95d9376d" };
 const mode = "production";
 const assetsBuildDirectory = "build/client";
 const basename = "/";
@@ -1468,13 +1504,21 @@ const routes = {
     caseSensitive: void 0,
     module: route2
   },
+  "routes/auth.login": {
+    id: "routes/auth.login",
+    parentId: "root",
+    path: "auth/login",
+    index: void 0,
+    caseSensitive: void 0,
+    module: route3
+  },
   "routes/_index": {
     id: "routes/_index",
     parentId: "root",
     path: void 0,
     index: true,
     caseSensitive: void 0,
-    module: route3
+    module: route4
   },
   "routes/auth.$": {
     id: "routes/auth.$",
@@ -1482,7 +1526,7 @@ const routes = {
     path: "auth/*",
     index: void 0,
     caseSensitive: void 0,
-    module: route4
+    module: route5
   },
   "routes/health": {
     id: "routes/health",
@@ -1490,7 +1534,7 @@ const routes = {
     path: "health",
     index: void 0,
     caseSensitive: void 0,
-    module: route5
+    module: route6
   },
   "routes/app": {
     id: "routes/app",
@@ -1498,7 +1542,7 @@ const routes = {
     path: "app",
     index: void 0,
     caseSensitive: void 0,
-    module: route6
+    module: route7
   },
   "routes/app.conversion-blocks": {
     id: "routes/app.conversion-blocks",
@@ -1506,7 +1550,7 @@ const routes = {
     path: "conversion-blocks",
     index: void 0,
     caseSensitive: void 0,
-    module: route7
+    module: route8
   },
   "routes/app.explore.$handle": {
     id: "routes/app.explore.$handle",
@@ -1514,7 +1558,7 @@ const routes = {
     path: "explore/:handle",
     index: void 0,
     caseSensitive: void 0,
-    module: route8
+    module: route9
   },
   "routes/app.explore._index": {
     id: "routes/app.explore._index",
@@ -1522,7 +1566,7 @@ const routes = {
     path: "explore",
     index: true,
     caseSensitive: void 0,
-    module: route9
+    module: route10
   },
   "routes/app.cart-drawer": {
     id: "routes/app.cart-drawer",
@@ -1530,7 +1574,7 @@ const routes = {
     path: "cart-drawer",
     index: void 0,
     caseSensitive: void 0,
-    module: route10
+    module: route11
   },
   "routes/app.settings": {
     id: "routes/app.settings",
@@ -1538,7 +1582,7 @@ const routes = {
     path: "settings",
     index: void 0,
     caseSensitive: void 0,
-    module: route11
+    module: route12
   },
   "routes/app.bundles": {
     id: "routes/app.bundles",
@@ -1546,7 +1590,7 @@ const routes = {
     path: "bundles",
     index: void 0,
     caseSensitive: void 0,
-    module: route12
+    module: route13
   },
   "routes/app._index": {
     id: "routes/app._index",
@@ -1554,7 +1598,7 @@ const routes = {
     path: void 0,
     index: true,
     caseSensitive: void 0,
-    module: route13
+    module: route14
   },
   "routes/app.bundle": {
     id: "routes/app.bundle",
@@ -1562,7 +1606,7 @@ const routes = {
     path: "bundle",
     index: void 0,
     caseSensitive: void 0,
-    module: route14
+    module: route15
   },
   "routes/app.help": {
     id: "routes/app.help",
@@ -1570,7 +1614,7 @@ const routes = {
     path: "help",
     index: void 0,
     caseSensitive: void 0,
-    module: route15
+    module: route16
   }
 };
 export {
