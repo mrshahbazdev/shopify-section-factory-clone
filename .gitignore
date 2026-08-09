@@ -13,6 +13,9 @@ node_modules
 /prisma/dev.db-journal
 database.sqlite
 
+app-error.log
+app.log
+
 .env
 .env.*
 !.env.example
