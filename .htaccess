@@ -1,16 +1,8 @@
-# Apache reverse proxy for the Remix/Node app running on localhost:3000
-# Requires mod_rewrite and mod_proxy (or mod_proxy_http) to be enabled.
-
-<IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
-
-  # Forward all requests to the Node app
-  RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
-</IfModule>
-
-# Optional: ensure correct content types for web assets
-<IfModule mod_mime.c>
-  AddType application/javascript .js
-  AddType text/css .css
-</IfModule>
+# CloudLinux / cPanel Phusion Passenger config for Node.js
+PassengerEnabled On
+PassengerAppType node
+PassengerBaseURI /
+PassengerAppRoot /home/jobspics/domains/sections-apps.clipvaultz.online/public_html
+PassengerStartupFile server.js
+PassengerNodejs /home/jobspics/nodevenv/domains/sections-apps.clipvaultz.online/public_html/20/bin/node
+PassengerFriendlyErrorPages Off
